@@ -136,11 +136,41 @@ Bundle, or `cd android && ./gradlew bundleRelease`.
 
 ---
 
+## Languages & content
+
+The app's text (UI, and each school-of-thought's conversational template bank)
+lives in `data/core.json` (shared, language-independent: persona list, lineage
+chains, category order) plus one file per language in `i18n/*.json`. **Do not
+hand-edit the `window.APP_DATA = {...}` blob inside `www/index.html`** — it's
+generated. After changing anything under `data/` or `i18n/`, run:
+
+```bash
+npm run data:build
+```
+
+Currently shipped: English, Ukrainian, Spanish, Polish, German. Every lookup
+(`t()`, `modeData()`, `categories()`) falls back to English key-by-key, so a
+language file can be partial without breaking anything — useful when adding
+one incrementally. Two things are **not yet translated per-language** and
+silently fall back to English: the 135 individual persona tag/terms/voice
+blurbs, and the Live-AI-mode Settings panel labels (added after the original
+i18n pass). `categories.crisis.kw` is the one field worth extra care in any
+new language — it's what routes a message to the crisis-resources reply
+instead of the scripted persona engine.
+
+To add a language: copy `i18n/en.json` to `i18n/<code>.json`, translate
+`label`/`ui`/`categories`/`modes` (and ideally `chainANotes`/`chainBNotes`),
+add `<code>` to the `ORDER` array in `scripts/build-data.js`, then
+`npm run data:build`.
+
 ## Project layout
 
 ```
 consulting-room-app/
-├─ www/index.html            # the entire app (edit this)
+├─ www/index.html            # generated app shell + logic (edit the *logic*, not APP_DATA)
+├─ data/core.json            # personas, lineage chains, category order (shared)
+├─ i18n/*.json               # one file per language
+├─ scripts/build-data.js     # data/ + i18n/ -> www/index.html's APP_DATA block
 ├─ capacitor.config.json     # Android config
 ├─ package.json              # build scripts
 └─ src-tauri/                # Windows (Tauri 2)
@@ -152,4 +182,6 @@ consulting-room-app/
 
 ## Updating the app
 
-Edit `www/index.html`, then `npm run android:sync` and/or `npm run win:build`.
+Edit `www/index.html` (logic/markup) and/or `data/core.json` + `i18n/*.json`
+(content), run `npm run data:build` if you touched the latter, then
+`npm run android:sync` and/or `npm run win:build`.
