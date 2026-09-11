@@ -41,6 +41,25 @@ offline and identical to the original.
 
 ---
 
+## Security notes
+
+- **Chat rendering is XSS-safe.** Every message (yours and the AI's) goes through
+  `esc()` before it's inserted as HTML — no raw `innerHTML` of untrusted text.
+- **API keys live only in `localStorage`** on the device; they're never bundled
+  into the app and never sent anywhere except straight to the provider you chose.
+- **Windows (Tauri):** the app ships a locked-down Content-Security-Policy
+  (`src-tauri/tauri.conf.json`), and outbound HTTP is capability-scoped in
+  `src-tauri/capabilities/default.json` to exactly the five providers' hosts —
+  the packaged app cannot be made to call an arbitrary URL. If you pick
+  **OpenAI‑compatible (custom)** with your own Base URL, add that host to the
+  `http:default` allow-list in that file before building, or the request will be
+  blocked (safe default; not a bug).
+- **CI workflow** (`.github/workflows/build.yml`) only triggers on push to `main`
+  or manual dispatch (no `pull_request_target`), uses no repo secrets, and its
+  `GITHUB_TOKEN` is scoped to `contents: read`.
+
+---
+
 ## Prerequisites
 
 - **Node.js 18+** and npm
