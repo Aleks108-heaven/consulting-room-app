@@ -1,0 +1,14 @@
+{
+  "appId": "app.consultingroom.study",
+  "appName": "Consulting Room",
+  "webDir": "www",
+  "bundledWebRuntime": false,
+  "plugins": {
+    "CapacitorHttp": {
+      "enabled": true
+    }
+  },
+  "android": {
+    "allowMixedContent": false
+  }
+}

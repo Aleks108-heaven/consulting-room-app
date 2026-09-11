@@ -1,0 +1,22 @@
+{
+  "name": "consulting-room-app",
+  "version": "1.0.0",
+  "description": "Consulting Room — a study companion for the history of psychotherapy. Android + Windows builds of the single-file web app, with a provider-agnostic Live AI mode.",
+  "private": true,
+  "scripts": {
+    "android:add": "cap add android",
+    "android:sync": "cap sync android",
+    "android:open": "cap open android",
+    "android:run": "cap run android",
+    "win:dev": "tauri dev",
+    "win:build": "tauri build"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^6.1.2",
+    "@capacitor/cli": "^6.1.2",
+    "@tauri-apps/cli": "^2.1.0"
+  },
+  "dependencies": {
+    "@capacitor/core": "^6.1.2"
+  }
+}
