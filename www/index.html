@@ -501,11 +501,19 @@ var state = {
   liveMode: lsGet("liveMode", false),
   provider: lsGet("provider", "gemini"),
   apiKey: lsGet("apiKey", ""),
-  modelId: lsGet("modelId", ""),
+  modelIds: lsGet("modelIds", {}),   // per-provider, so switching providers can't send the wrong model name
   apiBase: lsGet("apiBase", ""),
   theme: lsGet("theme", "system"),
   liveWarnShown: false
 };
+// migrate the old single "modelId" key (pre-multi-provider) onto its own provider only
+(function(){
+  var legacy = lsGet("modelId", "");
+  if(legacy && !Object.keys(state.modelIds).length){
+    state.modelIds.anthropic = legacy;
+    lsSet("modelIds", state.modelIds);
+  }
+})();
 
 var chatHistories = lsGet("chatHistories", {}); // idx -> [{role, text}]
 var turnCounts = lsGet("turnCounts", {});        // idx -> int
@@ -843,7 +851,8 @@ function tryLiveReply(idx, userText){
   var turns = hist.map(function(m){ return {role: m.role==="user"?"user":"assistant", content:m.text}; });
   turns.push({role:"user", content:userText});
 
-  return crProviderReply(state.provider || "anthropic", state.apiKey, (state.modelId||"").trim(), sys, turns)
+  var activeModel = ((state.modelIds || {})[state.provider] || "").trim();
+  return crProviderReply(state.provider || "anthropic", state.apiKey, activeModel, sys, turns)
     .then(function(reply){
       return reply && reply.trim() ? reply.trim() : null;
     }).catch(function(err){
@@ -1035,6 +1044,7 @@ function syncProviderUI(){
   providerSelect.value = state.provider;
   apiKeyInput.placeholder = cfg.keyHint;
   modelIdInput.placeholder = "default: " + cfg.defaultModel;
+  modelIdInput.value = (state.modelIds || {})[state.provider] || "";
   modelHint.textContent = "Leave blank to use " + cfg.defaultModel + ".";
   apiBaseField.style.display = (state.provider === "openai") ? "block" : "none";
   var tips = {
@@ -1053,7 +1063,6 @@ themeSelect.value = state.theme;
 liveToggle.checked = state.liveMode;
 liveFields.style.display = state.liveMode ? "block" : "none";
 apiKeyInput.value = state.apiKey;
-modelIdInput.value = state.modelId;
 apiBaseInput.value = state.apiBase;
 syncProviderUI();
 
@@ -1075,7 +1084,11 @@ liveToggle.addEventListener("change", function(){
 });
 apiKeyInput.addEventListener("change", function(){ state.apiKey = apiKeyInput.value.trim(); lsSet("apiKey", state.apiKey);
   if(state.currentPersonaIdx != null) liveBadgeEl.style.display = (state.liveMode && state.apiKey) ? "inline-block" : "none"; });
-modelIdInput.addEventListener("change", function(){ state.modelId = modelIdInput.value.trim(); lsSet("modelId", state.modelId); });
+modelIdInput.addEventListener("change", function(){
+  state.modelIds = state.modelIds || {};
+  state.modelIds[state.provider] = modelIdInput.value.trim();
+  lsSet("modelIds", state.modelIds);
+});
 document.getElementById("btn-clear-key").addEventListener("click", function(){
   apiKeyInput.value = ""; state.apiKey = ""; lsSet("apiKey", "");
   if(state.currentPersonaIdx != null) liveBadgeEl.style.display = "none";
