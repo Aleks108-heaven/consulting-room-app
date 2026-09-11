@@ -6,6 +6,7 @@
   "scripts": {
     "data:build": "node scripts/build-data.js",
     "ios:add": "cap add ios",
+    "ios:icon": "capacitor-assets generate --ios",
     "ios:sync": "cap sync ios",
     "android:add": "cap add android",
     "android:icon": "capacitor-assets generate --android --iconBackgroundColor \"#9C5A16\" --iconBackgroundColorDark \"#12191A\"",
