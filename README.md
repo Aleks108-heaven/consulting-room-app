@@ -135,6 +135,62 @@ native code and bypasses CORS. Internet permission is included by Capacitor by d
 To produce a release AAB for Play Store: Android Studio → Build → Generate Signed
 Bundle, or `cd android && ./gradlew bundleRelease`.
 
+### First-time Android SDK setup (no Android Studio)
+
+If you don't have Android Studio, the command-line tools are enough to build
+and run a debug/release APK:
+
+```bash
+# 1. Install the SDK command-line tools (example: scoop on Windows)
+scoop install android-clt
+
+# 2. Point env vars at it (persist with setx on Windows, export in ~/.bashrc elsewhere)
+export ANDROID_HOME="<path-to-android-clt>"
+
+# 3. Accept licenses, then install what's needed
+sdkmanager --licenses
+sdkmanager "platform-tools" "platforms;android-34" "build-tools;34.0.0" \
+  "emulator" "system-images;android-34;google_apis;x86_64"
+
+# 4. (optional) create an emulator to test on
+avdmanager create avd -n consulting_room \
+  -k "system-images;android-34;google_apis;x86_64" -d pixel_5
+emulator -avd consulting_room
+```
+
+Then `npm install`, `npm run android:add`, `npm run android:sync`, and build
+with Gradle directly rather than `npm run android:run` (Capacitor's `cap run`
+shells out to `gradlew` in a way that doesn't resolve reliably from Git Bash
+on Windows):
+
+```bash
+cd android
+./gradlew.bat assembleDebug      # -> android/app/build/outputs/apk/debug/app-debug.apk
+./gradlew.bat assembleRelease    # -> .../apk/release/app-release-unsigned.apk
+```
+
+**The release APK above is unsigned and will not install as-is.** For local
+testing (not a Play Store release, which needs a real, permanently-kept
+release keystore) you can sign it with a throwaway debug-style key:
+
+```bash
+keytool -genkeypair -v -keystore android/app/debug.keystore \
+  -alias androiddebugkey -storepass android -keypass android \
+  -keyalg RSA -keysize 2048 -validity 10000 \
+  -dname "CN=Debug,OU=Debug,O=Debug,L=Debug,S=Debug,C=US"
+
+BT="$ANDROID_HOME/build-tools/34.0.0"
+"$BT/zipalign" -f -p 4 app-release-unsigned.apk app-release-aligned.apk
+"$BT/apksigner" sign --ks android/app/debug.keystore \
+  --ks-pass pass:android --key-pass pass:android \
+  --out app-release-signed.apk app-release-aligned.apk
+```
+
+`android/app/debug.keystore` is gitignored (a signing key is a secret and
+never belongs in source control) — back it up yourself if you want future
+rebuilds on another machine to be treated as updates to the same app instead
+of a different signing identity.
+
 ---
 
 ## iPhone (Capacitor + Xcode)
@@ -185,7 +241,8 @@ generated. After changing anything under `data/` or `i18n/`, run:
 npm run data:build
 ```
 
-Currently shipped: English, Ukrainian, Spanish, Polish, German. Every lookup
+Currently shipped: English, Ukrainian, Spanish, Polish, German, Italian,
+Catalan, French, Portuguese, Romanian, Russian. Every lookup
 (`t()`, `modeData()`, `categories()`) falls back to English key-by-key, so a
 language file can be partial without breaking anything — useful when adding
 one incrementally. Two things are **not yet translated per-language** and
@@ -216,6 +273,19 @@ consulting-room-app/
    ├─ capabilities/default.json   # allow-list of API hosts
    └─ src/{main,lib}.rs
 ```
+
+## Build outputs are not committed
+
+`node_modules/`, `android/`, `ios/`, `src-tauri/target/`, and `ci-artifacts/`
+are all gitignored on purpose — they're generated from source (`package.json`,
+`www/`, `data/`+`i18n/`), not hand-written, and binaries don't belong in git
+history. A fresh clone gets them back via `npm install` + `npm run android:add`
++ a rebuild, **except** the signing keystore (see above), which isn't
+regenerable — the same key must be reused for every release build to update
+an already-installed app. `ci-artifacts/` in particular is just a local
+staging folder for build outputs you want to keep handy; if you want built
+APKs/EXEs available online without bloating the repo, attach them to a
+GitHub/GitLab Release instead.
 
 ## Updating the app
 
