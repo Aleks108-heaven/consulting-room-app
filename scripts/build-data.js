@@ -18,7 +18,7 @@ for (const f of files) {
 
 // Preserve a stable, curated language order (original four, then the newly
 // added ones alphabetically); any language file not listed here is appended.
-const ORDER = ["en", "uk", "es", "pl", "de", "it", "ca", "fr", "pt", "nl", "ro", "ru", "be"];
+const ORDER = ["en", "uk", "es", "pl", "de", "it", "ca", "fr", "pt", "ro", "ru"];
 const langs = ORDER.filter(l => languages[l]).concat(
   Object.keys(languages).filter(l => ORDER.indexOf(l) === -1).sort()
 );
