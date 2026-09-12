@@ -59,7 +59,7 @@
   "settings_live_warning": "⚠ Browser-to-API calls are blocked by this hosted page's security policy, so live mode will silently fall back to the offline engine here. To actually use it: download the file below and open it directly in your own browser (double-click it, or host it yourself) — outside this hosted page, the request can go through. Never share a copy of this file with your key already typed in.",
   "settings_install": "Install as an app",
   "settings_install_desc": "Add a home-screen / desktop icon",
-  "settings_install_steps": "On Android Chrome: menu (⋮) → <b>Add to Home screen</b>. On Windows (Chrome/Edge): address-bar install icon, or menu → <b>Install {app}…</b>. It then opens in its own window without browser chrome.",
+  "settings_install_steps": "On Android Chrome: menu (⋮) → <b>Add to Home screen</b>. On Windows (Chrome/Edge): address-bar install icon, or menu → <b>Install {app}…</b>. On iPhone/iPad (Safari): tap the Share icon, then <b>Add to Home Screen</b>. On Mac (Safari): the File menu → <b>Add to Dock</b>, or the Share button → <b>Add to Dock</b>. It then opens in its own window without browser chrome.",
   "settings_clear_key": "Clear stored key",
   "settings_done": "Done",
   "msg_intro": "You're now talking with a simulation of {name} ({life}) — {tagline}. {voice} This is an educational simulation, not the real person, not therapy, and not medical advice.",
@@ -72,486 +72,465 @@
  },
  "modes": {
   "founders": {
-   "label": "Founding Psychology",
    "openers": [
-    "Before we go further -- describe exactly what you noticed, without explaining it yet.",
-    "What is {t1} doing for you right now, practically speaking?",
-    "Let's not interpret yet. Just describe the raw experience as it came to you.",
-    "What habit is quietly running underneath what you just told me?",
-    "What would you notice if you slowed {topic} down to a single frame, the way a lab observation would?",
-    "Separate the raw sensation in {topic} from the label you've already put on it."
+    "Before we go further -- describe exactly what you noticed, the way a trained introspectionist would: no interpretation yet, just the raw report.",
+    "James called it a stream -- is {topic} really one thing, or a moving current you're freezing into a snapshot?",
+    "What's the structure underneath {topic} -- the basic elements it's built from, before you assemble them into a story?",
+    "What function does {topic} actually serve for you right now, practically -- what is it *for*?",
+    "If you slowed {topic} down to a single frame, like a lab observation, what would you actually see?",
+    "Separate the raw sensation in {topic} from the label you've already stuck on it."
    ],
    "reflect": [
-    "Stripped of interpretation, what you're describing is: {topic}. What else is present in it?",
-    "That's the surface. What's the function {topic} is actually serving for you?",
-    "Notice how much of {topic} is raw sensation, and how much is the story you've added to it.",
-    "This might be less a fixed thing than a stream -- constantly becoming, not staying still.",
+    "Stripped of interpretation, what you're describing is: {topic}. What else is actually there, before the story?",
+    "That's the surface report. What function does {topic} serve underneath -- what is the habit doing for you?",
+    "Notice how much of {topic} is raw sensation, and how much is the narrative you've layered on top.",
+    "It behaves more like a stream than a fixed object -- continuously becoming, not static.",
     "The habit itself may matter more here than any single thought about {topic}."
    ],
    "technique": [
-    "Try describing {topic} again, this time as plainly as you'd describe a chair -- no metaphors.",
-    "Ask yourself what purpose {topic} serves, the way you'd ask what a habit is for.",
-    "Try the stream-of-consciousness method: speak everything passing through awareness about {topic} for sixty seconds, unedited."
+    "Try trained introspection: describe {topic} again as plainly as you'd describe a chair -- no metaphors, just the elements.",
+    "Ask what {topic} is *for*, the way you'd ask what a habit is for -- function before meaning.",
+    "Try a stream-of-consciousness pass: sixty seconds, uncensored, everything that crosses your mind about {topic}."
    ]
   },
   "psychoanalytic": {
-   "label": "Psychoanalytic / Psychodynamic",
    "openers": [
-    "What comes to mind first, without editing it, when you sit with that?",
-    "Does {topic} remind you of anything from earlier in your life?",
-    "I notice how you're telling me this. What might that way of telling it be protecting you from?",
-    "Whose voice does {t1} sound like, if you listen closely?",
-    "What's the very first memory that surfaces when you let {topic} sit for a moment?",
-    "If this were a dream you'd had last night, what would the dream-version of {topic} be hiding?"
+    "Say whatever comes to mind first, uncensored, when you sit with that -- that's the rule of free association.",
+    "Does {topic} echo something from an earlier chapter of your life?",
+    "I notice *how* you're telling me this. What might this manner of telling be protecting you from?",
+    "Whose voice is really in {t1}, if you listen underneath your own?",
+    "If this were a dream from last night, what would the dream-version of {topic} be disguising?",
+    "What's the earliest memory that surfaces if you let {topic} sit for a moment?"
    ],
    "reflect": [
-    "There may be more beneath {topic} than you're saying, even to yourself.",
-    "That reaction is bigger than this moment alone -- it sounds like it's carrying something older.",
+    "There may be more under {topic} than you're saying, even to yourself.",
+    "This reaction is bigger than this one moment -- it seems to be carrying something older. That's usually how transference shows up.",
     "Notice the feeling you're avoiding naming directly. What would it be called, if you let yourself say it?",
-    "Transference happens outside the couch too -- who does this feel like all over again?",
-    "A slip, a joke, a forgotten detail around {topic} is rarely just an accident."
+    "Transference happens outside the room too -- who does this remind you of, again, this time?",
+    "A slip, a joke, a forgotten detail in {topic} is rarely just an accident -- Freud called these parapraxes."
    ],
    "technique": [
-    "Try free association for a minute: say whatever comes after '{topic} reminds me of...' without censoring it.",
-    "Ask what {topic} would look like if it were really about someone from your past, not the present.",
-    "Notice any resistance to going further with {topic} -- the discomfort itself is usually informative."
+    "Try free association for one minute: uncensored, everything that follows \"{topic} reminds me of...\".",
+    "Ask how {topic} would look if it were really about someone from your past, not the present.",
+    "Notice any resistance to going deeper into {topic} -- the discomfort itself is usually the signal worth following."
    ]
   },
   "jungian": {
-   "label": "Analytical / Jungian",
    "openers": [
     "What images or symbols come up when you think about {topic}?",
-    "Is there a part of yourself in {t2} that you usually keep in shadow?",
+    "Is there a part of you in {t2} that you usually keep in shadow?",
     "If this situation were a dream, what would it be telling you?",
-    "What does {topic} want from you that you haven't been willing to give it?",
-    "What would your dreams have to say about {topic} if you asked them tonight?",
-    "Where does {topic} touch on individuation -- becoming more fully who you actually are?"
+    "What does {topic} want from you -- something you haven't been willing to give it yet?",
+    "What would your dreams say about {topic}, if you asked them tonight?",
+    "Where does {topic} touch individuation -- becoming more fully who you actually are?"
    ],
    "reflect": [
-    "That might be your shadow speaking -- the part of you that doesn't fit your idea of who you are.",
-    "This could be less about the other person and more about something in you seeking integration.",
-    "The archetype underneath {topic} is worth naming. What role does it feel like -- protector, exile, judge?",
-    "The Self is bigger than the ego currently arguing with {topic}.",
-    "Setting the cause aside for a moment -- what meaningful coincidence surrounds {topic}?"
+    "This might be your shadow speaking -- the part of you that doesn't fit your idea of who you are.",
+    "This might have less to do with the other person and more to do with something in you seeking integration.",
+    "The archetype underneath {topic} deserves a name. What role does it seem to play -- protector, exile, judge?",
+    "The Self is larger than the ego currently arguing with {topic}.",
+    "What meaningful coincidence -- synchronicity -- surrounds {topic}, regardless of cause?"
    ],
    "technique": [
-    "Try holding an imaginary dialogue with {topic}, as if it were a character with its own voice.",
-    "Ask what {topic} is compensating for -- what one-sidedness in you it's trying to balance.",
-    "Try active imagination: let an image connected to {topic} move and speak on its own, and just watch."
+    "Try active imagination: hold {topic} in mind and let an image from it move and speak on its own, without steering it.",
+    "Ask what {topic} is compensating for -- what one-sidedness in you it might be trying to balance.",
+    "Let an image tied to {topic} answer a single question: what does it want?"
    ]
   },
   "adlerian": {
-   "label": "Individual Psychology (Adlerian)",
    "openers": [
-    "What do you think {topic} is really in service of -- what are you striving toward?",
-    "Where do you feel 'less than' in this, and who set that measuring stick?",
-    "How does {topic} connect to your sense of belonging?",
-    "What would 'enough' look like here, concretely?",
-    "What's the earliest memory you have that feels connected to this same feeling?",
-    "Whose applause were you originally trying to earn with patterns like {topic}?"
+    "In service of what do you think {topic} is really happening -- what are you striving toward?",
+    "Where do you feel \"less than,\" and who set that yardstick?",
+    "How does {topic} connect to your sense of belonging -- your social interest?",
+    "What would \"enough\" look like here, concretely?",
+    "What's your earliest recollection, and how does it relate to this feeling?",
+    "Whose applause were you originally trying to win with patterns like {topic}?"
    ],
    "reflect": [
-    "Underneath that is often a feeling of not measuring up -- does that resonate with {topic}?",
-    "This sounds like your style of life showing up here -- the strategy you learned early to feel significant.",
+    "Underneath is often a feeling of not measuring up -- does that resonate with {topic}?",
+    "This sounds like your style of life showing up here -- a strategy learned early to feel significant.",
     "Notice the social piece: who are you trying to matter to, in {topic}?",
-    "Early recollections aren't factual history so much as a mirror of your current style of life.",
-    "Courage, not comfort, is usually what social interest actually asks of you here."
+    "Early recollections are less factual history and more a mirror of your current style of life.",
+    "Courage, not comfort, is usually what social interest calls for here."
    ],
    "technique": [
-    "Ask what a small, genuinely useful contribution to someone else would look like right now -- social interest tends to loosen this kind of knot.",
-    "Try rating how much of {topic} is really about competence, and how much is about belonging.",
-    "Try 'acting as if' you already belonged, for one day, and notice what {topic} does."
+    "Ask what a small but genuinely useful contribution to someone else would look like right now -- social interest tends to loosen a knot like this.",
+    "Sort how much of {topic} is really about competence, and how much about belonging.",
+    "Try acting \"as if\" you already belonged, for one day, and notice what that does to {topic}."
    ]
   },
   "humanistic": {
-   "label": "Humanistic / Person-Centered",
    "openers": [
-    "I hear you. What does {topic} feel like from the inside, in your own words?",
-    "What would it mean to fully accept that feeling, exactly as it is, for just a moment?",
+    "I'm listening. What does {topic} feel like from the inside, in your own words?",
+    "What would it mean to fully accept that feeling, exactly as it is, just for a moment?",
     "What need feels unmet underneath {topic}?",
-    "What does the healthiest, most whole version of you make of this?",
-    "What would unconditional positive regard for yourself, right now, actually sound like?",
-    "Is the person you're being around {topic} congruent with who you feel yourself to be underneath?"
+    "What would the healthiest, most whole version of you think about this?",
+    "What would unconditional positive regard toward yourself sound like right now?",
+    "Is the person you are around {topic} congruent with who you feel you are inside?"
    ],
    "reflect": [
-    "It sounds like {topic} matters to you a great deal -- and that matters to me too.",
+    "It sounds like {topic} matters a great deal to you -- and that matters to me too.",
     "You're describing something real and valid. What would it be like to trust that reaction instead of arguing with it?",
-    "There's a growth edge in {topic} -- some part of you reaching toward something truer.",
-    "Empathy for yourself here matters as much as anyone else's would.",
-    "The organism tends to move toward growth when the conditions are safe enough -- what would make this safer?"
+    "There's a growth edge in {topic} -- a part of you reaching toward something truer.",
+    "Self-empathy matters here as much as empathy for anyone else would.",
+    "The organism tends toward growth when conditions are safe enough -- what would make this safer?"
    ],
    "technique": [
-    "Try finishing this sentence, slowly, several times: 'What I really feel about {topic} is...'",
-    "Notice: are you judging the feeling, or just having it? See what changes when you just let it be there.",
-    "Try simply restating {topic} back to yourself, without advice or judgment, the way a good listener would."
+    "Finish this sentence, slowly, a few times: \"What I actually feel about {topic} is...\".",
+    "Notice: are you judging the feeling, or just having it? See what shifts if you simply let it exist.",
+    "Just reflect {topic} back to yourself, without advice or judgment, the way a good listener would."
    ]
   },
   "existential": {
-   "label": "Existential",
    "openers": [
-    "What is {topic} asking you to be honest about -- to yourself, especially?",
-    "Where in this do you actually have a choice, even a small one?",
-    "If this were the last time you faced this exact situation, what would matter about it?",
-    "What meaning could {topic} be pointing you toward, even if it's unwelcome?",
-    "What would you regret not having said or done about {topic}, looking back from the end of your life?",
-    "Where does {topic} brush up against the absurd -- the gap between what you want and what the world gives?"
+    "What does {topic} ask you to be honest about -- especially with yourself?",
+    "Where do you actually have a choice here, even a small one?",
+    "If this were the last time you'd face exactly this situation, what would matter?",
+    "What meaning might {topic} be pointing toward, even unwelcome?",
+    "What would you regret not saying or doing about {topic}, looking back from the end of your life?",
+    "Where does {topic} touch the absurd -- the gap between what you want and what the world offers?"
    ],
    "reflect": [
-    "Underneath {topic} there's often one of the big, unavoidable facts of being alive -- our mortality, our aloneness, our freedom, or the search for meaning. Which one is closest to the surface here?",
-    "That anxiety might not be a malfunction -- it might be the honest sound of freedom, of a real choice in front of you.",
-    "Notice how much of {topic} is about what happened, and how much is about how you're choosing to respond to it.",
-    "This anxiety may be existential guilt -- the cost of not living out a real possibility.",
-    "Death isn't only an ending; awareness of it can sharpen what actually matters in {topic}."
+    "Underneath {topic} often sits one of the given facts of existence -- our mortality, our aloneness, our freedom, or the search for meaning. Which feels closest to the surface here?",
+    "This anxiety may not be a malfunction -- it may be the honest sound of freedom, of a real choice in front of you.",
+    "Notice how much of {topic} is about what happened, and how much about how you're choosing to respond.",
+    "This could be existential guilt -- the cost of not living out a real possibility.",
+    "Death isn't only an ending; awareness of it can clarify what actually matters in {topic}."
    ],
    "technique": [
     "Ask yourself directly: what am I responsible for here, and what am I not?",
-    "Try naming, out loud, the one thing about {topic} you've been avoiding saying plainly.",
-    "Ask yourself plainly: if I fully accepted this is finite, would I still spend it on {topic} the same way?"
+    "Name out loud the one thing about {topic} you've been avoiding saying plainly.",
+    "Ask simply: if I fully accepted that this is finite, would I still spend {topic} the same way?"
    ]
   },
   "gestalt": {
-   "label": "Gestalt Therapy",
    "openers": [
     "Stay with that. What are you aware of right now, in your body, as you say it?",
-    "Don't explain {topic} to me -- show me. What's happening as you sit with it this second?",
-    "If {topic} were sitting in the chair across from you, what would you say to it?",
-    "What are you doing right now, with your breath, your hands, your face, as you tell me this?",
-    "What's figure and what's ground right now -- what's loud, and what's quietly holding it up?",
-    "Finish this out loud: 'What I'm not saying about {topic} is...'"
+    "Don't explain {topic} to me -- show me. What's happening as you sit with it, right in this second?",
+    "If {topic} were sitting in the empty chair across from you, what would you say to it?",
+    "What are you doing right now -- with your breath, your hands, your face -- while you tell me this?",
+    "What's figure and what's ground right now -- what's making noise, and what's quietly holding it up?",
+    "Finish out loud: \"What I'm not saying about {topic} is...\"."
    ],
    "reflect": [
-    "I'm less interested in why {topic} happened than in what's happening between us right now, as you say it.",
-    "That sounds like unfinished business -- something that never got completed or said.",
-    "Notice the boundary here: where does {topic} stop being yours and start being about them?",
-    "That sounds like a retroflection -- doing to yourself what you'd rather do to someone else.",
+    "I'm less interested in why {topic} happened, and more in what's happening between us right now as you say it.",
+    "That sounds like unfinished business -- something that was never closed or said.",
+    "Notice the boundary here: where does {topic} stop being yours and start being theirs?",
+    "That sounds like retroflection -- doing to yourself what you'd rather do to someone else.",
     "Contact, not insight, is what actually closes unfinished business like {topic}."
    ],
    "technique": [
-    "Try this: put {topic} in an empty chair across from you and say, out loud, what you'd never say to its face.",
-    "Say the sentence again, but this time own it fully: replace 'it happens' with 'I do this.'",
-    "Exaggerate the gesture or tone you're using right now about {topic} -- what does it reveal when amplified?"
+    "Try this: put {topic} on an empty chair in front of you and say out loud what you'd never say to its face.",
+    "Say the sentence again, but this time fully own it: swap \"it happens\" for \"I do this.\"",
+    "Exaggerate the gesture or tone you're using about {topic} right now -- what does it reveal, amplified?"
    ]
   },
   "behaviorist": {
-   "label": "Behaviorist",
    "openers": [
-    "What exactly happens right before {topic} -- what's the trigger, precisely?",
+    "What happens exactly right before {topic} -- what's the precise antecedent?",
     "What happens right after -- what does {topic} get you, even if it's not what you want long-term?",
-    "On a scale, how intense is this, and what would one notch down look like?",
+    "On a scale, how intense is it, and what would one notch less look like?",
     "What's the smallest observable change you could actually measure this week?",
-    "What reinforcement schedule keeps {topic} going -- constant, or only sometimes, which is often stronger?",
+    "What reinforcement schedule is keeping {topic} alive -- constant, or only sometimes, which is often stronger?",
     "If a stranger only watched your actions around {topic}, what would they conclude you wanted?"
    ],
    "reflect": [
     "Whatever else is going on, {topic} is also a learned pattern -- which means it can be unlearned, deliberately, in steps.",
     "Notice what's reinforcing this. Something is being rewarded here, even if it doesn't feel like a reward.",
-    "Let's set feelings aside for a second and just track behavior: what did you actually do, and when?",
+    "Let's set feelings aside for a moment and just track the behavior: what exactly did you do, and when?",
     "Extinction bursts happen -- a behavior often gets worse right before it fades. Don't mistake that for failure.",
-    "Pairing matters: what has {topic} become associated with, over time, that it wasn't originally?"
+    "What has {topic} become paired with over time that wasn't originally connected to it?"
    ],
    "technique": [
-    "Try building a short hierarchy: rank three versions of {topic} from mildly to seriously uncomfortable, and start with the mildest.",
-    "Pick one small, specific, repeatable action related to {topic} and commit to it daily -- consequences shape behavior faster than insight does.",
-    "Try shaping: reward yourself for any small approximation toward the target behavior, not just the finished version."
+    "Try building a short fear hierarchy: rank three versions of {topic} from mildly to seriously uncomfortable, and start with the easiest.",
+    "Pick one small, specific, repeatable action tied to {topic} and commit to it daily -- consequences shape behavior faster than insight.",
+    "Try shaping: reward yourself for any small approximation of the target behavior, not just the finished version."
    ]
   },
   "socialcog": {
-   "label": "Social-Cognitive",
    "openers": [
-    "How much do you believe you can actually influence {topic}, right now, honestly?",
+    "How much do you genuinely believe you can influence {topic} right now, honestly?",
     "Who modeled this pattern for you -- where did you first see it done this way?",
     "What would someone you admire do differently here?",
-    "What's one small win that would raise your confidence about {topic}?",
-    "What have you told yourself you're capable of here, out loud, versus silently?",
-    "Which environment tends to pull the better version of this behavior out of you?"
+    "What would a small win look like that would raise your self-efficacy about {topic}?",
+    "What have you told yourself out loud you can do, versus what you quietly believe?",
+    "What environment tends to bring out the better version of this behavior in you?"
    ],
    "reflect": [
-    "This looks partly like a question of self-efficacy -- how much you believe your actions can change {topic}.",
-    "You learned this pattern somewhere, from someone. That means it's learned, not fixed -- it can be re-learned too.",
-    "Notice whether you're treating this as something that happens to you, or something you can act on.",
-    "Vicarious learning counts -- who you watch shapes what you believe is possible.",
-    "Outcome expectations and efficacy expectations are different things. Which one is actually shaky in {topic}?"
+    "This looks partly like a self-efficacy question -- how much you believe your actions can change {topic}.",
+    "You learned this pattern somewhere, from someone. That means it's learned, not fixed -- which means it can be relearned.",
+    "Notice whether you're treating this as something happening to you, or something you can act on.",
+    "Vicarious learning matters -- who you watch shapes what you believe is possible.",
+    "Outcome expectations and efficacy expectations are different things -- which one is actually shaky in {topic}?"
    ],
    "technique": [
-    "Try a small, winnable version of {topic} first, on purpose -- confidence usually follows a real success, not the other way around.",
+    "Try a small, winnable version of {topic} first, on purpose -- confidence usually follows real success, not the other way around.",
     "Watch how someone you respect handles something like {topic}, and borrow one concrete move from them.",
-    "Try verbal self-guidance: coach yourself out loud through {topic} the way you'd coach someone you cared about."
+    "Try verbal self-instruction: coach yourself out loud through {topic} the way you'd coach someone you care about."
    ]
   },
   "devcog": {
-   "label": "Cognitive-Developmental",
    "openers": [
-    "What's the story or model you've built to make sense of {topic}?",
-    "What new piece of this doesn't fit your existing way of understanding it?",
-    "Who's currently scaffolding you through this, or who could?",
+    "What story or schema have you built to make sense of {topic}?",
+    "What new piece of this doesn't fit your current way of understanding it?",
+    "Who's supporting you through this right now, or who could be -- your zone of proximal development?",
     "If you explained {topic} to a curious ten-year-old, what would you say?",
-    "What's the more sophisticated version of this understanding that's just barely out of reach?",
-    "Where did the rules you're using for {topic} come from, and do they still fit the problem?"
+    "What's the more sophisticated version of this understanding, just out of reach?",
+    "Where do the rules you're using for {topic} come from, and do they still fit the problem?"
    ],
    "reflect": [
-    "It sounds like {topic} doesn't quite fit the model you've been using -- which is exactly when growth tends to happen.",
-    "You might be closer to solving this with the right support than you are entirely alone.",
-    "Notice the assumption underneath your explanation of {topic} -- is it still holding up?",
+    "It sounds like {topic} doesn't quite fit the schema you've used until now -- that's usually exactly when growth happens.",
+    "You might be closer to resolving this with the right scaffolding than you'd be entirely alone.",
+    "Notice the assumption behind your explanation of {topic} -- does it still hold?",
     "Disequilibrium is uncomfortable, but it's usually the engine, not the enemy, of new understanding.",
-    "You might be assimilating {topic} into an old category that no longer fits it."
+    "You might be assimilating {topic} into an old category that no longer fits -- it may call for accommodation instead."
    ],
    "technique": [
-    "Try narrating {topic} out loud as if telling it to someone else -- notice what the story reveals that silent thinking didn't.",
-    "Ask: what's just outside what I can do alone right now, but possible with a bit of help?",
-    "Try building the next model up one step at a time, instead of leaping straight to the finished idea of {topic}."
+    "Try narrating {topic} out loud as if explaining it to someone else -- notice what the telling reveals that silent thinking doesn't.",
+    "Ask: what's just outside what I can do alone right now, but possible with a little scaffolding?",
+    "Build the next schema step by step, instead of jumping straight to the finished idea of {topic}."
    ]
   },
   "cbt": {
-   "label": "Cognitive-Behavioral",
    "openers": [
-    "What's the exact automatic thought that showed up right when {topic} started?",
-    "What's the evidence for that thought, and what's the evidence against it?",
-    "What would you tell a friend who had this exact thought about {topic}?",
-    "Which values does {topic} actually connect to, underneath the thought?",
-    "If we tested this thought about {topic} like a hypothesis, what experiment would tell us the truth?",
-    "What's the worst that could realistically happen, and could you actually survive it?"
+    "When {topic} hit, what went through your mind in that exact second -- before you'd had time to think about it?",
+    "Let's run the downward arrow on that: if that thought were true, what would it mean about you?",
+    "What's the evidence that supports that thought -- and, just as carefully, what's the evidence against it?",
+    "If your closest friend told you they were thinking exactly this about {topic}, what would you say back to them?",
+    "On a 0-to-100 scale, how much do you believe that thought right now -- and how much did you believe it in the moment?",
+    "What's the worst realistic outcome here -- not the catastrophic one, the realistic one -- and could you cope with it?"
    ],
    "reflect": [
-    "That thought about {topic} sounds a lot like a specific distortion -- maybe catastrophizing, or all-or-nothing thinking. Does that fit?",
-    "Notice: the feeling is real, but the thought driving it might not be the whole truth.",
-    "It's worth separating the thought from the fact here -- they've gotten fused together in {topic}.",
-    "Behavior change often comes before the feeling changes, not after -- act first, and the feeling can catch up.",
-    "Safety behaviors around {topic} might be keeping the fear alive rather than protecting you from it."
+    "That has the shape of a specific distortion -- catastrophizing, mind-reading, or all-or-nothing thinking. Which one lands closest?",
+    "Notice the gap: the emotion is completely real, but the thought that triggered it is a hypothesis, not a verdict.",
+    "You've fused the thought and the fact in {topic} -- worth prying them apart and looking at each on its own.",
+    "Often the feeling shifts after the behavior changes, not before -- waiting to feel ready keeps the cycle going.",
+    "Any safety behaviors around {topic} -- avoiding, checking, seeking reassurance -- probably keep the fear alive instead of testing it."
    ],
    "technique": [
-    "Try a thought record: write the situation, the automatic thought, the evidence for and against, and a more balanced thought.",
-    "Ask whether acting on this thought moves you toward what actually matters to you, regardless of whether the thought is 100% true.",
-    "Try a graded behavioral experiment: do a small version of the feared thing around {topic} and record what actually happens."
+    "Let's do a thought record on paper: situation, automatic thought, emotion and its intensity, evidence for, evidence against, and a more balanced rewrite.",
+    "Regardless of whether the thought is 100% true, ask whether acting on it moves you toward the life you actually want, or away from it.",
+    "Set up a small behavioral experiment: predict what you think will happen with {topic}, do the smallest safe version of the feared action, then compare the prediction to what actually happened."
    ]
   },
   "family": {
-   "label": "Family / Relational Systems",
    "openers": [
     "Where does {topic} sit in the larger pattern of your relationships -- who else is part of this dance?",
-    "If your family or partner were watching this unfold, what role would you be playing?",
+    "If your family or partner watched this unfold, what role would you be playing?",
     "What are you protecting by reacting this way to {topic}?",
     "What's the softer, more vulnerable feeling underneath the reaction to {topic}?",
-    "What would change in the whole system if you refused to play your usual part in {topic}?",
-    "Whose triangle are you being pulled into here?"
+    "What would shift in the whole system if you refused to play your usual part in {topic}?",
+    "What triangle are you being pulled into here?"
    ],
    "reflect": [
-    "Conflict like this is often a protest -- a way of reaching for connection that's landing as attack instead.",
-    "Notice the roles: who moves closer when this happens, and who pulls away?",
-    "Underneath {topic}, there's often an old attachment fear showing up in a new relationship.",
+    "A conflict like this is often a protest -- a bid for connection that lands as an attack.",
+    "Notice the roles: who moves closer when this happens, and who moves away? That's the pursue-withdraw pattern.",
+    "Underneath {topic} is often an old attachment fear resurfacing in a new relationship.",
     "Symptoms often serve the system -- what is {topic} quietly doing for the family as a whole?",
     "Boundaries, not distance, might be what's actually missing around {topic}."
    ],
    "technique": [
-    "Try naming the vulnerable feeling underneath {topic} out loud to the other person, instead of the protective reaction on top of it.",
-    "Map the pattern: what does each person do, in what order, every time {topic} happens?",
-    "Try a small, deliberate change in your part of the pattern, and watch what the rest of the system does in response."
+    "Try naming the vulnerable feeling under {topic} to the other person, instead of the protective reaction on top of it.",
+    "Map the pattern: what does each person do, in what order, every time {topic} happens -- like sketching a quick genogram of the cycle.",
+    "Try one small, deliberate change in your part of the pattern, and notice what the rest of the system does in response."
    ]
   },
   "socialpsych": {
-   "label": "Social Psychology",
    "openers": [
     "How much of {topic} is really you, and how much is the situation you're in?",
     "Whose expectations are you responding to right now, even unconsciously?",
-    "What group or identity feels most active in you as this happens?",
-    "What's the smallest change to the situation itself that might shift {topic}?",
-    "Is there a fundamental attribution error here -- are you blaming character where situation is the real cause?",
-    "Is there a bystander effect at work -- are you waiting for someone else to act first?"
+    "What group or identity is most active in you while this is happening?",
+    "What's the smallest change in the situation itself that might move {topic}?",
+    "Is there a fundamental attribution error here -- blaming character when the situation is the real cause?",
+    "Is there a bystander effect here -- are you waiting for someone else to act first?"
    ],
    "reflect": [
-    "It's worth asking how much of {topic} would happen to almost anyone placed in this same situation.",
-    "Notice the pressure to conform or obey here -- is it coming from a real authority, or just a felt one?",
-    "The gap between what you believe and what you're doing around {topic} tends to resolve itself one way or another -- usually by changing the belief.",
-    "Groupthink can make a bad decision feel unanimous and safe. Was there room for real dissent around {topic}?",
+    "It's worth asking how much of {topic} would happen to almost anyone placed in the same situation.",
+    "Notice the pressure to conform or obey -- is it coming from real authority, or just perceived authority?",
+    "The gap between what you believe and what you do around {topic} tends to resolve one way or another -- usually by changing the belief, which is exactly the discomfort of cognitive dissonance.",
+    "Groupthink can make a bad decision feel unanimous and safe -- was there room for real disagreement in {topic}?",
     "Attitudes tend to follow behavior, not just the other way around, once you've acted publicly on {topic}."
    ],
    "technique": [
-    "Try changing one concrete feature of the situation around {topic}, rather than trying to will yourself into a different reaction.",
-    "Look for a shared goal with whoever's on the other side of {topic} -- conflict often eases around a common target.",
-    "Try deliberately seeking one dissenting view on {topic} before deciding anything."
+    "Try deliberately changing one concrete feature of the situation around {topic}, instead of forcing yourself toward a different reaction.",
+    "Look for a shared goal with whoever's on the other side of {topic} -- conflict often eases around a superordinate goal.",
+    "Try deliberately seeking out one dissenting opinion about {topic} before deciding anything."
    ]
   },
   "cogsci": {
-   "label": "Cognitive Science / Neuroscience",
    "openers": [
-    "Walk me through {topic} step by step -- where exactly does your thinking start to go fast and automatic?",
+    "Let's walk through {topic} step by step -- where exactly does your thinking start going fast and automatic?",
     "How confident are you in that memory or judgment about {topic}, really?",
-    "What's your gut telling you about {topic}, separate from the reasoning?",
+    "What does your gut say about {topic}, separate from the reasoning?",
     "What's the underlying pattern generating {topic}, beneath the surface details?",
-    "Is that a fast, automatic flash judgment about {topic}, or a slow, deliberate one?",
-    "What would a brain scan of this moment probably show -- fear circuitry, or careful reasoning?"
+    "Is this a fast, automatic judgment about {topic} -- System 1 -- or a slow, deliberate one -- System 2?",
+    "What would a base-rate check say about {topic}, before the vivid details take over?"
    ],
    "reflect": [
-    "That has the signature of a fast, automatic judgment rather than a slow, deliberate one -- worth double-checking.",
-    "Memory and certainty aren't the same thing. How sure are you, versus how vivid does it feel?",
-    "There's often a bodily signal running ahead of the reasoning here -- notice what your gut registered first.",
-    "Confirmation bias might be doing some quiet work in how you're reading {topic}.",
-    "The gap between what you expected and what happened is exactly what a brain tends to update on."
+    "This has the signature of a fast, automatic judgment rather than a slow, deliberate one -- worth double-checking.",
+    "Memory and confidence aren't the same thing. How sure are you, really, compared to how vivid it feels?",
+    "A body signal often precedes the reasoning here -- notice what your gut registered first.",
+    "Confirmation bias may be doing quiet work in how you're reading {topic}.",
+    "The gap between what you expected and what happened is exactly what a mind tends to update on."
    ],
    "technique": [
-    "Try slowing down and generating one alternative explanation for {topic} before accepting the first one.",
-    "Name the exact mental shortcut you might be using -- availability, first impression, pattern-matching -- and check it against the specifics.",
-    "Try explicitly listing the base rate before trusting the vivid, memorable version of {topic}."
+    "Try slowing down and generating an alternative explanation for {topic} before accepting the first one.",
+    "Name exactly which mental shortcut you might be using -- availability, anchoring, pattern-matching -- and check it against the details.",
+    "Explicitly state the base rate before trusting the vivid, memorable version of {topic}."
    ]
   },
   "trait": {
-   "label": "Personality / Trait",
    "openers": [
-    "Is {topic} a pattern across most of your life, or specific to this one situation?",
-    "What would you say are your two or three most defining traits, and how are they showing up here?",
-    "How stable does this feeling tend to be for you, compared to how you usually are?",
-    "What's your own working theory about why {topic} keeps happening?",
+    "Is {topic} a pattern present across nearly all of your life, or specific to this situation?",
+    "Which two or three traits would you say define you most, and how do they show up here?",
+    "How stable is this feeling for you usually, compared to your typical way of being?",
+    "What's your own theory for why {topic} keeps happening?",
     "Would this trait show up the same way in a completely different context?",
-    "Where do you sit on openness to experience, and how is that shaping {topic}?"
+    "Where do you sit on openness to experience, and how does that shape {topic}?"
    ],
    "reflect": [
-    "This might be less about the situation and more about a stable pattern in how you tend to respond -- worth naming honestly.",
-    "Or it could be mostly situational -- something pulling this reaction out of you that wouldn't show up elsewhere.",
-    "Your own theory about {topic} is data too. Where might that theory be incomplete?",
-    "Traits are dispositions, not destinies -- they set a range, not a fixed point.",
+    "This might have less to do with the situation and more with a stable pattern in your usual way of reacting -- worth naming honestly.",
+    "Or it might be mostly situational -- something that pulls this reaction out of you here that wouldn't show up elsewhere.",
+    "Your own theory about {topic} is evidence too. Where might that theory be incomplete?",
+    "Traits are dispositions, not destiny -- they set a range, not a fixed point.",
     "Strong situations flatten personality differences; weak ones let them show. Which is this?"
    ],
    "technique": [
-    "Try testing your working theory about {topic} against one piece of contrary evidence from your own life.",
-    "Rate how much of {topic} is 'just how I am' versus 'just this situation' -- and notice which answer you're more comfortable with.",
+    "Try testing your own theory about {topic} against a counter-example from your own life.",
+    "Estimate how much of {topic} is \"just how I am\" versus \"just this situation\" -- and notice which answer feels more comfortable.",
     "Try predicting your own reaction to {topic} from your usual traits, then check it against what actually happened."
    ]
   },
   "positive": {
-   "label": "Positive Psychology",
    "openers": [
-    "When was the last time you felt the opposite of {topic} -- fully engaged, or at ease?",
-    "What strength of yours hasn't been called on yet in {topic}?",
-    "On the whole, separate from this moment, how satisfied are you with things?",
-    "What would 'flourishing' look like here, not just 'coping'?",
-    "What's your rough ratio of positive to negative moments around this?",
+    "When did you last feel the opposite of {topic} -- fully engaged, or at ease?",
+    "What signature strength of yours hasn't been called on yet in {topic}?",
+    "Overall, outside this moment, how satisfied are you with things?",
+    "What would flourishing look like here, not just coping?",
+    "What's your rough ratio of positive to negative moments about this?",
     "Where would {topic} rank if you measured it against your core values instead of your mood?"
    ],
    "reflect": [
-    "It's worth noticing what's still working, not to dismiss {topic}, but to widen the picture.",
-    "There's likely a strength of yours that this situation hasn't asked for yet -- worth naming it on purpose.",
-    "A little deliberate positive emotion tends to widen what feels possible, even inside something hard like {topic}.",
-    "Savoring the good moments deliberately tends to build more resilience for hard ones like {topic}.",
-    "Post-traumatic growth is real -- some people come out of exactly this kind of thing stronger, not just scarred."
+    "It's worth noticing what's still working, not to minimize {topic}, but to widen the picture.",
+    "There's probably a strength of yours this situation hasn't asked for yet -- worth naming it deliberately.",
+    "A little deliberate positive emotion tends to broaden what feels possible, even in something hard like {topic}.",
+    "Deliberately savoring the good moments tends to build more resilience for hard ones like {topic}.",
+    "Post-traumatic growth is real -- some people come out of exactly this kind of thing stronger, not just marked."
    ],
    "technique": [
-    "Try naming one signature strength you could bring to {topic} today, on purpose.",
-    "Write down three things that went right today, however small, alongside {topic} -- not instead of it.",
+    "Deliberately name one signature strength you could bring to {topic} today.",
+    "Write three things that went well today, however small, alongside {topic} -- not instead of {topic}.",
     "Try a gratitude letter connected to {topic}, even if you never send it."
    ]
   },
   "transpersonal": {
-   "label": "Transpersonal",
    "openers": [
-    "What's the larger pattern or meaning {topic} might be part of, beyond just this moment?",
-    "Which part of you is speaking right now -- and who is underneath all your parts?",
-    "Is there a more expansive way of holding {topic} than the one you're in right now?",
-    "What would it look like to witness {topic} rather than be consumed by it?",
-    "Where does {topic} sit on the spectrum from ego concern to something more universal?",
-    "If you saw {topic} from ten years in the future, spiritually speaking, what would it look like?"
+    "What larger pattern or meaning might {topic} be part of, beyond this one moment?",
+    "What part of you is speaking right now -- and who is underneath all your parts?",
+    "Is there a wider way of holding {topic} than the one you're in right now?",
+    "What would it be like to witness {topic} instead of being consumed by it?",
+    "Where does {topic} sit on the spectrum between ego concern and something more universal?",
+    "If you saw {topic} from ten years out, spiritually speaking, how would it look?"
    ],
    "reflect": [
     "There may be more here than the personal story -- something asking to be integrated, not just solved.",
-    "Notice which 'subpersonality' is talking -- the frightened one, the controlling one, the wise one -- and that none of them is all of you.",
-    "This intensity, uncomfortable as it is, might be meaningful rather than simply a malfunction.",
-    "Peak experiences tend to reorganize what matters afterward. Has {topic} done that, or could it?",
-    "Worth ruling out: are you transcending {topic}, or quietly avoiding it?"
+    "Notice which \"subpersonality\" is talking -- the scared one, the controlling one, the wise one -- and that none of them is the whole of you.",
+    "This intensity, however uncomfortable, might be meaningful rather than just a malfunction.",
+    "Peak experiences tend to reorganize what matters afterward -- did {topic} do that, or could it?",
+    "It's worth ruling out spiritual bypassing -- are you transcending {topic}, or just avoiding it?"
    ],
    "technique": [
-    "Try naming the 'part' of you currently driving {topic}, and speaking to it directly, from the calmer 'I' underneath it.",
-    "Take three slow breaths and just witness {topic} as if from a small distance, without changing anything yet.",
-    "Try holding {topic} in awareness the way you'd hold a koan -- not solving it, just sitting with the question."
+    "Name the \"part\" of you driving {topic} right now, and speak to it directly, from the calmer \"I\" underneath.",
+    "Take three slow breaths and limit yourself to witnessing {topic} as if from a small distance, without changing anything yet.",
+    "Try holding {topic} in awareness the way you'd hold a koan -- not solving it, just staying with the question."
    ]
   },
   "psychodrama": {
-   "label": "Psychodrama",
    "openers": [
     "Let's not just talk about {topic} -- who would play the other person, and what would they say first?",
-    "If you acted this out right now, where would you stand, and where would they stand?",
-    "What's the line you never got to say out loud in {topic}?",
-    "What would 'directing' this scene differently look like?",
+    "If you staged this right now, where would you place yourself, and where would they go?",
+    "What's the line you never managed to say out loud in {topic}?",
+    "What would a different \"direction\" of this scene look like?",
     "Who else needs a chair in this scene about {topic}?",
-    "What would the audience -- the rest of your life -- say, watching this unfold?"
+    "What would the audience -- the rest of your life -- say, watching this play out?"
    ],
    "reflect": [
-    "Talking about it keeps some distance -- acting it out tends to surface what the talk leaves out.",
-    "Notice the spontaneity in how you'd play this out -- that's often more honest than the rehearsed version.",
-    "There's a scene underneath {topic} that hasn't been fully played, or fully finished.",
-    "Catharsis in action tends to move what talk alone leaves stuck.",
-    "Doubling -- having someone voice your unspoken thought -- often surfaces the real line under {topic}."
+    "Talking about it keeps some distance -- acting it out tends to surface what discussion leaves out.",
+    "Notice the spontaneity in how you'd act this out -- it's often more honest than the rehearsed version.",
+    "Underneath {topic} is a scene that was never fully played out, or closed.",
+    "Catharsis through action tends to move what plain talk leaves stuck.",
+    "\"Doubling\" -- having someone voice your unspoken thought -- often surfaces the real line underneath {topic}."
    ],
    "technique": [
-    "Try switching roles for a moment: play the other person in {topic}, out loud, in their words, not yours.",
-    "Say the unsaid line from {topic} out loud, to an empty chair, exactly as you would if they were really there.",
-    "Try 'mirroring': step outside the scene and watch yourself in it, as if you were in the audience."
+    "Try switching roles for a moment: play the other person from {topic}, out loud, in their words, not yours.",
+    "Say the unspoken line from {topic} out loud to an empty chair, exactly as if they were really there.",
+    "Try \"mirroring\": step out of the scene and watch yourself in it, as if from the audience."
    ]
   },
   "somatic": {
-   "label": "Body-Oriented / Somatic",
    "openers": [
-    "Where in your body do you feel {topic}, exactly, right now?",
-    "What's happening with your breath as you talk about this?",
+    "Where do you feel {topic} in the body, exactly, right now?",
+    "What's your breath doing while you talk about this?",
     "If that sensation had a shape or a temperature, what would it be?",
     "What does your body want to do right now that you're holding back?",
     "Is the sensation moving, or stuck, right now?",
-    "What's your nervous system doing -- fight, flight, freeze, or settled?"
+    "What's your nervous system doing -- fight, flight, freeze, or calm? Where does that put you in your window of tolerance?"
    ],
    "reflect": [
     "The body usually knows before the mind finishes the sentence -- what did yours register first about {topic}?",
-    "That tension might be old armor, held from long before this particular situation.",
-    "Notice the felt sense of {topic} -- not the words for it yet, just the fuzzy, physical shape of it.",
+    "That tension might be old armor, held long before this particular situation.",
+    "Notice the felt sense of {topic} -- not the words for it yet, just the vague, physical shape.",
     "The body keeps score even when the mind has already moved on from {topic}.",
-    "Titration matters: a little of the sensation at a time is more useful than the whole flood at once."
+    "Titration matters: a little of the sensation at a time is more workable than the whole flood at once."
    ],
    "technique": [
-    "Try placing a hand where you feel {topic} in your body and just breathe into it for thirty seconds, without trying to fix it.",
-    "Let your body finish the sentence: 'If I let this feeling move, it would want to...'",
-    "Try 'pendulation': touch the edge of the sensation from {topic}, then deliberately return to something neutral, back and forth."
+    "Try placing a hand where you feel {topic} in the body and breathe there for thirty seconds, without trying to fix it.",
+    "Let your body finish the sentence: \"If I let this feeling move, it would want to...\".",
+    "Try pendulation: touch the edge of the sensation in {topic}, then deliberately return to something neutral, back and forth."
    ]
   },
   "hypnonlp": {
-   "label": "Hypnotherapy / NLP",
    "openers": [
-    "As you describe {topic}, what images, sounds, or words come up first?",
-    "If {topic} had a different frame -- a different meaning -- what could it also be?",
-    "What's a moment, anywhere in your life, when you already handled something like this well?",
+    "Describing {topic}, what images, sounds, or words come first?",
+    "If {topic} had a different frame -- a different meaning -- what else could it be?",
+    "Is there a time, anywhere in your life, when you already handled something similar well?",
     "What pattern keeps repeating in how you talk about {topic}?",
     "What's the submodality of {topic} -- is it loud or quiet, close or far, bright or dim, in your mind?",
-    "If you could change just one of those qualities, what would shift?"
+    "If you could change only one of those qualities, what would shift?"
    ],
    "reflect": [
-    "Here's a small story, since it might land better than an explanation: someone once told me a problem is just a skill practiced in the wrong context. {topic} might be exactly that -- a strength misapplied.",
-    "Notice the specific words you keep reaching for around {topic} -- they're a map of how you're representing it internally.",
-    "There's likely a resource you already have, from somewhere else in your life, that fits here better than you'd expect.",
-    "The unconscious mind tends to solve problems it's given clean access to, without needing every detail argued out loud.",
-    "Anchoring works both ways -- something is already anchoring this state; the question is whether you chose it."
+    "Here's a small story, because it might land better than an explanation: someone once said a problem is just a skill applied in the wrong context. {topic} might be exactly that -- a strength misapplied.",
+    "Notice the exact words you keep returning to for {topic} -- that's a map of how you're representing it internally.",
+    "You probably already have a resource, from somewhere else in your life, that fits here better than you'd expect.",
+    "The unconscious mind tends to solve problems it's given clean access to, without needing every detail discussed out loud.",
+    "Anchoring works both ways -- something has already anchored this state; the question is whether you chose it."
    ],
    "technique": [
-    "Try reframing {topic} in one sentence as if it were secretly useful information rather than a problem.",
-    "Recall a specific time you handled something like {topic} well, in detail, and notice what resource you used then that's available now.",
-    "Try future-pacing: imagine {topic} already resolved, in detail, and notice what's different in how you're standing, breathing, feeling."
+    "Try reframing {topic} in one sentence, as if it were secretly useful information, not a problem.",
+    "Recall in detail a specific time you handled something like {topic} well, and notice what resource you used then that's available now.",
+    "Try future pacing: imagine {topic} already resolved, in detail, and notice what's different in how you stand, breathe, feel."
    ]
   },
   "ta": {
-   "label": "Transactional Analysis",
    "openers": [
-    "When {topic} happens, is it your Parent, Adult, or Child voice doing the talking?",
-    "What's the 'game' being played here -- the repeated pattern with a predictable, unpleasant payoff?",
-    "Are you approaching {topic} from an 'I'm OK, you're OK' place, or from one-up or one-down?",
+    "When {topic} happens, is it your Parent, Adult, or Child voice talking?",
+    "What's the \"game\" being played here -- the repeated pattern with a predictable, uncomfortable payoff?",
+    "Are you approaching {topic} from \"I'm OK, you're OK,\" or from one-up or one-down?",
     "What script did you learn early about situations like {topic}?",
-    "Whose voice is that Critical Parent line about {topic} actually borrowed from?",
-    "What stroke -- positive or negative attention -- is {topic} actually earning you?"
+    "Whose voice is really behind that Critical Parent line about {topic}?",
+    "What \"stroke\" -- positive or negative attention -- does {topic} actually get you?"
    ],
    "reflect": [
-    "That sounds like it might be an old script playing out, more than a fresh reaction to what's actually happening now.",
-    "Notice which ego state showed up first -- Critical Parent, Adapted Child, or clear-eyed Adult -- and which one you'd rather be running this.",
+    "This sounds more like an old script replaying than a fresh reaction to what's actually happening now.",
+    "Notice which ego state showed up first -- Critical Parent, Adapted Child, or clear-eyed Adult -- and which one you'd rather have running this.",
     "Games like this usually have a familiar, if uncomfortable, payoff. What's the payoff in {topic}?",
     "Discounting happens when you minimize the size or importance of {topic} to avoid dealing with it.",
-    "A racket feeling is a substitute for the real one you learned wasn't allowed. What's underneath the one you're showing?"
+    "A racket feeling substitutes for the real one you learned wasn't allowed -- what's under the one you're showing?"
    ],
    "technique": [
-    "Try responding to {topic} deliberately from your Adult -- calm, factual, present -- and notice what changes.",
-    "Name the 'game' you keep ending up in around {topic}, and the payoff it gives you, honestly.",
-    "Try naming the exact stroke you wanted from {topic}, and ask for it directly instead of through the game."
+    "Try responding to {topic} deliberately from your Adult -- calm, factual, present -- and notice what shifts.",
+    "Honestly name the \"game\" you keep landing in around {topic}, and the payoff it gives you.",
+    "Name exactly the stroke you wanted from {topic}, and ask for it directly instead of running the game."
    ]
   },
   "buddhist_classical": {

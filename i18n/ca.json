@@ -59,7 +59,7 @@
   "settings_live_warning": "⚠ Les crides directes del navegador a l'API poden estar bloquejades per la política de seguretat d'algunes pàgines. A l'aplicació instal·lada (Android/Windows), el mode en directe passa per la petició nativa i no s'hi veu afectat.",
   "settings_install": "Instal·la com a aplicació",
   "settings_install_desc": "Afegeix una icona a la pantalla d'inici / escriptori",
-  "settings_install_steps": "A Android Chrome: menú (⋮) → <b>Afegeix a la pantalla d'inici</b>. A Windows (Chrome/Edge): icona d'instal·lació a la barra d'adreces, o menú → <b>Instal·la {app}…</b>. Després s'obrirà en una finestra pròpia sense la interfície del navegador.",
+  "settings_install_steps": "A Android Chrome: menú (⋮) → <b>Afegeix a la pantalla d'inici</b>. A Windows (Chrome/Edge): icona d'instal·lació a la barra d'adreces, o menú → <b>Instal·la {app}…</b>. A l'iPhone/iPad (Safari): toqueu la icona Comparteix i després <b>Afegeix a la pantalla d'inici</b>. Al Mac (Safari): menú Fitxer → <b>Afegeix al Dock</b>, o el botó Comparteix → <b>Afegeix al Dock</b>. Després s'obrirà en una finestra pròpia sense la interfície del navegador.",
   "settings_clear_key": "Esborra la clau guardada",
   "settings_done": "Fet",
   "msg_intro": "Ara estàs parlant amb una simulació de {name} ({life}) — {tagline}. {voice} Això és una simulació educativa, no la persona real, no és teràpia ni assessorament mèdic.",

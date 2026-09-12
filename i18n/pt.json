@@ -59,7 +59,7 @@
   "settings_live_warning": "⚠ As chamadas diretas do navegador à API podem ser bloqueadas pela política de segurança de algumas páginas. Na aplicação instalada (Android/Windows), o modo ao vivo passa pelo pedido nativo e não é afetado.",
   "settings_install": "Instalar como aplicação",
   "settings_install_desc": "Adicionar um ícone ao ecrã principal / ambiente de trabalho",
-  "settings_install_steps": "No Android Chrome: menu (⋮) → <b>Adicionar ao ecrã principal</b>. No Windows (Chrome/Edge): ícone de instalação na barra de endereço, ou menu → <b>Instalar {app}…</b>. Abrirá então numa janela própria sem a interface do navegador.",
+  "settings_install_steps": "No Android Chrome: menu (⋮) → <b>Adicionar ao ecrã principal</b>. No Windows (Chrome/Edge): ícone de instalação na barra de endereço, ou menu → <b>Instalar {app}…</b>. No iPhone/iPad (Safari): toque no ícone Partilhar e depois em <b>Adicionar ao ecrã principal</b>. No Mac (Safari): menu Ficheiro → <b>Adicionar ao Dock</b>, ou o botão Partilhar → <b>Adicionar ao Dock</b>. Abrirá então numa janela própria sem a interface do navegador.",
   "settings_clear_key": "Limpar chave guardada",
   "settings_done": "Concluído",
   "msg_intro": "Está agora a falar com uma simulação de {name} ({life}) — {tagline}. {voice} Isto é uma simulação educativa, não a pessoa real, não é terapia nem aconselhamento médico.",

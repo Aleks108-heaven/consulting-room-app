@@ -178,6 +178,13 @@ if __name__ == "__main__":
     master_1024 = downsample(master_work, WORK, 1024)
     write_png(os.path.join(ROOT, "resources", "icon.png"), master_1024, 1024)
 
+    # --- web/PWA icons: full-bleed square (no pre-baked rounding) so iOS/
+    # Android/Chrome can apply their own mask shape without transparent corners ---
+    square_master_work = composite_over(bg_work, fg_work, WORK)
+    web_icons = os.path.join(ROOT, "www", "icons")
+    for name, sz in [("icon-192.png", 192), ("icon-512.png", 512), ("apple-touch-icon.png", 180)]:
+        write_png(os.path.join(web_icons, name), downsample(square_master_work, WORK, sz), sz)
+
     # --- Android adaptive icon layers ---
     bg_square_work = bg_work  # no rounding; adaptive mask crops it on-device
     bg_1024 = downsample(bg_square_work, WORK, 1024)

@@ -59,7 +59,7 @@
   "settings_live_warning": "⚠ Direkte Browser-zu-API-Aufrufe können durch die Sicherheitsrichtlinie mancher Seiten blockiert sein. In der installierten App (Android/Windows) läuft der Live-Modus über die native Anfrage und ist davon nicht betroffen.",
   "settings_install": "Als App installieren",
   "settings_install_desc": "Symbol zum Startbildschirm/Desktop hinzufügen",
-  "settings_install_steps": "Unter Android Chrome: Menü (⋮) → <b>Zum Startbildschirm hinzufügen</b>. Unter Windows (Chrome/Edge): Installationssymbol in der Adressleiste oder Menü → <b>{app} installieren…</b>. Die App öffnet sich dann in einem eigenen Fenster ohne Browser-Rahmen.",
+  "settings_install_steps": "Unter Android Chrome: Menü (⋮) → <b>Zum Startbildschirm hinzufügen</b>. Unter Windows (Chrome/Edge): Installationssymbol in der Adressleiste oder Menü → <b>{app} installieren…</b>. Auf iPhone/iPad (Safari): Teilen-Symbol antippen, dann <b>Zum Home-Bildschirm</b>. Auf dem Mac (Safari): Menü „Ablage“ → <b>Zum Dock hinzufügen</b>, oder die Teilen-Schaltfläche → <b>Zum Dock hinzufügen</b>. Die App öffnet sich dann in einem eigenen Fenster ohne Browser-Rahmen.",
   "settings_clear_key": "Gespeicherten Schlüssel löschen",
   "settings_done": "Fertig",
   "msg_intro": "Sie sprechen jetzt mit einer Simulation von {name} ({life}) — {tagline}. {voice} Dies ist eine pädagogische Simulation, nicht die echte Person, keine Therapie und keine medizinische Beratung.",
