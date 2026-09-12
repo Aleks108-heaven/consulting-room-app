@@ -59,7 +59,7 @@
   "settings_live_warning": "⚠ Le chiamate API dirette dal browser possono essere bloccate dalla politica di sicurezza di alcune pagine. Nell'app installata (Android/Windows), la modalità live passa per la richiesta nativa e non ne risente.",
   "settings_install": "Installa come app",
   "settings_install_desc": "Aggiungi un'icona alla schermata home/desktop",
-  "settings_install_steps": "Su Android Chrome: menu (⋮) → <b>Aggiungi a schermata Home</b>. Su Windows (Chrome/Edge): icona di installazione nella barra degli indirizzi, o menu → <b>Installa {app}…</b>. Si aprirà poi in una finestra propria senza l'interfaccia del browser.",
+  "settings_install_steps": "Su Android Chrome: menu (⋮) → <b>Aggiungi a schermata Home</b>. Su Windows (Chrome/Edge): icona di installazione nella barra degli indirizzi, o menu → <b>Installa {app}…</b>. Su iPhone/iPad (Safari): tocca l'icona Condividi, poi <b>Aggiungi a Home</b>. Su Mac (Safari): menu File → <b>Aggiungi al Dock</b>, oppure il pulsante Condividi → <b>Aggiungi al Dock</b>. Si aprirà poi in una finestra propria senza l'interfaccia del browser.",
   "settings_clear_key": "Cancella chiave salvata",
   "settings_done": "Fatto",
   "msg_intro": "Stai parlando con una simulazione di {name} ({life}) — {tagline}. {voice} Questa è una simulazione educativa, non la persona reale, non è terapia né consulenza medica.",

@@ -59,7 +59,7 @@
   "settings_live_warning": "⚠ Browser-to-API calls are blocked by this hosted page's security policy, so live mode will silently fall back to the offline engine here. To actually use it: download the file below and open it directly in your own browser (double-click it, or host it yourself) — outside this hosted page, the request can go through. Never share a copy of this file with your key already typed in.",
   "settings_install": "Install as an app",
   "settings_install_desc": "Add a home-screen / desktop icon",
-  "settings_install_steps": "On Android Chrome: menu (⋮) → <b>Add to Home screen</b>. On Windows (Chrome/Edge): address-bar install icon, or menu → <b>Install {app}…</b>. It then opens in its own window without browser chrome.",
+  "settings_install_steps": "On Android Chrome: menu (⋮) → <b>Add to Home screen</b>. On Windows (Chrome/Edge): address-bar install icon, or menu → <b>Install {app}…</b>. On iPhone/iPad (Safari): tap the Share icon, then <b>Add to Home Screen</b>. On Mac (Safari): the File menu → <b>Add to Dock</b>, or the Share button → <b>Add to Dock</b>. It then opens in its own window without browser chrome.",
   "settings_clear_key": "Clear stored key",
   "settings_done": "Done",
   "msg_intro": "You're now talking with a simulation of {name} ({life}) — {tagline}. {voice} This is an educational simulation, not the real person, not therapy, and not medical advice.",

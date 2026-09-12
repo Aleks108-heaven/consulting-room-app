@@ -59,7 +59,7 @@
   "settings_live_warning": "⚠ Wywołania z przeglądarki do API są blokowane przez politykę bezpieczeństwa tej hostowanej strony, więc tryb na żywo po cichu wróci tutaj do silnika offline. Aby faktycznie go użyć: pobierz plik poniżej i otwórz go bezpośrednio we własnej przeglądarce (kliknij dwukrotnie albo hostuj samodzielnie) — poza tą hostowaną stroną żądanie może przejść. Nigdy nie udostępniaj kopii tego pliku z już wpisanym kluczem.",
   "settings_install": "Zainstaluj jako aplikację",
   "settings_install_desc": "Dodaj ikonę na ekranie głównym / pulpicie",
-  "settings_install_steps": "W Android Chrome: menu (⋮) → <b>Dodaj do ekranu głównego</b>. W Windows (Chrome/Edge): ikona instalacji na pasku adresu albo menu → <b>Zainstaluj {app}…</b>. Aplikacja otworzy się wtedy we własnym oknie, bez paska przeglądarki.",
+  "settings_install_steps": "W Android Chrome: menu (⋮) → <b>Dodaj do ekranu głównego</b>. W Windows (Chrome/Edge): ikona instalacji na pasku adresu albo menu → <b>Zainstaluj {app}…</b>. Na iPhonie/iPadzie (Safari): stuknij ikonę Udostępnij, a następnie <b>Dodaj do ekranu początkowego</b>. Na Macu (Safari): menu Plik → <b>Dodaj do Docka</b>, lub przycisk Udostępnij → <b>Dodaj do Docka</b>. Aplikacja otworzy się wtedy we własnym oknie, bez paska przeglądarki.",
   "settings_clear_key": "Usuń zapisany klucz",
   "settings_done": "Gotowe",
   "msg_intro": "Rozmawiasz teraz z symulacją {name} ({life}) — {tagline}. {voice} To symulacja edukacyjna, nie prawdziwa osoba, nie terapia i nie porada medyczna.",

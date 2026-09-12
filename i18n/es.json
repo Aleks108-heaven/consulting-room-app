@@ -59,7 +59,7 @@
   "settings_live_warning": "⚠ Las llamadas del navegador a la API están bloqueadas por la política de seguridad de esta página alojada, así que el modo en vivo volverá silenciosamente al motor sin conexión aquí. Para usarlo de verdad: descarga el archivo de abajo y ábrelo directamente en tu propio navegador (haz doble clic, o alójalo tú mismo) — fuera de esta página alojada, la solicitud puede pasar. Nunca compartas una copia de este archivo con tu clave ya escrita.",
   "settings_install": "Instalar como app",
   "settings_install_desc": "Añade un icono a la pantalla de inicio / escritorio",
-  "settings_install_steps": "En Android Chrome: menú (⋮) → <b>Añadir a pantalla de inicio</b>. En Windows (Chrome/Edge): icono de instalación en la barra de direcciones, o menú → <b>Instalar {app}…</b>. Luego se abre en su propia ventana sin la interfaz del navegador.",
+  "settings_install_steps": "En Android Chrome: menú (⋮) → <b>Añadir a pantalla de inicio</b>. En Windows (Chrome/Edge): icono de instalación en la barra de direcciones, o menú → <b>Instalar {app}…</b>. En iPhone/iPad (Safari): toca el icono Compartir y luego <b>Añadir a pantalla de inicio</b>. En Mac (Safari): menú Archivo → <b>Añadir al Dock</b>, o el botón Compartir → <b>Añadir al Dock</b>. Luego se abre en su propia ventana sin la interfaz del navegador.",
   "settings_clear_key": "Borrar clave guardada",
   "settings_done": "Listo",
   "msg_intro": "Ahora estás hablando con una simulación de {name} ({life}) — {tagline}. {voice} Esta es una simulación educativa, no la persona real, no es terapia ni consejo médico.",

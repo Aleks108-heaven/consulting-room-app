@@ -59,7 +59,7 @@
   "settings_live_warning": "⚠ Apelurile directe din browser către API pot fi blocate de politica de securitate a unor pagini. În aplicația instalată (Android/Windows), modul live trece prin cererea nativă și nu este afectat.",
   "settings_install": "Instalează ca aplicație",
   "settings_install_desc": "Adaugă o pictogramă pe ecranul principal / desktop",
-  "settings_install_steps": "Pe Android Chrome: meniu (⋮) → <b>Adaugă la ecranul principal</b>. Pe Windows (Chrome/Edge): pictograma de instalare din bara de adrese, sau meniu → <b>Instalează {app}…</b>. Se va deschide apoi într-o fereastră proprie, fără interfața browserului.",
+  "settings_install_steps": "Pe Android Chrome: meniu (⋮) → <b>Adaugă la ecranul principal</b>. Pe Windows (Chrome/Edge): pictograma de instalare din bara de adrese, sau meniu → <b>Instalează {app}…</b>. Pe iPhone/iPad (Safari): atinge pictograma Distribuie, apoi <b>Adaugă pe ecranul principal</b>. Pe Mac (Safari): meniul Fișier → <b>Adaugă în Dock</b>, sau butonul Distribuie → <b>Adaugă în Dock</b>. Se va deschide apoi într-o fereastră proprie, fără interfața browserului.",
   "settings_clear_key": "Șterge cheia salvată",
   "settings_done": "Gata",
   "msg_intro": "Acum vorbești cu o simulare a lui {name} ({life}) — {tagline}. {voice} Aceasta este o simulare educațională, nu persoana reală, nu este terapie, nici sfat medical.",
