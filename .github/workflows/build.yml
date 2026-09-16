@@ -26,8 +26,14 @@ jobs:
       - name: Install JS deps
         run: npm install
 
+      - name: Build web app
+        run: npm run build
+
       - name: Add Android platform
         run: test -d android || npx cap add android
+
+      - name: Harden AndroidManifest.xml (disable backup of stored API key/chat history)
+        run: node scripts/harden-android-manifest.js
 
       - name: Generate app icon from resources/icon*.png
         run: npx capacitor-assets generate --android --iconBackgroundColor "#9C5A16" --iconBackgroundColorDark "#12191A"
@@ -81,6 +87,9 @@ jobs:
 
       - name: Install JS deps
         run: npm install
+
+      - name: Build web app
+        run: npm run build
 
       - name: Add iOS platform
         run: test -d ios || npx cap add ios

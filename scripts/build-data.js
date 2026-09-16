@@ -1,7 +1,8 @@
 #!/usr/bin/env node
-// Rebuilds the `window.APP_DATA = {...}` block inside www/index.html from
-// data/core.json (shared, language-independent content) + i18n/<lang>.json
-// (one file per language). Run after editing anything under data/ or i18n/.
+// Assembles src/data/appData.generated.json from data/core.json (shared,
+// language-independent content) + i18n/<lang>.json (one file per language).
+// Vite imports that JSON directly, so it gets bundled at build time.
+// Run after editing anything under data/ or i18n/.
 const fs = require("fs");
 const path = require("path");
 
@@ -34,20 +35,8 @@ const appData = {
   languages
 };
 
-const htmlPath = path.join(ROOT, "www", "index.html");
-let html = fs.readFileSync(htmlPath, "utf8");
-const marker = "window.APP_DATA = ";
-const start = html.indexOf(marker);
-if (start === -1) throw new Error("window.APP_DATA marker not found in www/index.html");
-const jsonStart = start + marker.length;
-const scriptEnd = html.indexOf("</script>", jsonStart);
-if (scriptEnd === -1) throw new Error("closing </script> not found after APP_DATA");
-// the assignment ends at the last ';' before </script>
-const semi = html.lastIndexOf(";", scriptEnd);
-
-const before = html.slice(0, jsonStart);
-const after = html.slice(semi); // keeps the trailing ";\n</script>..."
-html = before + JSON.stringify(appData) + after;
-
-fs.writeFileSync(htmlPath, html);
-console.log(`Rebuilt www/index.html with languages: ${langs.join(", ")}`);
+const outDir = path.join(ROOT, "src", "data");
+fs.mkdirSync(outDir, { recursive: true });
+const outPath = path.join(outDir, "appData.generated.json");
+fs.writeFileSync(outPath, JSON.stringify(appData));
+console.log(`Wrote ${path.relative(ROOT, outPath)} with languages: ${langs.join(", ")}`);

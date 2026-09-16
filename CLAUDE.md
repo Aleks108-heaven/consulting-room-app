@@ -10,13 +10,19 @@
 
 \## Stack
 
-\[Fill in: language, framework, DB, etc.]
+TypeScript + React, built with Vite. Wrapped natively for Android (Capacitor) and Windows (Tauri 2). No backend/DB — all state in localStorage.
 
 
 
 \## Project Structure
 
-\[Fill in only the 3-5 folders/files that matter most. Do not list everything.]
+\- `src/` — app source (React components, `state/AppStateContext.tsx`, `lib/` helpers incl. `liveAi.ts`)
+
+\- `data/core.json` + `i18n/*.json` — content source; `scripts/build-data.js` compiles them into `src/data/appData.generated.json`
+
+\- `www/` — generated build output (gitignored); Capacitor/Tauri serve this, never edit directly
+
+\- `capacitor.config.json` / `src-tauri/tauri.conf.json` — native wrapper config
 
 
 

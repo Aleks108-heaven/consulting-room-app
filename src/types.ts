@@ -1,0 +1,73 @@
+export interface PersonaMeta {
+  n: string;
+  y: string;
+  mode: string;
+}
+
+export interface PersonaText {
+  tag: string;
+  voice: string;
+  terms: string[];
+}
+
+export interface ModeData {
+  label?: string;
+  openers: string[];
+  reflect: string[];
+  technique: string[];
+}
+
+export interface CategoryInfo {
+  kw: string[];
+  topic?: string;
+}
+
+export interface LanguagePack {
+  label: string;
+  ui: Record<string, string>;
+  modes: Record<string, ModeData>;
+  personas: PersonaText[];
+  categories: Record<string, CategoryInfo>;
+  masterTagOverride?: Record<string, string>;
+  chainANotes?: string[];
+  chainBNotes?: string[];
+  chainANames?: string[];
+  chainBNames?: string[];
+}
+
+export interface ListRow {
+  num: number;
+  personaIdx: number;
+}
+
+export interface ChainItem {
+  personaIdx: number;
+}
+
+export interface AppData {
+  langs: string[];
+  personaMeta: PersonaMeta[];
+  masterList: ListRow[];
+  chainA: ChainItem[];
+  chainB: ChainItem[];
+  traditions: ListRow[];
+  categoryOrder: string[];
+  languages: Record<string, LanguagePack>;
+}
+
+export type ChatRole = "user" | "clinician" | "system" | "crisis";
+
+export interface ChatMessage {
+  role: ChatRole;
+  text: string;
+}
+
+export type Theme = "system" | "light" | "dark";
+
+export type Provider = "anthropic" | "gemini" | "groq" | "openrouter" | "openai";
+
+export interface ProviderConfig {
+  label: string;
+  defaultModel: string;
+  keyHint: string;
+}
