@@ -1,25 +1,32 @@
 # Consulting Room — Android + Windows app
 
-A study companion for the history of psychotherapy. The whole app is one file:
-[`www/index.html`](www/index.html) (persona library, chat UI, scripted engine, i18n,
-theming). This repo wraps it as a native app for **Android** (Capacitor) and
+A study companion for the history of psychotherapy: a persona library, chat UI,
+scripted conversation engine, i18n, and theming, built with **Vite + React +
+TypeScript**. This repo wraps it as a native app for **Android** (Capacitor) and
 **Windows** (Tauri 2), and adds a **provider‑agnostic Live AI mode**.
+
+The app used to ship as a single 800KB `www/index.html` file. It has since been
+migrated to a proper source layout under `src/` — `www/` is now a **build output
+directory** (gitignored, produced by `npm run build`), not source. See
+[Project layout](#project-layout) below.
 
 ---
 
-## What changed vs. the original single file
+## Live AI mode
 
-- `tryLiveReply()` was replaced with `crProviderReply()` — a small layer that speaks
-  to **Anthropic, Google Gemini, Groq, OpenRouter, or any OpenAI‑compatible endpoint**.
-- Settings now has an **AI provider** dropdown, an optional **Model ID**, and an
+- `crProviderReply()` (`src/lib/liveAi.ts`) is a small provider-agnostic layer that
+  speaks to **Anthropic, Google Gemini, Groq, OpenRouter, or any OpenAI‑compatible
+  endpoint**.
+- Settings has an **AI provider** dropdown, an optional **Model ID**, and an
   optional **Base URL** (for OpenAI‑compatible servers). Key + settings are stored
   on‑device only (localStorage).
 - Network calls go through the **native HTTP bridge** (Capacitor `CapacitorHttp` /
   Tauri `http` plugin) so they are **not blocked by browser CORS** in the packaged apps.
-  A plain `fetch` fallback is kept for running in a normal browser tab.
+  A plain `fetch` fallback is kept for running in a normal browser tab. Every call is
+  bounded by a client-side timeout so a hung request can't leave the chat stuck on
+  the typing indicator.
 
-Nothing else about the app’s behaviour changed. With Live AI mode **off** it is 100%
-offline and identical to the original.
+With Live AI mode **off** the app is 100% offline, using the scripted engine only.
 
 ---
 
@@ -122,8 +129,8 @@ the http bridge is exposed without a bundler.
 npm run android:add          # creates the android/ project
 npm run android:icon         # writes the launcher icon from resources/icon*.png
 
-# after any change to www/
-npm run android:sync
+# after any change to src/, data/, or i18n/
+npm run build && npm run android:sync
 
 # open in Android Studio to run on a device/emulator or build an AAB
 npm run android:open
@@ -209,7 +216,8 @@ Simulator, not on a physical iPhone.
 ```bash
 npm run ios:add     # creates the ios/ project (needs CocoaPods: sudo gem install cocoapods)
 npm run ios:icon     # writes the app icon from resources/icon*.png
-npm run ios:sync     # after any change to www/
+npm run build        # after any change to src/, data/, or i18n/
+npm run ios:sync
 npx cap open ios     # opens Xcode
 ```
 
@@ -234,12 +242,14 @@ which gets you:
 The app's text (UI, and each school-of-thought's conversational template bank)
 lives in `data/core.json` (shared, language-independent: persona list, lineage
 chains, category order) plus one file per language in `i18n/*.json`. **Do not
-hand-edit the `window.APP_DATA = {...}` blob inside `www/index.html`** — it's
-generated. After changing anything under `data/` or `i18n/`, run:
+hand-edit `src/data/appData.generated.json`** — it's generated. After changing
+anything under `data/` or `i18n/`, run:
 
 ```bash
 npm run data:build
 ```
+
+(`npm run dev` and `npm run build` already run this for you first.)
 
 Currently shipped: English, Ukrainian, Spanish, Polish, German, Italian,
 Catalan, French, Portuguese, Romanian, Russian. Every lookup
@@ -261,14 +271,23 @@ add `<code>` to the `ORDER` array in `scripts/build-data.js`, then
 
 ```
 consulting-room-app/
-├─ www/index.html            # generated app shell + logic (edit the *logic*, not APP_DATA)
+├─ index.html                # Vite entry template (references src/main.tsx)
+├─ src/
+│  ├─ main.tsx, App.tsx      # app bootstrap + top-level view/modal wiring
+│  ├─ state/                 # AppStateContext.tsx — settings, chat state, persistence
+│  ├─ lib/                   # i18n, theming, persona helpers, scripted engine, liveAi.ts
+│  ├─ components/            # Library, Chat, Settings, Modals
+│  ├─ styles/global.css      # design tokens + component styles
+│  └─ data/appData.generated.json   # generated — do not hand-edit (see above)
 ├─ data/core.json            # personas, lineage chains, category order (shared)
-├─ i18n/*.json               # one file per language
-├─ scripts/build-data.js     # data/ + i18n/ -> www/index.html's APP_DATA block
-├─ capacitor.config.json     # Android config
+├─ i18n/*.json                # one file per language
+├─ scripts/build-data.js     # data/ + i18n/ -> src/data/appData.generated.json
+├─ www/                      # generated build output (gitignored) — Capacitor/Tauri serve this
+├─ vite.config.ts            # build.outDir = "www"
+├─ capacitor.config.json     # Android config (webDir: "www")
 ├─ package.json              # build scripts
 └─ src-tauri/                # Windows (Tauri 2)
-   ├─ tauri.conf.json
+   ├─ tauri.conf.json        # frontendDist: "../www"
    ├─ Cargo.toml
    ├─ capabilities/default.json   # allow-list of API hosts
    └─ src/{main,lib}.rs
@@ -276,11 +295,12 @@ consulting-room-app/
 
 ## Build outputs are not committed
 
-`node_modules/`, `android/`, `ios/`, `src-tauri/target/`, and `ci-artifacts/`
-are all gitignored on purpose — they're generated from source (`package.json`,
-`www/`, `data/`+`i18n/`), not hand-written, and binaries don't belong in git
-history. A fresh clone gets them back via `npm install` + `npm run android:add`
-+ a rebuild, **except** the signing keystore (see above), which isn't
+`node_modules/`, `android/`, `ios/`, `src-tauri/target/`, `www/`, and
+`ci-artifacts/` are all gitignored on purpose — they're generated from source
+(`package.json`, `src/`, `data/`+`i18n/`), not hand-written, and binaries don't
+belong in git history. A fresh clone gets them back via `npm install` +
+`npm run build` + `npm run android:add` + a rebuild, **except** the signing
+keystore (see above), which isn't
 regenerable — the same key must be reused for every release build to update
 an already-installed app. `ci-artifacts/` in particular is just a local
 staging folder for build outputs you want to keep handy; if you want built
@@ -289,6 +309,6 @@ GitHub/GitLab Release instead.
 
 ## Updating the app
 
-Edit `www/index.html` (logic/markup) and/or `data/core.json` + `i18n/*.json`
-(content), run `npm run data:build` if you touched the latter, then
-`npm run android:sync` and/or `npm run win:build`.
+Edit `src/` (logic/markup/styles) and/or `data/core.json` + `i18n/*.json`
+(content), run `npm run build` (regenerates data and rebuilds into `www/`),
+then `npm run android:sync` and/or `npm run win:build`.
