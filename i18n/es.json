@@ -20,6 +20,7 @@
   "disclaimer_line": "Simulación educativa, no es terapia ni consejo médico. En una crisis, contacta a los servicios de emergencia locales o (EE. UU.) llama/escribe al 988.",
   "disclaimer_full_link": "Descargo completo",
   "live_badge": "En vivo",
+  "scripted_badge": "Guion",
   "about_title": "Acerca de y seguridad",
   "about_p1": "<strong>Qué es esto.</strong> Sala de Consulta es un simulador educativo. Cada uno de los 135 personajes está construido a partir de biografía, conceptos centrales y técnicas características documentadas públicamente y asociadas a un psicólogo, psicoterapeuta, filósofo o maestro de meditación histórico o contemporáneo real. Las respuestas las genera un motor de plantillas guionizado y sin conexión (o, solo si aportas tu propia clave de API, un modelo de lenguaje en vivo instruido para mantener el personaje) — nunca la persona real.",
   "about_h_not": "Qué no es esto",
@@ -184,13 +185,13 @@
    "openers": [
     "Quédate con eso. ¿De qué eres consciente ahora mismo, en tu cuerpo, mientras lo dices?",
     "No me expliques {topic} -- muéstramelo. ¿Qué está pasando mientras te quedas con ello, en este segundo?",
-    "Si {topic} estuviera sentado en la silla frente a ti, ¿qué le dirías?",
+    "Si eso -- {topic} -- estuviera sentado en la silla frente a ti, ¿qué le dirías?",
     "¿Qué estás haciendo ahora mismo, con tu respiración, tus manos, tu cara, mientras me cuentas esto?"
    ],
    "reflect": [
     "Me interesa menos por qué pasó {topic} que lo que está pasando entre nosotros ahora mismo, mientras lo dices.",
     "Eso suena a un asunto inconcluso -- algo que nunca se terminó o se dijo.",
-    "Fíjate en el límite aquí: ¿dónde deja {topic} de ser tuyo y empieza a ser de ellos?"
+    "Fíjate en el límite aquí: ¿dónde deja de ser tuyo eso a lo que llamas {topic}, y empieza a ser de ellos?"
    ],
    "technique": [
     "Prueba esto: pon {topic} en una silla vacía frente a ti y dile, en voz alta, lo que nunca le dirías a la cara.",

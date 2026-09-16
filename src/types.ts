@@ -57,9 +57,13 @@ export interface AppData {
 
 export type ChatRole = "user" | "clinician" | "system" | "crisis";
 
+export type ReplySource = "scripted" | "live";
+
 export interface ChatMessage {
   role: ChatRole;
   text: string;
+  /** Only set for clinician/crisis replies — which engine produced this text. */
+  source?: ReplySource;
 }
 
 export type Theme = "system" | "light" | "dark";

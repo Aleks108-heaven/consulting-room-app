@@ -150,7 +150,7 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
 
       if (staleLang || !existing || !existing.length) {
         const intro: ChatMessage = { role: "system", text: introFor(lang, idx) };
-        const opener: ChatMessage = { role: "clinician", text: openerFor(lang, idx) };
+        const opener: ChatMessage = { role: "clinician", source: "scripted", text: openerFor(lang, idx) };
         const next = [intro, opener];
         setChatHistories((prev) => {
           const merged = { ...prev, [idx]: next };
@@ -222,7 +222,7 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
         crProviderReply(provider, apiKey, activeModel, sys, turns, apiBase)
           .then((reply) => {
             setIsTyping(false);
-            pushMessage(idx, { role: "clinician", text: reply });
+            pushMessage(idx, { role: "clinician", source: "live", text: reply });
           })
           .catch((err: unknown) => {
             setIsTyping(false);
