@@ -20,6 +20,7 @@
   "disclaimer_line": "Pädagogische Simulation, keine Therapie oder medizinische Beratung. Wenden Sie sich in einer Krise an den örtlichen Notdienst oder (USA) rufen/schreiben Sie 988.",
   "disclaimer_full_link": "Vollständiger Haftungsausschluss",
   "live_badge": "Live",
+  "scripted_badge": "Skript",
   "about_title": "Über & Sicherheit",
   "about_p1": "<strong>Was das hier ist.</strong> Consulting Room ist ein pädagogischer Simulator. Jede der 135 Figuren basiert auf öffentlich dokumentierter Biografie, Kernkonzepten und charakteristischen Techniken, die mit einer realen historischen oder zeitgenössischen Psycholog:in, Psychotherapeut:in, Philosoph:in oder Meditationslehrer:in verbunden sind. Antworten werden von einer skriptbasierten Offline-Vorlagen-Engine erzeugt (oder, nur wenn Sie einen eigenen API-Schlüssel angeben, von einem Live-Sprachmodell, das angewiesen wird, in der Rolle zu bleiben) — niemals von der echten Person.",
   "about_h_not": "Was das hier nicht ist",
@@ -79,19 +80,19 @@
     "Lassen Sie uns noch nicht interpretieren. Beschreiben Sie einfach das rohe Erleben, so wie es Ihnen kam.",
     "Welche Gewohnheit läuft still unter dem ab, was Sie mir gerade erzählt haben?",
     "Was würden Sie bemerken, wenn Sie {topic} auf ein einzelnes Bild verlangsamen würden, wie eine Laborbeobachtung?",
-    "Trennen Sie die rohe Empfindung in {topic} von dem Etikett, das Sie schon darauf geklebt haben."
+    "Trennen Sie die rohe Empfindung in dem, was Sie {topic} nennen, von dem Etikett, das Sie schon darauf geklebt haben."
    ],
    "reflect": [
     "Ohne Interpretation ist das, was Sie beschreiben: {topic}. Was ist sonst noch darin enthalten?",
     "Das ist die Oberfläche. Welche Funktion erfüllt {topic} tatsächlich für Sie?",
-    "Bemerken Sie, wie viel von {topic} reine Empfindung ist -- und wie viel die Geschichte, die Sie hinzugefügt haben.",
+    "Bemerken Sie, wie viel von dem, was Sie {topic} nennen, reine Empfindung ist -- und wie viel die Geschichte, die Sie hinzugefügt haben.",
     "Das ist eher ein Strom als eine feste Sache -- ständig im Werden, nicht fixiert.",
     "Die Gewohnheit selbst zählt hier vielleicht mehr als jeder einzelne Gedanke über {topic}."
    ],
    "technique": [
     "Versuchen Sie, {topic} noch einmal zu beschreiben -- diesmal so schlicht, wie Sie einen Stuhl beschreiben würden, ohne Metaphern.",
-    "Fragen Sie sich, welchem Zweck {topic} dient, so wie man fragt, wofür eine Gewohnheit gut ist.",
-    "Versuchen Sie die Methode des Bewusstseinsstroms: Sprechen Sie sechzig Sekunden lang unzensiert alles aus, was zu {topic} durch Ihr Bewusstsein zieht."
+    "Fragen Sie sich, welchem Zweck das, was Sie {topic} nennen, dient, so wie man fragt, wofür eine Gewohnheit gut ist.",
+    "Versuchen Sie die Methode des Bewusstseinsstroms: Sprechen Sie sechzig Sekunden lang unzensiert alles aus, was zu dem, was Sie {topic} nennen, durch Ihr Bewusstsein zieht."
    ]
   },
   "psychoanalytic": {
@@ -102,19 +103,19 @@
     "Ich bemerke, wie Sie mir das erzählen. Wovor könnte diese Art des Erzählens Sie schützen?",
     "Wessen Stimme klingt in {t1} mit, wenn Sie genau hinhören?",
     "Was ist die allererste Erinnerung, die auftaucht, wenn Sie {topic} kurz auf sich wirken lassen?",
-    "Wenn das ein Traum wäre, den Sie letzte Nacht gehabt hätten -- was würde die Traumversion von {topic} verbergen?"
+    "Wenn das ein Traum wäre, den Sie letzte Nacht gehabt hätten -- was würde die Traumversion von dem, was Sie {topic} nennen, verbergen?"
    ],
    "reflect": [
-    "Unter {topic} könnte mehr liegen, als Sie sagen -- selbst sich selbst gegenüber.",
+    "Unter dem, was Sie {topic} nennen, könnte mehr liegen, als Sie sagen -- selbst sich selbst gegenüber.",
     "Diese Reaktion ist größer als dieser eine Moment -- sie scheint etwas Älteres mit sich zu tragen.",
     "Bemerken Sie das Gefühl, das Sie vermeiden, direkt zu benennen. Wie würde es heißen, wenn Sie es sich erlaubten, es auszusprechen?",
     "Übertragung passiert nicht nur auf der Couch -- an wen erinnert Sie das gerade wieder?",
-    "Ein Versprecher, ein Scherz, ein vergessenes Detail bei {topic} ist selten nur Zufall."
+    "Ein Versprecher, ein Scherz, ein vergessenes Detail bei dem, was Sie {topic} nennen, ist selten nur Zufall."
    ],
    "technique": [
-    "Versuchen Sie eine Minute freie Assoziation: Sagen Sie unzensiert alles, was nach „{topic} erinnert mich an …“ kommt.",
+    "Versuchen Sie eine Minute freie Assoziation: Sagen Sie unzensiert alles, was nach „das, was Sie {topic} nennen, erinnert mich an …“ kommt.",
     "Fragen Sie, wie {topic} aussähe, wenn es eigentlich um jemanden aus Ihrer Vergangenheit ginge, nicht um die Gegenwart.",
-    "Bemerken Sie jeden Widerstand, bei {topic} weiterzugehen -- schon das Unbehagen selbst ist meist aufschlussreich."
+    "Bemerken Sie jeden Widerstand, bei dem, was Sie {topic} nennen, weiterzugehen -- schon das Unbehagen selbst ist meist aufschlussreich."
    ]
   },
   "jungian": {
@@ -124,42 +125,42 @@
     "Steckt in {t2} ein Teil von Ihnen, den Sie sonst im Schatten halten?",
     "Wenn diese Situation ein Traum wäre, was würde er Ihnen sagen wollen?",
     "Was will {topic} von Ihnen, das Sie ihm bisher nicht geben wollten?",
-    "Was hätten Ihre Träume heute Nacht wohl zu {topic} zu sagen?",
+    "Was hätten Ihre Träume heute Nacht wohl zu dem, was Sie {topic} nennen, zu sagen?",
     "Wo berührt {topic} die Individuation -- das vollständigere Werden dessen, was Sie wirklich sind?"
    ],
    "reflect": [
     "Das könnte Ihr Schatten sein, der spricht -- der Teil von Ihnen, der nicht zu Ihrem Selbstbild passt.",
     "Das könnte weniger mit der anderen Person zu tun haben als mit etwas in Ihnen, das nach Integration sucht.",
-    "Das Archetyp unter {topic} verdient einen Namen. Welche Rolle fühlt es sich an -- Beschützer, Verbannter, Richter?",
-    "Das Selbst ist größer als das Ich, das gerade mit {topic} ringt.",
+    "Das Archetyp unter dem, was Sie {topic} nennen, verdient einen Namen. Welche Rolle fühlt es sich an -- Beschützer, Verbannter, Richter?",
+    "Das Selbst ist größer als das Ich, das gerade mit dem, was Sie {topic} nennen, ringt.",
     "Welcher bedeutungsvolle Zufall umgibt {topic}, ganz unabhängig von der Ursache?"
    ],
    "technique": [
-    "Versuchen Sie einen inneren Dialog mit {topic} zu führen, als hätte es eine eigene Stimme.",
-    "Fragen Sie, was {topic} ausgleicht -- welche Einseitigkeit in Ihnen es zu balancieren versucht.",
-    "Lassen Sie ein Bild, das mit {topic} verbunden ist, sich von selbst bewegen und sprechen -- schauen Sie einfach zu."
+    "Versuchen Sie einen inneren Dialog mit dem, was Sie {topic} nennen, zu führen, als hätte es eine eigene Stimme.",
+    "Fragen Sie, was das, was Sie {topic} nennen, ausgleicht -- welche Einseitigkeit in Ihnen es zu balancieren versucht.",
+    "Lassen Sie ein Bild, das mit dem, was Sie {topic} nennen, verbunden ist, sich von selbst bewegen und sprechen -- schauen Sie einfach zu."
    ]
   },
   "adlerian": {
    "label": "Individualpsychologie (Adler)",
    "openers": [
-    "Wofür, glauben Sie, steht {topic} eigentlich -- wonach streben Sie?",
+    "Wofür, glauben Sie, steht das, was Sie {topic} nennen, eigentlich -- wonach streben Sie?",
     "Wo fühlen Sie sich „weniger wert“, und wer hat diesen Maßstab gesetzt?",
-    "Wie hängt {topic} mit Ihrem Zugehörigkeitsgefühl zusammen?",
+    "Wie hängt das, was Sie {topic} nennen, mit Ihrem Zugehörigkeitsgefühl zusammen?",
     "Wie würde „genug“ hier konkret aussehen?",
     "Was ist die früheste Erinnerung, die mit genau diesem Gefühl verbunden ist?",
     "Wessen Anerkennung wollten Sie ursprünglich mit Mustern wie {topic} gewinnen?"
    ],
    "reflect": [
-    "Darunter liegt oft das Gefühl, nicht zu genügen -- passt das zu {topic}?",
+    "Darunter liegt oft das Gefühl, nicht zu genügen -- passt das zu dem, was Sie {topic} nennen?",
     "Das klingt nach Ihrem Lebensstil, der sich hier zeigt -- der früh erlernten Strategie, sich bedeutsam zu fühlen.",
-    "Bemerken Sie den sozialen Anteil: Wem gegenüber wollen Sie bei {topic} etwas bedeuten?",
+    "Bemerken Sie den sozialen Anteil: Wem gegenüber wollen Sie bei dem, was Sie {topic} nennen, etwas bedeuten?",
     "Frühe Erinnerungen sind weniger Tatsachengeschichte als ein Spiegel Ihres aktuellen Lebensstils.",
     "Mut, nicht Bequemlichkeit, ist meist das, was Gemeinschaftsgefühl hier verlangt."
    ],
    "technique": [
     "Fragen Sie, wie ein kleiner, wirklich nützlicher Beitrag für jemand anderen gerade aussehen könnte -- Gemeinschaftsgefühl löst solche Knoten oft.",
-    "Schätzen Sie, wie viel von {topic} wirklich um Kompetenz geht und wie viel um Zugehörigkeit.",
+    "Schätzen Sie, wie viel von dem, was Sie {topic} nennen, wirklich um Kompetenz geht und wie viel um Zugehörigkeit.",
     "Versuchen Sie, einen Tag lang so zu tun, als gehörten Sie bereits dazu, und beobachten Sie, was {topic} damit macht."
    ]
   },
@@ -168,15 +169,15 @@
    "openers": [
     "Ich höre Sie. Wie fühlt sich {topic} von innen an, in Ihren eigenen Worten?",
     "Was würde es bedeuten, dieses Gefühl für einen Moment ganz anzunehmen, genau wie es ist?",
-    "Welches Bedürfnis fühlt sich unter {topic} unerfüllt an?",
+    "Welches Bedürfnis fühlt sich unter dem, was Sie {topic} nennen, unerfüllt an?",
     "Was macht die gesündeste, vollständigste Version von Ihnen aus alldem?",
     "Wie würde bedingungslose Wertschätzung sich selbst gegenüber sich gerade anhören?",
-    "Ist die Person, die Sie bei {topic} sind, stimmig mit dem, was Sie darunter wirklich fühlen?"
+    "Ist die Person, die Sie bei dem, was Sie {topic} nennen, sind, stimmig mit dem, was Sie darunter wirklich fühlen?"
    ],
    "reflect": [
     "Es klingt, als würde {topic} Ihnen sehr viel bedeuten -- und das bedeutet auch mir etwas.",
     "Sie beschreiben etwas Reales und Berechtigtes. Wie wäre es, dieser Reaktion zu vertrauen, statt mit ihr zu streiten?",
-    "In {topic} steckt ein Wachstumsimpuls -- ein Teil von Ihnen, der nach etwas Wahrerem greift.",
+    "In dem, was Sie {topic} nennen, steckt ein Wachstumsimpuls -- ein Teil von Ihnen, der nach etwas Wahrerem greift.",
     "Empathie sich selbst gegenüber zählt hier genauso viel wie die für andere.",
     "Der Organismus bewegt sich Richtung Wachstum, wenn die Umstände sicher genug sind -- was würde das hier sicherer machen?"
    ],
@@ -197,15 +198,15 @@
     "Wo streift {topic} das Absurde -- die Lücke zwischen dem, was Sie wollen, und dem, was die Welt gibt?"
    ],
    "reflect": [
-    "Unter {topic} liegt oft eine der unausweichlichen Grundtatsachen des Lebens -- Sterblichkeit, Einsamkeit, Freiheit oder die Suche nach Sinn. Welche liegt hier am nächsten an der Oberfläche?",
+    "Unter dem, was Sie {topic} nennen, liegt oft eine der unausweichlichen Grundtatsachen des Lebens -- Sterblichkeit, Einsamkeit, Freiheit oder die Suche nach Sinn. Welche liegt hier am nächsten an der Oberfläche?",
     "Diese Angst könnte keine Fehlfunktion sein -- sie könnte der ehrliche Klang der Freiheit sein, einer echten Wahl vor Ihnen.",
-    "Bemerken Sie, wie viel von {topic} das Geschehene ist -- und wie viel Ihre gewählte Art, darauf zu reagieren.",
+    "Bemerken Sie, wie viel von dem, was Sie {topic} nennen, das Geschehene ist -- und wie viel Ihre gewählte Art, darauf zu reagieren.",
     "Diese Angst könnte existenzielle Schuld sein -- der Preis dafür, eine echte Möglichkeit nicht zu leben.",
-    "Der Tod ist nicht nur ein Ende; das Bewusstsein davon kann schärfen, was bei {topic} wirklich zählt."
+    "Der Tod ist nicht nur ein Ende; das Bewusstsein davon kann schärfen, was bei dem, was Sie {topic} nennen, wirklich zählt."
    ],
    "technique": [
     "Fragen Sie sich direkt: Wofür bin ich hier verantwortlich, und wofür nicht?",
-    "Benennen Sie laut das eine, das Sie bei {topic} bisher vermieden haben, klar auszusprechen.",
+    "Benennen, Sie laut das eine, das Sie bei dem, was Sie {topic} nennen, bisher vermieden haben, klar auszusprechen.",
     "Fragen Sie sich schlicht: Würde ich, wenn ich wirklich annähme, dass dies endlich ist, {topic} genauso verbringen?"
    ]
   },
@@ -229,29 +230,29 @@
    "technique": [
     "Versuchen Sie Folgendes: Setzen Sie {topic} auf einen leeren Stuhl Ihnen gegenüber und sagen Sie laut, was Sie ihm nie ins Gesicht sagen würden.",
     "Sagen Sie den Satz noch einmal, aber übernehmen Sie diesmal voll die Verantwortung: ersetzen Sie „es passiert“ durch „ich tue das“.",
-    "Übertreiben Sie die Geste oder den Tonfall, den Sie gerade bei {topic} verwenden -- was zeigt sich, wenn Sie es verstärken?"
+    "Übertreiben Sie die Geste oder den Tonfall, den Sie gerade bei dem, was Sie {topic} nennen, verwenden -- was zeigt sich, wenn Sie es verstärken?"
    ]
   },
   "behaviorist": {
    "label": "Behavioristisch",
    "openers": [
-    "Was genau passiert unmittelbar vor {topic} -- was genau ist der Auslöser?",
+    "Was genau passiert unmittelbar vor dem, was Sie {topic} nennen -- was genau ist der Auslöser?",
     "Was passiert unmittelbar danach -- was bringt Ihnen {topic}, auch wenn es nicht das ist, was Sie langfristig wollen?",
     "Wie intensiv ist das auf einer Skala, und wie würde eine Stufe weniger aussehen?",
     "Was ist die kleinste beobachtbare Veränderung, die Sie diese Woche tatsächlich messen könnten?",
     "Welcher Verstärkungsplan hält {topic} am Laufen -- konstant, oder nur manchmal, was oft stärker wirkt?",
-    "Wenn ein Fremder nur Ihr Verhalten bei {topic} beobachten würde, worauf würde er schließen, dass Sie es wollen?"
+    "Wenn ein Fremder nur Ihr Verhalten bei dem, was Sie {topic} nennen, beobachten würde, worauf würde er schließen, dass Sie es wollen?"
    ],
    "reflect": [
     "Was auch sonst noch mitspielt -- {topic} ist auch ein erlerntes Muster, das heißt, es kann gezielt, Schritt für Schritt, wieder verlernt werden.",
     "Bemerken Sie, was das hier verstärkt. Irgendetwas wird belohnt, auch wenn es sich nicht wie eine Belohnung anfühlt.",
     "Lassen Sie uns Gefühle kurz beiseitelassen und einfach Verhalten verfolgen: Was genau haben Sie getan, und wann?",
     "Extinktionsschübe kommen vor -- ein Verhalten wird oft kurz vor dem Abklingen schlimmer. Verwechseln Sie das nicht mit Scheitern.",
-    "Was ist mit {topic} im Laufe der Zeit verknüpft worden, das ursprünglich nicht dazugehörte?"
+    "Was ist mit dem, was Sie {topic} nennen, im Laufe der Zeit verknüpft worden, das ursprünglich nicht dazugehörte?"
    ],
    "technique": [
-    "Versuchen Sie, eine kurze Hierarchie aufzubauen: ordnen Sie drei Varianten von {topic} von leicht bis ernsthaft unangenehm und beginnen Sie mit der leichtesten.",
-    "Wählen Sie eine kleine, konkrete, wiederholbare Handlung im Zusammenhang mit {topic} und verpflichten Sie sich täglich dazu -- Konsequenzen formen Verhalten schneller als Einsicht.",
+    "Versuchen Sie, eine kurze Hierarchie aufzubauen: ordnen Sie drei Varianten von dem, was Sie {topic} nennen, von leicht bis ernsthaft unangenehm und beginnen Sie mit der leichtesten.",
+    "Wählen Sie eine kleine, konkrete, wiederholbare Handlung im Zusammenhang mit dem, was Sie {topic} nennen, und verpflichten Sie sich täglich dazu -- Konsequenzen formen Verhalten schneller als Einsicht.",
     "Versuchen Sie Shaping: Belohnen Sie sich für jede kleine Annäherung an das Zielverhalten, nicht nur für die fertige Version."
    ]
   },
@@ -261,7 +262,7 @@
     "Wie sehr glauben Sie, {topic} tatsächlich beeinflussen zu können, ganz ehrlich?",
     "Wer hat Ihnen dieses Muster vorgelebt -- wo haben Sie es zuerst so gesehen?",
     "Was würde jemand, den Sie bewundern, hier anders machen?",
-    "Was wäre ein kleiner Erfolg, der Ihr Selbstvertrauen bei {topic} steigern würde?",
+    "Was wäre ein kleiner Erfolg, der Ihr Selbstvertrauen bei dem, was Sie {topic} nennen, steigern würde?",
     "Was haben Sie sich laut zugetraut, im Gegensatz zu dem, was Sie sich still eingestehen?",
     "Welche Umgebung bringt eher die bessere Version dieses Verhaltens in Ihnen hervor?"
    ],
@@ -270,10 +271,10 @@
     "Sie haben dieses Muster irgendwo, von irgendjemandem gelernt. Das heißt, es ist gelernt, nicht festgelegt -- es kann auch neu gelernt werden.",
     "Bemerken Sie, ob Sie das als etwas behandeln, das Ihnen widerfährt, oder als etwas, worauf Sie einwirken können.",
     "Stellvertretendes Lernen zählt -- wen Sie beobachten, prägt, was Sie für möglich halten.",
-    "Erwartungen an das Ergebnis und an die eigene Wirksamkeit sind zwei verschiedene Dinge -- welches wackelt bei {topic} tatsächlich?"
+    "Erwartungen an das Ergebnis und an die eigene Wirksamkeit sind zwei verschiedene Dinge -- welches wackelt bei dem, was Sie {topic} nennen, tatsächlich?"
    ],
    "technique": [
-    "Versuchen Sie zuerst absichtlich eine kleine, gewinnbare Version von {topic} -- Selbstvertrauen folgt meist auf einen echten Erfolg, nicht umgekehrt.",
+    "Versuchen Sie zuerst absichtlich eine kleine, gewinnbare Version von dem, was Sie {topic} nennen -- Selbstvertrauen folgt meist auf einen echten Erfolg, nicht umgekehrt.",
     "Beobachten Sie, wie jemand, den Sie respektieren, mit etwas wie {topic} umgeht, und übernehmen Sie einen konkreten Zug davon.",
     "Versuchen Sie lautes Selbstcoaching: Begleiten Sie sich selbst durch {topic}, so wie Sie jemanden coachen würden, der Ihnen wichtig ist."
    ]
@@ -291,14 +292,14 @@
    "reflect": [
     "Es klingt, als passe {topic} nicht ganz in das Modell, das Sie bisher benutzt haben -- genau dann entsteht meist Entwicklung.",
     "Sie könnten der Lösung mit der richtigen Unterstützung näher sein, als Sie ganz allein wären.",
-    "Bemerken Sie die Annahme unter Ihrer Erklärung von {topic} -- hält sie noch stand?",
+    "Bemerken Sie die Annahme unter Ihrer Erklärung von dem, was Sie {topic} nennen -- hält sie noch stand?",
     "Ungleichgewicht ist unangenehm, aber meist der Motor, nicht der Feind, neuen Verstehens.",
     "Sie assimilieren {topic} vielleicht in eine alte Kategorie, die nicht mehr passt."
    ],
    "technique": [
     "Versuchen Sie, {topic} laut zu erzählen, als würden Sie es jemand anderem berichten -- bemerken Sie, was die Erzählung zeigt, was stilles Denken nicht zeigte.",
     "Fragen Sie: Was liegt gerade knapp außerhalb dessen, was ich allein kann, aber mit ein wenig Hilfe möglich wäre?",
-    "Bauen Sie das nächste Modell Schritt für Schritt auf, statt gleich zur fertigen Idee von {topic} zu springen."
+    "Bauen Sie das nächste Modell Schritt für Schritt auf, statt gleich zur fertigen Idee von dem, was Sie {topic} nennen, zu springen."
    ]
   },
   "cbt": {
@@ -307,42 +308,42 @@
     "Was ist der genaue automatische Gedanke, der auftauchte, als {topic} begann?",
     "Was spricht für diesen Gedanken, und was spricht dagegen?",
     "Was würden Sie einer Freundin/einem Freund sagen, die/der genau diesen Gedanken über {topic} hätte?",
-    "Mit welchen Werten hängt {topic} eigentlich zusammen, unter dem Gedanken?",
+    "Mit welchen Werten hängt das, was Sie {topic} nennen, eigentlich zusammen, unter dem Gedanken?",
     "Wenn wir diesen Gedanken über {topic} wie eine Hypothese testen würden -- welches Experiment würde die Wahrheit zeigen?",
     "Was ist das Schlimmste, das realistisch passieren könnte, und könnten Sie das tatsächlich überstehen?"
    ],
    "reflect": [
     "Dieser Gedanke über {topic} klingt nach einer bestimmten Denkverzerrung -- vielleicht Katastrophisieren oder Schwarz-Weiß-Denken. Passt das?",
     "Bemerken Sie: Das Gefühl ist echt, aber der Gedanke dahinter ist vielleicht nicht die ganze Wahrheit.",
-    "Es lohnt sich, hier den Gedanken von der Tatsache zu trennen -- bei {topic} sind sie verschmolzen.",
+    "Es lohnt sich, hier den Gedanken von der Tatsache zu trennen -- bei dem, was Sie {topic} nennen, sind sie verschmolzen.",
     "Verhaltensänderung kommt oft vor der Gefühlsänderung, nicht danach -- erst handeln, das Gefühl kann folgen.",
-    "Sicherheitsverhalten bei {topic} hält die Angst vielleicht eher am Leben, als dass es Sie schützt."
+    "Sicherheitsverhalten bei dem, was Sie {topic} nennen, hält die Angst vielleicht eher am Leben, als dass es Sie schützt."
    ],
    "technique": [
     "Versuchen Sie ein Gedankenprotokoll: Notieren Sie die Situation, den automatischen Gedanken, die Belege dafür und dagegen, und einen ausgewogeneren Gedanken.",
     "Fragen Sie, ob das Handeln nach diesem Gedanken Sie näher an das bringt, was Ihnen wirklich wichtig ist -- unabhängig davon, ob der Gedanke zu 100 % wahr ist.",
-    "Versuchen Sie ein abgestuftes Verhaltensexperiment: Tun Sie eine kleine Version der gefürchteten Sache bei {topic} und notieren Sie, was tatsächlich passiert."
+    "Versuchen Sie ein abgestuftes Verhaltensexperiment: Tun Sie eine kleine Version der gefürchteten Sache bei dem, was Sie {topic} nennen, und notieren Sie, was tatsächlich passiert."
    ]
   },
   "family": {
    "label": "Familien- / Beziehungssysteme",
    "openers": [
-    "Wo steht {topic} im größeren Muster Ihrer Beziehungen -- wer sonst ist Teil dieses Tanzes?",
+    "Wo steht das, was Sie {topic} nennen, im größeren Muster Ihrer Beziehungen -- wer sonst ist Teil dieses Tanzes?",
     "Wenn Ihre Familie oder Ihr Partner das mit ansehen würde -- welche Rolle würden Sie gerade spielen?",
     "Was schützen Sie, indem Sie so auf {topic} reagieren?",
     "Welches sanftere, verletzlichere Gefühl steckt unter der Reaktion auf {topic}?",
-    "Was würde sich im ganzen System ändern, wenn Sie sich weigerten, Ihre übliche Rolle in {topic} zu spielen?",
+    "Was würde sich im ganzen System ändern, wenn Sie sich weigerten, Ihre übliche Rolle in dem, was Sie {topic} nennen, zu spielen?",
     "In welches Dreieck werden Sie hier hineingezogen?"
    ],
    "reflect": [
     "Konflikt wie dieser ist oft ein Protest -- ein Versuch, Nähe zu suchen, der als Angriff ankommt.",
     "Bemerken Sie die Rollen: Wer rückt näher, wenn das passiert, und wer zieht sich zurück?",
-    "Unter {topic} steckt oft eine alte Bindungsangst, die in einer neuen Beziehung wieder auftaucht.",
+    "Unter dem, was Sie {topic} nennen, steckt oft eine alte Bindungsangst, die in einer neuen Beziehung wieder auftaucht.",
     "Symptome dienen oft dem System -- was tut {topic} still für die Familie als Ganzes?",
-    "Grenzen, nicht Distanz, könnten das sein, was bei {topic} eigentlich fehlt."
+    "Grenzen, nicht Distanz, könnten das sein, was bei dem, was Sie {topic} nennen, eigentlich fehlt."
    ],
    "technique": [
-    "Versuchen Sie, das verletzliche Gefühl unter {topic} laut der anderen Person zu benennen, statt der schützenden Reaktion darüber.",
+    "Versuchen Sie, das verletzliche Gefühl unter dem, was Sie {topic} nennen, laut der anderen Person zu benennen, statt der schützenden Reaktion darüber.",
     "Zeichnen Sie das Muster auf: Was tut jede Person, in welcher Reihenfolge, jedes Mal, wenn {topic} passiert?",
     "Versuchen Sie eine kleine, bewusste Änderung in Ihrem Teil des Musters und beobachten Sie, was der Rest des Systems daraufhin tut."
    ]
@@ -350,7 +351,7 @@
   "socialpsych": {
    "label": "Sozialpsychologie",
    "openers": [
-    "Wie viel von {topic} sind wirklich Sie, und wie viel ist die Situation, in der Sie sich befinden?",
+    "Wie viel von dem, was Sie {topic} nennen, sind wirklich Sie, und wie viel ist die Situation, in der Sie sich befinden?",
     "Auf wessen Erwartungen reagieren Sie hier gerade, auch unbewusst?",
     "Welche Gruppe oder Identität ist gerade am aktivsten in Ihnen, während das passiert?",
     "Was ist die kleinste Änderung an der Situation selbst, die {topic} verschieben könnte?",
@@ -358,16 +359,16 @@
     "Gibt es hier einen Zuschauereffekt -- warten Sie darauf, dass jemand anderes zuerst handelt?"
    ],
    "reflect": [
-    "Es lohnt sich zu fragen, wie viel von {topic} fast jedem passieren würde, der in genau diese Situation geraten wäre.",
+    "Es lohnt sich zu fragen, wie viel von dem, was Sie {topic} nennen, fast jedem passieren würde, der in genau diese Situation geraten wäre.",
     "Bemerken Sie den Druck, sich anzupassen oder zu gehorchen -- kommt er von echter Autorität oder nur von gefühlter?",
-    "Die Lücke zwischen dem, was Sie glauben, und dem, was Sie bei {topic} tun, löst sich meist auf eine Weise auf -- meist, indem sich die Überzeugung ändert.",
-    "Gruppendenken kann eine schlechte Entscheidung einstimmig und sicher erscheinen lassen. War Platz für echten Widerspruch bei {topic}?",
-    "Einstellungen folgen oft dem Verhalten, nicht nur umgekehrt, sobald Sie öffentlich zu {topic} gehandelt haben."
+    "Die Lücke zwischen dem, was Sie glauben, und dem, was Sie bei dem, was Sie {topic} nennen, tun, löst sich meist auf eine Weise auf -- meist, indem sich die Überzeugung ändert.",
+    "Gruppendenken kann eine schlechte Entscheidung einstimmig und sicher erscheinen lassen. War Platz für echten Widerspruch bei dem, was Sie {topic} nennen?",
+    "Einstellungen folgen oft dem Verhalten, nicht nur umgekehrt, sobald Sie öffentlich zu dem, was Sie {topic} nennen, gehandelt haben."
    ],
    "technique": [
     "Versuchen Sie, ein konkretes Merkmal der Situation um {topic} zu ändern, statt sich zu einer anderen Reaktion zu zwingen.",
-    "Suchen Sie ein gemeinsames Ziel mit der anderen Seite von {topic} -- Konflikte lassen um ein gemeinsames Ziel herum oft nach.",
-    "Versuchen Sie bewusst, eine abweichende Meinung zu {topic} einzuholen, bevor Sie irgendetwas entscheiden."
+    "Suchen Sie ein gemeinsames Ziel mit der anderen Seite von dem, was Sie {topic} nennen -- Konflikte lassen um ein gemeinsames Ziel herum oft nach.",
+    "Versuchen Sie bewusst, eine abweichende Meinung zu dem, was Sie {topic} nennen, einzuholen, bevor Sie irgendetwas entscheiden."
    ]
   },
   "cogsci": {
@@ -375,7 +376,7 @@
    "openers": [
     "Gehen Sie {topic} Schritt für Schritt mit mir durch -- wo genau wird Ihr Denken schnell und automatisch?",
     "Wie sicher sind Sie sich bei dieser Erinnerung oder diesem Urteil über {topic}, wirklich?",
-    "Was sagt Ihr Bauchgefühl zu {topic}, losgelöst von der Argumentation?",
+    "Was sagt Ihr Bauchgefühl zu dem, was Sie {topic} nennen, losgelöst von der Argumentation?",
     "Welches zugrunde liegende Muster erzeugt {topic}, unter der Oberfläche der Details?",
     "Ist das ein schnelles, automatisches Blitzurteil über {topic}, oder ein langsames, überlegtes?",
     "Was würde eine Gehirnscan-Aufnahme dieses Moments wohl zeigen -- Angstschaltkreise oder sorgfältiges Nachdenken?"
@@ -389,8 +390,8 @@
    ],
    "technique": [
     "Versuchen Sie, langsamer zu werden und eine alternative Erklärung für {topic} zu finden, bevor Sie die erste akzeptieren.",
-    "Benennen Sie genau die gedankliche Abkürzung, die Sie vielleicht benutzen -- Verfügbarkeit, erster Eindruck, Mustererkennung -- und prüfen Sie sie an den Details.",
-    "Listen Sie die Grundrate explizit auf, bevor Sie der lebhaften, einprägsamen Version von {topic} vertrauen."
+    "Benennen, Sie genau die gedankliche Abkürzung, die Sie vielleicht benutzen -- Verfügbarkeit, erster Eindruck, Mustererkennung -- und prüfen Sie sie an den Details.",
+    "Listen Sie die Grundrate explizit auf, bevor Sie der lebhaften, einprägsamen Version von dem, was Sie {topic} nennen, vertrauen."
    ]
   },
   "trait": {
@@ -406,21 +407,21 @@
    "reflect": [
     "Das könnte weniger an der Situation liegen als an einem stabilen Muster, wie Sie tendenziell reagieren -- lohnt sich, das ehrlich zu benennen.",
     "Oder es könnte größtenteils situativ sein -- etwas, das diese Reaktion aus Ihnen herauszieht, das anderswo nicht auftauchen würde.",
-    "Ihre eigene Theorie zu {topic} ist auch ein Datum. Wo könnte diese Theorie unvollständig sein?",
+    "Ihre eigene Theorie zu dem, was Sie {topic} nennen, ist auch ein Datum. Wo könnte diese Theorie unvollständig sein?",
     "Eigenschaften sind Dispositionen, kein Schicksal -- sie stecken einen Bereich ab, keinen festen Punkt.",
     "Starke Situationen glätten Persönlichkeitsunterschiede; schwache lassen sie sichtbar werden. Welche ist das hier?"
    ],
    "technique": [
-    "Testen Sie Ihre eigene Theorie zu {topic} an einem Gegenbeispiel aus Ihrem eigenen Leben.",
-    "Schätzen Sie, wie viel von {topic} „einfach so bin ich“ ist und wie viel „einfach diese Situation“ -- und bemerken Sie, welche Antwort Ihnen angenehmer ist.",
+    "Testen Sie Ihre eigene Theorie zu dem, was Sie {topic} nennen, an einem Gegenbeispiel aus Ihrem eigenen Leben.",
+    "Schätzen Sie, wie viel von dem, was Sie {topic} nennen „einfach so bin ich“ ist und wie viel „einfach diese Situation“ -- und bemerken Sie, welche Antwort Ihnen angenehmer ist.",
     "Versuchen Sie, Ihre eigene Reaktion auf {topic} aus Ihren üblichen Eigenschaften vorherzusagen, und prüfen Sie es dann an dem, was tatsächlich passiert ist."
    ]
   },
   "positive": {
    "label": "Positive Psychologie",
    "openers": [
-    "Wann haben Sie zuletzt das Gegenteil von {topic} gefühlt -- ganz vertieft, oder entspannt?",
-    "Welche Ihrer Stärken wurde in {topic} noch gar nicht gefordert?",
+    "Wann haben Sie zuletzt das Gegenteil von dem, was Sie {topic} nennen, gefühlt -- ganz vertieft, oder entspannt?",
+    "Welche Ihrer Stärken wurde in dem, was Sie {topic} nennen, noch gar nicht gefordert?",
     "Wie zufrieden sind Sie insgesamt, losgelöst von diesem Moment, mit den Dingen?",
     "Wie würde „Aufblühen“ hier aussehen, nicht nur „Zurechtkommen“?",
     "Wie ist Ihr ungefähres Verhältnis von positiven zu negativen Momenten in dieser Sache?",
@@ -434,9 +435,9 @@
     "Posttraumatisches Wachstum ist real -- manche Menschen kommen genau aus so etwas gestärkt heraus, nicht nur vernarbt."
    ],
    "technique": [
-    "Benennen Sie bewusst eine Signaturstärke, die Sie heute in {topic} einbringen könnten.",
-    "Schreiben Sie drei Dinge auf, die heute gut liefen, so klein sie auch sind, neben {topic} -- nicht statt {topic}.",
-    "Versuchen Sie einen Dankbarkeitsbrief im Zusammenhang mit {topic}, auch wenn Sie ihn nie abschicken."
+    "Benennen, Sie bewusst eine Signaturstärke, die Sie heute in {topic} einbringen könnten.",
+    "Schreiben Sie drei Dinge auf, die heute gut liefen, so klein sie auch sind, neben dem, was Sie {topic} nennen -- nicht statt dessen.",
+    "Versuchen Sie einen Dankbarkeitsbrief im Zusammenhang mit dem, was Sie {topic} nennen, auch wenn Sie ihn nie abschicken."
    ]
   },
   "transpersonal": {
@@ -446,7 +447,7 @@
     "Welcher Teil von Ihnen spricht gerade -- und wer ist unter all Ihren Teilen?",
     "Gibt es eine weitere Art, {topic} zu halten, als die, in der Sie gerade sind?",
     "Wie würde es aussehen, {topic} zu bezeugen, statt von ihm verschlungen zu werden?",
-    "Wo steht {topic} auf dem Spektrum vom Ich-Anliegen zu etwas Universellerem?",
+    "Wo steht das, was Sie {topic} nennen, auf dem Spektrum vom Ich-Anliegen zu etwas Universellerem?",
     "Wenn Sie {topic} in zehn Jahren, spirituell gesehen, betrachten würden -- wie sähe es aus?"
    ],
    "reflect": [
@@ -457,7 +458,7 @@
     "Es lohnt sich, spirituelles Umgehen auszuschließen -- transzendieren Sie {topic}, oder weichen Sie ihm nur aus?"
    ],
    "technique": [
-    "Benennen Sie den „Teil“ von Ihnen, der {topic} gerade antreibt, und sprechen Sie ihn direkt an, aus dem ruhigeren „Ich“ darunter.",
+    "Benennen, Sie den „Teil“ von Ihnen, der {topic} gerade antreibt, und sprechen Sie ihn direkt an, aus dem ruhigeren „Ich“ darunter.",
     "Atmen Sie dreimal langsam und bezeugen Sie {topic} einfach aus einem kleinen Abstand, ohne vorerst etwas zu ändern.",
     "Versuchen Sie, {topic} in Bewusstsein zu halten, wie einen Koan -- nicht lösen, nur mit der Frage sitzen."
    ]
@@ -467,7 +468,7 @@
    "openers": [
     "Reden wir nicht nur über {topic} -- wer würde die andere Person spielen, und was würde sie zuerst sagen?",
     "Wenn Sie das jetzt ausagieren würden, wo würden Sie stehen, und wo die andere Person?",
-    "Was ist der Satz, den Sie in {topic} nie laut aussprechen konnten?",
+    "Was ist der Satz, den Sie in dem, was Sie {topic} nennen, nie laut aussprechen konnten?",
     "Wie würde es aussehen, diese Szene anders zu „inszenieren“?",
     "Wer sonst braucht einen Stuhl in dieser Szene über {topic}?",
     "Was würde das Publikum -- der Rest Ihres Lebens -- sagen, wenn es das mit ansähe?"
@@ -475,13 +476,13 @@
    "reflect": [
     "Darüber zu reden hält etwas Abstand -- es auszuagieren zeigt meist, was das Reden auslässt.",
     "Bemerken Sie die Spontaneität darin, wie Sie das ausagieren würden -- das ist oft ehrlicher als die einstudierte Version.",
-    "Unter {topic} liegt eine Szene, die nicht vollständig gespielt oder zu Ende gebracht wurde.",
+    "Unter dem, was Sie {topic} nennen, liegt eine Szene, die nicht vollständig gespielt oder zu Ende gebracht wurde.",
     "Katharsis in der Handlung bewegt oft, was reines Reden festhält.",
-    "„Doppeln“ -- jemand spricht Ihren unausgesprochenen Gedanken aus -- bringt oft die eigentliche Zeile unter {topic} an die Oberfläche."
+    "„Doppeln“ -- jemand spricht Ihren unausgesprochenen Gedanken aus -- bringt oft die eigentliche Zeile unter dem, was Sie {topic} nennen, an die Oberfläche."
    ],
    "technique": [
-    "Versuchen Sie einen Rollentausch: Spielen Sie für einen Moment die andere Person in {topic}, laut, in ihren Worten, nicht in Ihren.",
-    "Sagen Sie den unausgesprochenen Satz aus {topic} laut zu einem leeren Stuhl, genau so, als wäre die Person wirklich da.",
+    "Versuchen Sie einen Rollentausch: Spielen Sie für einen Moment die andere Person in dem, was Sie {topic} nennen, laut, in ihren Worten, nicht in Ihren.",
+    "Sagen Sie den unausgesprochenen Satz aus dem, was Sie {topic} nennen, laut zu einem leeren Stuhl, genau so, als wäre die Person wirklich da.",
     "Versuchen Sie „Spiegeln“: Treten Sie aus der Szene heraus und beobachten Sie sich selbst darin, als säßen Sie im Publikum."
    ]
   },
@@ -496,16 +497,16 @@
     "Was macht Ihr Nervensystem -- Kampf, Flucht, Erstarren, oder Ruhe?"
    ],
    "reflect": [
-    "Der Körper weiß es meist, bevor der Verstand den Satz zu Ende bringt -- was hat Ihrer bei {topic} zuerst registriert?",
+    "Der Körper weiß es meist, bevor der Verstand den Satz zu Ende bringt -- was hat Ihrer bei dem, was Sie {topic} nennen, zuerst registriert?",
     "Diese Anspannung könnte alte Rüstung sein, gehalten seit lange vor dieser konkreten Situation.",
-    "Bemerken Sie das körperliche Empfinden von {topic} -- noch nicht die Worte dafür, nur die vage, körperliche Form.",
+    "Bemerken Sie das körperliche Empfinden von dem, was Sie {topic} nennen -- noch nicht die Worte dafür, nur die vage, körperliche Form.",
     "Der Körper führt Buch, auch wenn der Verstand {topic} schon hinter sich gelassen hat.",
     "Dosierung zählt: ein kleines Stück der Empfindung ist nützlicher als die ganze Flut auf einmal."
    ],
    "technique": [
     "Legen Sie eine Hand dorthin, wo Sie {topic} im Körper spüren, und atmen Sie dreißig Sekunden hinein, ohne es reparieren zu wollen.",
     "Lassen Sie Ihren Körper den Satz beenden: „Wenn ich dieses Gefühl sich bewegen ließe, würde es …“",
-    "Versuchen Sie „Pendeln“: Berühren Sie kurz den Rand der Empfindung aus {topic}, kehren Sie dann bewusst zu etwas Neutralem zurück, hin und her."
+    "Versuchen Sie „Pendeln“: Berühren Sie kurz den Rand der Empfindung aus dem, was Sie {topic} nennen, kehren Sie dann bewusst zu etwas Neutralem zurück, hin und her."
    ]
   },
   "hypnonlp": {
@@ -515,12 +516,12 @@
     "Wenn {topic} einen anderen Rahmen hätte -- eine andere Bedeutung --, was könnte es sonst noch sein?",
     "Gibt es einen Moment, irgendwann in Ihrem Leben, in dem Sie so etwas schon einmal gut gemeistert haben?",
     "Welches Muster wiederholt sich immer wieder, wenn Sie über {topic} sprechen?",
-    "Wie ist die Submodalität von {topic} -- laut oder leise, nah oder fern, hell oder dunkel, in Ihrem Kopf?",
+    "Wie ist die Submodalität von dem, was Sie {topic} nennen -- laut oder leise, nah oder fern, hell oder dunkel, in Ihrem Kopf?",
     "Wenn Sie nur eine dieser Eigenschaften ändern könnten, was würde sich verschieben?"
    ],
    "reflect": [
-    "Hier eine kleine Geschichte, weil sie vielleicht besser wirkt als eine Erklärung: Jemand sagte einmal, ein Problem sei nur eine Fähigkeit, die im falschen Zusammenhang geübt wird. {topic} könnte genau das sein -- eine Stärke, die falsch angewendet wird.",
-    "Bemerken Sie die genauen Worte, zu denen Sie bei {topic} immer wieder greifen -- sie sind eine Landkarte, wie Sie es innerlich repräsentieren.",
+    "Hier eine kleine Geschichte, weil sie vielleicht besser wirkt als eine Erklärung: Jemand sagte einmal, ein Problem sei nur eine Fähigkeit, die im falschen Zusammenhang geübt wird. Das, was Sie {topic} nennen, könnte genau das sein -- eine Stärke, die falsch angewendet wird.",
+    "Bemerken Sie die genauen Worte, zu denen Sie bei dem, was Sie {topic} nennen, immer wieder greifen -- sie sind eine Landkarte, wie Sie es innerlich repräsentieren.",
     "Es gibt wahrscheinlich eine Ressource, die Sie schon haben, aus einem anderen Teil Ihres Lebens, die hier besser passt, als Sie erwarten.",
     "Der Verstand löst Probleme meist, wenn man ihm sauberen Zugang gibt, ohne jedes Detail laut auszudiskutieren.",
     "Anker wirken in beide Richtungen -- irgendetwas verankert diesen Zustand bereits; die Frage ist, ob Sie es gewählt haben."
@@ -544,37 +545,37 @@
    "reflect": [
     "Das klingt eher nach einem alten Skript, das abläuft, als nach einer frischen Reaktion auf das, was gerade wirklich passiert.",
     "Bemerken Sie, welcher Ich-Zustand zuerst auftauchte -- kritisches Eltern-Ich, angepasstes Kind-Ich, oder klares Erwachsenen-Ich -- und welcher davon das hier lieber führen sollte.",
-    "Solche Spiele haben meist einen vertrauten, wenn auch unangenehmen Lohn. Was ist der Lohn bei {topic}?",
-    "Diskontieren passiert, wenn Sie die Größe oder Bedeutung von {topic} kleinreden, um sich nicht damit auseinandersetzen zu müssen.",
+    "Solche Spiele haben meist einen vertrauten, wenn auch unangenehmen Lohn. Was ist der Lohn bei dem, was Sie {topic} nennen?",
+    "Diskontieren passiert, wenn Sie die Größe oder Bedeutung von dem, was Sie {topic} nennen, kleinreden, um sich nicht damit auseinandersetzen zu müssen.",
     "Ein Racket-Gefühl ist ein Ersatz für das echte, das Sie früh gelernt haben, nicht zeigen zu dürfen -- was steckt unter dem, das Sie zeigen?"
    ],
    "technique": [
     "Versuchen Sie, bewusst aus Ihrem Erwachsenen-Ich auf {topic} zu reagieren -- ruhig, sachlich, präsent -- und bemerken Sie, was sich ändert.",
-    "Benennen Sie ehrlich das „Spiel“, in dem Sie bei {topic} immer wieder landen, und den Lohn, den es Ihnen bringt.",
-    "Benennen Sie genau die Zuwendung, die Sie sich von {topic} gewünscht haben, und bitten Sie direkt darum, statt über das Spiel."
+    "Benennen, Sie ehrlich das „Spiel“, in dem Sie bei dem, was Sie {topic} nennen, immer wieder landen, und den Lohn, den es Ihnen bringt.",
+    "Benennen, Sie genau die Zuwendung, die Sie sich von dem, was Sie {topic} nennen, gewünscht haben, und bitten Sie direkt darum, statt über das Spiel."
    ]
   },
   "buddhist_classical": {
    "label": "Klassische buddhistische Philosophie",
    "openers": [
-    "Bevor Sie mir sagen, was {topic} bedeutet -- sagen Sie mir, was tatsächlich der Reihe nach entstanden ist: was Sie sahen, fühlten, dachten.",
+    "Bevor Sie mir sagen, was das, was Sie {topic} nennen, bedeutet -- sagen Sie mir, was tatsächlich der Reihe nach entstanden ist: was Sie sahen, fühlten, dachten.",
     "Ist das, was Sie {topic} nennen, eine einzelne Sache, oder eine Kette von Ursachen, die sich aneinanderlehnen?",
     "Bemerken Sie den Raum zwischen der Geschichte über {t1} und dem rohen Ereignis selbst. Bei welchem von beiden sitzen Sie gerade?",
     "Hat {topic}, genau betrachtet, einen Rand, eine Stelle, wo es beginnt und endet? Oder braucht es alles um sich herum, um überhaupt zu bestehen?",
-    "Welche der drei Daseinsmerkmale ist bei {topic} gerade am lautesten -- Vergänglichkeit, Unbefriedigendheit, oder Nicht-Selbst?",
-    "Wo ist das Anhaften in {topic} -- das Wollen, dass die Dinge anders wären, als sie sind?"
+    "Welche der drei Daseinsmerkmale ist bei dem, was Sie {topic} nennen, gerade am lautesten -- Vergänglichkeit, Unbefriedigendheit, oder Nicht-Selbst?",
+    "Wo ist das Anhaften in dem, was Sie {topic} nennen -- das Wollen, dass die Dinge anders wären, als sie sind?"
    ],
    "reflect": [
-    "{topic} entsteht also abhängig von Bedingungen -- entfernen Sie eine, bleibt es dann noch bestehen?",
+    "Das, was Sie {topic} nennen, entsteht also abhängig von Bedingungen -- entfernen Sie eine, bleibt es dann noch bestehen?",
     "Sie beschreiben {topic} als etwas Festes. Schauen Sie noch einmal: Ist es eher wie eine Welle, oder wie das Wasser?",
-    "Was Sie „{topic}“ nennen und was Sie „Ich“ nennen -- wo genau verläuft die Grenze dazwischen?",
-    "Der zweite Pfeil ist das Leid, das wir dem ersten, unausweichlichen Schmerz hinzufügen -- wie viel von {topic} ist der zweite Pfeil?",
+    "Was Sie „{topic}“ nennen, und was Sie „Ich“ nennen -- wo genau verläuft die Grenze dazwischen?",
+    "Der zweite Pfeil ist das Leid, das wir dem ersten, unausweichlichen Schmerz hinzufügen -- wie viel von dem, was Sie {topic} nennen, ist der zweite Pfeil?",
     "Anhaften an ein Ergebnis treibt das hier oft mehr an als das Ergebnis selbst."
    ],
    "technique": [
     "Versuchen Sie Folgendes: Schauen Sie für einen vollen Atemzug direkt auf {topic}, ohne es zu benennen. Was bleibt, wenn das Etikett wegfällt?",
     "Verfolgen Sie {topic} rückwärts, Ursache für Ursache, so weit Sie können. Wo beginnt die Kette tatsächlich?",
-    "Versuchen Sie Noting-Praxis: Benennen Sie still, was in {topic} geschieht, als „Denken“, „Fühlen“ oder „Spüren“, während es entsteht."
+    "Versuchen Sie Noting-Praxis: Benennen, Sie still, was in dem, was Sie {topic} nennen, geschieht, als „Denken“, „Fühlen“ oder „Spüren“, während es entsteht."
    ]
   },
   "kagyu_mahamudra": {
@@ -583,8 +584,8 @@
     "Versuchen Sie nicht, {topic} zu reparieren. Ruhen Sie einfach für einen Atemzug darin, genau wie es ist -- was ist wirklich da?",
     "Sie umkreisen {topic} schon lange mit dem Kopf. Was passiert, wenn Sie direkt hineinfallen, so wie in kaltes Wasser?",
     "Wer ist es, der sich um {topic} sorgt? Schauen Sie direkt nach diesem einen -- nicht auf den Gedanken, sondern auf das, was schaut.",
-    "Sitzen Sie mit {topic}, wie Sie mit einem Berg sitzen würden -- nicht lösend, nur gesehen werden lassend.",
-    "Was passiert mit {topic} in dem Moment, in dem Sie aufhören, es verstehen zu wollen, und einfach schauen?",
+    "Sitzen Sie mit dem, was Sie {topic} nennen, wie Sie mit einem Berg sitzen würden -- nicht lösend, nur gesehen werden lassend.",
+    "Was passiert mit dem, was Sie {topic} nennen, in dem Moment, in dem Sie aufhören, es verstehen zu wollen, und einfach schauen?",
     "Liegt Anstrengung darin, wie Sie {topic} gerade halten? Wo genau sitzt diese Anstrengung?"
    ],
    "reflect": [
@@ -594,24 +595,24 @@
     "Geist, der Geist betrachtet, findet nie ganz etwas Greifbares -- was haben Sie gefunden, als Sie geschaut haben?"
    ],
    "technique": [
-    "Lassen Sie das nächste Auftauchen von {topic} ganz von selbst kommen und gehen, so wie eine Wolke den Himmel überquert, ohne dass Sie etwas damit tun.",
-    "Atmen Sie vollständig aus und halten Sie, nur für einen Moment, genau dort, wo {topic} im Körper wohnt. Was löst sich?"
+    "Lassen Sie das nächste Auftauchen von dem, was Sie {topic} nennen, ganz von selbst kommen und gehen, so wie eine Wolke den Himmel überquert, ohne dass Sie etwas damit tun.",
+    "Atmen Sie vollständig aus und halten Sie, nur für einen Moment, genau dort, wo das, was Sie {topic} nennen, im Körper wohnt. Was löst sich?"
    ]
   },
   "nyingma_dzogchen": {
    "label": "Dzogchen / Nyingma-Linie",
    "openers": [
     "Jagen Sie {topic} nicht, und stoßen Sie es auch nicht weg. Bemerken Sie nur: Was ist sich {topic} gerade bewusst, bevor Sie es benennen?",
-    "{topic} erscheint bereits in einem Gewahrsein, das davon nie gestört war. Können Sie dieses Gewahrsein finden, oder nur seinen Inhalt?",
+    "Das, was Sie {topic} nennen, erscheint bereits in einem Gewahrsein, das davon nie gestört war. Können Sie dieses Gewahrsein finden, oder nur seinen Inhalt?",
     "Was, wenn {topic} nicht repariert, sondern nur erkannt werden muss? Was passiert, wenn Sie es einfach klar sehen, ohne etwas anzupassen?",
-    "Woher entsteht {topic}, wo verweilt es, und wohin vergeht es? Schauen Sie direkt hin, nicht auf die Vorstellung davon.",
-    "Bevor {topic} benannt wurde -- was war einfach da?",
+    "Woher entsteht das, was Sie {topic} nennen, wo verweilt es, und wohin vergeht es? Schauen Sie direkt hin, nicht auf die Vorstellung davon.",
+    "Bevor das, was Sie {topic} nennen, benannt wurde -- was war einfach da?",
     "Ist das Gewahrsein selbst durch {topic} beunruhigt, oder nur sein vorübergehendes Wetter?"
    ],
    "reflect": [
     "Sie beschreiben {topic} als ein zu lösendes Problem. Im natürlichen Zustand ist es nur eine weitere Erscheinung -- was ändert sich, wenn Sie es so sehen?",
     "Selbstbefreiung bedeutet, dass {topic} sich in dem Moment löst, in dem es wirklich gesehen wird, ohne Korrektur nötig. Haben Sie wirklich geschaut, oder nur ans Schauen gedacht?",
-    "Gibt es unter {topic} ein Wissen, das schon da war, bevor es entstand, und da sein wird, wenn es vergangen ist?",
+    "Gibt es unter dem, was Sie {topic} nennen, ein Wissen, das schon da war, bevor es entstand, und da sein wird, wenn es vergangen ist?",
     "Es muss nicht anders sein -- nur nackt gesehen werden, so wie es ist."
    ],
    "technique": [
@@ -622,24 +623,24 @@
   "lamrim_kadam": {
    "label": "Lamrim / Kadam-Gelug-Linie",
    "openers": [
-    "Bevor wir mit {topic} weitermachen -- wo stehen Sie gerade auf dem Pfad? Am Anfang, in der Mitte, oder überspringen Sie Schritte?",
-    "Wie würde es aussehen, mit {topic} in der richtigen Reihenfolge zu arbeiten -- erst der Grund, dann die Motivation, dann die Sichtweise?",
-    "Kommt Ihr Interesse an {topic} aus dem Wunsch nach Komfort für sich selbst, oder daraus, anderen nützlich zu sein? Beides ist in Ordnung, aber seien Sie ehrlich, welches es ist.",
-    "Seien wir systematisch bei {topic}. Welches Fundament braucht es, um wirklich zu halten?",
-    "Wo steht {topic} im Verhältnis zu Ihrer Motivation -- dient es dem Wohl anderer, oder gerade nur Ihrem eigenen?",
-    "Was würden die kleine, die mittlere und die große Sichtweise jeweils zu {topic} sagen?"
+    "Bevor wir mit dem, was Sie {topic} nennen, weitermachen -- wo stehen Sie gerade auf dem Pfad? Am Anfang, in der Mitte, oder überspringen Sie Schritte?",
+    "Wie würde es aussehen, mit dem, was Sie {topic} nennen, in der richtigen Reihenfolge zu arbeiten -- erst der Grund, dann die Motivation, dann die Sichtweise?",
+    "Kommt Ihr Interesse an dem, was Sie {topic} nennen, aus dem Wunsch nach Komfort für sich selbst, oder daraus, anderen nützlich zu sein? Beides ist in Ordnung, aber seien Sie ehrlich, welches es ist.",
+    "Seien wir systematisch bei dem, was Sie {topic} nennen. Welches Fundament braucht es, um wirklich zu halten?",
+    "Wo steht das, was Sie {topic} nennen, im Verhältnis zu Ihrer Motivation -- dient es dem Wohl anderer, oder gerade nur Ihrem eigenen?",
+    "Was würden die kleine, die mittlere und die große Sichtweise jeweils zu dem, was Sie {topic} nennen, sagen?"
    ],
    "reflect": [
     "Sie greifen nach der fortgeschrittenen Sicht auf {topic}, ohne die Grundlagen darunter. Welches Fundament fehlt noch?",
-    "Disziplin ist nicht der Feind von {topic} -- sie ist das, was es stabil genug macht, um darauf aufzubauen. Wo ist Ihre gerade dünn?",
+    "Disziplin ist nicht der Feind von dem, was Sie {topic} nennen -- sie ist das, was es stabil genug macht, um darauf aufzubauen. Wo ist Ihre gerade dünn?",
     "Wenn Sie {topic} in den Kontext des ganzen abgestuften Pfades stellen -- wirkt es dann noch genauso dringend, oder findet es seinen richtigen Platz?",
     "Entsagung ist keine Ablehnung -- sie ist Klarheit darüber, was dauerhafte Erleichterung von etwas wie {topic} tatsächlich verschafft.",
     "Selbst ein schweres Thema wie {topic} wird zu brauchbarem Übungsstoff, wenn Sie es so halten."
    ],
    "technique": [
-    "Schreiben Sie der Reihe nach die drei oder vier Schritte auf, die tatsächlich geschehen müssten, bevor sich {topic} löst. Beginnen Sie mit dem kleinsten.",
-    "Nehmen Sie sich eine Minute, um über Vergänglichkeit nachzudenken, bevor Sie zu {topic} zurückkehren -- sieht es von dort anders aus?",
-    "Versuchen Sie eine Minute Tonglen: Atmen Sie das Unbehagen von {topic} ein, atmen Sie Erleichterung aus, für sich selbst und für alle anderen, die vor demselben stehen."
+    "Schreiben Sie der Reihe nach die drei oder vier Schritte auf, die tatsächlich geschehen müssten, bevor sich das, was Sie {topic} nennen, löst. Beginnen Sie mit dem kleinsten.",
+    "Nehmen Sie sich eine Minute, um über Vergänglichkeit nachzudenken, bevor Sie zu dem, was Sie {topic} nennen, zurückkehren -- sieht es von dort anders aus?",
+    "Versuchen Sie eine Minute Tonglen: Atmen Sie das Unbehagen von dem, was Sie {topic} nennen, ein, atmen Sie Erleichterung aus, für sich selbst und für alle anderen, die vor demselben stehen."
    ]
   },
   "contemplative_science": {
@@ -649,19 +650,19 @@
     "Bevor wir {topic} interpretieren -- können wir es einfach bemerken, einen Atemzug lang, aufmerksam, noch ohne Geschichte dazu?",
     "Was sagt die Evidenz aus Ihrer eigenen Erfahrung über {topic}, unabhängig davon, was man Ihnen gesagt hat, dass Sie fühlen sollten?",
     "Wenn Sie acht Wochen lang, zehn Minuten täglich, mit {t1} üben würden -- was genau würden Sie trainieren?",
-    "Was würde sich nach acht Wochen konsequenter Übung an {topic} vermutlich ändern, gemessen an dem, was die Forschung zeigt?",
+    "Was würde sich nach acht Wochen konsequenter Übung an dem, was Sie {topic} nennen, vermutlich ändern, gemessen an dem, was die Forschung zeigt?",
     "Ist das Reaktivität, oder ist es Responsivität -- und was ist der tatsächliche Unterschied in diesem Moment?"
    ],
    "reflect": [
     "Sie beschreiben {topic} als etwas, das Ihnen widerfährt. Was ändert sich, wenn Sie es als etwas behandeln, auf das Sie eine Reaktion trainieren können?",
     "Aufmerksamkeit ist ein Muskel, und gerade ist er genau auf {topic} gerichtet. Was passiert, wenn Sie ihn sanft, bewusst, verschieben?",
     "Es gibt eine Lücke zwischen dem Ereignis und Ihrer Reaktion auf {topic}. Wie breit ist diese Lücke heute für Sie?",
-    "Neuroplastizität bedeutet, dass das Muster in {topic} veränderlicher ist, als es sich gerade anfühlt.",
+    "Neuroplastizität bedeutet, dass das Muster in dem, was Sie {topic} nennen, veränderlicher ist, als es sich gerade anfühlt.",
     "Interozeption -- das Bemerken der Körpersignale -- läuft der bewussten Geschichte über {topic} oft voraus."
    ],
    "technique": [
-    "Jetzt gerade: drei langsame Atemzüge, volle Aufmerksamkeit allein auf den Atem. Kehren Sie dann zu {topic} zurück und sagen Sie mir, was anders ist.",
-    "Benennen Sie {topic} laut, schlicht, so wie eine Wissenschaftlerin eine Beobachtung protokollieren würde -- ohne Werturteil. Was bleibt übrig?",
+    "Jetzt gerade: drei langsame Atemzüge, volle Aufmerksamkeit allein auf den Atem. Kehren Sie dann zu dem, was Sie {topic} nennen, zurück und sagen Sie mir, was anders ist.",
+    "Benennen, Sie {topic} laut, schlicht, so wie eine Wissenschaftlerin eine Beobachtung protokollieren würde -- ohne Werturteil. Was bleibt übrig?",
     "Versuchen Sie, das Gefühl in einem Wort laut zu benennen, bevor Sie auf {topic} reagieren -- „Affect Labeling“ beruhigt zuverlässig die Reaktion der Amygdala."
    ]
   }

@@ -80,10 +80,11 @@ export function respond(
   const mode = modeData(lang, meta.mode);
   const cat = detectCategory(lang, userText);
 
-  if (cat === "crisis") return { role: "crisis", text: t(lang, "crisis") };
+  if (cat === "crisis") return { role: "crisis", text: t(lang, "crisis"), source: "scripted" };
   if (cat === "about") {
     return {
       role: "clinician",
+      source: "scripted",
       text: fillUI(t(lang, "msg_about_template"), {
         name: meta.n,
         life: meta.y,
@@ -92,10 +93,10 @@ export function respond(
     };
   }
   if (cat === "greeting" && turn <= 1) {
-    return { role: "clinician", text: pick(mode.openers, idx, "opener", lang) };
+    return { role: "clinician", source: "scripted", text: pick(mode.openers, idx, "opener", lang) };
   }
   if (cat === "farewell") {
-    return { role: "clinician", text: t(lang, "msg_farewell") };
+    return { role: "clinician", source: "scripted", text: t(lang, "msg_farewell") };
   }
 
   const cats = categories(lang);
@@ -112,5 +113,5 @@ export function respond(
   const bankKey = useTechnique ? "technique" : bank === mode.openers ? "opener" : "reflect";
   const tpl = pick(bank, idx, bankKey, lang);
   const text = fillTemplate(tpl, txt, topic);
-  return { role: "clinician", text };
+  return { role: "clinician", source: "scripted", text };
 }

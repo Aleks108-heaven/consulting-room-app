@@ -20,6 +20,7 @@
   "disclaimer_line": "Simulation éducative, pas une thérapie ni un avis médical. En cas de crise, contactez les services d'urgence locaux ou (É.-U.) appelez/envoyez un SMS au 988.",
   "disclaimer_full_link": "Avertissement complet",
   "live_badge": "En direct",
+  "scripted_badge": "Scénario",
   "about_title": "À propos & sécurité",
   "about_p1": "<strong>Ce que c'est.</strong> Consulting Room est un simulateur éducatif. Chacun des 135 personnages est construit à partir d'une biographie documentée publiquement, de concepts clés et de techniques caractéristiques associées à un·e psychologue, psychothérapeute, philosophe ou enseignant·e de méditation réel·le, historique ou contemporain·e. Les réponses sont générées par un moteur de modèles hors ligne scénarisé (ou, seulement si vous fournissez votre propre clé API, par un modèle de langage en direct chargé de rester dans le personnage) — jamais par la personne réelle.",
   "about_h_not": "Ce que ce n'est pas",
@@ -83,7 +84,7 @@
    ],
    "reflect": [
     "Dépouillé d'interprétation, ce que vous décrivez, c'est : {topic}. Qu'y a-t-il d'autre là-dedans ?",
-    "Ça, c'est la surface. Quelle fonction {topic} remplit-il réellement pour vous ?",
+    "Ça, c'est la surface. Quelle fonction remplit vraiment {topic} pour vous ?",
     "Remarquez combien de {topic} est sensation brute, et combien est l'histoire que vous y avez ajoutée.",
     "C'est plus un flux qu'une chose fixe -- constamment en train de devenir, pas figé.",
     "L'habitude elle-même compte peut-être plus ici que n'importe quelle pensée isolée sur {topic}."
@@ -98,7 +99,7 @@
    "label": "Psychanalytique / Psychodynamique",
    "openers": [
     "Qu'est-ce qui vous vient à l'esprit en premier, sans le retoucher, quand vous vous posez avec ça ?",
-    "{topic} vous rappelle-t-il quelque chose d'une période antérieure de votre vie ?",
+    "Est-ce que {topic} vous rappelle quelque chose d'une période antérieure de votre vie ?",
     "Je remarque comment vous me racontez cela. De quoi cette façon de le raconter pourrait-elle vous protéger ?",
     "La voix de qui résonne dans {t1}, si vous écoutez attentivement ?",
     "Quel est le tout premier souvenir qui surgit si vous laissez {topic} se déposer un instant ?",
@@ -113,7 +114,7 @@
    ],
    "technique": [
     "Essayez l'association libre pendant une minute : dites sans censure tout ce qui vient après « {topic} me rappelle... ».",
-    "Demandez-vous à quoi ressemblerait {topic} s'il concernait vraiment quelqu'un de votre passé, et non du présent.",
+    "Demandez-vous à quoi ressemblerait {topic} si cela concernait vraiment quelqu'un de votre passé, et non du présent.",
     "Remarquez toute résistance à aller plus loin avec {topic} -- le malaise lui-même est généralement révélateur."
    ]
   },
@@ -125,7 +126,7 @@
     "Si cette situation était un rêve, que vous dirait-elle ?",
     "Que veut de vous {topic} que vous n'avez pas voulu lui donner jusqu'ici ?",
     "Qu'auraient à dire vos rêves sur {topic}, si vous le leur demandiez ce soir ?",
-    "Où {topic} touche-t-il à l'individuation -- devenir plus pleinement ce que vous êtes réellement ?"
+    "Où cela touche-t-il à l'individuation, dans ce que vous appelez {topic} -- devenir plus pleinement ce que vous êtes réellement ?"
    ],
    "reflect": [
     "C'est peut-être votre ombre qui parle -- la part de vous qui ne correspond pas à l'idée que vous vous faites de qui vous êtes.",
@@ -135,8 +136,8 @@
     "Quelle coïncidence significative entoure {topic}, indépendamment de la cause ?"
    ],
    "technique": [
-    "Essayez de tenir un dialogue imaginaire avec {topic}, comme s'il avait sa propre voix.",
-    "Demandez-vous ce que {topic} compense -- quelle unilatéralité en vous il essaie d'équilibrer.",
+    "Essayez de tenir un dialogue imaginaire avec {topic}, comme si cela avait sa propre voix.",
+    "Demandez-vous ce que {topic} compense -- quelle unilatéralité en vous cela essaie d'équilibrer.",
     "Laissez une image liée à {topic} bouger et parler d'elle-même -- contentez-vous d'observer."
    ]
   },
@@ -145,7 +146,7 @@
    "openers": [
     "À quoi pensez-vous que {topic} sert réellement -- vers quoi tendez-vous ?",
     "Où vous sentez-vous « moins que », et qui a fixé cet étalon ?",
-    "Comment {topic} se rattache-t-il à votre sentiment d'appartenance ?",
+    "Comment cela se rattache-t-il à votre sentiment d'appartenance, dans ce que vous appelez {topic} ?",
     "À quoi ressemblerait « assez » ici, concrètement ?",
     "Quel est le souvenir le plus ancien que vous ayez, lié à ce même sentiment ?",
     "Les applaudissements de qui essayiez-vous à l'origine de gagner avec des schémas comme {topic} ?"
@@ -189,12 +190,12 @@
   "existential": {
    "label": "Existentielle",
    "openers": [
-    "Sur quoi {topic} vous demande-t-il d'être honnête -- envers vous-même, en particulier ?",
+    "Sur quoi cela vous demande-t-il d'être honnête, dans ce que vous appelez {topic} -- envers vous-même, en particulier ?",
     "Où avez-vous réellement un choix ici, même petit ?",
     "Si c'était la dernière fois que vous faisiez face à exactement cette situation, qu'est-ce qui compterait ?",
-    "Vers quel sens {topic} pourrait-il pointer, même s'il est mal accueilli ?",
+    "Vers quel sens cela pourrait-il pointer, dans ce que vous appelez {topic}, même si c'est mal accueilli ?",
     "Que regretteriez-vous de ne pas avoir dit ou fait à propos de {topic}, en regardant en arrière depuis la fin de votre vie ?",
-    "Où {topic} frôle-t-il l'absurde -- l'écart entre ce que vous voulez et ce que le monde donne ?"
+    "Où cela frôle-t-il l'absurde, dans ce que vous appelez {topic} -- l'écart entre ce que vous voulez et ce que le monde donne ?"
    ],
    "reflect": [
     "Sous {topic}, il y a souvent l'un des faits inévitables de l'existence -- notre mortalité, notre solitude, notre liberté, ou la quête de sens. Lequel est le plus proche de la surface ici ?",
@@ -222,14 +223,14 @@
    "reflect": [
     "Ce qui m'intéresse moins, c'est pourquoi {topic} est arrivé, et davantage ce qui se passe entre nous en ce moment, pendant que vous le dites.",
     "Cela ressemble à une affaire inachevée -- quelque chose qui n'a jamais été mené à terme ni dit.",
-    "Remarquez la frontière ici : où {topic} cesse-t-il d'être à vous et commence à être à eux ?",
+    "Remarquez la frontière ici : où cela cesse-t-il d'être à vous et commence à être à eux, dans ce que vous appelez {topic} ?",
     "Cela ressemble à une rétroflexion -- vous vous faites à vous-même ce que vous préféreriez faire à quelqu'un d'autre.",
     "Le contact, pas l'intuition, est ce qui clôt vraiment une affaire inachevée comme {topic}."
    ],
    "technique": [
     "Essayez ceci : mettez {topic} sur une chaise vide en face de vous et dites à voix haute ce que vous ne lui diriez jamais en face.",
     "Répétez la phrase, mais cette fois en l'assumant pleinement : remplacez « ça arrive » par « je fais ça ».",
-    "Exagérez le geste ou le ton que vous utilisez en ce moment à propos de {topic} -- que révèle-t-il, amplifié ?"
+    "Exagérez le geste ou le ton que vous utilisez en ce moment à propos de {topic} -- que cela révèle-t-il, amplifié ?"
    ]
   },
   "behaviorist": {
@@ -243,11 +244,11 @@
     "Si un inconnu observait seulement vos actions autour de {topic}, que conclurait-il que vous vouliez ?"
    ],
    "reflect": [
-    "Quoi qu'il en soit, {topic} est aussi un schéma appris -- ce qui signifie qu'il peut être désappris, délibérément, par étapes.",
+    "Quoi qu'il en soit, {topic} est aussi un schéma appris -- ce qui signifie que cela peut être désappris, délibérément, par étapes.",
     "Remarquez ce qui renforce ceci. Quelque chose est récompensé ici, même si cela ne ressemble pas à une récompense.",
     "Mettons les sentiments de côté un instant et contentons-nous de suivre le comportement : qu'avez-vous fait exactement, et quand ?",
     "Les poussées d'extinction arrivent -- un comportement empire souvent juste avant de s'estomper. Ne confondez pas ça avec un échec.",
-    "À quoi {topic} s'est-il associé avec le temps, ce qui n'était pas le cas à l'origine ?"
+    "À quoi cela s'est-il associé avec le temps, dans ce que vous appelez {topic}, ce qui n'était pas le cas à l'origine ?"
    ],
    "technique": [
     "Essayez de construire une courte hiérarchie : classez trois versions de {topic} de légèrement à sérieusement inconfortables, et commencez par la plus légère.",
@@ -307,7 +308,7 @@
     "Quelle est exactement la pensée automatique apparue juste quand {topic} a commencé ?",
     "Quelles preuves y a-t-il en faveur de cette pensée, et lesquelles contre ?",
     "Que diriez-vous à un ami qui aurait exactement cette pensée à propos de {topic} ?",
-    "À quelles valeurs {topic} se rattache-t-il vraiment, sous la pensée ?",
+    "À quelles valeurs cela se rattache-t-il vraiment, sous la pensée, dans ce que vous appelez {topic} ?",
     "Si nous testions cette pensée sur {topic} comme une hypothèse, quelle expérience révélerait la vérité ?",
     "Quelle est la pire chose qui pourrait raisonnablement arriver, et pourriez-vous vraiment y survivre ?"
    ],
@@ -327,7 +328,7 @@
   "family": {
    "label": "Familiale / Systèmes Relationnels",
    "openers": [
-    "Où {topic} se situe-t-il dans le schéma plus large de vos relations -- qui d'autre fait partie de cette danse ?",
+    "Où cela se situe-t-il dans le schéma plus large de vos relations, dans ce que vous appelez {topic} -- qui d'autre fait partie de cette danse ?",
     "Si votre famille ou votre partenaire regardait cela se dérouler, quel rôle joueriez-vous ?",
     "Que protégez-vous en réagissant ainsi à {topic} ?",
     "Quel est le sentiment plus doux, plus vulnérable, sous la réaction à {topic} ?",
@@ -396,12 +397,12 @@
   "trait": {
    "label": "Personnalité / Traits",
    "openers": [
-    "{topic} est-il un schéma présent dans presque toute votre vie, ou spécifique à cette situation ?",
+    "Est-ce que ce que vous appelez {topic} est un schéma présent dans presque toute votre vie, ou spécifique à cette situation ?",
     "Quels diriez-vous être vos deux ou trois traits les plus définissants, et comment se manifestent-ils ici ?",
     "À quel point ce sentiment est-il stable pour vous habituellement, comparé à comment vous êtes d'ordinaire ?",
     "Quelle est votre propre théorie sur pourquoi {topic} continue de se produire ?",
     "Ce trait se manifesterait-il de la même façon dans un contexte complètement différent ?",
-    "Où vous situez-vous sur l'ouverture à l'expérience, et comment cela façonne-t-il {topic} ?"
+    "Où vous situez-vous sur l'ouverture à l'expérience, et comment cela façonne-t-il ce que vous appelez {topic} ?"
    ],
    "reflect": [
     "Ceci pourrait avoir moins à voir avec la situation et plus avec un schéma stable dans votre façon habituelle de réagir -- ça vaut la peine de le nommer honnêtement.",
@@ -442,18 +443,18 @@
   "transpersonal": {
    "label": "Transpersonnelle",
    "openers": [
-    "Quel schéma ou sens plus large {topic} pourrait-il faire partie, au-delà de ce seul moment ?",
+    "De quel schéma ou sens plus large ce que vous appelez {topic} pourrait-il faire partie, au-delà de ce seul moment ?",
     "Quelle part de vous parle en ce moment -- et qui se trouve sous toutes vos parts ?",
     "Y a-t-il une façon plus vaste de tenir {topic} que celle dans laquelle vous êtes en ce moment ?",
     "À quoi ressemblerait le fait d'être témoin de {topic} plutôt que d'en être consumé·e ?",
-    "Où {topic} se situe-t-il sur le spectre entre préoccupation de l'ego et quelque chose de plus universel ?",
+    "Où ce que vous appelez {topic} se situe-t-il sur le spectre entre préoccupation de l'ego et quelque chose de plus universel ?",
     "Si vous voyiez {topic} depuis dix ans dans le futur, spirituellement parlant, à quoi cela ressemblerait-il ?"
    ],
    "reflect": [
     "Il y a peut-être ici plus que l'histoire personnelle -- quelque chose qui demande à être intégré, pas seulement résolu.",
     "Remarquez quelle « sous-personnalité » parle -- celle qui a peur, celle qui contrôle, celle qui est sage -- et qu'aucune d'elles n'est vous tout entier·ère.",
     "Cette intensité, aussi inconfortable soit-elle, pourrait être significative plutôt que simplement un dysfonctionnement.",
-    "Les expériences sommets tendent à réorganiser ensuite ce qui compte -- {topic} a-t-il fait cela, ou pourrait-il le faire ?",
+    "Les expériences sommets tendent à réorganiser ensuite ce qui compte -- ce que vous appelez {topic} a-t-il fait cela, ou pourrait-il le faire ?",
     "Ça vaut la peine d'écarter le contournement spirituel -- transcendez-vous {topic}, ou l'évitez-vous simplement ?"
    ],
    "technique": [
@@ -512,7 +513,7 @@
    "label": "Hypnothérapie / PNL",
    "openers": [
     "En décrivant {topic}, quelles images, sons ou mots viennent en premier ?",
-    "Si {topic} avait un cadre différent -- un sens différent -- que pourrait-il aussi être ?",
+    "Si ce que vous appelez {topic} avait un cadre différent -- un sens différent -- que pourrait-il aussi être ?",
     "Y a-t-il un moment, n'importe où dans votre vie, où vous avez déjà bien géré quelque chose de similaire ?",
     "Quel schéma se répète toujours dans la façon dont vous parlez de {topic} ?",
     "Quelle est la sous-modalité de {topic} -- est-ce fort ou silencieux, proche ou lointain, lumineux ou terne, dans votre esprit ?",
@@ -526,7 +527,7 @@
     "L'ancrage fonctionne dans les deux sens -- quelque chose ancre déjà cet état ; la question est de savoir si vous l'avez choisi."
    ],
    "technique": [
-    "Essayez de reformuler {topic} en une phrase, comme s'il était secrètement une information utile plutôt qu'un problème.",
+    "Essayez de reformuler {topic} en une phrase, comme si c'était secrètement une information utile plutôt qu'un problème.",
     "Rappelez-vous en détail un moment précis où vous avez bien géré quelque chose comme {topic}, et remarquez quelle ressource vous avez utilisée alors et qui est disponible maintenant.",
     "Essayez le « pacing futur » : imaginez {topic} déjà résolu, en détail, et remarquez ce qui est différent dans votre posture, votre respiration, votre ressenti."
    ]
@@ -539,7 +540,7 @@
     "Abordez-vous {topic} depuis un endroit « je vais bien, tu vas bien », ou depuis une position de supériorité ou d'infériorité ?",
     "Quel scénario avez-vous appris tôt à propos de situations comme {topic} ?",
     "À qui appartient vraiment la voix derrière cette réplique de Parent Critique sur {topic} ?",
-    "Quelle « caresse » -- attention positive ou négative -- {topic} vous rapporte-t-il vraiment ?"
+    "Quelle « caresse » -- attention positive ou négative -- cela vous rapporte-t-il vraiment, avec {topic} ?"
    ],
    "reflect": [
     "Cela ressemble plus à un vieux scénario en train de se jouer qu'à une réaction fraîche à ce qui se passe vraiment maintenant.",
@@ -550,7 +551,7 @@
    ],
    "technique": [
     "Essayez de répondre à {topic} délibérément depuis votre Adulte -- calme, factuel, présent -- et remarquez ce qui change.",
-    "Nommez honnêtement le « jeu » dans lequel vous finissez toujours à propos de {topic}, et le bénéfice qu'il vous procure.",
+    "Nommez honnêtement le « jeu » dans lequel vous finissez toujours à propos de {topic}, et le bénéfice que cela vous procure.",
     "Nommez exactement la caresse que vous vouliez de {topic}, et demandez-la directement au lieu de passer par le jeu."
    ]
   },
@@ -558,21 +559,21 @@
    "label": "Philosophie Bouddhiste Classique",
    "openers": [
     "Avant de me dire ce que signifie {topic} -- dites-moi ce qui est réellement apparu : ce que vous avez vu, ressenti, pensé, dans l'ordre.",
-    "Ce que vous appelez {topic} est-il une seule chose, ou une chaîne de causes qui s'appuient les unes sur les autres ?",
+    "Est-ce que ce que vous appelez {topic} est une seule chose, ou une chaîne de causes qui s'appuient les unes sur les autres ?",
     "Remarquez l'espace entre l'histoire sur {t1} et l'événement brut lui-même. Avec lequel des deux êtes-vous en ce moment ?",
-    "En y regardant de près, {topic} a-t-il un bord, un endroit où il commence et s'arrête ? Ou dépend-il de tout ce qui l'entoure pour exister ?",
+    "En y regardant de près, ce que vous appelez {topic} a-t-il un bord, un endroit où cela commence et s'arrête ? Ou cela dépend-il de tout ce qui l'entoure pour exister ?",
     "Laquelle des trois caractéristiques est la plus présente dans {topic} en ce moment -- impermanence, insatisfaction, ou non-soi ?",
     "Où est l'attachement dans {topic} -- le désir que les choses soient autres qu'elles ne sont ?"
    ],
    "reflect": [
-    "Donc {topic} naît en dépendant de conditions -- enlevez-en une, et tient-il encore debout ?",
+    "Donc ce que vous appelez {topic} naît en dépendant de conditions -- enlevez-en une, et est-ce que cela tient encore debout ?",
     "Vous décrivez {topic} comme solide. Regardez à nouveau : est-ce plus comme une vague, ou comme l'eau ?",
     "Ce que vous appelez « {topic} » et ce que vous appelez « vous » -- où se trouve exactement la ligne entre les deux ?",
     "La seconde flèche est la souffrance que nous ajoutons au-dessus de la première douleur, inévitable -- combien de {topic} est la seconde flèche ?",
     "L'attachement à un résultat, plus que le résultat lui-même, est souvent ce qui motive cela."
    ],
    "technique": [
-    "Essayez ceci : pendant une respiration entière, regardez directement {topic} sans le nommer. Que reste-t-il quand l'étiquette tombe ?",
+    "Essayez ceci : pendant une respiration entière, regardez directement {topic} sans nommer cela. Que reste-t-il quand l'étiquette tombe ?",
     "Retracez {topic} en arrière, cause par cause, aussi loin que vous le pouvez. Où commence réellement la chaîne ?",
     "Essayez la pratique de l'étiquetage : nommez silencieusement ce qui se passe dans {topic} comme « pensée », « sentiment » ou « sensation », à mesure que cela surgit."
    ]
@@ -584,7 +585,7 @@
     "Vous avez tourné autour de {topic} avec votre tête. Que se passe-t-il si vous y plongez directement, comme dans de l'eau froide ?",
     "Qui est celui ou celle qui s'inquiète de {topic} ? Cherchez directement celui-là -- pas la pensée, mais ce qui regarde.",
     "Asseyez-vous avec {topic} comme vous vous assiériez avec une montagne -- pas en le résolvant, juste en le laissant être vu.",
-    "Que se passe-t-il avec {topic} à l'instant où vous arrêtez d'essayer de le comprendre et regardez simplement ?",
+    "Que se passe-t-il avec {topic} à l'instant où vous arrêtez d'essayer de comprendre cela et regardez simplement ?",
     "Y a-t-il de l'effort dans la façon dont vous tenez {topic} en ce moment ? Où se trouve exactement cet effort ?"
    ],
    "reflect": [
@@ -603,15 +604,15 @@
    "openers": [
     "Ne poursuivez pas {topic}, et ne le repoussez pas non plus. Remarquez seulement : qu'est-ce qui est conscient de {topic} en ce moment, avant que vous ne le nommiez ?",
     "{topic} apparaît déjà dans une conscience qui n'a jamais été perturbée par lui. Pouvez-vous trouver cette conscience, ou seulement son contenu ?",
-    "Et si {topic} n'avait pas besoin d'être réparé, seulement reconnu ? Que se passe-t-il quand vous le voyez simplement clairement, sans rien ajuster ?",
-    "D'où {topic} surgit-il, où demeure-t-il, et où va-t-il ? Regardez directement, pas l'idée qu'on s'en fait.",
-    "Avant que {topic} ne soit nommé, qu'y avait-il simplement ?",
+    "Et si ce que vous appelez {topic} n'avait pas besoin d'être réparé, seulement reconnu ? Que se passe-t-il quand vous voyez cela simplement clairement, sans rien ajuster ?",
+    "D'où surgit ce que vous appelez {topic}, où cela demeure-t-il, et où cela va-t-il ? Regardez directement, pas l'idée qu'on s'en fait.",
+    "Avant que ce que vous appelez {topic} ne soit nommé, qu'y avait-il simplement ?",
     "La conscience elle-même est-elle troublée par {topic}, ou seulement par sa météo passagère ?"
    ],
    "reflect": [
     "Vous décrivez {topic} comme un problème à résoudre. Dans l'état naturel, c'est juste une manifestation de plus -- qu'est-ce qui change si vous le voyez ainsi ?",
-    "L'auto-libération signifie que {topic} se libère à l'instant où il est vraiment vu, sans correction nécessaire. Avez-vous vraiment regardé, ou seulement pensé à regarder ?",
-    "Sous {topic}, y a-t-il un savoir qui était là avant qu'il ne surgisse et qui sera là après qu'il soit passé ?",
+    "L'auto-libération signifie que ce que vous appelez {topic} se libère à l'instant où cela est vraiment vu, sans correction nécessaire. Avez-vous vraiment regardé, ou seulement pensé à regarder ?",
+    "Sous ce que vous appelez {topic}, y a-t-il un savoir qui était là avant que cela ne surgisse et qui sera là après que cela soit passé ?",
     "Cela n'a pas besoin d'être différent -- juste vu nu, tel que c'est."
    ],
    "technique": [
@@ -625,20 +626,20 @@
     "Avant d'aller plus loin avec {topic} -- où en êtes-vous sur le chemin en ce moment ? Au début, au milieu, ou sautez-vous des étapes ?",
     "À quoi ressemblerait travailler sur {topic} dans le bon ordre -- d'abord le fondement, puis la motivation, puis la vue ?",
     "Votre intérêt pour {topic} vient-il du désir de confort pour vous-même, ou du désir d'être utile aux autres ? Les deux sont valables, mais soyez honnête sur lequel c'est.",
-    "Soyons systématiques à propos de {topic}. Quel fondement lui faut-il pour tenir réellement ?",
-    "Où {topic} se situe-t-il par rapport à votre motivation -- sert-il le bien-être des autres, ou seulement le vôtre ?",
+    "Soyons systématiques à propos de {topic}. Quel fondement faut-il à cela pour tenir réellement ?",
+    "Où ce que vous appelez {topic} se situe-t-il par rapport à votre motivation -- cela sert-il le bien-être des autres, ou seulement le vôtre ?",
     "Que diraient respectivement la petite, la moyenne et la grande portée à propos de {topic} ?"
    ],
    "reflect": [
     "Vous tendez vers la vue avancée de {topic} sans les fondations en dessous. Quel fondement manque-t-il encore ?",
-    "La discipline n'est pas l'ennemie de {topic} -- c'est ce qui le rend assez stable pour construire dessus. Où la vôtre est-elle mince en ce moment ?",
-    "Si vous placez {topic} dans le contexte de tout le chemin graduel, semble-t-il encore aussi urgent, ou trouve-t-il sa juste place ?",
+    "La discipline n'est pas l'ennemie de {topic} -- c'est ce qui rend cela assez stable pour construire dessus. Où la vôtre est-elle mince en ce moment ?",
+    "Si vous placez ce que vous appelez {topic} dans le contexte de tout le chemin graduel, cela semble-t-il encore aussi urgent, ou cela trouve-t-il sa juste place ?",
     "Le renoncement n'est pas un rejet -- c'est la clarté sur ce qui procure réellement un soulagement durable de quelque chose comme {topic}.",
     "Même une chose difficile comme {topic} devient un matériau utile une fois qu'on la tient comme une pratique, pas seulement comme un problème."
    ],
    "technique": [
     "Écrivez dans l'ordre les trois ou quatre étapes qui devraient réellement se produire avant que {topic} ne se résolve. Commencez par la plus petite.",
-    "Passez une minute à réfléchir à l'impermanence avant de revenir à {topic} -- semble-t-il différent depuis là ?",
+    "Passez une minute à réfléchir à l'impermanence avant de revenir à {topic} -- est-ce que cela semble différent depuis là ?",
     "Essayez le tonglen pendant une minute : inspirez le malaise de {topic}, expirez le soulagement, pour vous-même et pour quiconque affronte la même chose."
    ]
   },

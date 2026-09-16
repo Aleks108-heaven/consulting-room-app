@@ -20,6 +20,7 @@
   "disclaimer_line": "Simulazione educativa, non terapia né consulenza medica. In caso di crisi, contatta i servizi di emergenza locali o (USA) chiama/scrivi al 988.",
   "disclaimer_full_link": "Avvertenza completa",
   "live_badge": "Live",
+  "scripted_badge": "Script",
   "about_title": "Informazioni & sicurezza",
   "about_p1": "<strong>Cos'è questo.</strong> Consulting Room è un simulatore educativo. Ognuno dei 135 personaggi è costruito a partire da biografia pubblicamente documentata, concetti chiave e tecniche caratteristiche associate a uno psicologo, psicoterapeuta, filosofo o insegnante di meditazione reale, storico o contemporaneo. Le risposte sono generate da un motore offline basato su modelli scriptati (oppure, solo se fornisci una tua chiave API, da un modello linguistico live istruito a restare nel personaggio) — mai dalla persona reale.",
   "about_h_not": "Cosa non è",
@@ -214,7 +215,7 @@
    "openers": [
     "Resta lì. Di cosa sei consapevole in questo momento, nel corpo, mentre lo dici?",
     "Non spiegarmi {topic} -- mostramelo. Cosa succede mentre ci resti seduto in questo istante?",
-    "Se {topic} fosse seduto sulla sedia di fronte a te, cosa gli diresti?",
+    "Se ciò che chiami {topic} fosse seduto sulla sedia di fronte a te, cosa gli diresti?",
     "Cosa stai facendo in questo momento, con il respiro, le mani, il viso, mentre me lo racconti?",
     "Cos'è figura e cos'è sfondo in questo momento -- cosa è rumoroso, e cosa lo sostiene in silenzio?",
     "Completa ad alta voce: «Quello che non sto dicendo su {topic} è...»."
@@ -227,7 +228,7 @@
     "Il contatto, non l'intuizione, è ciò che chiude davvero un affare incompiuto come {topic}."
    ],
    "technique": [
-    "Prova questo: metti {topic} su una sedia vuota di fronte a te e di' ad alta voce ciò che non gli diresti mai in faccia.",
+    "Prova questo: metti ciò che chiami {topic} su una sedia vuota di fronte a te e di' ad alta voce quello che non gli diresti mai in faccia.",
     "Ripeti la frase, ma stavolta assumitela pienamente: sostituisci «succede» con «io lo faccio».",
     "Esagera il gesto o il tono che stai usando ora riguardo a {topic} -- cosa rivela, amplificato?"
    ]
@@ -274,7 +275,7 @@
    ],
    "technique": [
     "Prova prima una versione piccola e vincibile di {topic}, di proposito -- la fiducia di solito segue un vero successo, non il contrario.",
-    "Osserva come qualcuno che rispetti gestisce qualcosa come {topic}, e prendi in prestito una mossa concreta da lui.",
+    "Osserva come qualcuno che rispetti gestisce qualcosa come {topic}, e prendi in prestito una mossa concreta da quella persona.",
     "Prova l'auto-istruzione verbale: guidati ad alta voce attraverso {topic} come faresti con qualcuno a cui tieni."
    ]
   },
@@ -342,7 +343,7 @@
     "I confini, non la distanza, potrebbero essere ciò che manca davvero attorno a {topic}."
    ],
    "technique": [
-    "Prova a nominare ad alta voce il sentimento vulnerabile sotto {topic} all'altra persona, invece della reazione protettiva sopra di esso.",
+    "Prova a nominare ad alta voce il sentimento vulnerabile sotto ciò che chiami {topic} all'altra persona, invece della reazione protettiva sopra di esso.",
     "Mappa lo schema: cosa fa ciascuna persona, in che ordine, ogni volta che succede {topic}?",
     "Prova un piccolo cambiamento deliberato nella tua parte dello schema, e osserva cosa fa il resto del sistema in risposta."
    ]
@@ -602,9 +603,9 @@
    "label": "Dzogchen / Lignaggio Nyingma",
    "openers": [
     "Non inseguire {topic}, e non respingerlo nemmeno. Nota solo: cos'è consapevole di {topic} in questo momento, prima che tu lo nomini?",
-    "{topic} appare già in una consapevolezza che non è mai stata disturbata da esso. Riesci a trovare quella consapevolezza, o solo il suo contenuto?",
+    "Ciò che chiami {topic} appare già in una consapevolezza che non è mai stata disturbata da esso. Riesci a trovare quella consapevolezza, o solo il suo contenuto?",
     "E se {topic} non avesse bisogno di essere sistemato, ma solo riconosciuto? Cosa succede quando lo vedi semplicemente con chiarezza, senza aggiustare nulla?",
-    "Da dove sorge {topic}, dove dimora, e dove va? Guarda direttamente, non all'idea di esso.",
+    "Da dove sorge ciò che chiami {topic}, dove dimora, e dove va? Guarda direttamente, non all'idea di esso.",
     "Prima che {topic} fosse nominato, cosa c'era semplicemente?",
     "La consapevolezza stessa è disturbata da {topic}, o solo il suo tempo meteorologico passeggero?"
    ],
@@ -625,7 +626,7 @@
     "Prima di continuare con {topic} -- dove sei sul sentiero in questo momento? All'inizio, a metà, o stai saltando dei passi?",
     "Come apparirebbe lavorare su {topic} nell'ordine giusto -- prima il fondamento, poi la motivazione, poi la visione?",
     "Il tuo interesse per {topic} viene dal voler comfort per te stesso, o dal voler essere utile agli altri? Entrambi vanno bene, ma sii onesto su quale sia.",
-    "Siamo sistematici su {topic}. Quale fondamento gli serve per reggere davvero?",
+    "Siamo sistematici su {topic}. Quale fondamento serve a ciò, per reggere davvero?",
     "Dove si colloca {topic} rispetto alla tua motivazione -- serve il benessere altrui, o solo il tuo?",
     "Cosa direbbero rispettivamente la visione a portata piccola, media e grande su {topic}?"
    ],

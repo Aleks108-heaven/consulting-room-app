@@ -20,6 +20,7 @@
   "disclaimer_line": "Simulare educațională, nu este terapie sau sfat medical. În caz de criză, contactează serviciile de urgență locale sau (SUA) sună/trimite SMS la 988.",
   "disclaimer_full_link": "Avertisment complet",
   "live_badge": "Live",
+  "scripted_badge": "Script",
   "about_title": "Despre & siguranță",
   "about_p1": "<strong>Ce este.</strong> Consulting Room este un simulator educațional. Fiecare dintre cele 135 de personaje este construit pe baza unei biografii documentate public, a unor concepte-cheie și a unor tehnici caracteristice asociate unui psiholog, psihoterapeut, filosof sau profesor de meditație real, istoric sau contemporan. Răspunsurile sunt generate de un motor de șabloane offline, scenarizat (sau, doar dacă furnizezi propria cheie API, de un model lingvistic live instruit să rămână în personaj) — niciodată de persoana reală.",
   "about_h_not": "Ce nu este aceasta",
@@ -445,7 +446,7 @@
     "Din ce tipar sau sens mai larg ar putea face parte {topic}, dincolo de acest moment singur?",
     "Ce parte din tine vorbește chiar acum -- și cine se află sub toate părțile tale?",
     "Există un mod mai larg de a ține {topic} decât cel în care ești acum?",
-    "Cum ar fi să fii martor la {topic} în loc să fii consumat de el?",
+    "Cum ar fi să fii martor la asta -- {topic} -- în loc să fii consumat de asta?",
     "Unde se situează {topic} pe spectrul dintre preocuparea ego-ului și ceva mai universal?",
     "Dacă ai vedea {topic} de peste zece ani, spiritual vorbind, cum ar arăta?"
    ],
@@ -545,7 +546,7 @@
     "Asta sună mai mult ca un scenariu vechi jucându-se decât ca o reacție proaspătă la ce se întâmplă cu adevărat acum.",
     "Observă ce stare a eului a apărut prima -- Părinte Critic, Copil Adaptat, sau Adult lucid -- și pe care ai prefera să conducă asta.",
     "Jocuri ca acesta au de obicei un câștig familiar, deși neconfortabil. Care e câștigul în {topic}?",
-    "Descalificarea se întâmplă când minimizezi mărimea sau importanța lui {topic} pentru a evita să te confrunți cu el.",
+    "Descalificarea se întâmplă când minimizezi mărimea sau importanța lui {topic} pentru a evita să te confrunți cu asta.",
     "Un sentiment de rezervă e un substitut pentru cel real pe care ai învățat că nu era permis -- ce se află sub cel pe care îl arăți?"
    ],
    "technique": [
@@ -580,8 +581,8 @@
   "kagyu_mahamudra": {
    "label": "Mahāmudrā / Linia Kagyu",
    "openers": [
-    "Încetează să încerci să repari {topic}. Odihnește-te în el pentru o respirație, exact așa cum e -- ce e cu adevărat acolo?",
-    "Ai dat târcoale lui {topic} cu mintea. Ce se întâmplă dacă cazi direct în el, ca în apă rece?",
+    "Încetează să încerci să repari {topic}. Odihnește-te în asta pentru o respirație, exact așa cum e -- ce e cu adevărat acolo?",
+    "Ai dat târcoale lui {topic} cu mintea. Ce se întâmplă dacă cazi direct în asta, ca în apă rece?",
     "Cine e cel care se îngrijorează de {topic}? Caută direct acela -- nu gândul, ci ceea ce privește.",
     "Stai cu {topic} cum ai sta cu un munte -- nu rezolvând, doar lăsându-l să fie văzut.",
     "Ce se întâmplă cu {topic} în clipa în care încetezi să încerci să-l înțelegi și pur și simplu privești?",
@@ -594,7 +595,7 @@
     "Mintea care privește mintea nu găsește niciodată cu adevărat ceva de apucat -- ce ai găsit când ai privit?"
    ],
    "technique": [
-    "Lasă următoarea apariție a lui {topic} să vină și să plece complet de la sine, ca un nor care traversează cerul, fără să faci nimic cu el.",
+    "Lasă următoarea apariție a lui {topic} să vină și să plece complet de la sine, ca un nor care traversează cerul, fără să faci nimic cu asta.",
     "Expiră complet și reține, doar o clipă, exact unde trăiește {topic} în corp. Ce se relaxează?"
    ]
   },
@@ -602,9 +603,9 @@
    "label": "Dzogchen / Linia Nyingma",
    "openers": [
     "Nu urmări {topic}, și nici nu-l respinge. Observă doar: ce e conștient de {topic} chiar acum, înainte să-l numești?",
-    "{topic} apare deja într-o conștiență care n-a fost niciodată tulburată de el. Poți găsi acea conștiență, sau doar conținutul ei?",
+    "Asta -- {topic} -- apare deja într-o conștiență care n-a fost niciodată tulburată de asta. Poți găsi acea conștiență, sau doar conținutul ei?",
     "Ce-ar fi dacă {topic} n-ar avea nevoie să fie reparat, ci doar recunoscut? Ce se întâmplă când îl vezi pur și simplu clar, fără să ajustezi nimic?",
-    "De unde apare {topic}, unde rămâne, și unde se duce? Privește direct, nu la ideea despre el.",
+    "De unde apare {topic}, unde rămâne, și unde se duce? Privește direct, nu la ideea despre asta.",
     "Înainte ca {topic} să fie numit, ce era pur și simplu?",
     "E conștiența însăși tulburată de {topic}, sau doar de vremea lui trecătoare?"
    ],
@@ -631,7 +632,7 @@
    ],
    "reflect": [
     "Întinzi mâna spre viziunea avansată a lui {topic} fără fundațiile de dedesubt. Ce fundație lipsește încă?",
-    "Disciplina nu e dușmanul lui {topic} -- e ceea ce îl face suficient de stabil pentru a construi pe el. Unde e subțire a ta chiar acum?",
+    "Disciplina nu e dușmanul lui {topic} -- e ceea ce face asta suficient de stabil pentru a construi pe asta. Unde e subțire a ta chiar acum?",
     "Dacă pui {topic} în contextul întregii căi graduale, mai pare la fel de urgent, sau își găsește locul potrivit?",
     "Renunțarea nu e respingere -- e claritate despre ce provoacă cu adevărat ușurare durabilă de la ceva ca {topic}.",
     "Chiar și un lucru greu ca {topic} devine material util odată ce e ținut ca practică, nu doar ca problemă."

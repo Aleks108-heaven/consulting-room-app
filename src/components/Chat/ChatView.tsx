@@ -45,7 +45,7 @@ export function ChatView({ onAbout }: ChatViewProps) {
       <div className="chat-scroll" ref={scrollRef}>
         <div className="chat-col">
           {history.map((m, i) => (
-            <MessageBubble key={i} message={m} personaName={meta.n} />
+            <MessageBubble key={i} message={m} personaName={meta.n} lang={lang} />
           ))}
           {isTyping && <TypingBubble personaName={meta.n} />}
         </div>

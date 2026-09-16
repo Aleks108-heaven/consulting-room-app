@@ -20,6 +20,7 @@
   "disclaimer_line": "Simulació educativa, no és teràpia ni assessorament mèdic. En una crisi, contacta els serveis d'emergència locals o (EUA) truca/escriu al 988.",
   "disclaimer_full_link": "Avís legal complet",
   "live_badge": "En directe",
+  "scripted_badge": "Guió",
   "about_title": "Quant a & seguretat",
   "about_p1": "<strong>Què és això.</strong> Consulting Room és un simulador educatiu. Cadascun dels 135 personatges es construeix a partir de biografia documentada públicament, conceptes clau i tècniques característiques associades a un psicòleg, psicoterapeuta, filòsof o mestre de meditació real, històric o contemporani. Les respostes es generen amb un motor de plantilles fora de línia guionat (o, només si proporciones la teva pròpia clau API, amb un model de llenguatge en directe instruït per mantenir-se en el personatge) — mai per la persona real.",
   "about_h_not": "Què no és això",

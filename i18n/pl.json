@@ -20,6 +20,7 @@
   "disclaimer_line": "Symulacja edukacyjna, nie terapia ani porada medyczna. W kryzysie skontaktuj się z lokalnymi służbami ratunkowymi lub (USA) zadzwoń/napisz pod 988.",
   "disclaimer_full_link": "Pełne zastrzeżenie",
   "live_badge": "Na żywo",
+  "scripted_badge": "Skrypt",
   "about_title": "O aplikacji i bezpieczeństwo",
   "about_p1": "<strong>Czym to jest.</strong> Gabinet Konsultacyjny to symulator edukacyjny. Każda ze 135 postaci powstała na podstawie publicznie udokumentowanej biografii, kluczowych koncepcji i charakterystycznych technik przypisywanych prawdziwemu, historycznemu lub współczesnemu psychologowi, psychoterapeucie, filozofowi lub nauczycielowi medytacji. Odpowiedzi generuje skryptowy, działający offline silnik szablonów (albo — tylko jeśli podasz własny klucz API — model językowy na żywo, poinstruowany, by trzymać się postaci) — nigdy prawdziwa osoba.",
   "about_h_not": "Czym to nie jest",
@@ -82,7 +83,7 @@
    "reflect": [
     "Pozbawione interpretacji, to, co opisujesz, to: {topic}. Co jeszcze się w tym kryje?",
     "To powierzchnia. Jaką funkcję {topic} tak naprawdę dla ciebie pełni?",
-    "Zauważ, ile w {topic} jest surowego odczucia, a ile historii, którą do tego dopisałeś/aś."
+    "Zauważ, ile w tym: {topic} jest surowego odczucia, a ile historii, którą do tego dopisałeś/aś."
    ],
    "technique": [
     "Spróbuj opisać {topic} jeszcze raz, tym razem tak prosto, jak opisałbyś/łabyś krzesło -- bez metafor.",
@@ -98,7 +99,7 @@
     "Czyj głos przypomina {t1}, jeśli przysłuchasz się uważnie?"
    ],
    "reflect": [
-    "Pod {topic} może kryć się więcej, niż mówisz -- nawet samemu/samej sobie.",
+    "pod tym: {topic} może kryć się więcej, niż mówisz -- nawet samemu/samej sobie.",
     "Ta reakcja jest większa niż ta chwila -- brzmi, jakby niosła coś starszego.",
     "Zauważ uczucie, którego unikasz nazwania wprost. Jak by się nazywało, gdybyś sobie pozwolił/a to powiedzieć?"
    ],
@@ -110,18 +111,18 @@
   "jungian": {
    "label": "Analityczny / Jungowski",
    "openers": [
-    "Jakie obrazy albo symbole pojawiają się, gdy myślisz o {topic}?",
+    "Jakie obrazy albo symbole pojawiają się, gdy myślisz o tym: {topic}?",
     "Czy jest w {t2} część ciebie, którą zwykle trzymasz w cieniu?",
     "Gdyby ta sytuacja była snem, co by ci mówiła?",
-    "Czego {topic} od ciebie chce, czego nie chciałeś/aś dotąd dać?"
+    "Czego chce od ciebie to, co nazywasz {topic}, czego nie chciałeś/aś dotąd dać?"
    ],
    "reflect": [
     "To może mówić twój cień -- część ciebie, która nie pasuje do twojego wyobrażenia o tym, kim jesteś.",
     "To może dotyczyć mniej drugiej osoby, a bardziej czegoś w tobie, co szuka integracji.",
-    "Warto nazwać archetyp pod {topic}. Jaka to rola -- obrońca, wygnaniec, sędzia?"
+    "Warto nazwać archetyp pod tym: {topic}. Jaka to rola -- obrońca, wygnaniec, sędzia?"
    ],
    "technique": [
-    "Spróbuj poprowadzić wyobrażony dialog z {topic}, jakby to była postać z własnym głosem.",
+    "Spróbuj poprowadzić wyobrażony dialog z tym: {topic}, jakby to była postać z własnym głosem.",
     "Zapytaj, co {topic} kompensuje -- jaką jednostronność w tobie próbuje zrównoważyć."
    ]
   },
@@ -134,13 +135,13 @@
     "Jak konkretnie wyglądałoby tu 'wystarczająco'?"
    ],
    "reflect": [
-    "Pod spodem często kryje się poczucie niedorastania do czegoś -- czy to pasuje do {topic}?",
+    "Pod spodem często kryje się poczucie niedorastania do czegoś -- czy to pasuje do tego: {topic}?",
     "To brzmi jak twój styl życia, który się tu ujawnia -- strategia wyuczona wcześnie, by czuć się znaczącym/ą.",
-    "Zauważ element społeczny: komu próbujesz zaimponować, w {topic}?"
+    "Zauważ element społeczny: komu próbujesz zaimponować, w tym: {topic}?"
    ],
    "technique": [
     "Zastanów się, jak wyglądałby mały, naprawdę użyteczny wkład na rzecz kogoś innego już teraz -- zainteresowanie społeczne zwykle rozluźnia taki węzeł.",
-    "Oceń, ile w {topic} dotyczy kompetencji, a ile przynależności."
+    "Oceń, ile w tym: {topic} dotyczy kompetencji, a ile przynależności."
    ]
   },
   "humanistic": {
@@ -148,35 +149,35 @@
    "openers": [
     "Słyszę cię. Jak {topic} czuje się od środka, twoimi własnymi słowami?",
     "Co by znaczyło w pełni zaakceptować to uczucie, dokładnie takie, jakie jest, choć na chwilę?",
-    "Jaka potrzeba czuje się niezaspokojona pod {topic}?",
+    "Jaka potrzeba czuje się niezaspokojona pod tym: {topic}?",
     "Co o tym sądzi najzdrowsza, najpełniejsza wersja ciebie?"
    ],
    "reflect": [
     "Wygląda na to, że {topic} naprawdę ci na tym zależy -- i mnie też na tym zależy.",
     "Opisujesz coś prawdziwego i uzasadnionego. Jak by to było zaufać tej reakcji zamiast się z nią spierać?",
-    "W {topic} jest krawędź wzrostu -- jakaś część ciebie sięga po coś prawdziwszego."
+    "w tym: {topic} jest krawędź wzrostu -- jakaś część ciebie sięga po coś prawdziwszego."
    ],
    "technique": [
-    "Spróbuj dokończyć to zdanie, powoli, kilka razy: 'To, co naprawdę czuję wobec {topic}, to...'",
+    "Spróbuj dokończyć to zdanie, powoli, kilka razy: 'To, co naprawdę czuję wobec tego: {topic}, to...'",
     "Zauważ: czy oceniasz to uczucie, czy po prostu je masz? Zobacz, co się zmienia, gdy po prostu pozwolisz mu być."
    ]
   },
   "existential": {
    "label": "Egzystencjalny",
    "openers": [
-    "Wobec czego {topic} prosi cię o szczerość -- zwłaszcza wobec samego/samej siebie?",
+    "Wobec czego prosi cię o szczerość to, co nazywasz {topic} -- zwłaszcza wobec samego/samej siebie?",
     "Gdzie w tym naprawdę masz wybór, choćby mały?",
     "Gdyby to był ostatni raz, kiedy stajesz przed dokładnie taką sytuacją, co by się w niej liczyło?",
     "Ku jakiemu sensowi mogłoby prowadzić {topic}, nawet jeśli niechcianemu?"
    ],
    "reflect": [
-    "Pod {topic} często kryje się jeden z wielkich, nieuniknionych faktów bycia żywym -- nasza śmiertelność, samotność, wolność albo poszukiwanie sensu. Który jest tu najbliżej powierzchni?",
+    "pod tym: {topic} często kryje się jeden z wielkich, nieuniknionych faktów bycia żywym -- nasza śmiertelność, samotność, wolność albo poszukiwanie sensu. Który jest tu najbliżej powierzchni?",
     "Ten lęk może nie być usterką -- może być uczciwym dźwiękiem wolności, prawdziwego wyboru przed tobą.",
-    "Zauważ, ile w {topic} dotyczy tego, co się stało, a ile tego, jak wybierasz na to odpowiedzieć."
+    "Zauważ, ile w tym: {topic} dotyczy tego, co się stało, a ile tego, jak wybierasz na to odpowiedzieć."
    ],
    "technique": [
     "Zapytaj siebie wprost: za co tu odpowiadam, a za co nie?",
-    "Spróbuj nazwać na głos jedną rzecz w {topic}, której wprost powiedzenia unikałeś/aś."
+    "Spróbuj nazwać na głos jedną rzecz w tym: {topic}, której wprost powiedzenia unikałeś/aś."
    ]
   },
   "gestalt": {
@@ -188,9 +189,9 @@
     "Co robisz właśnie teraz, swoim oddechem, dłońmi, twarzą, gdy mi to mówisz?"
    ],
    "reflect": [
-    "Mniej interesuje mnie, dlaczego {topic} się wydarzyło, a bardziej to, co dzieje się między nami właśnie teraz, gdy to mówisz.",
+    "Mniej interesuje mnie, dlaczego wydarzyło się to, co nazywasz {topic}, a bardziej to, co dzieje się między nami właśnie teraz, gdy to mówisz.",
     "To brzmi jak niedokończona sprawa -- coś, co nigdy nie zostało zamknięte ani powiedziane.",
-    "Zauważ granicę tutaj: gdzie {topic} przestaje być twoje, a zaczyna być ich?"
+    "Zauważ granicę tutaj: gdzie przestaje być twoje to, co nazywasz {topic}, a zaczyna być ich?"
    ],
    "technique": [
     "Spróbuj tego: postaw {topic} na pustym krześle naprzeciwko siebie i powiedz na głos, czego nigdy byś mu nie powiedział/a prosto w twarz.",
@@ -200,7 +201,7 @@
   "behaviorist": {
    "label": "Behawiorystyczny",
    "openers": [
-    "Co dokładnie dzieje się tuż przed {topic} -- co dokładnie jest wyzwalaczem?",
+    "Co dokładnie dzieje się tuż przed tym: {topic} -- co dokładnie jest wyzwalaczem?",
     "Co dzieje się zaraz potem -- co {topic} ci daje, nawet jeśli to nie to, czego chcesz na dłuższą metę?",
     "W skali, jak intensywne jest to, i jak wyglądałoby jedno oczko mniej?",
     "Jaka jest najmniejsza obserwowalna zmiana, którą naprawdę mógłbyś/mogłabyś zmierzyć w tym tygodniu?"
@@ -211,8 +212,8 @@
     "Odłóżmy na chwilę uczucia i śledźmy samo zachowanie: co dokładnie zrobiłeś/aś, i kiedy?"
    ],
    "technique": [
-    "Spróbuj zbudować krótką hierarchię: uszereguj trzy wersje {topic} od lekko do poważnie nieprzyjemnych i zacznij od najlżejszej.",
-    "Wybierz jedno małe, konkretne, powtarzalne działanie związane z {topic} i zobowiąż się do niego codziennie -- konsekwencje kształtują zachowanie szybciej niż wgląd."
+    "Spróbuj zbudować krótką hierarchię: uszereguj trzy wersje tego: {topic}, od lekko do poważnie nieprzyjemnych i zacznij od najlżejszej.",
+    "Wybierz jedno małe, konkretne, powtarzalne działanie związane z tym: {topic}, i zobowiąż się do niego codziennie -- konsekwencje kształtują zachowanie szybciej niż wgląd."
    ]
   },
   "socialcog": {
@@ -221,7 +222,7 @@
     "Ile naprawdę wierzysz, że możesz wpłynąć na {topic}, właśnie teraz, szczerze?",
     "Kto był dla ciebie wzorem tego wzorca -- gdzie po raz pierwszy widziałeś/aś, że robi się to w ten sposób?",
     "Co zrobiłby inaczej ktoś, kogo podziwiasz?",
-    "Jaki byłby mały, wygrywalny sukces, który podniósłby twoją pewność siebie w sprawie {topic}?"
+    "Jaki byłby mały, wygrywalny sukces, który podniósłby twoją pewność siebie w sprawie tego: {topic}?"
    ],
    "reflect": [
     "To wygląda po części na kwestię poczucia własnej skuteczności -- ile wierzysz, że twoje działania mogą zmienić {topic}.",
@@ -256,13 +257,13 @@
    "openers": [
     "Jaka dokładnie jest automatyczna myśl, która pojawiła się dokładnie wtedy, gdy zaczęło się {topic}?",
     "Jakie są dowody za tą myślą, a jakie przeciw niej?",
-    "Co byś powiedział/a przyjacielowi, który miałby dokładnie tę samą myśl o {topic}?",
+    "Co byś powiedział/a przyjacielowi, który miałby dokładnie tę samą myśl o tym: {topic}?",
     "Z jakimi wartościami tak naprawdę łączy się {topic}, pod tą myślą?"
    ],
    "reflect": [
-    "Ta myśl o {topic} brzmi bardzo jak konkretne zniekształcenie -- może katastrofizacja, może myślenie czarno-białe. Czy to pasuje?",
+    "Ta myśl o tym: {topic} brzmi bardzo jak konkretne zniekształcenie -- może katastrofizacja, może myślenie czarno-białe. Czy to pasuje?",
     "Zauważ: uczucie jest prawdziwe, ale myśl, która je napędza, może nie być całą prawdą.",
-    "Warto tu oddzielić myśl od faktu -- w {topic} się ze sobą zlepiły."
+    "Warto tu oddzielić myśl od faktu -- w tym: {topic} się ze sobą zlepiły."
    ],
    "technique": [
     "Spróbuj zapisu myśli: opisz sytuację, automatyczną myśl, dowody za i przeciw, i bardziej wyważoną myśl.",
@@ -272,7 +273,7 @@
   "family": {
    "label": "Rodzinny / Systemowo-Relacyjny",
    "openers": [
-    "Gdzie {topic} mieści się w szerszym wzorcu twoich relacji -- kto jeszcze bierze udział w tym tańcu?",
+    "Gdzie mieści się to, co nazywasz {topic}, w szerszym wzorcu twoich relacji -- kto jeszcze bierze udział w tym tańcu?",
     "Gdyby twoja rodzina albo partner/ka to obserwowali, jaką rolę byś odgrywał/a?",
     "Co chronisz, reagując tak na {topic}?",
     "Jakie jest łagodniejsze, bardziej bezbronne uczucie pod reakcją na {topic}?"
@@ -280,28 +281,28 @@
    "reflect": [
     "Konflikt taki jak ten to często protest -- sposób sięgania po bliskość, który ląduje jako atak zamiast tego.",
     "Zauważ role: kto zbliża się, gdy to się dzieje, a kto się wycofuje?",
-    "Pod {topic} często kryje się stary lęk związany z przywiązaniem, który pojawia się w nowej relacji."
+    "pod tym: {topic} często kryje się stary lęk związany z przywiązaniem, który pojawia się w nowej relacji."
    ],
    "technique": [
-    "Spróbuj nazwać na głos bezbronne uczucie pod {topic} drugiej osobie, zamiast reakcji obronnej, która jest na wierzchu.",
+    "Spróbuj nazwać na głos bezbronne uczucie pod tym: {topic} drugiej osobie, zamiast reakcji obronnej, która jest na wierzchu.",
     "Naszkicuj wzorzec: co robi każda osoba, w jakiej kolejności, za każdym razem, gdy dzieje się {topic}?"
    ]
   },
   "socialpsych": {
    "label": "Psychologia Społeczna",
    "openers": [
-    "Ile w {topic} to naprawdę ty, a ile to sytuacja, w której się znajdujesz?",
+    "Ile w tym: {topic} to naprawdę ty, a ile to sytuacja, w której się znajdujesz?",
     "Na czyje oczekiwania odpowiadasz właśnie teraz, choćby nieświadomie?",
     "Jaka grupa albo tożsamość czuje się w tobie najbardziej aktywna, gdy to się dzieje?",
     "Jaka najmniejsza zmiana w samej sytuacji mogłaby poruszyć {topic}?"
    ],
    "reflect": [
-    "Warto zapytać, ile z {topic} przydarzyłoby się prawie każdemu postawionemu w dokładnie tej samej sytuacji.",
+    "Warto zapytać, ile z tego: {topic} przydarzyłoby się prawie każdemu postawionemu w dokładnie tej samej sytuacji.",
     "Zauważ presję, by się dostosować albo być posłusznym/ą tutaj -- czy pochodzi od prawdziwego autorytetu, czy tylko odczuwanego jako taki?",
-    "Rozdźwięk między tym, w co wierzysz, a tym, co robisz w sprawie {topic}, zwykle sam się rozwiązuje -- zwykle przez zmianę przekonania."
+    "Rozdźwięk między tym, w co wierzysz, a tym, co robisz w sprawie tego: {topic}, zwykle sam się rozwiązuje -- zwykle przez zmianę przekonania."
    ],
    "technique": [
-    "Spróbuj zmienić jeden konkretny element sytuacji wokół {topic}, zamiast zmuszać się do innej reakcji.",
+    "Spróbuj zmienić jeden konkretny element sytuacji wokół tego: {topic}, zamiast zmuszać się do innej reakcji.",
     "Poszukaj wspólnego celu z osobą po drugiej stronie {topic} -- konflikt często łagodnieje wokół wspólnego celu."
    ]
   },
@@ -309,9 +310,9 @@
    "label": "Nauka o Poznaniu / Neuronauka",
    "openers": [
     "Przeprowadź mnie przez {topic} krok po kroku -- gdzie dokładnie twoje myślenie zaczyna być szybkie i automatyczne?",
-    "Jak bardzo jesteś pewny/a tego wspomnienia albo osądu o {topic}, tak naprawdę?",
-    "Co mówi ci intuicja o {topic}, niezależnie od rozumowania?",
-    "Jaki jest wzorzec leżący u podstaw {topic}, pod powierzchownymi szczegółami?"
+    "Jak bardzo jesteś pewny/a tego wspomnienia albo osądu o tym: {topic}, tak naprawdę?",
+    "Co mówi ci intuicja o tym: {topic}, niezależnie od rozumowania?",
+    "Jaki jest wzorzec leżący u podstaw tego: {topic}, pod powierzchownymi szczegółami?"
    ],
    "reflect": [
     "To ma cechy szybkiego, automatycznego osądu, a nie powolnego, przemyślanego -- warto to sprawdzić jeszcze raz.",
@@ -334,18 +335,18 @@
    "reflect": [
     "To może dotyczyć mniej sytuacji, a bardziej stabilnego wzorca w tym, jak zwykle reagujesz -- warto nazwać to szczerze.",
     "Albo może być głównie sytuacyjne -- coś, co wyciąga z ciebie tę reakcję, a co nie pojawiłoby się gdzie indziej.",
-    "Twoja własna teoria na temat {topic} też jest danymi. Gdzie ta teoria mogłaby być niepełna?"
+    "Twoja własna teoria na temat tego: {topic}, też jest danymi. Gdzie ta teoria mogłaby być niepełna?"
    ],
    "technique": [
-    "Spróbuj skonfrontować swoją teorię o {topic} z jednym dowodem przeciwnym z własnego życia.",
-    "Oceń, ile w {topic} to 'po prostu taki/taka jestem', a ile to 'po prostu ta sytuacja' -- i zauważ, przy której odpowiedzi czujesz się swobodniej."
+    "Spróbuj skonfrontować swoją teorię o tym: {topic} z jednym dowodem przeciwnym z własnego życia.",
+    "Oceń, ile w tym: {topic} to 'po prostu taki/taka jestem', a ile to 'po prostu ta sytuacja' -- i zauważ, przy której odpowiedzi czujesz się swobodniej."
    ]
   },
   "positive": {
    "label": "Psychologia Pozytywna",
    "openers": [
-    "Kiedy ostatnio czułeś/aś coś przeciwnego do {topic} -- pełne zaangażowanie albo spokój?",
-    "Jakiej twojej mocnej strony {topic} jeszcze nie wywołało?",
+    "Kiedy ostatnio czułeś/aś coś przeciwnego do tego: {topic} -- pełne zaangażowanie albo spokój?",
+    "Jakiej twojej mocnej strony jeszcze nie wywołało to, co nazywasz {topic}?",
     "Ogólnie, poza tą chwilą, jak bardzo jesteś zadowolony/a z życia?",
     "Jak wyglądałoby tu 'rozkwitanie', a nie tylko 'radzenie sobie'?"
    ],
@@ -355,16 +356,16 @@
     "Odrobina celowej pozytywnej emocji zwykle poszerza to, co wydaje się możliwe, nawet w czymś trudnym jak {topic}."
    ],
    "technique": [
-    "Spróbuj celowo nazwać jedną charakterystyczną mocną stronę, którą mógłbyś/mogłabyś dziś wnieść do {topic}.",
-    "Zapisz trzy rzeczy, które dziś poszły dobrze, choćby drobne, obok {topic} -- nie zamiast niego."
+    "Spróbuj celowo nazwać jedną charakterystyczną mocną stronę, którą mógłbyś/mogłabyś dziś wnieść do tego: {topic}.",
+    "Zapisz trzy rzeczy, które dziś poszły dobrze, choćby drobne, obok tego: {topic} -- nie zamiast niego."
    ]
   },
   "transpersonal": {
    "label": "Transpersonalny",
    "openers": [
-    "Jaki szerszy wzorzec albo sens, którego {topic} może być częścią, wykracza poza tę chwilę?",
+    "Jaki szerszy wzorzec albo sens, którego częścią może być to, co nazywasz {topic}, wykracza poza tę chwilę?",
     "Która część ciebie mówi właśnie teraz -- i kto jest pod wszystkimi twoimi częściami?",
-    "Czy jest szerszy sposób trzymania {topic} niż ten, w którym jesteś teraz?",
+    "Czy jest szerszy sposób trzymania tego: {topic}, niż ten, w którym jesteś teraz?",
     "Jak by to było być świadkiem {topic}, zamiast być przez to pochłoniętym/ą?"
    ],
    "reflect": [
@@ -380,19 +381,19 @@
   "psychodrama": {
    "label": "Psychodrama",
    "openers": [
-    "Nie tylko mówmy o {topic} -- kto zagrałby drugą osobę, i co powiedziałaby jako pierwsze?",
+    "Nie tylko mówmy o tym: {topic} -- kto zagrałby drugą osobę, i co powiedziałaby jako pierwsze?",
     "Gdybyś odegrał/a to teraz, gdzie byś stanął/stanęła, a gdzie oni?",
-    "Jakiej kwestii nigdy nie wypowiedziałeś/aś na głos w {topic}?",
+    "Jakiej kwestii nigdy nie wypowiedziałeś/aś na głos w tym: {topic}?",
     "Jak wyglądałoby 'wyreżyserowanie' tej sceny inaczej?"
    ],
    "reflect": [
     "Mówienie o tym zachowuje dystans -- odegranie tego zwykle ujawnia to, czego mowa nie pokazuje.",
     "Zauważ spontaniczność w tym, jak byś to odegrał/a -- to zwykle bardziej szczere niż wersja wyćwiczona.",
-    "Pod {topic} jest scena, która nie została w pełni odegrana albo dokończona."
+    "pod tym: {topic} jest scena, która nie została w pełni odegrana albo dokończona."
    ],
    "technique": [
-    "Spróbuj na chwilę zamienić się rolami: zagraj drugą osobę w {topic}, na głos, jej słowami, nie twoimi.",
-    "Powiedz na głos niewypowiedzianą kwestię z {topic}, do pustego krzesła, dokładnie tak, jakbyś zrobił/a to, gdyby naprawdę tam byli."
+    "Spróbuj na chwilę zamienić się rolami: zagraj drugą osobę w tym: {topic}, na głos, jej słowami, nie twoimi.",
+    "Powiedz na głos niewypowiedzianą kwestię z tego: {topic}, do pustego krzesła, dokładnie tak, jakbyś zrobił/a to, gdyby naprawdę tam byli."
    ]
   },
   "somatic": {
@@ -404,7 +405,7 @@
     "Co twoje ciało chce teraz zrobić, a co powstrzymujesz?"
    ],
    "reflect": [
-    "Ciało zwykle wie, zanim umysł skończy zdanie -- co twoje zarejestrowało najpierw w sprawie {topic}?",
+    "Ciało zwykle wie, zanim umysł skończy zdanie -- co twoje zarejestrowało najpierw w sprawie tego: {topic}?",
     "To napięcie może być starą zbroją, noszoną na długo przed tą konkretną sytuacją.",
     "Zauważ odczuwany sens {topic} -- jeszcze nie słowa na to, tylko rozmyty, fizyczny kształt."
    ],
@@ -419,11 +420,11 @@
     "Gdy opisujesz {topic}, jakie obrazy, dźwięki albo słowa pojawiają się jako pierwsze?",
     "Gdyby {topic} miało inną ramę -- inne znaczenie -- czym jeszcze mogłoby być?",
     "Jaka jest chwila, gdziekolwiek w twoim życiu, gdy już dobrze poradziłeś/aś sobie z czymś takim?",
-    "Jaki wzorzec powtarza się w tym, jak mówisz o {topic}?"
+    "Jaki wzorzec powtarza się w tym, jak mówisz o tym: {topic}?"
    ],
    "reflect": [
-    "Oto krótka historia, bo może trafi lepiej niż wyjaśnienie: ktoś powiedział mi kiedyś, że problem to po prostu umiejętność ćwiczona w niewłaściwym kontekście. {topic} może być właśnie tym -- źle zastosowaną mocną stroną.",
-    "Zauważ konkretne słowa, po które sięgasz przy {topic} -- to mapa tego, jak reprezentujesz to wewnętrznie.",
+    "Oto krótka historia, bo może trafi lepiej niż wyjaśnienie: ktoś powiedział mi kiedyś, że problem to po prostu umiejętność ćwiczona w niewłaściwym kontekście. To, co nazywasz {topic}, może być właśnie tym -- źle zastosowaną mocną stroną.",
+    "Zauważ konkretne słowa, po które sięgasz przy tym: {topic} -- to mapa tego, jak reprezentujesz to wewnętrznie.",
     "Prawdopodobnie masz już zasób, z innej części życia, który pasuje tu lepiej, niż mógłbyś/mogłabyś oczekiwać."
    ],
    "technique": [
@@ -436,17 +437,17 @@
    "openers": [
     "Gdy dzieje się {topic}, czy mówi twój głos Rodzica, Dorosłego czy Dziecka?",
     "Jaka jest tu 'gra' -- powtarzający się wzorzec z przewidywalną, nieprzyjemną wypłatą?",
-    "Czy podchodzisz do {topic} z miejsca 'ja jestem OK, ty jesteś OK', czy z pozycji góra albo dół?",
+    "Czy podchodzisz do tego: {topic} z miejsca 'ja jestem OK, ty jesteś OK', czy z pozycji góra albo dół?",
     "Jaki scenariusz nauczyłeś/aś się wcześnie na temat sytuacji takich jak {topic}?"
    ],
    "reflect": [
     "To brzmi jak odgrywanie się starego scenariusza, bardziej niż świeża reakcja na to, co naprawdę dzieje się teraz.",
     "Zauważ, który stan ja pojawił się pierwszy -- Krytyczny Rodzic, Przystosowane Dziecko czy jasno patrzący Dorosły -- i który wolałbyś/wolałabyś, żeby to prowadził.",
-    "Gry takie jak ta zwykle mają znajomą, choć niewygodną, wypłatę. Jaka jest wypłata w {topic}?"
+    "Gry takie jak ta zwykle mają znajomą, choć niewygodną, wypłatę. Jaka jest wypłata w tym: {topic}?"
    ],
    "technique": [
     "Spróbuj odpowiedzieć na {topic} celowo ze swojego Dorosłego -- spokojnie, rzeczowo, obecnie -- i zauważ, co się zmienia.",
-    "Nazwij 'grę', w której wciąż kończysz wokół {topic}, i wypłatę, którą ci daje, szczerze."
+    "Nazwij 'grę', w której wciąż kończysz wokół tego: {topic}, i wypłatę, którą ci daje, szczerze."
    ]
   },
   "buddhist_classical": {
@@ -471,18 +472,18 @@
    "label": "Mahāmudrā / Linia Kagyu",
    "openers": [
     "Przestań próbować naprawiać {topic}. Po prostu spocznij w tym, dokładnie takim, jakie jest, przez jeden oddech -- co tam naprawdę jest?",
-    "Krążysz wokół {topic} głową. Co się stanie, jeśli wskoczysz prosto w to, tak jak wskoczyłbyś do zimnej wody?",
-    "Kto martwi się o {topic}? Poszukaj tego bezpośrednio -- nie myśli, ale tego, co patrzy.",
-    "Usiądź z {topic} tak, jak usiadłbyś z górą -- nie rozwiązując tego, po prostu pozwalając, żeby to zostało zobaczone."
+    "Krążysz wokół tego: {topic} głową. Co się stanie, jeśli wskoczysz prosto w to, tak jak wskoczyłbyś do zimnej wody?",
+    "Kto martwi się o tym: {topic}? Poszukaj tego bezpośrednio -- nie myśli, ale tego, co patrzy.",
+    "Usiądź z tym: {topic}, tak, jak usiadłbyś z górą -- nie rozwiązując tego, po prostu pozwalając, żeby to zostało zobaczone."
    ],
    "reflect": [
-    "Wciąż medytujesz nad {topic}. Co się dzieje w chwili, gdy przestajesz medytować i po prostu pozwalasz umysłowi być umysłem?",
+    "Wciąż medytujesz nad tym: {topic}. Co się dzieje w chwili, gdy przestajesz medytować i po prostu pozwalasz umysłowi być umysłem?",
     "W sposobie, w jaki trzymasz {topic}, jest wysiłek. Gdzie dokładnie się on znajduje?",
     "Zwykły umysł, taki jaki jest, już teraz zawiera {topic} bez potrzeby zmieniania go. Wierzysz w to, czy tylko to rozumiesz?"
    ],
    "technique": [
     "Przez najbliższą minutę, kiedy tylko pojawi się {topic}, nie podążaj za tym i nie odpychaj tego -- po prostu obserwuj, jak samo powstaje i rozpuszcza się.",
-    "Wydychaj powietrze całkowicie i zatrzymaj oddech, tylko na chwilę, dokładnie tam, gdzie {topic} mieszka w ciele. Co się rozluźnia?"
+    "Wydychaj powietrze całkowicie i zatrzymaj oddech, tylko na chwilę, dokładnie tam, gdzie mieszka w ciele to, co nazywasz {topic}. Co się rozluźnia?"
    ]
   },
   "nyingma_dzogchen": {
@@ -496,29 +497,29 @@
    "reflect": [
     "Opisujesz {topic} jako problem do rozwiązania. W naturalnym stanie to tylko kolejny przejaw -- co się zmienia, gdy spojrzysz na to w ten sposób?",
     "Samowyzwolenie oznacza, że {topic} uwalnia się w chwili, gdy zostanie naprawdę zobaczone, bez poprawiania. Naprawdę spojrzałeś, czy tylko o tym pomyślałeś?",
-    "Czy pod {topic} jest poznawanie, które było tam, zanim to powstało, i będzie tam, gdy to zniknie?"
+    "Czy pod tym: {topic} jest poznawanie, które było tam, zanim to powstało, i będzie tam, gdy to zniknie?"
    ],
    "technique": [
-    "Rozluźnij wzrok, pozwól oddechowi się uspokoić i po prostu spocznij -- nie skupiając się na {topic}, nie ignorując tego. Tylko to, trzydzieści sekund.",
+    "Rozluźnij wzrok, pozwól oddechowi się uspokoić i po prostu spocznij -- nie skupiając się na tym: {topic}, nie ignorując tego. Tylko to, trzydzieści sekund.",
     "Zapytaj siebie wprost: kto albo co jest świadome {topic}? Nie odpowiadaj pojęciem takim jak {t1} -- spójrz."
    ]
   },
   "lamrim_kadam": {
    "label": "Lamrim / Linia Kadam-Gelug",
    "openers": [
-    "Zanim pójdziemy dalej z {topic} -- gdzie teraz jesteś na ścieżce? Na początku, w środku, czy pomijasz kroki?",
-    "Jak wyglądałaby praca z {topic} we właściwej kolejności -- najpierw grunt, potem motywacja, potem pogląd?",
+    "Zanim pójdziemy dalej z tym: {topic} -- gdzie teraz jesteś na ścieżce? Na początku, w środku, czy pomijasz kroki?",
+    "Jak wyglądałaby praca z tym: {topic}, we właściwej kolejności -- najpierw grunt, potem motywacja, potem pogląd?",
     "Czy twoje zainteresowanie {topic} bierze się z chęci wygody dla siebie, czy z chęci bycia użytecznym dla innych? Oba są w porządku, ale bądź szczery co do tego, które.",
-    "Podejdźmy do {topic} systematycznie. Jakiego fundamentu to naprawdę potrzebuje?"
+    "Podejdźmy do tego: {topic} systematycznie. Jakiego fundamentu to naprawdę potrzebuje?"
    ],
    "reflect": [
     "Sięgasz po zaawansowany pogląd na {topic} bez fundamentu pod spodem. Jakiego fundamentu wciąż brakuje?",
-    "Dyscyplina nie jest wrogiem {topic} -- to ona czyni to na tyle stabilnym, by na tym budować. Gdzie twoja jest teraz cienka?",
+    "Dyscyplina nie jest wrogiem tego: {topic} -- to ona czyni to na tyle stabilnym, by na tym budować. Gdzie twoja jest teraz cienka?",
     "Jeśli umieścisz {topic} w kontekście całej stopniowej ścieżki, czy nadal wydaje się to tak pilne, czy osiada na swoim właściwym miejscu?"
    ],
    "technique": [
-    "Zapisz po kolei trzy lub cztery kroki, które faktycznie musiałyby się wydarzyć, zanim {topic} się rozwiąże. Zacznij od najmniejszego.",
-    "Poświęć minutę na refleksję o nietrwałości, zanim wrócisz do {topic} -- czy wygląda inaczej stamtąd?"
+    "Zapisz po kolei trzy lub cztery kroki, które faktycznie musiałyby się wydarzyć, zanim rozwiąże się to, co nazywasz {topic}. Zacznij od najmniejszego.",
+    "Poświęć minutę na refleksję o nietrwałości, zanim wrócisz do tego: {topic} -- czy wygląda inaczej stamtąd?"
    ]
   },
   "contemplative_science": {
@@ -526,7 +527,7 @@
    "openers": [
     "Potraktujmy {topic} jak umiejętność do wytrenowania, a nie stałą cechę. Jak wyglądałaby pierwsza mała powtórka?",
     "Zanim zinterpretujemy {topic}, czy możemy po prostu to zauważyć -- jeden oddech, z uwagą, bez historii na razie?",
-    "Co mówią dowody z twojego własnego doświadczenia o {topic}, niezależnie od tego, co powiedziano ci, że powinieneś czuć?",
+    "Co mówią dowody z twojego własnego doświadczenia o tym: {topic}, niezależnie od tego, co powiedziano ci, że powinieneś czuć?",
     "Gdybyś praktykował {t1} przez osiem tygodni, dziesięć minut dziennie, co dokładnie byś trenował?"
    ],
    "reflect": [
@@ -535,7 +536,7 @@
     "Jest luka między zdarzeniem a twoją reakcją na {topic}. Jak szeroka jest dziś dla ciebie ta luka?"
    ],
    "technique": [
-    "Teraz: trzy powolne oddechy, pełna uwaga tylko na oddechu. Potem wróć do {topic} i powiedz mi, co jest inne.",
+    "Teraz: trzy powolne oddechy, pełna uwaga tylko na oddechu. Potem wróć do tego: {topic} i powiedz mi, co jest inne.",
     "Nazwij {topic} na głos, wprost, tak jak zrobiłby to naukowiec zapisujący obserwację -- bez żadnego słowa oceniającego. Co zostaje?"
    ]
   }
