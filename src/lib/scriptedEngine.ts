@@ -55,7 +55,9 @@ export function fillTemplate(tpl: string, persona: { terms: string[] }, topic: s
 export function openerFor(lang: string, idx: number): string {
   const meta = appData.personaMeta[idx];
   const mode = modeData(lang, meta.mode);
-  return pick(mode.openers, idx, "opener", lang);
+  const txt = personaText(lang, idx);
+  const tpl = pick(mode.openers, idx, "opener", lang);
+  return fillTemplate(tpl, txt, t(lang, "topic_fallback"));
 }
 
 export function introFor(lang: string, idx: number): string {
@@ -93,7 +95,8 @@ export function respond(
     };
   }
   if (cat === "greeting" && turn <= 1) {
-    return { role: "clinician", source: "scripted", text: pick(mode.openers, idx, "opener", lang) };
+    const tpl = pick(mode.openers, idx, "opener", lang);
+    return { role: "clinician", source: "scripted", text: fillTemplate(tpl, txt, t(lang, "topic_fallback")) };
   }
   if (cat === "farewell") {
     return { role: "clinician", source: "scripted", text: t(lang, "msg_farewell") };
