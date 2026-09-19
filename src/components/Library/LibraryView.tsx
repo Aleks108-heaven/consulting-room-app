@@ -4,6 +4,7 @@ import { t, fillUI } from "../../lib/i18n";
 import { personaIdxByName, personaText, schoolLabel } from "../../lib/personas";
 import { useAppState } from "../../state/AppStateContext";
 import { PersonaCard } from "./PersonaCard";
+import { Button } from "../ui/Button";
 
 interface LibraryViewProps {
   onLineage: () => void;
@@ -46,14 +47,14 @@ export function LibraryView({ onLineage }: LibraryViewProps) {
   }, [lang, search, school]);
 
   const perlsBtn = (
-    <button className="btn ghost small" style={{ padding: "2px 8px" }} onClick={() => openPersona(personaIdxByName("Fritz Perls"))}>
+    <Button variant="ghost" onClick={() => openPersona(personaIdxByName("Fritz Perls"))}>
       Fritz Perls
-    </button>
+    </Button>
   );
   const lineageBtn = (
-    <button className="btn ghost small" style={{ padding: "2px 8px" }} onClick={onLineage}>
+    <Button variant="ghost" onClick={onLineage}>
       {t(lang, "nav_lineage")}
-    </button>
+    </Button>
   );
   const bannerText = fillUI(t(lang, "lineage_banner_text"), { perls: "__PERLS__", lineage: "__LINEAGE__" });
   const bannerParts = bannerText.split(/(__PERLS__|__LINEAGE__)/);
@@ -64,9 +65,9 @@ export function LibraryView({ onLineage }: LibraryViewProps) {
         <h1>{t(lang, "lib_h1")}</h1>
         <p className="lede">
           {t(lang, "lib_lede")}{" "}
-          <button className="btn ghost small" style={{ padding: "2px 8px" }} onClick={onLineage}>
+          <Button variant="ghost" onClick={onLineage}>
             {t(lang, "lib_read_disclaimer")}
-          </button>
+          </Button>
         </p>
         <div className="toolbar">
           <div className="search-box">
