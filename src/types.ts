@@ -60,6 +60,8 @@ export type ChatRole = "user" | "clinician" | "system" | "crisis";
 export type ReplySource = "scripted" | "live";
 
 export interface ChatMessage {
+  /** Stable React key. Absent on history saved before this field existed. */
+  id?: string;
   role: ChatRole;
   text: string;
   /** Only set for clinician/crisis replies — which engine produced this text. */

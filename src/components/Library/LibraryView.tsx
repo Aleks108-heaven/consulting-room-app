@@ -5,9 +5,12 @@ import { personaIdxByName, personaText, schoolLabel } from "../../lib/personas";
 import { useAppState } from "../../state/AppStateContext";
 import { PersonaCard } from "./PersonaCard";
 import { Button } from "../ui/Button";
+import { Icon } from "../ui/Icon";
+import { Select } from "../ui/Select";
 
 interface LibraryViewProps {
   onLineage: () => void;
+  onAbout: () => void;
 }
 
 function matches(lang: string, idx: number, q: string): boolean {
@@ -23,7 +26,7 @@ function matches(lang: string, idx: number, q: string): boolean {
   );
 }
 
-export function LibraryView({ onLineage }: LibraryViewProps) {
+export function LibraryView({ onLineage, onAbout }: LibraryViewProps) {
   const { lang, search, setSearch, school, setSchool, openPersona } = useAppState();
 
   const schoolOptions = useMemo(() => {
@@ -47,12 +50,12 @@ export function LibraryView({ onLineage }: LibraryViewProps) {
   }, [lang, search, school]);
 
   const perlsBtn = (
-    <Button variant="ghost" onClick={() => openPersona(personaIdxByName("Fritz Perls"))}>
+    <Button variant="ghost" inline onClick={() => openPersona(personaIdxByName("Fritz Perls"))}>
       Fritz Perls
     </Button>
   );
   const lineageBtn = (
-    <Button variant="ghost" onClick={onLineage}>
+    <Button variant="ghost" inline onClick={onLineage}>
       {t(lang, "nav_lineage")}
     </Button>
   );
@@ -65,40 +68,38 @@ export function LibraryView({ onLineage }: LibraryViewProps) {
         <h1>{t(lang, "lib_h1")}</h1>
         <p className="lede">
           {t(lang, "lib_lede")}{" "}
-          <Button variant="ghost" onClick={onLineage}>
+          <Button variant="ghost" inline onClick={onAbout}>
             {t(lang, "lib_read_disclaimer")}
           </Button>
         </p>
         <div className="toolbar">
           <div className="search-box">
-            <svg className="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
-              <circle cx="11" cy="11" r="7" />
-              <path d="m21 21-4.3-4.3" />
-            </svg>
+            <Icon name="search" />
             <input
-              type="text"
+              type="search"
+              aria-label={t(lang, "search_placeholder")}
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder={t(lang, "search_placeholder")}
               autoComplete="off"
             />
           </div>
-          <select className="school-filter" value={school} onChange={(e) => setSchool(e.target.value)}>
+          <Select className="school-filter" aria-label={t(lang, "filter_all_schools")} value={school} onChange={(e) => setSchool(e.target.value)}>
             <option value="">{t(lang, "filter_all_schools")}</option>
             {schoolOptions.map((m) => (
               <option key={m} value={m}>
                 {schoolLabel(lang, m)}
               </option>
             ))}
-          </select>
-          <span className="count-pill">
+          </Select>
+          <span className="count-pill" aria-live="polite">
             {visibleIdx.length} / {appData.personaMeta.length}
           </span>
         </div>
       </div>
       <div className="library-scroll">
         <div className="lineage-banner">
-          <span style={{ fontSize: 20 }}>🪑</span>
+          <span className="lineage-banner-icon"><Icon name="compass" /></span>
           <div className="txt">
             <b>{t(lang, "lineage_banner_new_here")}</b>{" "}
             {bannerParts.map((part, i) =>

@@ -10,6 +10,9 @@ import type { ChatMessage, Provider, Theme } from "../types";
 
 type View = "library" | "chat";
 
+let messageSeq = 0;
+const newId = () => `${Date.now().toString(36)}-${(messageSeq++).toString(36)}`;
+
 interface AppStateValue {
   // ephemeral UI state
   view: View;
@@ -94,6 +97,11 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
     applyTheme(theme);
   }, [theme]);
 
+  // Keep <html lang> in step with the UI language (screen-reader pronunciation, hyphenation, quotes).
+  useEffect(() => {
+    document.documentElement.lang = lang;
+  }, [lang]);
+
   const setLang = useCallback((v: string) => {
     setLangState(v);
     lsSet("lang", v);
@@ -132,7 +140,7 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
 
   const pushMessage = useCallback((idx: number, msg: ChatMessage) => {
     setChatHistories((prev) => {
-      const next = { ...prev, [idx]: [...(prev[idx] || []), msg] };
+      const next = { ...prev, [idx]: [...(prev[idx] || []), { ...msg, id: msg.id ?? newId() }] };
       lsSet("chatHistories", next);
       return next;
     });
@@ -149,8 +157,8 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
       const staleLang = existing && existing.length && !hasRealConversation && historyLang[idx] !== lang;
 
       if (staleLang || !existing || !existing.length) {
-        const intro: ChatMessage = { role: "system", text: introFor(lang, idx) };
-        const opener: ChatMessage = { role: "clinician", source: "scripted", text: openerFor(lang, idx) };
+        const intro: ChatMessage = { id: newId(), role: "system", text: introFor(lang, idx) };
+        const opener: ChatMessage = { id: newId(), role: "clinician", source: "scripted", text: openerFor(lang, idx) };
         const next = [intro, opener];
         setChatHistories((prev) => {
           const merged = { ...prev, [idx]: next };
