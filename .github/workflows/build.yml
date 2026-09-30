@@ -2,13 +2,34 @@ name: Build Android + Windows + iOS
 
 on:
   push:
-    branches: [main]
+    branches: [main, content-ru-pwa-ios-cbt-rewrite]
   workflow_dispatch:
 
 permissions:
   contents: read
 
 jobs:
+  web:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install JS deps
+        run: npm install
+
+      - name: Build web app (typecheck + Vite)
+        run: npm run build
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: consulting-room-web-build
+          path: www/
+          if-no-files-found: error
+
   android:
     runs-on: ubuntu-latest
     steps:
