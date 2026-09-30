@@ -52,7 +52,7 @@
   "theme_light": "Light",
   "theme_dark": "Dark",
   "settings_live": "Live AI mode",
-  "settings_live_desc": "Use your own Anthropic API key for open-ended replies instead of the scripted engine",
+  "settings_live_desc": "Use your own AI provider API key for open-ended replies instead of the scripted engine",
   "settings_api_key_label": "Anthropic API key",
   "settings_api_key_hint": "Stored only in this browser (localStorage), sent only to Anthropic's API, never to us. Get one at console.anthropic.com — API usage is billed separately from any Claude subscription, so watch your usage/limits there.",
   "settings_model_label": "Model ID",

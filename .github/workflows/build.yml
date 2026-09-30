@@ -3,6 +3,8 @@ name: Build Android + Windows + iOS
 on:
   push:
     branches: [main, content-ru-pwa-ios-cbt-rewrite]
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 
 permissions:

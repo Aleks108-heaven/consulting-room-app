@@ -52,7 +52,7 @@
   "theme_light": "Clair",
   "theme_dark": "Sombre",
   "settings_live": "Mode IA en direct",
-  "settings_live_desc": "Utilisez votre propre clé API pour des réponses ouvertes au lieu du moteur scénarisé",
+  "settings_live_desc": "Utilisez la clé API de votre fournisseur d'IA pour des réponses ouvertes au lieu du moteur scénarisé",
   "settings_api_key_label": "Clé API",
   "settings_api_key_hint": "Stockée uniquement dans ce navigateur, envoyée uniquement au fournisseur choisi, jamais à nous.",
   "settings_model_label": "ID du modèle",

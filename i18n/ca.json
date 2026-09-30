@@ -52,7 +52,7 @@
   "theme_light": "Clar",
   "theme_dark": "Fosc",
   "settings_live": "Mode IA en directe",
-  "settings_live_desc": "Utilitza la teva pròpia clau API per a respostes obertes en lloc del motor guionat",
+  "settings_live_desc": "Utilitza la clau API del teu proveïdor d'IA per a respostes obertes en lloc del motor guionat",
   "settings_api_key_label": "Clau API",
   "settings_api_key_hint": "Es guarda només en aquest navegador, s'envia només al proveïdor triat, mai a nosaltres.",
   "settings_model_label": "ID del model",

@@ -52,7 +52,7 @@
   "theme_light": "Claro",
   "theme_dark": "Oscuro",
   "settings_live": "Modo de IA en vivo",
-  "settings_live_desc": "Usa tu propia clave de API de Anthropic para respuestas abiertas en lugar del motor guionizado",
+  "settings_live_desc": "Usa la clave de API de tu proveedor de IA para respuestas abiertas en lugar del motor guionizado",
   "settings_api_key_label": "Clave de API de Anthropic",
   "settings_api_key_hint": "Se guarda solo en este navegador (localStorage), se envía solo a la API de Anthropic, nunca a nosotros. Consigue una en console.anthropic.com — el uso de la API se factura por separado de cualquier suscripción a Claude, así que vigila tu uso/límites allí.",
   "settings_model_label": "ID del modelo",

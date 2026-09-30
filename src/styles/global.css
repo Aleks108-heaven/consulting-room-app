@@ -133,10 +133,10 @@ a{color:var(--amber);}
 .ds-button-sm{font-size:var(--fs-sm);}
 /* inline-in-text buttons are exempt from the touch-target minimum (WCAG 2.5.8) */
 .ds-button-inline{
-  display:inline; min-height:0; padding:2px var(--space-0); font-size:inherit; text-decoration:underline;
+  display:inline; min-height:0; padding:1px 0; font-size:inherit; text-decoration:underline;
   text-underline-offset:2px; color:var(--amber); border-radius:var(--radius-md); font-weight:600;
 }
-.ds-button-inline:hover:not(:disabled){background:var(--amber-subtle); color:var(--amber-strong);}
+.ds-button-inline:hover:not(:disabled){background:var(--amber-subtle); box-shadow:0 0 0 3px var(--amber-subtle); color:var(--amber-strong);}
 
 .ds-select{
   border:1px solid var(--border-strong); background:var(--surface-100); color:var(--ink);
@@ -215,16 +215,18 @@ a{color:var(--amber);}
 .modal-veil{
   position:fixed; inset:0; background:var(--veil);
   display:flex; align-items:flex-start; justify-content:center; z-index:100;
-  padding:5vh var(--space-2); overflow-y:auto;
+  padding:5vh var(--space-2);
 }
 .modal{
   background:var(--surface-100); border:1px solid var(--border); border-radius:var(--radius-lg);
-  max-width:640px; width:100%; box-shadow:var(--shadow-modal); margin-bottom:5vh;
+  max-width:640px; width:100%; box-shadow:var(--shadow-modal);
+  display:flex; flex-direction:column; max-height:90vh; max-height:90dvh; overflow:hidden;
 }
 .modal:focus{outline:none;}
-.modal-head{display:flex; align-items:flex-start; justify-content:space-between; gap:var(--space-1h); padding:var(--space-2) var(--space-3) var(--space-0);}
+.modal-head{flex:0 0 auto; display:flex; align-items:flex-start; justify-content:space-between; gap:var(--space-1h); padding:var(--space-2) var(--space-3) var(--space-0);}
 .modal-head h2{font-size:var(--fs-xl); margin:0; align-self:center;}
-.modal-body{padding:var(--space-1h) var(--space-3) var(--space-3); font-size:var(--fs-base); line-height:1.6; color:var(--ink-muted);}
+.modal-body{padding:var(--space-1h) var(--space-3) var(--space-3); font-size:var(--fs-base); line-height:1.6; color:var(--ink-muted);
+  flex:1 1 auto; min-height:0; overflow-y:auto; overscroll-behavior:contain;}
 .modal-body h3{font-size:var(--fs-md); color:var(--ink); margin:var(--space-3) 0 var(--space-1);}
 .modal-body h3:first-child{margin-top:var(--space-2);}
 .modal-body strong{color:var(--ink);}
@@ -270,7 +272,7 @@ a{color:var(--amber);}
 .master-table td.num{font-family:var(--font-mono); color:var(--ink-faint); width:28px;}
 .master-table button.linklike{background:none; border:none; padding:var(--space-0) 0; color:var(--ink); font:inherit; font-weight:600; cursor:pointer; text-align:left;}
 .master-table button.linklike:hover{color:var(--amber);}
-.master-scroll{max-height:48vh; overflow-y:auto; border:1px solid var(--border); border-radius:var(--radius-md); margin-top:var(--space-0);}
+.master-scroll{max-height:40vh; overflow-y:auto; border:1px solid var(--border); border-radius:var(--radius-md); margin-top:var(--space-0);}
 
 /* ---------- Chat ---------- */
 .chat-head{
@@ -353,6 +355,13 @@ a{color:var(--amber);}
   .composer{padding-left:var(--space-1h); padding-right:var(--space-1h);}
   .msg{max-width:94%;}
   .modal-veil{align-items:flex-end; padding:0;}
-  .modal{border-radius:var(--radius-lg) var(--radius-lg) 0 0; margin-top:auto; margin-bottom:0; padding-bottom:var(--safe-bottom);}
+  .modal{border-radius:var(--radius-lg) var(--radius-lg) 0 0; margin-top:auto; max-height:92vh; max-height:92dvh; padding-bottom:var(--safe-bottom);}
   .modal-head,.modal-body{padding-left:var(--space-2); padding-right:var(--space-2);}
+}
+
+/* Small or short screens: the intro and filters must not pin a large share of the viewport,
+   so the whole library page scrolls as one instead of only the card grid. */
+@media (max-width:640px), (max-height:600px){
+  #view-library{overflow-y:auto; overflow-x:hidden;}
+  .library-scroll{flex:none; overflow:visible;}
 }

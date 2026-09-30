@@ -52,7 +52,7 @@
   "theme_light": "Chiaro",
   "theme_dark": "Scuro",
   "settings_live": "Modalità AI live",
-  "settings_live_desc": "Usa la tua chiave API per risposte aperte invece del motore scriptato",
+  "settings_live_desc": "Usa la chiave API del tuo provider di IA per risposte aperte invece del motore scriptato",
   "settings_api_key_label": "Chiave API",
   "settings_api_key_hint": "Salvata solo in questo browser, inviata solo al fornitore scelto, mai a noi.",
   "settings_model_label": "ID modello",
