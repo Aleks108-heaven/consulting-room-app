@@ -37,7 +37,7 @@ export function App() {
         onSettings={() => setOpenModal("settings")}
       />
 
-      {view === "library" ? <LibraryView onLineage={() => setOpenModal("lineage")} /> : <ChatView onAbout={() => setOpenModal("about")} />}
+      {view === "library" ? <LibraryView onLineage={() => setOpenModal("lineage")} onAbout={() => setOpenModal("about")} /> : <ChatView onAbout={() => setOpenModal("about")} />}
 
       <AboutModal open={openModal === "about"} onClose={() => setOpenModal(null)} />
       <LineageModal open={openModal === "lineage"} onClose={() => setOpenModal(null)} onOpenPersona={handleOpenPersonaFromModal} />

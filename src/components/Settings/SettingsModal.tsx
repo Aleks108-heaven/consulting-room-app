@@ -1,17 +1,14 @@
+import { useState } from "react";
 import { appData } from "../../lib/appData";
 import { t, fillUI } from "../../lib/i18n";
 import { CR_PROVIDERS } from "../../lib/liveAi";
 import { Modal } from "../Modal";
 import { useAppState } from "../../state/AppStateContext";
+import { Button } from "../ui/Button";
+import { Icon } from "../ui/Icon";
+import { RichText } from "../ui/RichText";
+import { Select } from "../ui/Select";
 import type { Provider, Theme } from "../../types";
-
-const PROVIDER_TIPS: Record<Provider, string> = {
-  gemini: "Free key at aistudio.google.com/apikey — no credit card.",
-  groq: "Free key at console.groq.com/keys — very fast, no credit card.",
-  openrouter: "Free key at openrouter.ai/keys — use models ending in :free.",
-  anthropic: "Paid key from console.anthropic.com.",
-  openai: "Any OpenAI-compatible endpoint; set the Base URL below.",
-};
 
 interface SettingsModalProps {
   open: boolean;
@@ -36,6 +33,7 @@ export function SettingsModal({ open, onClose }: SettingsModalProps) {
     setModelId,
     clearApiKey,
   } = useAppState();
+  const [showKey, setShowKey] = useState(false);
 
   const cfg = CR_PROVIDERS[provider] || CR_PROVIDERS.anthropic;
   const activeModel = modelIds[provider] || "";
@@ -46,122 +44,127 @@ export function SettingsModal({ open, onClose }: SettingsModalProps) {
 
       <div className="toggle-row">
         <div>
-          <div className="t-label">{t(lang, "settings_language")}</div>
+          <label className="t-label" htmlFor="lang-select">{t(lang, "settings_language")}</label>
           <div className="t-desc">{t(lang, "settings_language_desc")}</div>
         </div>
-        <select
-          value={lang}
-          onChange={(e) => setLang(e.target.value)}
-          style={{ border: "1px solid var(--border-strong)", background: "var(--bg)", color: "var(--ink)", borderRadius: 8, padding: "6px 10px", fontSize: 13 }}
-        >
+        <Select id="lang-select" value={lang} onChange={(e) => setLang(e.target.value)}>
           {appData.langs.map((l) => (
             <option key={l} value={l}>
               {appData.languages[l].label}
             </option>
           ))}
-        </select>
+        </Select>
       </div>
 
       <div className="toggle-row">
         <div>
-          <div className="t-label">{t(lang, "settings_theme")}</div>
+          <label className="t-label" htmlFor="theme-select">{t(lang, "settings_theme")}</label>
           <div className="t-desc">{t(lang, "settings_theme_desc")}</div>
         </div>
-        <select
-          value={theme}
-          onChange={(e) => setTheme(e.target.value as Theme)}
-          style={{ border: "1px solid var(--border-strong)", background: "var(--bg)", color: "var(--ink)", borderRadius: 8, padding: "6px 10px", fontSize: 13 }}
-        >
+        <Select id="theme-select" value={theme} onChange={(e) => setTheme(e.target.value as Theme)}>
           <option value="system">{t(lang, "theme_system")}</option>
           <option value="light">{t(lang, "theme_light")}</option>
           <option value="dark">{t(lang, "theme_dark")}</option>
-        </select>
+        </Select>
       </div>
 
       <div className="toggle-row">
         <div>
-          <div className="t-label">{t(lang, "settings_live")}</div>
+          <label className="t-label" htmlFor="live-switch">{t(lang, "settings_live")}</label>
           <div className="t-desc">{t(lang, "settings_live_desc")}</div>
         </div>
-        <label className="switch">
-          <input type="checkbox" checked={liveMode} onChange={(e) => setLiveMode(e.target.checked)} />
-          <span className="slider" />
-        </label>
+        <span className="switch">
+          <input id="live-switch" type="checkbox" role="switch" checked={liveMode} onChange={(e) => setLiveMode(e.target.checked)} />
+          <span className="slider" aria-hidden="true" />
+        </span>
       </div>
 
       {liveMode && (
         <div>
           <div className="field">
-            <label htmlFor="provider-select">AI provider</label>
-            <select
-              id="provider-select"
-              value={provider}
-              onChange={(e) => setProvider(e.target.value as Provider)}
-              style={{ border: "1px solid var(--border-strong)", background: "var(--bg)", color: "var(--ink)", borderRadius: 8, padding: "8px 10px", fontSize: 13, width: "100%" }}
-            >
+            <label htmlFor="provider-select">{t(lang, "settings_provider")}</label>
+            <Select id="provider-select" className="block" value={provider} onChange={(e) => setProvider(e.target.value as Provider)}>
               {(Object.keys(CR_PROVIDERS) as Provider[]).map((k) => (
                 <option key={k} value={k}>
                   {CR_PROVIDERS[k].label}
                 </option>
               ))}
-            </select>
-            <div className="hint">{PROVIDER_TIPS[provider] || ""}</div>
+            </Select>
+            <div className="hint">{t(lang, `tip_${provider}`)}</div>
           </div>
           <div className="field">
-            <label htmlFor="api-key">API key</label>
-            <input
-              type="password"
-              id="api-key"
-              placeholder={cfg.keyHint}
-              autoComplete="off"
-              value={apiKey}
-              onChange={(e) => setApiKey(e.target.value.trim())}
-            />
-            <div className="hint">Stored only on this device.</div>
+            <label htmlFor="api-key">{t(lang, "settings_api_key")}</label>
+            <div className="input-with-action">
+              <input
+                type={showKey ? "text" : "password"}
+                id="api-key"
+                placeholder={cfg.keyHint}
+                autoComplete="off"
+                autoCapitalize="off"
+                spellCheck={false}
+                value={apiKey}
+                onChange={(e) => setApiKey(e.target.value)}
+                onBlur={(e) => setApiKey(e.target.value.trim())}
+              />
+              <Button
+                variant="ghost"
+                size="sm"
+                aria-label={t(lang, showKey ? "settings_key_hide" : "settings_key_show")}
+                aria-pressed={showKey}
+                onClick={() => setShowKey((s) => !s)}
+              >
+                <Icon name={showKey ? "eye-off" : "eye"} />
+              </Button>
+            </div>
+            <div className="hint">{t(lang, "settings_key_stored")}</div>
           </div>
           <div className="field">
             <label htmlFor="model-id">
-              Model ID <span style={{ color: "var(--ink-faint)" }}>(optional)</span>
+              {t(lang, "settings_model_id")} <span className="optional">{t(lang, "settings_optional")}</span>
             </label>
             <input
               type="text"
               id="model-id"
-              placeholder={"default: " + cfg.defaultModel}
+              autoCapitalize="off"
+              spellCheck={false}
+              placeholder={fillUI(t(lang, "settings_model_default"), { model: cfg.defaultModel })}
               value={activeModel}
               onChange={(e) => setModelId(provider, e.target.value.trim())}
             />
-            <div className="hint">Leave blank to use {cfg.defaultModel}.</div>
+            <div className="hint">{fillUI(t(lang, "settings_model_blank"), { model: cfg.defaultModel })}</div>
           </div>
           {provider === "openai" && (
             <div className="field">
-              <label htmlFor="api-base">Base URL</label>
+              <label htmlFor="api-base">{t(lang, "settings_base_url")}</label>
               <input
                 type="text"
                 id="api-base"
+                autoCapitalize="off"
+                spellCheck={false}
                 placeholder="https://api.openai.com/v1"
                 value={apiBase}
                 onChange={(e) => setApiBase(e.target.value.trim())}
               />
-              <div className="hint">For any OpenAI-compatible endpoint.</div>
+              <div className="hint">{t(lang, "settings_base_url_hint")}</div>
             </div>
           )}
-          <div className="hint" style={{ background: "var(--accent-soft)", border: "1px solid var(--accent-soft-border)", padding: "10px 12px", borderRadius: 9 }}>
-            In a browser tab, direct API calls may be blocked by CORS. The packaged Android / Windows app calls the provider natively, so Live mode works there.
-          </div>
+          <div className="callout">{t(lang, "settings_cors_note")}</div>
         </div>
       )}
 
-      <div className="toggle-row" style={{ borderTop: "1px solid var(--border)", marginTop: 8, paddingTop: 14 }}>
+      <div className="toggle-row section-divider">
         <div>
           <div className="t-label">{t(lang, "settings_install")}</div>
           <div className="t-desc">{t(lang, "settings_install_desc")}</div>
         </div>
       </div>
-      <p className="hint" dangerouslySetInnerHTML={{ __html: fillUI(t(lang, "settings_install_steps"), { app: t(lang, "brand_title") }) }} />
+      <p className="hint">
+        <RichText text={fillUI(t(lang, "settings_install_steps"), { app: t(lang, "brand_title") })} />
+      </p>
 
-      <div className="modal-foot" style={{ paddingLeft: 0, paddingRight: 0 }}>
-        <button className="btn small" onClick={clearApiKey}>{t(lang, "settings_clear_key")}</button>
-        <button className="btn primary small" onClick={onClose}>{t(lang, "settings_done")}</button>
+      <div className="modal-foot flush">
+        <Button size="sm" onClick={clearApiKey}>{t(lang, "settings_clear_key")}</Button>
+        <Button variant="primary" size="sm" onClick={onClose}>{t(lang, "settings_done")}</Button>
       </div>
     </Modal>
   );

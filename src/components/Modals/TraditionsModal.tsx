@@ -16,7 +16,7 @@ export function TraditionsModal({ open, onClose, onOpenPersona }: TraditionsModa
   return (
     <Modal open={open} onClose={onClose} title={t(lang, "traditions_title")} maxWidth={760}>
       <p>{t(lang, "traditions_intro")}</p>
-      <p style={{ fontSize: 12 }}>{t(lang, "traditions_master_note")}</p>
+      <p className="note">{t(lang, "traditions_master_note")}</p>
       <ListTable rows={appData.traditions} lang={lang} onOpenPersona={onOpenPersona} />
     </Modal>
   );

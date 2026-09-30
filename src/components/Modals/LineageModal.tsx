@@ -37,9 +37,9 @@ function ListTable({ rows, overrides, lang, onOpenPersona }: { rows: ListRow[]; 
       <table className="master-table">
         <thead>
           <tr>
-            <th>#</th>
-            <th>Name</th>
-            <th>Known for</th>
+            <th scope="col">#</th>
+            <th scope="col">{t(lang, "th_name")}</th>
+            <th scope="col">{t(lang, "th_known_for")}</th>
           </tr>
         </thead>
         <tbody>
@@ -77,10 +77,10 @@ export function LineageModal({ open, onClose, onOpenPersona }: LineageModalProps
       <p>{t(lang, "lineage_intro")}</p>
       <h3>{t(lang, "lineage_h_formative")}</h3>
       <ChainList chain={appData.chainA} notes={l.chainANotes || en.chainANotes} names={l.chainANames || en.chainANames} onOpenPersona={onOpenPersona} />
-      <h3 style={{ marginTop: 22 }}>{t(lang, "lineage_h_compare")}</h3>
+      <h3>{t(lang, "lineage_h_compare")}</h3>
       <ChainList chain={appData.chainB} notes={l.chainBNotes || en.chainBNotes} names={l.chainBNames || en.chainBNames} onOpenPersona={onOpenPersona} />
-      <h3 style={{ marginTop: 22 }}>{t(lang, "lineage_h_master")}</h3>
-      <p style={{ fontSize: 12 }}>{t(lang, "lineage_master_note")}</p>
+      <h3>{t(lang, "lineage_h_master")}</h3>
+      <p className="note">{t(lang, "lineage_master_note")}</p>
       <ListTable rows={appData.masterList} overrides={overrides} lang={lang} onOpenPersona={onOpenPersona} />
     </Modal>
   );

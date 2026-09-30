@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { t } from "../../lib/i18n";
 import { useAppState } from "../../state/AppStateContext";
+import { Button } from "../ui/Button";
+import { Icon } from "../ui/Icon";
 
 interface ComposerProps {
   onAbout: () => void;
@@ -39,6 +41,7 @@ export function Composer({ onAbout }: ComposerProps) {
             ref={textareaRef}
             value={value}
             rows={1}
+            aria-label={t(lang, "composer_placeholder")}
             placeholder={t(lang, "composer_placeholder")}
             onChange={(e) => {
               setValue(e.target.value);
@@ -51,15 +54,15 @@ export function Composer({ onAbout }: ComposerProps) {
               }
             }}
           />
-          <button className="send-btn" aria-label="Send" onClick={handleSend}>
-            <svg className="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
-              <path d="M22 2 11 13" />
-              <path d="M22 2 15 22l-4-9-9-4 20-7Z" />
-            </svg>
+          <button className="send-btn" aria-label={t(lang, "send")} disabled={!value.trim()} onClick={handleSend}>
+            <Icon name="send" />
           </button>
         </div>
         <div className="disclaimer-line">
-          <span>{t(lang, "disclaimer_line")}</span> <button onClick={onAbout}>{t(lang, "disclaimer_full_link")}</button>
+          <span>{t(lang, "disclaimer_line")}</span>{" "}
+          <Button variant="ghost" inline onClick={onAbout}>
+            {t(lang, "disclaimer_full_link")}
+          </Button>
         </div>
       </div>
     </div>
