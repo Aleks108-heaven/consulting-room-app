@@ -52,7 +52,7 @@
   "theme_light": "Jasny",
   "theme_dark": "Ciemny",
   "settings_live": "Tryb AI na żywo",
-  "settings_live_desc": "Użyj własnego klucza API Anthropic, aby uzyskać swobodne odpowiedzi zamiast silnika skryptowego",
+  "settings_live_desc": "Użyj klucza API własnego dostawcy AI, aby uzyskać swobodne odpowiedzi zamiast silnika skryptowego",
   "settings_api_key_label": "Klucz API Anthropic",
   "settings_api_key_hint": "Przechowywany wyłącznie w tej przeglądarce (localStorage), wysyłany tylko do API Anthropic, nigdy do nas. Uzyskaj go na console.anthropic.com — użycie API jest rozliczane osobno od subskrypcji Claude, więc pilnuj tam swojego zużycia/limitów.",
   "settings_model_label": "ID modelu",

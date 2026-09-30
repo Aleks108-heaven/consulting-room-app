@@ -52,7 +52,7 @@
   "theme_light": "Claro",
   "theme_dark": "Escuro",
   "settings_live": "Modo de IA ao vivo",
-  "settings_live_desc": "Use a sua própria chave de API para respostas abertas em vez do motor guionado",
+  "settings_live_desc": "Use a chave de API do seu fornecedor de IA para respostas abertas em vez do motor guionado",
   "settings_api_key_label": "Chave de API",
   "settings_api_key_hint": "Guardada apenas neste navegador, enviada apenas ao fornecedor escolhido, nunca para nós.",
   "settings_model_label": "ID do modelo",

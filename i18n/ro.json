@@ -52,7 +52,7 @@
   "theme_light": "Deschisă",
   "theme_dark": "Întunecată",
   "settings_live": "Mod AI live",
-  "settings_live_desc": "Folosește propria ta cheie API pentru răspunsuri deschise în loc de motorul scenarizat",
+  "settings_live_desc": "Folosește cheia API a furnizorului tău de IA pentru răspunsuri deschise în loc de motorul scenarizat",
   "settings_api_key_label": "Cheie API",
   "settings_api_key_hint": "Stocată doar în acest browser, trimisă doar furnizorului ales, niciodată nouă.",
   "settings_model_label": "ID model",

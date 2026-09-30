@@ -52,7 +52,7 @@
   "theme_light": "Hell",
   "theme_dark": "Dunkel",
   "settings_live": "Live-KI-Modus",
-  "settings_live_desc": "Verwenden Sie Ihren eigenen API-Schlüssel für offene Antworten anstelle der skriptbasierten Engine",
+  "settings_live_desc": "Verwenden Sie den API-Schlüssel Ihres KI-Anbieters für offene Antworten anstelle der skriptbasierten Engine",
   "settings_api_key_label": "API-Schlüssel",
   "settings_api_key_hint": "Wird nur in diesem Browser gespeichert und nur an den gewählten Anbieter gesendet, nie an uns.",
   "settings_model_label": "Modell-ID",

@@ -80,6 +80,17 @@ cd consulting-room-app
 npm install
 ```
 
+## Run in the browser (development)
+
+```bash
+npm run dev          # rebuilds the data, then starts Vite with hot reload
+```
+
+Open the `localhost` address it prints. To check the phone layout, use the
+browser's device toolbar (Chrome/Edge DevTools → Ctrl+Shift+M) and pick a
+narrow device such as 360 px wide. `npm run typecheck` runs the TypeScript
+check on its own.
+
 ---
 
 ## App icon

@@ -52,7 +52,7 @@
   "theme_light": "Світла",
   "theme_dark": "Темна",
   "settings_live": "Режим ШІ наживо",
-  "settings_live_desc": "Використовуйте власний API-ключ Anthropic для відкритих відповідей замість сценарного двигуна",
+  "settings_live_desc": "Використовуйте API-ключ вашого ІІ-провайдера для відкритих відповідей замість сценарного двигуна",
   "settings_api_key_label": "API-ключ Anthropic",
   "settings_api_key_hint": "Зберігається лише в цьому браузері (localStorage), надсилається лише до API Anthropic, ніколи до нас. Отримайте його на console.anthropic.com — використання API оплачується окремо від будь-якої підписки Claude, тож стежте там за використанням/лімітами.",
   "settings_model_label": "ID моделі",
