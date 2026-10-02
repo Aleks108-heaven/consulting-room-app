@@ -1,0 +1,91 @@
+stages:
+  - build
+
+workflow:
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+    - if: $CI_COMMIT_BRANCH == "content-ru-pwa-ios-cbt-rewrite"
+    - if: $CI_PIPELINE_SOURCE == "web"
+
+default:
+  cache:
+    key:
+      files:
+        - package-lock.json
+    paths:
+      - .npm/
+
+variables:
+  npm_config_cache: "$CI_PROJECT_DIR/.npm"
+
+web:
+  stage: build
+  image: node:20
+  script:
+    - npm install
+    - npm run build
+  artifacts:
+    name: consulting-room-web-build
+    paths:
+      - www/
+
+android:
+  stage: build
+  image: eclipse-temurin:17-jdk
+  before_script:
+    - apt-get update -qq && apt-get install -y -qq curl
+    - curl -fsSL https://deb.nodesource.com/setup_20.x | bash -
+    - apt-get install -y -qq nodejs
+  script:
+    - npm install
+    - npm run build
+    - test -d android || npx cap add android
+    - node scripts/harden-android-manifest.js
+    - npx capacitor-assets generate --android --iconBackgroundColor "#9C5A16" --iconBackgroundColorDark "#12191A"
+    - npx cap sync android
+    - cd android && ./gradlew assembleDebug --no-daemon
+  artifacts:
+    name: consulting-room-android-debug-apk
+    paths:
+      - android/app/build/outputs/apk/debug/*.apk
+
+# Windows and iOS need platform runners (GitLab SaaS Windows/macOS runners or
+# self-hosted). Run manually from the pipeline page.
+windows:
+  stage: build
+  tags:
+    - saas-windows-medium-amd64
+  when: manual
+  allow_failure: true
+  script:
+    - npm install
+    - npm run win:build
+  artifacts:
+    name: consulting-room-windows-installers
+    paths:
+      - src-tauri/target/release/bundle/nsis/*.exe
+      - src-tauri/target/release/bundle/msi/*.msi
+
+ios:
+  stage: build
+  tags:
+    - saas-macos-medium-m1
+  image: macos-14-xcode-15
+  when: manual
+  allow_failure: true
+  script:
+    - npm install
+    - npm run build
+    - test -d ios || npx cap add ios
+    - npx capacitor-assets generate --ios
+    - npx cap sync ios
+    - >
+      xcodebuild -workspace ios/App/App.xcworkspace -scheme App
+      -sdk iphonesimulator -configuration Debug -derivedDataPath build
+      CODE_SIGNING_ALLOWED=NO build
+    - cd build/Build/Products/Debug-iphonesimulator && zip -r ConsultingRoom-simulator.zip App.app
+  artifacts:
+    name: consulting-room-ios-simulator-build
+    paths:
+      - build/Build/Products/Debug-iphonesimulator/ConsultingRoom-simulator.zip
