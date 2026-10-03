@@ -1,14 +1,36 @@
 import React, { createContext, useContext, useMemo, useRef, useState, useCallback, useEffect } from "react";
-import { lsGet, lsSet } from "../lib/storage";
+import {
+  asBoolean,
+  asFiniteNumber,
+  asString,
+  isRecord,
+  lsGet,
+  lsSet,
+  oneOf,
+  recordOf,
+  type Coerce,
+} from "../lib/storage";
 import { appData, detectLang } from "../lib/appData";
 import { applyTheme } from "../lib/theme";
 import { personaText } from "../lib/personas";
 import { openerFor, introFor, respond } from "../lib/scriptedEngine";
-import { buildLiveSystemPrompt, crProviderReply, LiveAiError, type ChatTurn } from "../lib/liveAi";
+import { buildLiveSystemPrompt, crProviderReply, CR_PROVIDERS, LiveAiError, type ChatTurn } from "../lib/liveAi";
 import { t } from "../lib/i18n";
-import type { ChatMessage, Provider, Theme } from "../types";
+import type { ChatMessage, ChatRole, Provider, Theme } from "../types";
 
 type View = "library" | "chat";
+
+const THEMES: readonly Theme[] = ["system", "light", "dark"];
+const CHAT_ROLES: readonly ChatRole[] = ["user", "clinician", "system", "crisis"];
+
+// Persisted history is untrusted: keep the well-formed messages, drop the rest.
+const asChatMessages: Coerce<ChatMessage[]> = (v) => {
+  if (!Array.isArray(v)) return undefined;
+  return v.filter(
+    (m): m is ChatMessage =>
+      isRecord(m) && typeof m.text === "string" && CHAT_ROLES.includes(m.role as ChatRole)
+  );
+};
 
 let messageSeq = 0;
 const newId = () => `${Date.now().toString(36)}-${(messageSeq++).toString(36)}`;
@@ -64,18 +86,23 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
   const [currentPersonaIdx, setCurrentPersonaIdx] = useState<number | null>(null);
   const [search, setSearch] = useState("");
   const [school, setSchool] = useState("");
-  const [isTyping, setIsTyping] = useState(false);
+  const [typingIdx, setTypingIdx] = useState<number | null>(null);
+  // Only the conversation that is waiting on a reply shows the typing indicator.
+  const isTyping = typingIdx !== null && typingIdx === currentPersonaIdx;
+  const stopTyping = useCallback((idx: number) => setTypingIdx((cur) => (cur === idx ? null : cur)), []);
 
-  const [lang, setLangState] = useState<string>(() => detectLang(lsGet<string | null>("lang", null)));
-  const [theme, setThemeState] = useState<Theme>(() => lsGet<Theme>("theme", "system"));
-  const [liveMode, setLiveModeState] = useState<boolean>(() => lsGet("liveMode", false));
-  const [provider, setProviderState] = useState<Provider>(() => lsGet<Provider>("provider", "gemini"));
-  const [apiKey, setApiKeyState] = useState<string>(() => lsGet("apiKey", ""));
-  const [apiBase, setApiBaseState] = useState<string>(() => lsGet("apiBase", ""));
+  const [lang, setLangState] = useState<string>(() => detectLang(lsGet<string | null>("lang", null, asString)));
+  const [theme, setThemeState] = useState<Theme>(() => lsGet<Theme>("theme", "system", oneOf(THEMES)));
+  const [liveMode, setLiveModeState] = useState<boolean>(() => lsGet("liveMode", false, asBoolean));
+  const [provider, setProviderState] = useState<Provider>(() =>
+    lsGet<Provider>("provider", "gemini", oneOf(Object.keys(CR_PROVIDERS) as Provider[]))
+  );
+  const [apiKey, setApiKeyState] = useState<string>(() => lsGet("apiKey", "", asString));
+  const [apiBase, setApiBaseState] = useState<string>(() => lsGet("apiBase", "", asString));
   const [modelIds, setModelIdsState] = useState<Partial<Record<Provider, string>>>(() => {
-    const ids = lsGet<Partial<Record<Provider, string>>>("modelIds", {});
+    const ids = lsGet<Partial<Record<Provider, string>>>("modelIds", {}, recordOf(asString));
     // migrate the old single "modelId" key (pre-multi-provider) onto its own provider only
-    const legacy = lsGet("modelId", "");
+    const legacy = lsGet("modelId", "", asString);
     if (legacy && !Object.keys(ids).length) {
       const migrated = { ...ids, anthropic: legacy };
       lsSet("modelIds", migrated);
@@ -85,10 +112,14 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
   });
 
   const [chatHistories, setChatHistories] = useState<Record<number, ChatMessage[]>>(() =>
-    lsGet("chatHistories", {})
+    lsGet<Record<number, ChatMessage[]>>("chatHistories", {}, recordOf(asChatMessages))
   );
-  const [turnCounts, setTurnCounts] = useState<Record<number, number>>(() => lsGet("turnCounts", {}));
-  const [historyLang, setHistoryLang] = useState<Record<number, string>>(() => lsGet("historyLang", {}));
+  const [turnCounts, setTurnCounts] = useState<Record<number, number>>(() =>
+    lsGet<Record<number, number>>("turnCounts", {}, recordOf(asFiniteNumber))
+  );
+  const [historyLang, setHistoryLang] = useState<Record<number, string>>(() =>
+    lsGet<Record<number, string>>("historyLang", {}, recordOf(asString))
+  );
 
   // shown at most once per session, matching the original silent-fallback behaviour
   const liveWarnShown = useRef(false);
@@ -211,7 +242,7 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
         pushMessage(idx, reply);
       };
 
-      setIsTyping(true);
+      setTypingIdx(idx);
 
       if (liveMode && apiKey) {
         const meta = appData.personaMeta[idx];
@@ -229,11 +260,11 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
 
         crProviderReply(provider, apiKey, activeModel, sys, turns, apiBase)
           .then((reply) => {
-            setIsTyping(false);
+            stopTyping(idx);
             pushMessage(idx, { role: "clinician", source: "live", text: reply });
           })
           .catch((err: unknown) => {
-            setIsTyping(false);
+            stopTyping(idx);
             if (!liveWarnShown.current) {
               liveWarnShown.current = true;
               const message = err instanceof LiveAiError || err instanceof Error ? err.message : String(err);
@@ -246,12 +277,12 @@ export function AppStateProvider({ children }: { children: React.ReactNode }) {
           });
       } else {
         setTimeout(() => {
-          setIsTyping(false);
+          stopTyping(idx);
           fallback();
         }, 380 + Math.random() * 420);
       }
     },
-    [apiBase, apiKey, chatHistories, currentPersonaIdx, lang, liveMode, modelIds, provider, pushMessage, turnCounts]
+    [apiBase, apiKey, chatHistories, currentPersonaIdx, lang, liveMode, modelIds, provider, pushMessage, stopTyping, turnCounts]
   );
 
   const value: AppStateValue = useMemo(

@@ -56,11 +56,11 @@ interface CapacitorHttpPlugin {
 declare global {
   interface Window {
     Capacitor?: { Plugins?: { CapacitorHttp?: CapacitorHttpPlugin } };
-    __TAURI__?: { http?: { fetch: (url: string, init: RequestInit & { method: string }) => Promise<Response> } };
   }
 }
 
-// Prefer the native HTTP bridge (Capacitor / Tauri) so requests are not subject to browser CORS.
+// Prefer Capacitor's native HTTP bridge so Android requests are not subject to browser CORS.
+// Windows (Tauri) uses the webview's fetch; there is no Tauri HTTP bridge wired up.
 async function crHttp(url: string, headers: Record<string, string>, bodyObj: unknown): Promise<unknown> {
   const cap = typeof window !== "undefined" && window.Capacitor?.Plugins?.CapacitorHttp;
   if (cap) {
@@ -69,15 +69,6 @@ async function crHttp(url: string, headers: Record<string, string>, bodyObj: unk
     if (r.status < 200 || r.status >= 300) {
       throw new LiveAiError("http", `HTTP ${r.status} ${JSON.stringify(data).slice(0, 180)}`);
     }
-    return data;
-  }
-
-  const tauri = typeof window !== "undefined" && window.__TAURI__?.http;
-  if (tauri && typeof tauri.fetch === "function") {
-    const r = await tauri.fetch(url, { method: "POST", headers, body: JSON.stringify(bodyObj) });
-    const text = await r.text();
-    const data = safeParse(text) ?? { raw: text };
-    if (!r.ok) throw new LiveAiError("http", `HTTP ${r.status} ${text.slice(0, 180)}`);
     return data;
   }
 
@@ -152,14 +143,14 @@ export async function crProviderReply(
           role: m.role === "assistant" ? "model" : "user",
           parts: [{ text: m.content }],
         }));
+        // Key goes in a header, not the query string, so it never lands in URL logs.
         const url =
           "https://generativelanguage.googleapis.com/v1beta/models/" +
           encodeURIComponent(activeModel) +
-          ":generateContent?key=" +
-          encodeURIComponent(apiKey);
+          ":generateContent";
         return crHttp(
           url,
-          { "content-type": "application/json" },
+          { "content-type": "application/json", "x-goog-api-key": apiKey },
           { systemInstruction: { parts: [{ text: sys }] }, contents, generationConfig: { maxOutputTokens: 400 } }
         );
       }
