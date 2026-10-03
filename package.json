@@ -9,7 +9,7 @@
     "build": "npm run data:build && tsc -p tsconfig.json --noEmit && vite build",
     "preview": "vite preview",
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "test": "vitest run",
+    "test": "npm run data:build && vitest run",
     "ios:add": "cap add ios",
     "ios:icon": "capacitor-assets generate --ios",
     "ios:sync": "cap sync ios",
