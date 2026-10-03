@@ -24,6 +24,7 @@ web:
   image: node:20
   script:
     - npm install
+    - npm test
     - npm run build
   artifacts:
     name: consulting-room-web-build
