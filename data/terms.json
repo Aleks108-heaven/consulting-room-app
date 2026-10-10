@@ -1,0 +1,115 @@
+{
+  "terms": [
+    {
+      "key": "besetzung",
+      "original": "Besetzung",
+      "originalLang": "de",
+      "renderings": [
+        { "text": "cathexis", "by": "James Strachey" },
+        { "text": "interest", "by": "Freud, in an English letter to Ernest Jones" },
+        { "text": "occupation", "by": "the ordinary German sense, as Peter Gay points out" }
+      ]
+    },
+    {
+      "key": "ich-es-ueber-ich",
+      "original": "das Ich · das Es · das Über-Ich",
+      "originalLang": "de",
+      "renderings": [
+        { "text": "ego · id · super-ego", "by": "Latinisations by James Strachey" },
+        { "text": "the I · the It · the Over-I", "by": "the literal German" },
+        { "text": "the It", "by": "Groddeck's translators, for das Es" }
+      ]
+    },
+    {
+      "key": "trieb",
+      "original": "Trieb",
+      "originalLang": "de",
+      "renderings": [
+        { "text": "instinct", "by": "the Standard Edition (for both Instinkt and Trieb)" },
+        { "text": "drive" }
+      ]
+    },
+    {
+      "key": "einfuehlung",
+      "original": "Einfühlung",
+      "originalLang": "de",
+      "renderings": [
+        { "text": "empathy", "by": "Edward Titchener, 1909" },
+        { "text": "feeling into", "by": "the literal German" }
+      ]
+    },
+    {
+      "key": "nachtraeglichkeit",
+      "original": "Nachträglichkeit",
+      "originalLang": "de",
+      "renderings": [
+        { "text": "deferred action" },
+        { "text": "afterwardsness", "by": "associated with Jean Laplanche" },
+        { "text": "retroaction" },
+        { "text": "après-coup", "by": "Jacques Lacan, in French" }
+      ]
+    },
+    {
+      "key": "gemeinschaftsgefuehl",
+      "original": "Gemeinschaftsgefühl",
+      "originalLang": "de",
+      "renderings": [
+        { "text": "social interest", "by": "the title of Adler's 1938 book" },
+        { "text": "social feeling", "by": "Adler, 1938; W. Béran Wolfe's 1927 translation of Understanding Human Nature" },
+        { "text": "community feeling" }
+      ]
+    },
+    {
+      "key": "selbstverwirklichung",
+      "original": "Selbstverwirklichung",
+      "originalLang": "de",
+      "renderings": [
+        { "text": "self-actualization", "by": "Kurt Goldstein, 1939; Abraham Maslow; Carl Rogers" },
+        { "text": "self-realization", "by": "suggested as a more adequate translation" }
+      ]
+    },
+    {
+      "key": "phantasy",
+      "original": "phantasy · fantasy",
+      "originalLang": "en",
+      "renderings": [
+        { "text": "phantasy", "by": "Melanie Klein and the Kleinian school: unconscious phantasy" },
+        { "text": "fantasy", "by": "ordinary usage: daydreams" }
+      ]
+    },
+    {
+      "key": "zbr",
+      "original": "зона ближайшего развития",
+      "originalLang": "ru",
+      "renderings": [
+        { "text": "zone of proximal development", "by": "Thought and Language, 1962; Mind in Society, 1978" },
+        { "text": "zone of proximate development", "by": "Mitchell's 2017 translation of The Problem of Teaching and Mental Development at School Age" },
+        { "text": "zone of next development", "by": "Peter Smagorinsky" },
+        { "text": "zone prochaine de développement", "by": "the French form, quoted by David Kellogg from Françoise Sève" },
+        { "text": "nearest · next · immediate", "by": "dictionary senses of the Russian word (Oxford Russian Dictionary, 1993, cited by Dowling)" }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "author": "Wikipedia",
+      "title": "“Cathexis”, “Id, ego and super-ego”, “Death drive”, “Empathy”, “Afterwardsness”, “Alfred Adler”, “Self-actualization” and “Fantasy (psychology)”",
+      "detail": "for the renderings and attributions quoted there (Strachey, Bettelheim, Gay, Groddeck's translators, Lipps, Titchener, Lacan, Laplanche, Adler, Goldstein, Maslow, Rogers, Klein, Isaacs)"
+    },
+    {
+      "author": "Jean Laplanche",
+      "title": "“Deferred Action”",
+      "detail": "entry in the International Dictionary of Psychoanalysis (Gale), on Encyclopedia.com"
+    },
+    {
+      "author": "Tim Dowling",
+      "title": "Vygotsky's Notion of the ZPD: Teaching, Assessment and Imagination",
+      "detail": "open-access paper, Kwansei Gakuin University repository (citing Barrs, 2017, and Vygotsky, 2017)"
+    },
+    {
+      "author": "David Kellogg",
+      "title": "post on the xmca-l mailing list, 23 November 2016, “zone of next development”",
+      "detail": "reporting the views of Peter Smagorinsky and Françoise Sève"
+    }
+  ]
+}

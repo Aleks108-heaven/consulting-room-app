@@ -93,7 +93,25 @@
   "tip_groq": "Chiave gratuita su console.groq.com/keys — molto veloce, senza carta di credito.",
   "tip_openrouter": "Chiave gratuita su openrouter.ai/keys — usa modelli che finiscono con :free.",
   "tip_anthropic": "Chiave a pagamento da console.anthropic.com.",
-  "tip_openai": "Qualsiasi endpoint compatibile con OpenAI; imposta l'URL di base qui sotto."
+  "tip_openai": "Qualsiasi endpoint compatibile con OpenAI; imposta l'URL di base qui sotto.",
+  "nav_terms": "Termini della psicologia",
+  "terms_title": "Termini della psicologia",
+  "terms_intro": "Molti termini della psicologia e della psicoterapia sono tradotti in più modi, e le diverse scuole li spiegano in modo diverso. Per ogni termine si trovano una breve glossa, le rese inglesi usate da traduttori e autori (con chi usa quale, dove la fonte è nota) e i punti in cui il significato varia. Sono glosse semplificate per lo studio, che non sostituiscono i testi originali né la formazione.",
+  "terms_label_original": "Termine originale",
+  "terms_note": "Semplificato: i significati variano secondo le scuole, gli autori e le traduzioni.",
+  "nav_quotes": "Citazioni",
+  "quotes_title": "Citazioni",
+  "quotes_intro": "Brevi passi di psicologi, copiati parola per parola da testi di pubblico dominio. Ogni citazione indica l'opera, il traduttore e la fonte.",
+  "quotes_english_note": "Le citazioni sono date nel testo inglese indicato, senza essere ritradotte.",
+  "quotes_licence": "Questi testi sono di pubblico dominio: i loro autori e traduttori sono morti da più di 70 anni. Ortografia e punteggiatura seguono la fonte; il corsivo è omesso.",
+  "quotes_none": "Per gli altri {count} personaggi non è inclusa alcuna citazione: non è stato trovato un testo liberamente utilizzabile, oppure i loro scritti e le loro traduzioni sono ancora protetti dal diritto d'autore.",
+  "terms_h_short": "In breve",
+  "terms_h_renderings": "Spesso tradotto come",
+  "terms_h_varies": "Dove varia",
+  "terms_sources": "Fonti",
+  "terms_sources_note": "Solo riferimenti. Ogni resa è attribuita come appare in queste fonti; l'app non apre link.",
+  "quotes_h_quotes": "Citazioni",
+  "quotes_translated_by": "Tradotto da"
  },
  "modes": {
   "founders": {

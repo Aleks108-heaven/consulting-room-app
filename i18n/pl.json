@@ -93,7 +93,25 @@
   "tip_groq": "Darmowy klucz na console.groq.com/keys — bardzo szybko, bez karty kredytowej.",
   "tip_openrouter": "Darmowy klucz na openrouter.ai/keys — używaj modeli z końcówką :free.",
   "tip_anthropic": "Płatny klucz z console.anthropic.com.",
-  "tip_openai": "Dowolny punkt końcowy zgodny z OpenAI; podaj bazowy URL poniżej."
+  "tip_openai": "Dowolny punkt końcowy zgodny z OpenAI; podaj bazowy URL poniżej.",
+  "nav_terms": "Pojęcia psychologii",
+  "terms_title": "Pojęcia psychologii",
+  "terms_intro": "Wiele pojęć psychologii i psychoterapii tłumaczy się na kilka sposobów, a różne szkoły objaśniają je odmiennie. Przy każdym pojęciu podano krótkie objaśnienie, angielskie odpowiedniki używane przez tłumaczy i autorów (z informacją, kto którego używa, tam gdzie źródło jest znane) oraz to, gdzie znaczenie się rozchodzi. To uproszczone objaśnienia do nauki, które nie zastępują tekstów źródłowych ani kształcenia.",
+  "terms_label_original": "Termin oryginalny",
+  "terms_note": "Uproszczenie: znaczenia różnią się w zależności od szkoły, autora i tłumaczenia.",
+  "nav_quotes": "Cytaty",
+  "quotes_title": "Cytaty",
+  "quotes_intro": "Krótkie fragmenty psychologów, skopiowane słowo w słowo z tekstów należących do domeny publicznej. Każdy cytat podaje dzieło, tłumacza i źródło.",
+  "quotes_english_note": "Cytaty podano we wskazanym tekście angielskim, bez ponownego tłumaczenia.",
+  "quotes_licence": "Te teksty należą do domeny publicznej: ich autorzy i tłumacze zmarli ponad 70 lat temu. Pisownia i interpunkcja odpowiadają źródłu; kursywę pominięto.",
+  "quotes_none": "Dla pozostałych {count} postaci nie dołączono cytatu: nie znaleziono tekstu o swobodnym użyciu albo ich pisma i przekłady wciąż podlegają ochronie prawnoautorskiej.",
+  "terms_h_short": "W skrócie",
+  "terms_h_renderings": "Często tłumaczone jako",
+  "terms_h_varies": "Gdzie się różni",
+  "terms_sources": "Źródła",
+  "terms_sources_note": "Tylko odwołania do źródeł. Każdy odpowiednik jest przypisany tak, jak występuje w tych źródłach; aplikacja nie otwiera linków.",
+  "quotes_h_quotes": "Cytaty",
+  "quotes_translated_by": "Tłumaczenie:"
  },
  "modes": {
   "founders": {

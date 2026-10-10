@@ -93,7 +93,25 @@
   "tip_groq": "Clau gratuïta a console.groq.com/keys — molt ràpid, sense targeta de crèdit.",
   "tip_openrouter": "Clau gratuïta a openrouter.ai/keys — usa models que acabin en :free.",
   "tip_anthropic": "Clau de pagament a console.anthropic.com.",
-  "tip_openai": "Qualsevol endpoint compatible amb OpenAI; indica l'URL base a sota."
+  "tip_openai": "Qualsevol endpoint compatible amb OpenAI; indica l'URL base a sota.",
+  "nav_terms": "Termes de psicologia",
+  "terms_title": "Termes de psicologia",
+  "terms_intro": "Molts termes de la psicologia i la psicoteràpia es tradueixen de diverses maneres, i les diferents escoles els expliquen de manera diferent. De cada terme s'ofereix una glossa breu, les traduccions angleses que han fet servir traductors i autors (amb qui fa servir quina, quan es coneix la font) i on varia el significat. Són glosses simplificades per a l'estudi, que no substitueixen els textos originals ni la formació.",
+  "terms_label_original": "Terme original",
+  "terms_note": "Simplificat: els significats varien segons les escoles, els autors i les traduccions.",
+  "nav_quotes": "Cites",
+  "quotes_title": "Cites",
+  "quotes_intro": "Passatges breus de psicòlegs, copiats paraula per paraula de textos de domini públic. Cada cita indica l'obra, el traductor i la font.",
+  "quotes_english_note": "Les cites es donen en el text anglès indicat, sense retraduir.",
+  "quotes_licence": "Aquests textos són de domini públic: els seus autors i traductors van morir fa més de 70 anys. L'ortografia i la puntuació segueixen la font; s'omet la cursiva.",
+  "quotes_none": "No s'inclou cap cita dels altres {count} personatges: no s'ha trobat cap text d'ús lliure, o els seus escrits i traduccions encara són protegits pels drets d'autor.",
+  "terms_h_short": "En resum",
+  "terms_h_renderings": "Sovint es tradueix com",
+  "terms_h_varies": "On varia",
+  "terms_sources": "Fonts",
+  "terms_sources_note": "Només citacions. Cada traducció s'atribueix tal com apareix en aquestes fonts; l'aplicació no obre enllaços.",
+  "quotes_h_quotes": "Cites",
+  "quotes_translated_by": "Traduït per"
  },
  "modes": {
   "founders": {

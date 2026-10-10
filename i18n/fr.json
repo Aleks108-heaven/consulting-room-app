@@ -93,7 +93,25 @@
   "tip_groq": "Clé gratuite sur console.groq.com/keys — très rapide, sans carte bancaire.",
   "tip_openrouter": "Clé gratuite sur openrouter.ai/keys — utilisez des modèles se terminant par :free.",
   "tip_anthropic": "Clé payante sur console.anthropic.com.",
-  "tip_openai": "Tout point de terminaison compatible OpenAI ; renseignez l'URL de base ci-dessous."
+  "tip_openai": "Tout point de terminaison compatible OpenAI ; renseignez l'URL de base ci-dessous.",
+  "nav_terms": "Termes de psychologie",
+  "terms_title": "Termes de psychologie",
+  "terms_intro": "De nombreux termes de la psychologie et de la psychothérapie sont traduits de plusieurs façons, et les différentes écoles les expliquent différemment. Pour chaque terme, on trouve une courte glose, les rendus anglais employés par des traducteurs et des auteurs (avec qui emploie lequel, lorsque la source est connue) et les points où le sens varie. Ce sont des gloses simplifiées pour l'étude, qui ne remplacent ni les textes originaux ni une formation.",
+  "terms_label_original": "Terme d'origine",
+  "terms_note": "Simplifié : les sens varient selon les écoles, les auteurs et les traductions.",
+  "nav_quotes": "Citations",
+  "quotes_title": "Citations",
+  "quotes_intro": "De courts passages de psychologues, copiés mot pour mot dans des textes du domaine public. Chaque citation indique l'œuvre, le traducteur et la source.",
+  "quotes_english_note": "Les citations sont données dans le texte anglais indiqué, sans être retraduites.",
+  "quotes_licence": "Ces textes sont dans le domaine public : leurs auteurs et traducteurs sont morts il y a plus de 70 ans. L'orthographe et la ponctuation suivent la source ; l'italique est omis.",
+  "quotes_none": "Aucune citation n'est incluse pour les {count} autres personnages : aucun texte librement utilisable n'a été trouvé, ou leurs écrits et traductions sont encore protégés par le droit d'auteur.",
+  "terms_h_short": "En bref",
+  "terms_h_renderings": "Souvent traduit par",
+  "terms_h_varies": "Où cela varie",
+  "terms_sources": "Sources",
+  "terms_sources_note": "Références seulement. Chaque rendu est attribué tel qu'il apparaît dans ces sources ; l'application n'ouvre pas de liens.",
+  "quotes_h_quotes": "Citations",
+  "quotes_translated_by": "Traduit par"
  },
  "modes": {
   "founders": {

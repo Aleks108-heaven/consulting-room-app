@@ -6,12 +6,14 @@ import { NavLink } from "./ui/NavLink";
 
 interface TopBarProps {
   onLineage: () => void;
+  onTerms: () => void;
+  onQuotes: () => void;
   onTraditions: () => void;
   onAbout: () => void;
   onSettings: () => void;
 }
 
-export function TopBar({ onLineage, onTraditions, onAbout, onSettings }: TopBarProps) {
+export function TopBar({ onLineage, onTerms, onQuotes, onTraditions, onAbout, onSettings }: TopBarProps) {
   const { lang } = useAppState();
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -54,6 +56,8 @@ export function TopBar({ onLineage, onTraditions, onAbout, onSettings }: TopBarP
       </button>
       <nav className="topbar-actions" id="topbar-actions">
         <NavLink onClick={act(onLineage)}>{t(lang, "nav_lineage")}</NavLink>
+        <NavLink onClick={act(onTerms)}>{t(lang, "nav_terms")}</NavLink>
+        <NavLink onClick={act(onQuotes)}>{t(lang, "nav_quotes")}</NavLink>
         <NavLink onClick={act(onTraditions)}>{t(lang, "nav_traditions")}</NavLink>
         <NavLink onClick={act(onAbout)}>{t(lang, "nav_about")}</NavLink>
         <NavLink onClick={act(onSettings)}>

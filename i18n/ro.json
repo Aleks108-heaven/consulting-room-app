@@ -93,7 +93,25 @@
   "tip_groq": "Cheie gratuită la console.groq.com/keys — foarte rapid, fără card bancar.",
   "tip_openrouter": "Cheie gratuită la openrouter.ai/keys — folosește modele care se termină în :free.",
   "tip_anthropic": "Cheie cu plată de la console.anthropic.com.",
-  "tip_openai": "Orice endpoint compatibil cu OpenAI; setează URL-ul de bază mai jos."
+  "tip_openai": "Orice endpoint compatibil cu OpenAI; setează URL-ul de bază mai jos.",
+  "nav_terms": "Termeni de psihologie",
+  "terms_title": "Termeni de psihologie",
+  "terms_intro": "Mulți termeni din psihologie și psihoterapie sunt traduși în mai multe feluri, iar școlile diferite îi explică diferit. Pentru fiecare termen se oferă o scurtă glosă, echivalentele englezești folosite de traducători și autori (cu precizarea cine folosește care, acolo unde sursa e cunoscută) și locurile în care sensul variază. Sunt glose simplificate pentru studiu, care nu înlocuiesc textele originale sau formarea.",
+  "terms_label_original": "Termenul original",
+  "terms_note": "Simplificat: sensurile variază după școli, autori și traduceri.",
+  "nav_quotes": "Citate",
+  "quotes_title": "Citate",
+  "quotes_intro": "Scurte pasaje de la psihologi, copiate cuvânt cu cuvânt din texte aflate în domeniul public. Fiecare citat indică lucrarea, traducătorul și sursa.",
+  "quotes_english_note": "Citatele sunt date în textul englezesc indicat, fără a fi retraduse.",
+  "quotes_licence": "Aceste texte se află în domeniul public: autorii și traducătorii lor au murit de peste 70 de ani. Ortografia și punctuația urmează sursa; cursivele sunt omise.",
+  "quotes_none": "Pentru celelalte {count} personaje nu este inclus niciun citat: nu a fost găsit un text liber de utilizat sau scrierile și traducerile lor sunt încă protejate de drepturi de autor.",
+  "terms_h_short": "Pe scurt",
+  "terms_h_renderings": "Adesea redat ca",
+  "terms_h_varies": "Unde diferă",
+  "terms_sources": "Surse",
+  "terms_sources_note": "Doar citări. Fiecare redare este atribuită așa cum apare în aceste surse; aplicația nu deschide linkuri.",
+  "quotes_h_quotes": "Citate",
+  "quotes_translated_by": "Tradus de"
  },
  "modes": {
   "founders": {

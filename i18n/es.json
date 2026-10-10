@@ -93,7 +93,25 @@
   "tip_groq": "Clave gratuita en console.groq.com/keys — muy rápido, sin tarjeta de crédito.",
   "tip_openrouter": "Clave gratuita en openrouter.ai/keys — usa modelos que terminen en :free.",
   "tip_anthropic": "Clave de pago en console.anthropic.com.",
-  "tip_openai": "Cualquier endpoint compatible con OpenAI; indica la URL base más abajo."
+  "tip_openai": "Cualquier endpoint compatible con OpenAI; indica la URL base más abajo.",
+  "nav_terms": "Términos de psicología",
+  "terms_title": "Términos de psicología",
+  "terms_intro": "Muchos términos de la psicología y la psicoterapia se traducen de varias maneras, y las distintas escuelas los explican de forma distinta. De cada término se ofrece una breve glosa, las traducciones al inglés que han usado traductores y autores (con quién usa cuál, donde se conoce la fuente) y dónde varía el significado. Son glosas simplificadas para el estudio, que no sustituyen a los textos originales ni a la formación.",
+  "terms_label_original": "Término original",
+  "terms_note": "Simplificado: los significados varían según las escuelas, los autores y las traducciones.",
+  "nav_quotes": "Citas",
+  "quotes_title": "Citas",
+  "quotes_intro": "Pasajes breves de psicólogos, copiados palabra por palabra de textos de dominio público. Cada cita indica la obra, el traductor y la fuente.",
+  "quotes_english_note": "Las citas se dan en el texto inglés indicado, sin volver a traducirlas.",
+  "quotes_licence": "Estos textos son de dominio público: sus autores y traductores murieron hace más de 70 años. La ortografía y la puntuación siguen la fuente; se omiten las cursivas.",
+  "quotes_none": "No se incluye ninguna cita de los otros {count} personajes: no se encontró ningún texto de uso libre, o sus escritos y traducciones siguen protegidos por derechos de autor.",
+  "terms_h_short": "En breve",
+  "terms_h_renderings": "A menudo se traduce como",
+  "terms_h_varies": "Dónde varía",
+  "terms_sources": "Fuentes",
+  "terms_sources_note": "Solo citas. Cada traducción se atribuye tal como aparece en estas fuentes; la aplicación no abre enlaces.",
+  "quotes_h_quotes": "Citas",
+  "quotes_translated_by": "Traducido por"
  },
  "modes": {
   "founders": {
