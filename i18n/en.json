@@ -114,7 +114,7 @@
    ],
    "technique": [
     "Try trained introspection: describe {topic} again as plainly as you'd describe a chair -- no metaphors, just the elements.",
-    "Ask what {topic} is *for*, the way you'd ask what a habit is for -- function before meaning.",
+    "Treat {topic} the way you'd treat a habit: ask what it is *for* -- function before meaning.",
     "Try a stream-of-consciousness pass: sixty seconds, uncensored, everything that crosses your mind about {topic}."
    ]
   },
@@ -158,7 +158,7 @@
    ],
    "technique": [
     "Try active imagination: hold {topic} in mind and let an image from it move and speak on its own, without steering it.",
-    "Ask what {topic} is compensating for -- what one-sidedness in you it might be trying to balance.",
+    "Look at {topic}: what is it compensating for -- what one-sidedness in you might it be trying to balance?",
     "Let an image tied to {topic} answer a single question: what does it want?"
    ]
   },
@@ -561,7 +561,7 @@
   "buddhist_classical": {
    "label": "Classical Buddhist Philosophy",
    "openers": [
-    "Before you tell me what {topic} means, tell me what actually arose -- what you saw, felt, thought, in order.",
+    "Before you interpret {topic}, tell me what actually arose -- what you saw, felt, thought, in order.",
     "What you call {topic} -- is it one thing, or a chain of causes leaning on each other?",
     "Notice the space between the story about {t1} and the raw event itself. Which one are you sitting with right now?",
     "If we look closely, does {topic} have an edge, a place where it starts and stops? Or does it depend on everything around it to exist at all?",
