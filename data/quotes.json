@@ -1,0 +1,65 @@
+{
+  "quotes": [
+    {
+      "person": "William James",
+      "work": "The Principles of Psychology, volume 1",
+      "year": "1890",
+      "part": "Chapter IX, “The Stream of Thought”",
+      "source": "Project Gutenberg eBook #57628",
+      "sourceUrls": [
+        "https://www.gutenberg.org/cache/epub/57628/pg57628.txt"
+      ],
+      "text": "Consciousness, then, does not appear to itself chopped up in bits. Such words as 'chain' or 'train' do not describe it fitly as it presents itself in the first instance. It is nothing jointed; it flows. A 'river' or a 'stream' are the metaphors by which it is most naturally described."
+    },
+    {
+      "person": "Sigmund Freud",
+      "work": "The Interpretation of Dreams",
+      "year": "1913",
+      "part": "Chapter VII, “The Psychology of the Dream Activities”",
+      "translator": "A. A. Brill",
+      "source": "Project Gutenberg eBook #66048",
+      "sourceUrls": [
+        "https://www.gutenberg.org/cache/epub/66048/pg66048.txt"
+      ],
+      "text": "At any rate the interpretation of dreams is the via regia to a knowledge of the unconscious in the psychic life."
+    },
+    {
+      "person": "Edward Thorndike",
+      "work": "Animal Intelligence: Experimental Studies",
+      "year": "1911",
+      "part": "Chapter VI, “Laws and Hypotheses for Behavior”",
+      "source": "Project Gutenberg eBook #69904",
+      "sourceUrls": [
+        "https://www.gutenberg.org/cache/epub/69904/pg69904.txt"
+      ],
+      "text": "Of several responses made to the same situation, those which are accompanied or closely followed by satisfaction to the animal will, other things being equal, be more firmly connected with the situation, so that, when it recurs, they will be more likely to recur; those which are accompanied or closely followed by discomfort to the animal will, other things being equal, have their connections with that situation weakened, so that, when it recurs, they will be less likely to occur. The greater the satisfaction or discomfort, the greater the strengthening or weakening of the bond."
+    },
+    {
+      "person": "Wilhelm Wundt",
+      "work": "Lectures on Human and Animal Psychology",
+      "year": "1894",
+      "part": "Lecture I",
+      "translator": "J. E. Creighton and E. B. Titchener",
+      "source": "Internet Archive and Wellcome Collection scans",
+      "sourceUrls": [
+        "https://archive.org/download/lecturesonhumana00wundrich/lecturesonhumana00wundrich_djvu.txt",
+        "https://api.wellcomecollection.org/text/v1/b21923231",
+        "https://api.wellcomecollection.org/text/v1/b21294173"
+      ],
+      "text": "Man himself, not as he appears from without, but as he is in his own immediate experience, is the real problem of psychology."
+    },
+    {
+      "person": "Alfred Adler",
+      "work": "Understanding Human Nature",
+      "year": "1927",
+      "translator": "W. Béran Wolfe",
+      "source": "Internet Archive and Wellcome Collection scans",
+      "sourceUrls": [
+        "https://archive.org/download/understandinghum00adlerich/understandinghum00adlerich_djvu.txt",
+        "https://archive.org/download/understandinghum0000adle_x0g4/understandinghum0000adle_x0g4_djvu.txt",
+        "https://archive.org/download/b3136293x_0002/b3136293x_0002_djvu.txt"
+      ],
+      "text": "The social feeling is influenced both by the feeling of inferiority and its compensatory striving for power."
+    }
+  ]
+}

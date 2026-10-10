@@ -10,6 +10,28 @@ migrated to a proper source layout under `src/` — `www/` is now a **build outp
 directory** (gitignored, produced by `npm run build`), not source. See
 [Project layout](#project-layout) below.
 
+Consulting Room keeps all **135** characters, including the Buddhist, Tibetan and Dzogchen
+teachers. A separate app that is **only** those teachers (33 of them, with a Dzogchen lineage,
+terms, quotes and mantras) lives in its own repo:
+[traditions-of-the-mind-app](https://github.com/Aleks108-heaven/traditions-of-the-mind-app).
+
+---
+
+## Status and known gaps
+
+- **Tested:** typecheck, unit tests, and scripted walkthroughs in a headless browser (phone and
+  desktop sizes, light and dark, all 11 languages). The **Android and Windows builds are produced by
+  CI and have not been run on a device** by the maintainer.
+- **Live AI** was tested only against a local mock server, not against a real provider.
+- **Translations** of the app's text were written with AI assistance and have **not been reviewed
+  by native speakers**. Only English, Spanish, Polish and Ukrainian have per-character dialogue; the
+  other languages show the English text for each character.
+- **Psychology terms** are in English and Ukrainian (other languages show the English content with
+  translated labels). **Quotes**: only five psychologists have a quotation, because the rest are
+  still in copyright (see [Quotes](#quotes)).
+- **Licence:** no licence has been chosen, so by default all rights are reserved.
+- This is an educational simulation: not the real people, not therapy, not a clinician.
+
 ---
 
 ## Live AI mode
@@ -20,11 +42,21 @@ directory** (gitignored, produced by `npm run build`), not source. See
 - Settings has an **AI provider** dropdown, an optional **Model ID**, and an
   optional **Base URL** (for OpenAI‑compatible servers). Key + settings are stored
   on‑device only (localStorage).
-- Network calls go through the **native HTTP bridge** (Capacitor `CapacitorHttp` /
-  Tauri `http` plugin) so they are **not blocked by browser CORS** in the packaged apps.
-  A plain `fetch` fallback is kept for running in a normal browser tab. Every call is
-  bounded by a client-side timeout so a hung request can't leave the chat stuck on
-  the typing indicator.
+- On **Android**, network calls go through Capacitor's native HTTP bridge (`CapacitorHttp`),
+  so browser CORS does not apply. In a **browser tab and in the Windows app** the app uses the
+  webview's own `fetch`, so the provider must allow cross-origin requests (the five listed
+  providers do). Every call is bounded by a client-side timeout so a hung request can't leave
+  the chat stuck on the typing indicator.
+- **Crisis messages never reach a provider.** Before anything is sent, the message is checked
+  against the crisis wording of all 11 languages (whatever the interface language is). A match
+  gets the fixed crisis reply with crisis-line guidance, and no request is made
+  (`src/lib/liveGate.ts`).
+- The system prompt names the character and the interface language, tells the model it is a
+  simulation (not the real person, not a licensed clinician), and asks it to drop the role and
+  point to real crisis resources if the user expresses self-harm. A model can still ignore
+  instructions, so treat Live AI replies as unverified.
+- If the provider fails (HTTP error, timeout, no network), the chat shows one short note and
+  answers from the scripted engine instead.
 
 With Live AI mode **off** the app is 100% offline, using the scripted engine only.
 
@@ -50,20 +82,17 @@ With Live AI mode **off** the app is 100% offline, using the scripted engine onl
 
 ## Security notes
 
-- **Chat rendering is XSS-safe.** Every message (yours and the AI's) goes through
-  `esc()` before it's inserted as HTML — no raw `innerHTML` of untrusted text.
+- **Chat rendering is XSS-safe.** Every message (yours and the AI's) is rendered by React
+  as text; the app never uses `dangerouslySetInnerHTML` or `innerHTML`.
 - **API keys live only in `localStorage`** on the device; they're never bundled
   into the app and never sent anywhere except straight to the provider you chose.
-- **Windows (Tauri):** the app ships a locked-down Content-Security-Policy
-  (`src-tauri/tauri.conf.json`), and outbound HTTP is capability-scoped in
-  `src-tauri/capabilities/default.json` to exactly the five providers' hosts —
-  the packaged app cannot be made to call an arbitrary URL. If you pick
-  **OpenAI‑compatible (custom)** with your own Base URL, add that host to the
-  `http:default` allow-list in that file before building, or the request will be
-  blocked (safe default; not a bug).
-- **CI workflow** (`.github/workflows/build.yml`) only triggers on push to `main`
-  or manual dispatch (no `pull_request_target`), uses no repo secrets, and its
-  `GITHUB_TOKEN` is scoped to `contents: read`.
+- **Windows (Tauri):** the app ships a Content-Security-Policy (`src-tauri/tauri.conf.json`).
+  The Tauri HTTP plugin is registered and scoped to the five providers' hosts in
+  `src-tauri/capabilities/default.json`, but the app's Live AI client currently uses the
+  webview's `fetch`, not that plugin, so the CSP is what limits outbound connections.
+- **CI workflow** (`.github/workflows/build.yml`) triggers on push to `main` (and one older
+  branch), on pull requests to `main` and on manual dispatch (no `pull_request_target`), uses no
+  repo secrets, and its `GITHUB_TOKEN` is scoped to `contents: read`.
 
 ---
 
@@ -278,6 +307,46 @@ To add a language: copy `i18n/en.json` to `i18n/<code>.json`, translate
 add `<code>` to the `ORDER` array in `scripts/build-data.js`, then
 `npm run data:build`.
 
+## Psychology terms
+
+The **Psychology terms** window explains nine terms whose meaning varies between schools, authors
+and translators: *Besetzung* (cathexis), *das Ich / Es / Über-Ich* (ego, id, super-ego), *Trieb*
+(instinct or drive), *Einfühlung* (empathy), *Nachträglichkeit* (deferred action), *Gemeinschaftsgefühl*
+(social interest), *Selbstverwirklichung* (self-actualization), *phantasy* and *fantasy*, and Vygotsky's
+*zona blizhaishego razvitiya* (zone of proximal development). Each has its original-language form, a short
+gloss, the English renderings **with who uses which**, and where the meaning varies. The glosses are
+simplified for study.
+
+- Facts (terms, renderings, who uses them, sources) live in `data/terms.json`; per-language text (names,
+  short glosses, "where it varies") in each `i18n/<code>.json` under `terms`. English and Ukrainian are
+  complete; other languages show the English content with their own translated labels. The renderings
+  and the names in "who uses which" stay in English.
+- Every attribution comes from a source that was read: Wikipedia articles for the renderings and
+  attributions quoted there, Jean Laplanche's entry on deferred action (*International Dictionary of
+  Psychoanalysis*), Tim Dowling's paper on the zone of proximal development, and one mailing-list post
+  (David Kellogg, 2016) for the French and "next" renderings. The window lists them as plain citations and
+  has no links.
+
+## Quotes
+
+The **Quotes** window has one short passage each from five psychologists: William James, Sigmund Freud
+(A. A. Brill's translation), Edward Thorndike, Wilhelm Wundt (Creighton and Titchener's translation) and
+Alfred Adler (W. Béran Wolfe's translation). Each names its work, year, translator and source, and is shown
+in the English text cited, never re-translated.
+
+- **Rule: public domain everywhere.** A text qualifies only if its author **and its translator** died more
+  than 70 years ago, so it is free to use in the US and in life+70 countries such as the EU, Ukraine and Poland.
+  `src/lib/quotes.test.ts` enforces this (an unknown translator fails the test until someone checks them).
+  That rules out Jung, Watson, Pavlov, Maslow and every later author: the window says no quotation is included
+  for the other characters.
+- Texts live in `data/quotes.json` (with `sourceUrls`, which are never shown in the app). They were copied
+  from the source texts by a script, not typed. `node scripts/verify-quotes.js` (needs network; not run in CI)
+  re-fetches every source and confirms each quotation appears there word for word. Adler and Wundt come from
+  scans, so each is checked against **two or three independent scans** and would be dropped if they disagreed.
+- Project Gutenberg texts are public domain in the US; the Gutenberg name is used only to cite the source.
+- To add a quotation: find a short passage in a text whose author and translator both died before 1956,
+  add its entry (and the translator's death year in `quotes.test.ts`), and run the verify script.
+
 ## Project layout
 
 ```
@@ -291,8 +360,11 @@ consulting-room-app/
 │  ├─ styles/global.css      # design tokens + component styles
 │  └─ data/appData.generated.json   # generated — do not hand-edit (see above)
 ├─ data/core.json            # personas, lineage chains, category order (shared)
+├─ data/terms.json           # psychology terms: renderings, who uses which, sources
+├─ data/quotes.json          # public-domain quotations (with verification sources)
 ├─ i18n/*.json                # one file per language
 ├─ scripts/build-data.js     # data/ + i18n/ -> src/data/appData.generated.json
+├─ scripts/verify-quotes.js  # re-fetches the quotation sources and checks them word for word
 ├─ www/                      # generated build output (gitignored) — Capacitor/Tauri serve this
 ├─ vite.config.ts            # build.outDir = "www"
 ├─ capacitor.config.json     # Android config (webDir: "www")

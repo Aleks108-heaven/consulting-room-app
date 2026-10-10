@@ -93,7 +93,25 @@
   "tip_groq": "Kostenloser Schlüssel unter console.groq.com/keys — sehr schnell, keine Kreditkarte nötig.",
   "tip_openrouter": "Kostenloser Schlüssel unter openrouter.ai/keys — Modelle mit der Endung :free verwenden.",
   "tip_anthropic": "Kostenpflichtiger Schlüssel von console.anthropic.com.",
-  "tip_openai": "Beliebiger OpenAI-kompatibler Endpunkt; unten die Basis-URL eintragen."
+  "tip_openai": "Beliebiger OpenAI-kompatibler Endpunkt; unten die Basis-URL eintragen.",
+  "nav_terms": "Begriffe der Psychologie",
+  "terms_title": "Begriffe der Psychologie",
+  "terms_intro": "Viele Begriffe der Psychologie und Psychotherapie werden auf verschiedene Weise übersetzt, und die einzelnen Schulen erklären sie unterschiedlich. Zu jedem Begriff gibt es eine kurze Erläuterung, die englischen Wiedergaben, die Übersetzer und Autoren verwendet haben (mit Angabe, wer welche nutzt, soweit die Quelle bekannt ist), und die Stellen, an denen die Bedeutung abweicht. Es sind vereinfachte Erläuterungen zum Studium, kein Ersatz für die Originaltexte oder eine Ausbildung.",
+  "terms_label_original": "Originalbegriff",
+  "terms_note": "Vereinfacht: Bedeutungen unterscheiden sich je nach Schule, Autor und Übersetzung.",
+  "nav_quotes": "Zitate",
+  "quotes_title": "Zitate",
+  "quotes_intro": "Kurze Textstellen von Psychologen, Wort für Wort aus gemeinfreien Texten übernommen. Jedes Zitat nennt Werk, Übersetzer und Quelle.",
+  "quotes_english_note": "Die Zitate stehen im genannten englischen Text und wurden nicht neu übersetzt.",
+  "quotes_licence": "Diese Texte sind gemeinfrei: Ihre Autoren und Übersetzer sind vor mehr als 70 Jahren gestorben. Rechtschreibung und Zeichensetzung folgen der Quelle; Kursivschrift ist weggelassen.",
+  "quotes_none": "Für die übrigen {count} Figuren ist kein Zitat enthalten: Es wurde kein frei nutzbarer Text gefunden, oder ihre Schriften und Übersetzungen sind noch urheberrechtlich geschützt.",
+  "terms_h_short": "Kurz gesagt",
+  "terms_h_renderings": "Häufig wiedergegeben als",
+  "terms_h_varies": "Wo es abweicht",
+  "terms_sources": "Quellen",
+  "terms_sources_note": "Nur Quellenangaben. Jede Wiedergabe ist so zugeordnet, wie sie in diesen Quellen steht; die App öffnet keine Links.",
+  "quotes_h_quotes": "Zitate",
+  "quotes_translated_by": "Übersetzt von"
  },
  "modes": {
   "founders": {

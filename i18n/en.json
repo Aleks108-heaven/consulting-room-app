@@ -93,7 +93,25 @@
   "tip_groq": "Free key at console.groq.com/keys — very fast, no credit card.",
   "tip_openrouter": "Free key at openrouter.ai/keys — use models ending in :free.",
   "tip_anthropic": "Paid key from console.anthropic.com.",
-  "tip_openai": "Any OpenAI-compatible endpoint; set the Base URL below."
+  "tip_openai": "Any OpenAI-compatible endpoint; set the Base URL below.",
+  "nav_terms": "Psychology terms",
+  "terms_title": "Psychology terms",
+  "terms_intro": "Many terms in psychology and psychotherapy are translated in several ways, and different schools explain them differently. For each term you will find a short gloss, the English renderings that translators and authors have used (with who uses which, where a source is known), and where the meaning varies. These are simplified glosses for study, not a substitute for the original texts or for training.",
+  "terms_label_original": "Original term",
+  "terms_note": "Simplified: meanings vary between schools, authors and translations.",
+  "nav_quotes": "Quotes",
+  "quotes_title": "Quotes",
+  "quotes_intro": "Short passages from psychologists, copied word for word from public-domain texts. Each quotation names its work, translator and source.",
+  "quotes_english_note": "Quotations are given in the English text cited, not re-translated.",
+  "quotes_licence": "These texts are in the public domain: their authors and translators died more than 70 years ago. Spelling and punctuation follow the source; italics are omitted.",
+  "quotes_none": "No quotation is included for the other {count} characters: no freely usable text was found, or their writings and translations are still in copyright.",
+  "terms_h_short": "In short",
+  "terms_h_renderings": "Often rendered as",
+  "terms_h_varies": "Where it varies",
+  "terms_sources": "Sources",
+  "terms_sources_note": "Citations only. Each rendering is attributed as it appears in these sources; the app does not open links.",
+  "quotes_h_quotes": "Quotations",
+  "quotes_translated_by": "Translated by"
  },
  "modes": {
   "founders": {
@@ -114,7 +132,7 @@
    ],
    "technique": [
     "Try trained introspection: describe {topic} again as plainly as you'd describe a chair -- no metaphors, just the elements.",
-    "Ask what {topic} is *for*, the way you'd ask what a habit is for -- function before meaning.",
+    "Treat {topic} the way you'd treat a habit: ask what it is *for* -- function before meaning.",
     "Try a stream-of-consciousness pass: sixty seconds, uncensored, everything that crosses your mind about {topic}."
    ]
   },
@@ -158,7 +176,7 @@
    ],
    "technique": [
     "Try active imagination: hold {topic} in mind and let an image from it move and speak on its own, without steering it.",
-    "Ask what {topic} is compensating for -- what one-sidedness in you it might be trying to balance.",
+    "Look at {topic}: what is it compensating for -- what one-sidedness in you might it be trying to balance?",
     "Let an image tied to {topic} answer a single question: what does it want?"
    ]
   },
@@ -561,7 +579,7 @@
   "buddhist_classical": {
    "label": "Classical Buddhist Philosophy",
    "openers": [
-    "Before you tell me what {topic} means, tell me what actually arose -- what you saw, felt, thought, in order.",
+    "Before you interpret {topic}, tell me what actually arose -- what you saw, felt, thought, in order.",
     "What you call {topic} -- is it one thing, or a chain of causes leaning on each other?",
     "Notice the space between the story about {t1} and the raw event itself. Which one are you sitting with right now?",
     "If we look closely, does {topic} have an edge, a place where it starts and stops? Or does it depend on everything around it to exist at all?",
@@ -2102,5 +2120,40 @@
   null,
   null,
   null
- ]
+ ],
+ "terms": {
+  "names": {
+   "besetzung": "Cathexis (Besetzung)",
+   "ich-es-ueber-ich": "Ego, id and super-ego",
+   "trieb": "Instinct or drive (Trieb)",
+   "einfuehlung": "Empathy (Einfühlung)",
+   "nachtraeglichkeit": "Deferred action (Nachträglichkeit)",
+   "gemeinschaftsgefuehl": "Social interest (Gemeinschaftsgefühl)",
+   "selbstverwirklichung": "Self-actualization (Selbstverwirklichung)",
+   "phantasy": "Phantasy and fantasy",
+   "zbr": "Zone of proximal development"
+  },
+  "short": {
+   "besetzung": "Freud's word for the mental energy attached to an idea, a person or a goal: the way the mind “invests” itself in something.",
+   "ich-es-ueber-ich": "Freud's three agencies of the mind: das Es, the impersonal drives; das Ich, which deals with reality; and das Über-Ich, which judges.",
+   "trieb": "In Freud's theory, a pressure within the person that pushes towards satisfaction and shapes thought and behaviour.",
+   "einfuehlung": "“Feeling into” another person, an object or a work of art: the German word behind the English “empathy”.",
+   "nachtraeglichkeit": "An earlier experience takes on its force or meaning only afterwards, when a later event makes it newly significant.",
+   "gemeinschaftsgefuehl": "In Adler's psychology, a person's sense of belonging with others and of contributing to them.",
+   "selbstverwirklichung": "The tendency of a person or organism to develop its own capacities. Goldstein used the term first; Maslow and Rogers gave it different meanings.",
+   "phantasy": "In Kleinian psychoanalysis, “phantasy” with “ph” is unconscious mental activity; “fantasy” with “f” is the ordinary conscious daydream.",
+   "zbr": "In Vygotsky's work, the gap between what a child can do alone and what the child can do with help."
+  },
+  "varies": {
+   "besetzung": "Strachey coined “cathexis” from the Greek κάθεξις. Peter Gay objected that it replaced a German word rich in everyday meanings, among them “occupation”, with an esoteric one. Freud himself used the English word “interest” for it in an early letter to Ernest Jones.",
+   "ich-es-ueber-ich": "In German these are plain words: “the I”, “the It”, “the Over-I”. The Latin forms are Strachey's, and they have stayed in use. Bruno Bettelheim argued that they made it harder for students to understand Freud. Groddeck's translators rendered das Es as “the It”.",
+   "trieb": "The Standard Edition renders both Instinkt and Trieb as “instinct”, although Freud treated them as different words. That is why the same idea (Todestrieb) appears both as “death instinct” and as “death drive”.",
+   "einfuehlung": "Theodor Lipps brought the German aesthetic term into psychology in 1903, and Edward Titchener translated it as “empathy” in 1909. Researchers still define empathy in sometimes conflicting ways, for example as sharing another person's bodily feelings or as understanding their beliefs and desires.",
+   "nachtraeglichkeit": "Laplanche noted that the word had not been translated consistently into either English or French. “Deferred action”, “afterwardsness” and “retroaction” are all used in English, and Lacan's French après-coup is used too. Laplanche made afterwardsness central to his own theory.",
+   "gemeinschaftsgefuehl": "The English wording differs by text: “social interest” (the title of Adler's 1938 book), “social feeling” (Adler, 1938, and Wolfe's 1927 translation of Understanding Human Nature) and “community feeling”.",
+   "selbstverwirklichung": "Goldstein (1939) called it the only drive that determines an organism's life. Maslow (1943) made it a growth-motivated need that is rarely reached. Rogers used it for the actualization of a person's sense of self, within a broader actualizing tendency. “Self-realization” has been suggested as a more adequate translation of the German word.",
+   "phantasy": "Klein's “unconscious phantasy” is deliberately spelled with “ph” to set it apart from “fantasy” (Hinshelwood, 1999). Kleinians regard the unconscious as made up of phantasies of relations with objects. Susan Isaacs's paper “The Nature and Function of Phantasy” (1948) was generally accepted by the Klein group in London (Laing, 1971).",
+   "zbr": "Dowling notes that the term has been translated, understood and used in varying ways. It first appeared in English as “zone of proximal development” in the 1962 Thought and Language; a 2017 translation uses “proximate”, and the Russian word blizhaishego can also mean “nearest”, “next” or “immediate”. Some render it “potential”, which Dowling calls broad and innocuous, even if not accurate."
+  }
+ }
 }

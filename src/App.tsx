@@ -5,10 +5,12 @@ import { ChatView } from "./components/Chat/ChatView";
 import { AboutModal } from "./components/Modals/AboutModal";
 import { LineageModal } from "./components/Modals/LineageModal";
 import { TraditionsModal } from "./components/Modals/TraditionsModal";
+import { TermsModal } from "./components/Modals/TermsModal";
+import { QuotesModal } from "./components/Modals/QuotesModal";
 import { SettingsModal } from "./components/Settings/SettingsModal";
 import { useAppState } from "./state/AppStateContext";
 
-type OpenModal = "about" | "lineage" | "traditions" | "settings" | null;
+type OpenModal = "about" | "lineage" | "terms" | "quotes" | "traditions" | "settings" | null;
 
 export function App() {
   const { view, openPersona } = useAppState();
@@ -32,6 +34,8 @@ export function App() {
     <div id="app">
       <TopBar
         onLineage={() => setOpenModal("lineage")}
+        onTerms={() => setOpenModal("terms")}
+        onQuotes={() => setOpenModal("quotes")}
         onTraditions={() => setOpenModal("traditions")}
         onAbout={() => setOpenModal("about")}
         onSettings={() => setOpenModal("settings")}
@@ -41,6 +45,8 @@ export function App() {
 
       <AboutModal open={openModal === "about"} onClose={() => setOpenModal(null)} />
       <LineageModal open={openModal === "lineage"} onClose={() => setOpenModal(null)} onOpenPersona={handleOpenPersonaFromModal} />
+      <TermsModal open={openModal === "terms"} onClose={() => setOpenModal(null)} />
+      <QuotesModal open={openModal === "quotes"} onClose={() => setOpenModal(null)} />
       <TraditionsModal open={openModal === "traditions"} onClose={() => setOpenModal(null)} onOpenPersona={handleOpenPersonaFromModal} />
       <SettingsModal open={openModal === "settings"} onClose={() => setOpenModal(null)} />
     </div>

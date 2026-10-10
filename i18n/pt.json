@@ -93,7 +93,25 @@
   "tip_groq": "Chave gratuita em console.groq.com/keys — muito rápido, sem cartão de crédito.",
   "tip_openrouter": "Chave gratuita em openrouter.ai/keys — use modelos terminados em :free.",
   "tip_anthropic": "Chave paga em console.anthropic.com.",
-  "tip_openai": "Qualquer endpoint compatível com a OpenAI; defina o URL base abaixo."
+  "tip_openai": "Qualquer endpoint compatível com a OpenAI; defina o URL base abaixo.",
+  "nav_terms": "Termos de psicologia",
+  "terms_title": "Termos de psicologia",
+  "terms_intro": "Muitos termos da psicologia e da psicoterapia são traduzidos de várias maneiras, e as diferentes escolas explicam-nos de forma diferente. De cada termo apresenta-se uma breve glosa, as versões inglesas usadas por tradutores e autores (com quem usa qual, quando a fonte é conhecida) e onde o significado varia. São glosas simplificadas para estudo, que não substituem os textos originais nem a formação.",
+  "terms_label_original": "Termo original",
+  "terms_note": "Simplificado: os significados variam consoante as escolas, os autores e as traduções.",
+  "nav_quotes": "Citações",
+  "quotes_title": "Citações",
+  "quotes_intro": "Passagens breves de psicólogos, copiadas palavra por palavra de textos de domínio público. Cada citação indica a obra, o tradutor e a fonte.",
+  "quotes_english_note": "As citações são dadas no texto inglês indicado, sem nova tradução.",
+  "quotes_licence": "Estes textos são de domínio público: os seus autores e tradutores morreram há mais de 70 anos. A ortografia e a pontuação seguem a fonte; o itálico é omitido.",
+  "quotes_none": "Não se inclui nenhuma citação dos outros {count} personagens: não foi encontrado nenhum texto de uso livre, ou os seus escritos e traduções ainda estão protegidos por direitos de autor.",
+  "terms_h_short": "Em resumo",
+  "terms_h_renderings": "Frequentemente traduzido como",
+  "terms_h_varies": "Onde varia",
+  "terms_sources": "Fontes",
+  "terms_sources_note": "Apenas citações. Cada tradução é atribuída tal como aparece nestas fontes; a aplicação não abre ligações.",
+  "quotes_h_quotes": "Citações",
+  "quotes_translated_by": "Traduzido por"
  },
  "modes": {
   "founders": {
