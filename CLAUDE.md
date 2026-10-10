@@ -18,7 +18,7 @@ TypeScript + React, built with Vite. Wrapped natively for Android (Capacitor) an
 
 \- `src/` — app source (React components, `state/AppStateContext.tsx`, `lib/` helpers incl. `liveAi.ts`)
 
-\- `data/core.json` + `i18n/*.json` — content source; `scripts/build-data.js` compiles them into `src/data/appData.generated.json`
+\- `data/core.json`, `data/terms.json`, `data/quotes.json` + `i18n/*.json` — content source; `scripts/build-data.js` compiles them into `src/data/appData.generated.json`
 
 \- `www/` — generated build output (gitignored); Capacitor/Tauri serve this, never edit directly
 
@@ -28,11 +28,15 @@ TypeScript + React, built with Vite. Wrapped natively for Android (Capacitor) an
 
 \## Current Status
 
-\- \[ ] \[Feature/task 1] — done
+\- \[x] Live AI hardened: crisis messages (wording from all 11 languages) never reach a provider (`src/lib/liveGate.ts`); prompt names the interface language for all 11; grammar pass for assembled replies (`src/lib/grammar.ts`)
 
-\- \[ ] \[Feature/task 2] — in progress
+\- \[x] Psychology terms window (`data/terms.json`, nine terms, attributed renderings, en + uk) and public-domain Quotes window (`data/quotes.json`, five quotations, `scripts/verify-quotes.js`)
 
-\- \[ ] \[Feature/task 3] — todo
+\- \[x] `SECURITY.md` uses GitHub private vulnerability reporting
+
+\- \[ ] No licence chosen yet (owner's decision)
+
+\- \[ ] Android / Windows builds are CI-only; never run on a device
 
 
 
@@ -60,11 +64,11 @@ TypeScript + React, built with Vite. Wrapped natively for Android (Capacitor) an
 
 \## Commit Convention
 
-\[Fill in: e.g. Conventional Commits — feat:, fix:, chore:]
+Conventional Commits — `feat:`, `fix:`, `chore:`, `test:`, `ci:`, `docs:`.
 
 
 
 \## Out of Scope
 
-\[Fill in: folders/files Claude should never touch, e.g. /migrations, /secrets, /node\_modules]
+`node_modules/`, `www/` and `src/data/appData.generated.json` (generated); never commit signing keystores or API keys.
 
