@@ -51,7 +51,6 @@ export interface AppData {
   masterList: ListRow[];
   chainA: ChainItem[];
   chainB: ChainItem[];
-  traditions: ListRow[];
   categoryOrder: string[];
   terms: TermsData;
   quotes: QuotesData;

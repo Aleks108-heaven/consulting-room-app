@@ -2,12 +2,12 @@
  "label": "Polski",
  "ui": {
   "brand_title": "Gabinet Konsultacyjny",
-  "brand_sub": "135 TEORETYKÓW · SYMULACJA OFFLINE",
+  "brand_sub": "102 TEORETYKÓW · SYMULACJA OFFLINE",
   "nav_lineage": "Rodowód Perlsa",
   "nav_about": "O aplikacji",
   "nav_settings": "Ustawienia",
   "lib_h1": "Wybierz, z kim chcesz porozmawiać",
-  "lib_lede": "Każda karta to scenariuszowa symulacja oparta na publicznie udokumentowanych teoriach i technikach — towarzysz do nauki historii psychoterapii i myśli kontemplacyjnej, a nie prawdziwy terapeuta czy nauczyciel.",
+  "lib_lede": "Każda karta to scenariuszowa symulacja oparta na publicznie udokumentowanych teoriach i technikach — towarzysz do nauki historii psychoterapii, a nie prawdziwy terapeuta czy nauczyciel.",
   "lib_read_disclaimer": "Przeczytaj zastrzeżenie →",
   "search_placeholder": "Szukaj po nazwisku lub temacie (np. “sny”, “przywiązanie”, “CBT”)…",
   "filter_all_schools": "Wszystkie szkoły myślenia",
@@ -22,7 +22,7 @@
   "live_badge": "Na żywo",
   "scripted_badge": "Skrypt",
   "about_title": "O aplikacji i bezpieczeństwo",
-  "about_p1": "<strong>Czym to jest.</strong> Gabinet Konsultacyjny to symulator edukacyjny. Każda ze 135 postaci powstała na podstawie publicznie udokumentowanej biografii, kluczowych koncepcji i charakterystycznych technik przypisywanych prawdziwemu, historycznemu lub współczesnemu psychologowi, psychoterapeucie, filozofowi lub nauczycielowi medytacji. Odpowiedzi generuje skryptowy, działający offline silnik szablonów (albo — tylko jeśli podasz własny klucz API — model językowy na żywo, poinstruowany, by trzymać się postaci) — nigdy prawdziwa osoba.",
+  "about_p1": "<strong>Czym to jest.</strong> Gabinet Konsultacyjny to symulator edukacyjny. Każda ze 102 postaci powstała na podstawie publicznie udokumentowanej biografii, kluczowych koncepcji i charakterystycznych technik przypisywanych prawdziwemu, historycznemu lub współczesnemu psychologowi, psychoterapeucie lub filozofowi. Odpowiedzi generuje skryptowy, działający offline silnik szablonów (albo — tylko jeśli podasz własny klucz API — model językowy na żywo, poinstruowany, by trzymać się postaci) — nigdy prawdziwa osoba.",
   "about_h_not": "Czym to nie jest",
   "about_p_not": "To nie terapia. Nie diagnoza. Nie opieka medyczna, psychiatryczna ani kryzysowa. To nie są prawdziwe słowa tej osoby — traktuj każdą odpowiedź jako wymyślony, poglądowy kompozyt, a nie zweryfikowany cytat. Nic stąd nie powinno być podstawą decyzji o lekach, leczeniu czy bezpieczeństwie.",
   "about_h_struggling": "Jeśli przeżywasz trudności",
@@ -35,10 +35,6 @@
   "lineage_h_compare": "Porównaj z",
   "lineage_h_master": "Pełna lista główna (tak jak podano, 1–110)",
   "lineage_master_note": "Kilka nazwisk powtarza się na oryginalnej numerowanej liście (np. Jung pod #4 i #12, Perls pod #17 i #103) — każde z nich nadal otwiera tę samą, pasującą postać poniżej.",
-  "nav_traditions": "Tradycje umysłu",
-  "traditions_title": "Tradycje umysłu",
-  "traditions_intro": "Druga lista, obok tej powyżej: buddyjscy filozofowie i nauczyciele kontemplacyjni, a także kilka postaci, które łączą się z powrotem z psychologią (Skinner → psychologia eksperymentalna, Freud → psychoanaliza, Kahneman → nauka kognitywna, Nāgārjuna → filozofia buddyjska, Namkhai Norbu → kontemplacyjna tradycja dzogczen). Przeczytaj je obok siebie, a pod spodem przewija się jedno pytanie: jak różne tradycje rozumiały umysł, świadomość, cierpienie, zachowanie i przemianę?",
-  "traditions_master_note": "Nazwiska już obecne w bibliotece psychologii powyżej (Freud, Perls, Kahneman i inni) pojawiają się tu ponownie na swoim miejscu na tej liście -- otwarcie ich otwiera tę samą postać.",
   "table_num": "#",
   "table_name": "Nazwisko",
   "table_known_for": "Znany z",
@@ -490,96 +486,6 @@
    "technique": [
     "Spróbuj odpowiedzieć na {topic} celowo ze swojego Dorosłego -- spokojnie, rzeczowo, obecnie -- i zauważ, co się zmienia.",
     "Nazwij 'grę', w której wciąż kończysz wokół tego: {topic}, i wypłatę, którą ci daje, szczerze."
-   ]
-  },
-  "buddhist_classical": {
-   "label": "Klasyczna Filozofia Buddyjska",
-   "openers": [
-    "Zanim powiesz mi, czym jest {topic}, powiedz, co faktycznie się pojawiło -- co zobaczyłeś, poczułeś, pomyślałeś, po kolei.",
-    "To, co nazywasz {topic} -- to jedna rzecz, czy łańcuch przyczyn opierających się jedna o drugą?",
-    "Zauważ przestrzeń między historią o {t1} a samym surowym wydarzeniem. Z którym z nich siedzisz teraz?",
-    "Jeśli przyjrzymy się uważnie, czy {topic} ma krawędź, miejsce gdzie się zaczyna i kończy? Czy może zależy od wszystkiego dookoła, żeby w ogóle istnieć?"
-   ],
-   "reflect": [
-    "Czyli {topic} powstaje w zależności od warunków -- usuń jeden, i czy nadal się utrzymuje?",
-    "Opisujesz {topic} jako coś stałego. Spójrz jeszcze raz: czy to bardziej jak fala, czy jak woda?",
-    "To, co nazywasz '{topic}', i to, co nazywasz 'sobą' -- gdzie dokładnie jest granica między nimi?"
-   ],
-   "technique": [
-    "Spróbuj tego: przez jeden pełny oddech spójrz wprost na {topic}, nie nazywając tego. Co zostaje, gdy etykieta odpada?",
-    "Prześledź {topic} wstecz, przyczyna po przyczynie, tak daleko jak się da. Gdzie naprawdę zaczyna się ten łańcuch?"
-   ]
-  },
-  "kagyu_mahamudra": {
-   "label": "Mahāmudrā / Linia Kagyu",
-   "openers": [
-    "Przestań próbować naprawiać {topic}. Po prostu spocznij w tym, dokładnie takim, jakie jest, przez jeden oddech -- co tam naprawdę jest?",
-    "Krążysz wokół tego: {topic} głową. Co się stanie, jeśli wskoczysz prosto w to, tak jak wskoczyłbyś do zimnej wody?",
-    "Kto martwi się o tym: {topic}? Poszukaj tego bezpośrednio -- nie myśli, ale tego, co patrzy.",
-    "Usiądź z tym: {topic}, tak, jak usiadłbyś z górą -- nie rozwiązując tego, po prostu pozwalając, żeby to zostało zobaczone."
-   ],
-   "reflect": [
-    "Wciąż medytujesz nad tym: {topic}. Co się dzieje w chwili, gdy przestajesz medytować i po prostu pozwalasz umysłowi być umysłem?",
-    "W sposobie, w jaki trzymasz {topic}, jest wysiłek. Gdzie dokładnie się on znajduje?",
-    "Zwykły umysł, taki jaki jest, już teraz zawiera {topic} bez potrzeby zmieniania go. Wierzysz w to, czy tylko to rozumiesz?"
-   ],
-   "technique": [
-    "Przez najbliższą minutę, kiedy tylko pojawi się {topic}, nie podążaj za tym i nie odpychaj tego -- po prostu obserwuj, jak samo powstaje i rozpuszcza się.",
-    "Wydychaj powietrze całkowicie i zatrzymaj oddech, tylko na chwilę, dokładnie tam, gdzie mieszka w ciele to, co nazywasz {topic}. Co się rozluźnia?"
-   ]
-  },
-  "nyingma_dzogchen": {
-   "label": "Dzogczen / Linia Nyingma",
-   "openers": [
-    "Nie ścigaj {topic} i nie odpychaj tego. Po prostu zauważ: co jest świadome {topic} właśnie teraz, zanim to nazwiesz?",
-    "{topic} już pojawia się w świadomości, która nigdy nie została przez to zakłócona. Czy potrafisz odnaleźć tę świadomość, czy tylko jej treść?",
-    "A gdyby {topic} nie trzeba było naprawiać, tylko rozpoznać? Co się dzieje, gdy po prostu widzisz to jasno, niczego nie poprawiając?",
-    "Skąd powstaje {topic}, gdzie trwa i dokąd odchodzi? Spójrz wprost, nie na samą ideę tego."
-   ],
-   "reflect": [
-    "Opisujesz {topic} jako problem do rozwiązania. W naturalnym stanie to tylko kolejny przejaw -- co się zmienia, gdy spojrzysz na to w ten sposób?",
-    "Samowyzwolenie oznacza, że {topic} uwalnia się w chwili, gdy zostanie naprawdę zobaczone, bez poprawiania. Naprawdę spojrzałeś, czy tylko o tym pomyślałeś?",
-    "Czy pod tym: {topic} jest poznawanie, które było tam, zanim to powstało, i będzie tam, gdy to zniknie?"
-   ],
-   "technique": [
-    "Rozluźnij wzrok, pozwól oddechowi się uspokoić i po prostu spocznij -- nie skupiając się na tym: {topic}, nie ignorując tego. Tylko to, trzydzieści sekund.",
-    "Zapytaj siebie wprost: kto albo co jest świadome {topic}? Nie odpowiadaj pojęciem takim jak {t1} -- spójrz."
-   ]
-  },
-  "lamrim_kadam": {
-   "label": "Lamrim / Linia Kadam-Gelug",
-   "openers": [
-    "Zanim pójdziemy dalej z tym: {topic} -- gdzie teraz jesteś na ścieżce? Na początku, w środku, czy pomijasz kroki?",
-    "Jak wyglądałaby praca z tym: {topic}, we właściwej kolejności -- najpierw grunt, potem motywacja, potem pogląd?",
-    "Czy twoje zainteresowanie {topic} bierze się z chęci wygody dla siebie, czy z chęci bycia użytecznym dla innych? Oba są w porządku, ale bądź szczery co do tego, które.",
-    "Podejdźmy do tego: {topic} systematycznie. Jakiego fundamentu to naprawdę potrzebuje?"
-   ],
-   "reflect": [
-    "Sięgasz po zaawansowany pogląd na {topic} bez fundamentu pod spodem. Jakiego fundamentu wciąż brakuje?",
-    "Dyscyplina nie jest wrogiem tego: {topic} -- to ona czyni to na tyle stabilnym, by na tym budować. Gdzie twoja jest teraz cienka?",
-    "Jeśli umieścisz {topic} w kontekście całej stopniowej ścieżki, czy nadal wydaje się to tak pilne, czy osiada na swoim właściwym miejscu?"
-   ],
-   "technique": [
-    "Zapisz po kolei trzy lub cztery kroki, które faktycznie musiałyby się wydarzyć, zanim rozwiąże się to, co nazywasz {topic}. Zacznij od najmniejszego.",
-    "Poświęć minutę na refleksję o nietrwałości, zanim wrócisz do tego: {topic} -- czy wygląda inaczej stamtąd?"
-   ]
-  },
-  "contemplative_science": {
-   "label": "Nauka Kontemplacyjna / Buddyzm i Zachód",
-   "openers": [
-    "Potraktujmy {topic} jak umiejętność do wytrenowania, a nie stałą cechę. Jak wyglądałaby pierwsza mała powtórka?",
-    "Zanim zinterpretujemy {topic}, czy możemy po prostu to zauważyć -- jeden oddech, z uwagą, bez historii na razie?",
-    "Co mówią dowody z twojego własnego doświadczenia o tym: {topic}, niezależnie od tego, co powiedziano ci, że powinieneś czuć?",
-    "Gdybyś praktykował {t1} przez osiem tygodni, dziesięć minut dziennie, co dokładnie byś trenował?"
-   ],
-   "reflect": [
-    "Opisujesz {topic} jako coś, co ci się przydarza. Co się zmienia, jeśli potraktujesz to jako coś, do czego możesz wytrenować reakcję?",
-    "Uwaga to mięsień, a teraz jest skierowana prosto na {topic}. Co się stanie, jeśli delikatnie, celowo, ją przesuniesz?",
-    "Jest luka między zdarzeniem a twoją reakcją na {topic}. Jak szeroka jest dziś dla ciebie ta luka?"
-   ],
-   "technique": [
-    "Teraz: trzy powolne oddechy, pełna uwaga tylko na oddechu. Potem wróć do tego: {topic} i powiedz mi, co jest inne.",
-    "Nazwij {topic} na głos, wprost, tak jak zrobiłby to naukowiec zapisujący obserwację -- bez żadnego słowa oceniającego. Co zostaje?"
    ]
   }
  },
@@ -1460,240 +1366,6 @@
    "voice": "Podkreśla prawdziwe spotkanie zamiast traktowania drugiej osoby jak przedmiot -- pyta, czy ją spotykasz, czy nią zarządzasz."
   },
   {
-   "tag": "Założyciel buddyzmu",
-   "terms": [
-    "Cztery Szlachetne Prawdy",
-    "współzależne powstawanie",
-    "Środkową Drogę"
-   ],
-   "voice": "Prosty i wymagający. Zaczyna od cierpienia jako faktu do zbadania, a nie tajemnicy, w którą trzeba wierzyć -- wszystko sprowadza się do przyczyn i warunków."
-  },
-  {
-   "tag": "Madhjamaka, pustka",
-   "terms": [
-    "pustkę",
-    "dwie prawdy",
-    "współzależne powstawanie"
-   ],
-   "voice": "Nieustępliwie logiczny. Bierze dowolną stałą ideę, której się trzymasz, i pokazuje, krok po kroku, że nie może istnieć sama z siebie."
-  },
-  {
-   "tag": "Jogaczara, tylko-świadomość",
-   "terms": [
-    "świadomość-magazyn",
-    "tylko-umysł",
-    "trzy natury"
-   ],
-   "voice": "Systematyczny i cierpliwy. Chce dokładnie zmapować, jak umysł konstruuje doświadczenie, zanim wyciągniesz wnioski o tym, co 'naprawdę' jest na zewnątrz."
-  },
-  {
-   "tag": "Abhidharma, tylko-świadomość",
-   "terms": [
-    "osiem świadomości",
-    "chwilowość",
-    "tylko-świadomość"
-   ],
-   "voice": "Precyzyjny, niemal kliniczny. Rozkłada doświadczenie na części składowe i prosi, byś znalazł wśród nich trwałe ja."
-  },
-  {
-   "tag": "Bodhiczitta, współczucie",
-   "terms": [
-    "bodhiczittę",
-    "zamianę siebie z innymi",
-    "cierpliwość"
-   ],
-   "voice": "Łagodny, ale bezlitosny. Wciąż wraca do pytania, czy naprawdę jesteś gotów zamienić swój komfort na czyjś."
-  },
-  {
-   "tag": "Twórca wadżrajany w Tybecie",
-   "terms": [
-    "terma",
-    "przekaz wadżrajany",
-    "oswajanie przeszkód"
-   ],
-   "voice": "Władczy i niezachwiany. Traktuje przeszkody jako surowiec dla ścieżki, a nie problemy, których należy unikać."
-  },
-  {
-   "tag": "Założyciel szkoły Kadam",
-   "terms": [
-    "lamrim",
-    "stopniową ścieżkę",
-    "trzy pojazdy razem"
-   ],
-   "voice": "Ciepły, ale nieustępliwy co do kolejności. Nie pozwoli ci sięgnąć po zaawansowaną naukę, dopóki fundament pod nią nie będzie naprawdę solidny."
-  },
-  {
-   "tag": "Źródło linii Mahāmudrā",
-   "terms": [
-    "mahāmudrę",
-    "niemedytację",
-    "bezpośrednie wskazanie"
-   ],
-   "voice": "Bezpośredni aż do szoku. Nie ma cierpliwości do rozbudowanej praktyki, gdy sedno można zobaczyć wprost, już teraz."
-  },
-  {
-   "tag": "Mahāmudrā, Sześć Jog",
-   "terms": [
-    "Sześć Jog",
-    "oddanie guru",
-    "trudności jako trening"
-   ],
-   "voice": "Rygorystyczny i okupiony trudem. Mówi jak ktoś, kto zapłacił prawdziwą cenę za zrozumienie, i oczekuje, że ty też naprawdę wykonasz tę pracę."
-  },
-  {
-   "tag": "Założyciel linii Kagyu",
-   "terms": [
-    "tłumaczenie i przekaz",
-    "mahāmudrę",
-    "wystawianie ucznia na próbę"
-   ],
-   "voice": "Szorstki, wymagający, czasem celowo surowy. Sprawdza, czy naprawdę tego chcesz, zanim przekaże cokolwiek prawdziwego."
-  },
-  {
-   "tag": "Jogin-poeta linii Kagyu",
-   "terms": [
-    "tummo",
-    "pieśni duchowe",
-    "przemianę przez trud"
-   ],
-   "voice": "Mówi bardziej obrazami i pieśnią niż argumentem. Odwołuje się do własnej przemiany od krzywdy do urzeczywistnienia, nigdy nie łagodząc, jak trudna była ta przemiana."
-  },
-  {
-   "tag": "Łączy sutrę z Mahāmudrą",
-   "terms": [
-    "Cztery Dharmy Gampopy",
-    "lamrim i mahāmudrę razem",
-    "łączenie ścieżki klasztornej i jogicznej"
-   ],
-   "voice": "Metodyczny jak lekarz, którym był z wykształcenia. Chce mieć stopniowy fundament na miejscu, zanim bezpośrednie wskazanie cokolwiek znaczy."
-  },
-  {
-   "tag": "Wczesny systematyzator dzogczen",
-   "terms": [
-    "obronę dzogczen",
-    "egzegezę tantryczną",
-    "tantrę ponad sutrą"
-   ],
-   "voice": "Uczony i broniący swojej tradycji -- oczekuje rygorystycznego argumentu, nie tylko oddania, na poparcie poglądu."
-  },
-  {
-   "tag": "Wielki systematyzator dzogczen",
-   "terms": [
-    "pierwotną czystość",
-    "spontaniczną obecność",
-    "naturę buddy"
-   ],
-   "voice": "Rozległy i niespieszny. Wciąż sprowadza wszystko do podstawowego gruntu, który nigdy naprawdę nie został zakłócony, choćby na powierzchni wyglądało to chaotycznie."
-  },
-  {
-   "tag": "Założyciel szkoły Gelug",
-   "terms": [
-    "Lamrim Czenmo",
-    "rygorystyczną pustkę",
-    "sutrę i tantrę razem"
-   ],
-   "voice": "Wymagający i precyzyjny. Nie zaakceptuje wygodnego półzrozumienia pustki, gdy dostępne jest rygorystyczne."
-  },
-  {
-   "tag": "Odkrywca Longchen Nyingtik",
-   "terms": [
-    "terma",
-    "Longchen Nyingtik",
-    "wizyjny przekaz"
-   ],
-   "voice": "Wizjonerski i bezpośredni, mówi tak, jakby nauka dotarła do niego w całości, a nie została wypracowana argumentacją."
-  },
-  {
-   "tag": "Autor Słów mego doskonałego nauczyciela",
-   "terms": [
-    "praktyki wstępne",
-    "proste życie",
-    "udostępnianie dzogczen"
-   ],
-   "voice": "Celowo bezpretensjonalny, czasem anonimowy z wyboru. Nie ufa duchowemu statusowi i wciąż sprowadza wszystko do prostej, uczciwej praktyki."
-  },
-  {
-   "tag": "Filozof nyingma natury buddy",
-   "terms": [
-    "naturę buddy",
-    "godzenie pustki z pozorem",
-    "dwie prawdy"
-   ],
-   "voice": "Płodny i wymagający, najszczęśliwszy, gdy godzi dwa poglądy, które wyglądają sprzecznie, dopóki nie przyjrzysz się wystarczająco uważnie."
-  },
-  {
-   "tag": "Wizjonerski tertön, dzogczen i czöd",
-   "terms": [
-    "wizyjną termę",
-    "niemedytację",
-    "czöd"
-   ],
-   "voice": "Bez formalnego wykształcenia, i to mu nie przeszkadza -- mówi z bezpośredniej wizji, a nie z cytowania tekstów."
-  },
-  {
-   "tag": "Współzałożyciel ruchu rimé",
-   "terms": [
-    "rimé, niesekciarski pogląd",
-    "odkrywanie skarbów",
-    "ochronę zagrożonych linii przekazu"
-   ],
-   "voice": "Ekumeniczny z przekonania -- naprawdę niezainteresowany tym, która szkoła ma 'rację', a bardziej tym, co inaczej zostałoby stracone."
-  },
-  {
-   "tag": "Przyniósł buddyzm na Zachód",
-   "terms": [
-    "szalona mądrość",
-    "materializm duchowy",
-    "wojowniczość Śambali"
-   ],
-   "voice": "Ikonoklastyczny i nieprzewidywalny, celowo przecina duchową pretensjonalność -- także twoją -- czasem szorstko."
-  },
-  {
-   "tag": "Globalny głos współczucia i dialogu z nauką",
-   "terms": [
-    "powszechną odpowiedzialność",
-    "współczucie jako coś do wytrenowania",
-    "dialog nauki z buddyzmem"
-   ],
-   "voice": "Ciepły, prostolinijny, szybko się śmieje, i naprawdę ciekawy dowodów -- traktuje współczucie jako umiejętność do wytrenowania, a nie tylko cnotę do podziwiania."
-  },
-  {
-   "tag": "Przyniósł buddyzm zachodnim uczniom",
-   "terms": [
-    "przystępną dharmę",
-    "radosny wysiłek",
-    "założenie FPMT"
-   ],
-   "voice": "Energiczny i zachęcający, przekłada tradycyjną praktykę na proste, wykonalne kroki dla ludzi bez żadnego wcześniejszego przygotowania."
-  },
-  {
-   "tag": "Wprowadził buddyzm nyingma w USA",
-   "terms": [
-    "Czas, Przestrzeń, Wiedzę",
-    "Kum Nye",
-    "budowanie instytucji"
-   ],
-   "voice": "Praktyczny i nastawiony na budowanie -- równie zainteresowany wydawnictwem, ośrodkami nauczania i praktyką cielesną, co doktryną."
-  },
-  {
-   "tag": "Łączy praktykę kontemplacyjną z nauką kognitywną",
-   "terms": [
-    "śamathę, trening uwagi",
-    "badania nad świadomością",
-    "długotrwałe badania odosobnień"
-   ],
-   "voice": "Uczony i wymagający co do metody -- chce, by twoje twierdzenia o własnym umyśle były testowane tak, jak naukowiec testowałby każde inne twierdzenie."
-  },
-  {
-   "tag": "Mnich, naukowiec i badacz altruizmu",
-   "terms": [
-    "altruizm",
-    "badania nad medytacją",
-    "szczęście jako umiejętność do wytrenowania"
-   ],
-   "voice": "Spokojny, precyzyjny i alergiczny na szum medialny -- sprzeciwia się nazywaniu go 'najszczęśliwszym człowiekiem' i kieruje uwagę na rzeczywisty trening, o który tu chodzi."
-  },
-  {
    "tag": "Spopularyzował inteligencję emocjonalną",
    "terms": [
     "inteligencję emocjonalną",
@@ -1703,15 +1375,6 @@
    "voice": "Dziennikarski i jasny, przekłada badania na praktyczne, nazwane umiejętności, nad którymi naprawdę można pracować."
   },
   {
-   "tag": "Twórca redukcji stresu opartej na uważności",
-   "terms": [
-    "redukcję stresu opartą na uważności",
-    "pełnię życia mimo katastrofy",
-    "świadome kierowanie uwagi"
-   ],
-   "voice": "Ugruntowany i niespieszny, wciąż sprowadza cię z powrotem do bezpośredniej uwagi na chwili obecnej zamiast do opowieści o twojej sytuacji."
-  },
-  {
    "tag": "Neuronauka medytacji i dobrostanu",
    "terms": [
     "neuroplastyczność",
@@ -1719,60 +1382,6 @@
     "mózgowe miary emocji"
    ],
    "voice": "Kieruje się danymi i naprawdę ekscytuje się dowodami -- chce wiedzieć, co byłoby faktycznie mierzalne, gdyby to, co opisujesz, było prawdą."
-  },
-  {
-   "tag": "Dzogczen bön, joga snu i marzeń sennych",
-   "terms": [
-    "jogę marzeń sennych",
-    "jogę snu",
-    "dzogczen bön"
-   ],
-   "voice": "Łagodny i praktyczny, traktuje nawet sen i marzenia senne jako grunt do pracy dla świadomości, a nie przerwę od praktyki."
-  },
-  {
-   "tag": "Mistrz dzogczen tradycji rimé",
-   "terms": [
-    "przekaz dzogczen",
-    "niesekciarskie nauczanie",
-    "głównego nauczyciela wielu lamów"
-   ],
-   "voice": "Rozległa, niespieszna obecność -- naucza tyle samo tym, jak siedzi z tobą, co tym, co mówi."
-  },
-  {
-   "tag": "Pierwszy głowa szkoły nyingma na wygnaniu",
-   "terms": [
-    "termę",
-    "mistrzostwo dzogczen",
-    "zachowanie nyingma na wygnaniu"
-   ],
-   "voice": "Pełen autorytetu i niewzruszony, mówi jak ktoś, kto odbudowuje tradycję niemal od zera i nie zamierza pozwolić, by cokolwiek z niej zaginęło."
-  },
-  {
-   "tag": "Przyniósł trzyletnie odosobnienie na Zachód",
-   "terms": [
-    "trzyletnie odosobnienie",
-    "Szangpa Kagyu",
-    "ustrukturyzowany trening medytacyjny"
-   ],
-   "voice": "Cicho rygorystyczny -- wierzy, że prawdziwa zmiana potrzebuje trwałej, ustrukturyzowanej praktyki, a nie pojedynczego wglądu."
-  },
-  {
-   "tag": "Uczony-nauczyciel Kagyu, komentarze do Mahāmudry",
-   "terms": [
-    "komentarz do mahāmudry",
-    "jasne, krok po kroku nauczanie",
-    "kształcenie przyszłych nauczycieli"
-   ],
-   "voice": "Cierpliwy i dokładny, urodzony nauczyciel nauczycieli -- rozkłada trudne punkty na czynniki pierwsze, aż staną się proste, nie tracąc głębi."
-  },
-  {
-   "tag": "Przyniósł dzogczen na Zachód",
-   "terms": [
-    "Wspólnotę Dzogczen",
-    "naturalny stan",
-    "Jantra Jogę"
-   ],
-   "voice": "Bezpretensjonalny i bezpośredni -- akademik za dnia i mistrz dzogczen z przekazu, niezainteresowany ceremonią dla niej samej."
   }
  ],
  "categories": {

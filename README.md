@@ -10,9 +10,9 @@ migrated to a proper source layout under `src/` — `www/` is now a **build outp
 directory** (gitignored, produced by `npm run build`), not source. See
 [Project layout](#project-layout) below.
 
-Consulting Room keeps all **135** characters, including the Buddhist, Tibetan and Dzogchen
-teachers. A separate app that is **only** those teachers (33 of them, with a Dzogchen lineage,
-terms, quotes and mantras) lives in its own repo:
+Consulting Room contains **only** psychologists, psychotherapists and the people associated with
+them (**102** characters). The Buddhist, Tibetan and Dzogchen teachers (33 of them, with a Dzogchen
+lineage, terms, quotes and mantras) are a separate app in their own repo:
 [traditions-of-the-mind-app](https://github.com/Aleks108-heaven/traditions-of-the-mind-app).
 
 ---
@@ -296,7 +296,7 @@ Catalan, French, Portuguese, Romanian, Russian. Every lookup
 (`t()`, `modeData()`, `categories()`) falls back to English key-by-key, so a
 language file can be partial without breaking anything — useful when adding
 one incrementally. Two things are **not yet translated per-language** and
-silently fall back to English: the 135 individual persona tag/terms/voice
+silently fall back to English: the 102 individual persona tag/terms/voice
 blurbs, and the Live-AI-mode Settings panel labels (added after the original
 i18n pass). `categories.crisis.kw` is the one field worth extra care in any
 new language — it's what routes a message to the crisis-resources reply

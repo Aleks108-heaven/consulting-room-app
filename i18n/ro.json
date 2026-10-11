@@ -2,12 +2,12 @@
  "label": "Română",
  "ui": {
   "brand_title": "Cabinet de Consultanță",
-  "brand_sub": "135 DE TEORETICIENI · SIMULARE OFFLINE",
+  "brand_sub": "102 DE TEORETICIENI · SIMULARE OFFLINE",
   "nav_lineage": "Linia lui Perls",
   "nav_about": "Despre",
   "nav_settings": "Setări",
   "lib_h1": "Alege cu cine vrei să vorbești",
-  "lib_lede": "Fiecare card este o simulare scenarizată, construită pe baza unor teorii și tehnici documentate public — un partener de studiu pentru istoria psihoterapiei și a gândirii contemplative, nu un clinician sau profesor real.",
+  "lib_lede": "Fiecare card este o simulare scenarizată, construită pe baza unor teorii și tehnici documentate public — un partener de studiu pentru istoria psihoterapiei, nu un clinician sau profesor real.",
   "lib_read_disclaimer": "Citește avertismentul →",
   "search_placeholder": "Caută după nume sau idee (ex. „vise”, „atașament”, „TCC”)…",
   "filter_all_schools": "Toate școlile de gândire",
@@ -22,7 +22,7 @@
   "live_badge": "Live",
   "scripted_badge": "Script",
   "about_title": "Despre & siguranță",
-  "about_p1": "<strong>Ce este.</strong> Consulting Room este un simulator educațional. Fiecare dintre cele 135 de personaje este construit pe baza unei biografii documentate public, a unor concepte-cheie și a unor tehnici caracteristice asociate unui psiholog, psihoterapeut, filosof sau profesor de meditație real, istoric sau contemporan. Răspunsurile sunt generate de un motor de șabloane offline, scenarizat (sau, doar dacă furnizezi propria cheie API, de un model lingvistic live instruit să rămână în personaj) — niciodată de persoana reală.",
+  "about_p1": "<strong>Ce este.</strong> Consulting Room este un simulator educațional. Fiecare dintre cele 102 de personaje este construit pe baza unei biografii documentate public, a unor concepte-cheie și a unor tehnici caracteristice asociate unui psiholog, psihoterapeut sau filosof real, istoric sau contemporan. Răspunsurile sunt generate de un motor de șabloane offline, scenarizat (sau, doar dacă furnizezi propria cheie API, de un model lingvistic live instruit să rămână în personaj) — niciodată de persoana reală.",
   "about_h_not": "Ce nu este aceasta",
   "about_p_not": "Nu este terapie. Nu este un diagnostic. Nu este îngrijire medicală, psihiatrică sau de criză. Nu sunt cuvintele reale ale persoanei reale — tratează fiecare răspuns ca pe o construcție inventată, ilustrativă, nu un citat verificat. Nimic de aici nu ar trebui folosit pentru a lua decizii despre medicație, tratament sau siguranță.",
   "about_h_struggling": "Dacă treci printr-o perioadă grea",
@@ -35,10 +35,6 @@
   "lineage_h_compare": "Comparație cu",
   "lineage_h_master": "Lista completă (așa cum a fost dată, 1–110)",
   "lineage_master_note": "Unele nume se repetă în lista numerotată originală (ex. Jung la #4 și #12, Perls la #17 și #103) — fiecare deschide totuși același personaj corespunzător de mai jos.",
-  "nav_traditions": "Tradiții ale Minții",
-  "traditions_title": "Tradiții ale Minții",
-  "traditions_intro": "O a doua listă, pe lângă cea de mai sus: filosofi budiști și profesori contemplativi, plus câteva figuri care fac legătura cu psihologia (Skinner → psihologie experimentală, Freud → psihanaliză, Kahneman → știință cognitivă, Nāgārjuna → filosofie budistă, Namkhai Norbu → tradiția contemplativă Dzogchen). Citește-le una lângă alta — o singură întrebare traversează totul: cum au înțeles diferitele tradiții mintea, conștiința, suferința, comportamentul și transformarea?",
-  "traditions_master_note": "Numele deja prezente în biblioteca de psihologie de mai sus (Freud, Perls, Kahneman și alții) reapar aici, la locul lor din această listă — deschiderea lor deschide același personaj.",
   "table_num": "#",
   "table_name": "Nume",
   "table_known_for": "Cunoscut pentru",
@@ -595,117 +591,6 @@
     "Încearcă să răspunzi la {topic} deliberat din Adultul tău -- calm, factual, prezent -- și observă ce se schimbă.",
     "Numește onest „jocul” în care mereu ajungi în privința lui {topic}, și câștigul pe care ți-l oferă.",
     "Numește exact mângâierea pe care o voiai de la {topic}, și cere-o direct în loc să treci prin joc."
-   ]
-  },
-  "buddhist_classical": {
-   "label": "Filosofie Budistă Clasică",
-   "openers": [
-    "Înainte să-mi spui ce înseamnă {topic} -- spune-mi ce a apărut de fapt: ce ai văzut, simțit, gândit, în ordine.",
-    "Ceea ce numești {topic} e un singur lucru, sau un lanț de cauze care se sprijină una pe alta?",
-    "Observă spațiul dintre povestea despre {t1} și evenimentul brut în sine. Cu care dintre cele două stai chiar acum?",
-    "Privind atent, are {topic} o margine, un loc unde începe și se oprește? Sau depinde de tot ce-l înconjoară pentru a exista?",
-    "Care dintre cele trei caracteristici e mai puternică în {topic} chiar acum -- impermanența, insatisfacția, sau non-sinele?",
-    "Unde e agățarea de dorință în {topic} -- dorința ca lucrurile să fie altfel decât sunt?"
-   ],
-   "reflect": [
-    "Deci {topic} apare depinzând de condiții -- înlătură una, și mai rezistă?",
-    "Descrii {topic} ca solid. Privește din nou: e mai degrabă ca un val, sau ca apa?",
-    "Ceea ce numești „{topic}” și ceea ce numești „eu” -- unde e exact linia dintre ele?",
-    "A doua săgeată e suferința pe care o adăugăm peste prima durere, inevitabilă -- cât din {topic} e a doua săgeată?",
-    "Atașamentul de un rezultat, mai mult decât rezultatul în sine, e adesea ceea ce conduce asta."
-   ],
-   "technique": [
-    "Încearcă asta: pentru o respirație întreagă, privește direct la {topic} fără să-l numești. Ce rămâne când eticheta cade?",
-    "Urmărește {topic} înapoi, cauză cu cauză, cât de departe poți. Unde începe cu adevărat lanțul?",
-    "Încearcă practica notării: numește în tăcere ce se întâmplă în {topic} drept „gândire”, „simțire” sau „percepere”, pe măsură ce apare."
-   ]
-  },
-  "kagyu_mahamudra": {
-   "label": "Mahāmudrā / Linia Kagyu",
-   "openers": [
-    "Încetează să încerci să repari {topic}. Odihnește-te în asta pentru o respirație, exact așa cum e -- ce e cu adevărat acolo?",
-    "Ai dat târcoale lui {topic} cu mintea. Ce se întâmplă dacă cazi direct în asta, ca în apă rece?",
-    "Cine e cel care se îngrijorează de {topic}? Caută direct acela -- nu gândul, ci ceea ce privește.",
-    "Stai cu {topic} cum ai sta cu un munte -- nu rezolvând, doar lăsându-l să fie văzut.",
-    "Ce se întâmplă cu {topic} în clipa în care încetezi să încerci să-l înțelegi și pur și simplu privești?",
-    "Există efort în felul cum ții {topic} chiar acum? Unde se află exact acel efort?"
-   ],
-   "reflect": [
-    "Continui să meditezi asupra lui {topic}. Ce se întâmplă în momentul în care încetezi să meditezi și pur și simplu lași mintea să fie minte?",
-    "Mintea obișnuită, exact așa cum e, chiar acum, conține deja {topic} fără să fie nevoie să se schimbe. Crezi asta, sau doar o înțelegi?",
-    "Chiar și efortul de a fi lipsit de efort tot e efort. Poți vedea și asta?",
-    "Mintea care privește mintea nu găsește niciodată cu adevărat ceva de apucat -- ce ai găsit când ai privit?"
-   ],
-   "technique": [
-    "Lasă următoarea apariție a lui {topic} să vină și să plece complet de la sine, ca un nor care traversează cerul, fără să faci nimic cu asta.",
-    "Expiră complet și reține, doar o clipă, exact unde trăiește {topic} în corp. Ce se relaxează?"
-   ]
-  },
-  "nyingma_dzogchen": {
-   "label": "Dzogchen / Linia Nyingma",
-   "openers": [
-    "Nu urmări {topic}, și nici nu-l respinge. Observă doar: ce e conștient de {topic} chiar acum, înainte să-l numești?",
-    "Asta -- {topic} -- apare deja într-o conștiență care n-a fost niciodată tulburată de asta. Poți găsi acea conștiență, sau doar conținutul ei?",
-    "Ce-ar fi dacă {topic} n-ar avea nevoie să fie reparat, ci doar recunoscut? Ce se întâmplă când îl vezi pur și simplu clar, fără să ajustezi nimic?",
-    "De unde apare {topic}, unde rămâne, și unde se duce? Privește direct, nu la ideea despre asta.",
-    "Înainte ca {topic} să fie numit, ce era pur și simplu?",
-    "E conștiența însăși tulburată de {topic}, sau doar de vremea lui trecătoare?"
-   ],
-   "reflect": [
-    "Descrii {topic} ca pe o problemă de rezolvat. În starea naturală, e doar o altă manifestare -- ce se schimbă dacă îl vezi așa?",
-    "Auto-eliberarea înseamnă că {topic} se dizolvă în clipa în care e cu adevărat văzut, fără corecție necesară. Ai privit cu adevărat, sau doar te-ai gândit să privești?",
-    "Sub {topic}, există o cunoaștere care era acolo înainte să apară și va fi acolo după ce va trece?",
-    "Nu trebuie să fie diferit -- doar văzut gol, așa cum e."
-   ],
-   "technique": [
-    "Lasă privirea să se înmoaie, respirația să se așeze, și pur și simplu odihnește-te -- nu concentrat pe {topic}, nu ignorându-l. Doar asta, treizeci de secunde.",
-    "Întreabă-te direct: cine sau ce e conștient de {topic}? Nu răspunde cu un concept precum {t1} -- privește."
-   ]
-  },
-  "lamrim_kadam": {
-   "label": "Lamrim / Linia Kadam-Gelug",
-   "openers": [
-    "Înainte să continuăm cu {topic} -- unde ești chiar acum pe cale? La început, la mijloc, sau sari peste pași?",
-    "Cum ar arăta să lucrezi la {topic} în ordinea corectă -- mai întâi fundația, apoi motivația, apoi viziunea?",
-    "Vine interesul tău pentru {topic} din a vrea confort pentru tine, sau din a vrea să fii util altora? Ambele sunt în regulă, dar fii sincer care e.",
-    "Să fim sistematici cu {topic}. Ce fundație îi trebuie ca să reziste cu adevărat?",
-    "Unde se situează {topic} față de motivația ta -- servește bunăstarea altora, sau doar a ta?",
-    "Ce ar spune fiecare dintre perspectivele mică, medie și mare despre {topic}?"
-   ],
-   "reflect": [
-    "Întinzi mâna spre viziunea avansată a lui {topic} fără fundațiile de dedesubt. Ce fundație lipsește încă?",
-    "Disciplina nu e dușmanul lui {topic} -- e ceea ce face asta suficient de stabil pentru a construi pe asta. Unde e subțire a ta chiar acum?",
-    "Dacă pui {topic} în contextul întregii căi graduale, mai pare la fel de urgent, sau își găsește locul potrivit?",
-    "Renunțarea nu e respingere -- e claritate despre ce provoacă cu adevărat ușurare durabilă de la ceva ca {topic}.",
-    "Chiar și un lucru greu ca {topic} devine material util odată ce e ținut ca practică, nu doar ca problemă."
-   ],
-   "technique": [
-    "Scrie în ordine cei trei sau patru pași care ar trebui cu adevărat să se întâmple înainte ca {topic} să se rezolve. Începe cu cel mai mic.",
-    "Petrece un minut reflectând la impermanență înainte de a te întoarce la {topic} -- pare diferit de acolo?",
-    "Încearcă tonglen timp de un minut: inspiră disconfortul lui {topic}, expiră ușurare, pentru tine și pentru oricine altcineva care se confruntă cu același lucru."
-   ]
-  },
-  "contemplative_science": {
-   "label": "Știință Contemplativă / Budism și Occident",
-   "openers": [
-    "Să tratăm {topic} ca pe o abilitate antrenabilă, nu o trăsătură fixă. Cum ar arăta concret prima mică repetiție?",
-    "Înainte să interpretăm {topic}, putem pur și simplu să-l observăm -- o respirație, cu atenție, fără nicio poveste atașată încă?",
-    "Ce spune dovada din propria ta experiență despre {topic}, separat de ceea ce ți s-a spus că ar trebui să simți?",
-    "Dacă ai exersa cu {t1} timp de opt săptămâni, zece minute pe zi, ce ai antrena de fapt?",
-    "Ce s-ar schimba probabil la {topic} după opt săptămâni de practică constantă, conform cercetării?",
-    "E reactivitate, sau e responsivitate -- și care e diferența reală chiar acum?"
-   ],
-   "reflect": [
-    "Descrii {topic} ca pe ceva ce ți se întâmplă. Ce se schimbă dacă îl tratezi ca pe ceva pentru care poți antrena un răspuns?",
-    "Atenția e un mușchi, și chiar acum e îndreptată direct spre {topic}. Ce se întâmplă dacă o muți ușor, deliberat?",
-    "Există un decalaj între eveniment și reacția ta la {topic}. Cât de larg e acel decalaj azi pentru tine?",
-    "Neuroplasticitatea înseamnă că tiparul din {topic} e mai modificabil decât pare chiar acum.",
-    "Interocepția -- observarea semnalelor corpului -- adesea precede povestea conștientă despre {topic}."
-   ],
-   "technique": [
-    "Chiar acum: trei respirații lente, atenție totală doar pe respirație. Apoi întoarce-te la {topic} și spune-mi ce e diferit.",
-    "Numește {topic} cu voce tare, simplu, așa cum ar înregistra un om de știință o observație -- fără cuvinte de judecată. Ce rămâne?",
-    "Încearcă să etichetezi emoția într-un cuvânt, cu voce tare, înainte de a reacționa la {topic} -- „etichetarea afectivă” calmează în mod fiabil răspunsul amigdalei."
    ]
   }
  },
