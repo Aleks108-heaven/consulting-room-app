@@ -33,8 +33,8 @@ An 8px-rooted scale (`space-1` … `space-12`). Cards and controls round to `rad
 - **Card** — the theorist card: name, lifespan, one-line focus, school pill. The repeating unit of the whole app.
 - **Tag** — the amber school-of-thought pill (PSYCHOANALYTIC, JUNGIAN, ADLERIAN, …), also usable as a small status label.
 - **Button** — primary (filled amber) and secondary (outline) actions.
-- **NavLink** — the top-nav text links (Perls lineage, Traditions of the Mind, About, Settings), including their active/hover state.
+- **NavLink** — the top-nav text links (Perls lineage, Psychology terms, Quotes, About, Settings), including their active/hover state.
 
 ## What's not built yet
 
-This first release covers the browse grid shown in the reference screen. The theorist detail/chat view, the Perls lineage timeline, Traditions of the Mind taxonomy page, and the Settings panel described alongside it will need their own components (a chat bubble/turn, a timeline node, a taxonomy tree row, a settings field) — flag them and I'll add them as their own cards using these same tokens.
+This first release covers the browse grid shown in the reference screen. The theorist detail/chat view, the Perls lineage timeline, and the Settings panel described alongside it will need their own components (a chat bubble/turn, a timeline node, a settings field) — flag them and I'll add them as their own cards using these same tokens.

@@ -2,12 +2,12 @@
  "label": "Italiano",
  "ui": {
   "brand_title": "Sala di Consultazione",
-  "brand_sub": "135 TEORICI · SIMULAZIONE OFFLINE",
+  "brand_sub": "102 TEORICI · SIMULAZIONE OFFLINE",
   "nav_lineage": "Linea di Perls",
   "nav_about": "Informazioni",
   "nav_settings": "Impostazioni",
   "lib_h1": "Scegli con chi vuoi parlare",
-  "lib_lede": "Ogni scheda è una simulazione scriptata costruita su teorie e tecniche pubblicamente documentate — un compagno di studio per la storia della psicoterapia e del pensiero contemplativo, non un vero clinico o insegnante.",
+  "lib_lede": "Ogni scheda è una simulazione scriptata costruita su teorie e tecniche pubblicamente documentate — un compagno di studio per la storia della psicoterapia, non un vero clinico o insegnante.",
   "lib_read_disclaimer": "Leggi l'avvertenza →",
   "search_placeholder": "Cerca per nome o idea (es. «sogni», «attaccamento», «CBT»)…",
   "filter_all_schools": "Tutte le scuole di pensiero",
@@ -22,7 +22,7 @@
   "live_badge": "Live",
   "scripted_badge": "Script",
   "about_title": "Informazioni & sicurezza",
-  "about_p1": "<strong>Cos'è questo.</strong> Consulting Room è un simulatore educativo. Ognuno dei 135 personaggi è costruito a partire da biografia pubblicamente documentata, concetti chiave e tecniche caratteristiche associate a uno psicologo, psicoterapeuta, filosofo o insegnante di meditazione reale, storico o contemporaneo. Le risposte sono generate da un motore offline basato su modelli scriptati (oppure, solo se fornisci una tua chiave API, da un modello linguistico live istruito a restare nel personaggio) — mai dalla persona reale.",
+  "about_p1": "<strong>Cos'è questo.</strong> Consulting Room è un simulatore educativo. Ognuno dei 102 personaggi è costruito a partire da biografia pubblicamente documentata, concetti chiave e tecniche caratteristiche associate a uno psicologo, psicoterapeuta o filosofo reale, storico o contemporaneo. Le risposte sono generate da un motore offline basato su modelli scriptati (oppure, solo se fornisci una tua chiave API, da un modello linguistico live istruito a restare nel personaggio) — mai dalla persona reale.",
   "about_h_not": "Cosa non è",
   "about_p_not": "Non è terapia. Non è una diagnosi. Non è assistenza medica, psichiatrica o di crisi. Non sono le parole reali della persona vera — considera ogni risposta come un composto inventato e illustrativo, non una citazione verificata. Niente qui dovrebbe essere usato per decisioni su farmaci, trattamenti o sicurezza.",
   "about_h_struggling": "Se stai attraversando un momento difficile",
@@ -35,10 +35,6 @@
   "lineage_h_compare": "Confronta con",
   "lineage_h_master": "Elenco completo (come dato, 1–110)",
   "lineage_master_note": "Alcuni nomi si ripetono nell'elenco numerato originale (es. Jung al #4 e al #12, Perls al #17 e al #103) — ognuno apre comunque lo stesso personaggio corrispondente qui sotto.",
-  "nav_traditions": "Tradizioni della Mente",
-  "traditions_title": "Tradizioni della Mente",
-  "traditions_intro": "Un secondo elenco, accanto a quello sopra: filosofi buddhisti e insegnanti contemplativi, più alcune figure che fanno da ponte verso la psicologia (Skinner → psicologia sperimentale, Freud → psicoanalisi, Kahneman → scienze cognitive, Nāgārjuna → filosofia buddhista, Namkhai Norbu → la tradizione contemplativa Dzogchen). Leggili affiancati: una sola domanda attraversa tutto: come hanno inteso mente, coscienza, sofferenza, comportamento e trasformazione le diverse tradizioni?",
-  "traditions_master_note": "I nomi già presenti nella biblioteca di psicologia sopra (Freud, Perls, Kahneman e altri) ricompaiono qui al loro posto in questo elenco — aprirli apre lo stesso personaggio.",
   "table_num": "#",
   "table_name": "Nome",
   "table_known_for": "Noto per",
@@ -595,117 +591,6 @@
     "Prova a rispondere a {topic} deliberatamente dal tuo Adulto -- calmo, fattuale, presente -- e nota cosa cambia.",
     "Nomina onestamente il «gioco» in cui continui a finire riguardo a {topic}, e la ricompensa che ti dà.",
     "Nomina esattamente la carezza che volevi da {topic}, e chiedila direttamente invece che tramite il gioco."
-   ]
-  },
-  "buddhist_classical": {
-   "label": "Filosofia Buddhista Classica",
-   "openers": [
-    "Prima di dirmi cosa significa {topic} -- dimmi cosa è effettivamente emerso: cosa hai visto, sentito, pensato, in ordine.",
-    "Quello che chiami {topic} è una cosa sola, o una catena di cause che si appoggiano l'una all'altra?",
-    "Nota lo spazio tra la storia su {t1} e l'evento grezzo stesso. Con quale dei due stai seduto adesso?",
-    "Guardando attentamente, {topic} ha un bordo, un punto dove inizia e finisce? O dipende da tutto ciò che lo circonda per esistere?",
-    "Quale delle tre caratteristiche è più forte in {topic} in questo momento -- impermanenza, insoddisfazione, o non-sé?",
-    "Dov'è il desiderio ardente in {topic} -- il voler che le cose siano diverse da come sono?"
-   ],
-   "reflect": [
-    "Quindi {topic} sorge dipendendo da condizioni -- rimuovine una, e regge ancora?",
-    "Stai descrivendo {topic} come solido. Guarda di nuovo: è più simile a un'onda, o all'acqua?",
-    "Quello che chiami «{topic}» e quello che chiami «io» -- dov'è esattamente il confine tra loro?",
-    "La seconda freccia è la sofferenza che aggiungiamo sopra al primo dolore, inevitabile -- quanto di {topic} è la seconda freccia?",
-    "L'attaccamento a un risultato, più del risultato stesso, è spesso ciò che guida questo."
-   ],
-   "technique": [
-    "Prova questo: per un respiro intero, guarda direttamente {topic} senza nominarlo. Cosa resta quando l'etichetta cade?",
-    "Ripercorri {topic} all'indietro, causa per causa, il più lontano possibile. Dove inizia davvero la catena?",
-    "Prova la pratica del noting: etichetta silenziosamente ciò che accade in {topic} come «pensare», «sentire» o «percepire», man mano che sorge."
-   ]
-  },
-  "kagyu_mahamudra": {
-   "label": "Mahāmudrā / Lignaggio Kagyu",
-   "openers": [
-    "Smetti di cercare di sistemare {topic}. Riposaci sopra per un respiro, esattamente com'è -- cosa c'è davvero?",
-    "Hai girato intorno a {topic} con la testa. Cosa succede se ci caschi dentro direttamente, come in acqua fredda?",
-    "Chi è preoccupato per {topic}? Cerca proprio quello -- non il pensiero, ma ciò che guarda.",
-    "Siedi con {topic} come faresti con una montagna -- non risolvendo, semplicemente lasciandolo essere visto.",
-    "Cosa succede a {topic} nell'istante in cui smetti di cercare di capirlo e semplicemente guardi?",
-    "C'è sforzo in come stai tenendo {topic} in questo momento? Dove si trova esattamente quello sforzo?"
-   ],
-   "reflect": [
-    "Continui a meditare su {topic}. Cosa succede nel momento in cui smetti di meditare e lasci semplicemente che la mente sia mente?",
-    "La mente ordinaria, esattamente com'è, ora, contiene già {topic} senza bisogno che cambi. Lo credi, o lo capisci soltanto?",
-    "Anche lo sforzo di essere senza sforzo è ancora sforzo. Riesci a vedere anche questo?",
-    "La mente che osserva la mente non trova mai davvero qualcosa da afferrare -- cosa hai trovato quando hai guardato?"
-   ],
-   "technique": [
-    "Lascia che il prossimo sorgere di {topic} vada e venga completamente da solo, come una nuvola attraversa il cielo, senza che tu faccia nulla.",
-    "Espira completamente e trattieni, solo per un momento, proprio dove {topic} vive nel corpo. Cosa si allenta?"
-   ]
-  },
-  "nyingma_dzogchen": {
-   "label": "Dzogchen / Lignaggio Nyingma",
-   "openers": [
-    "Non inseguire {topic}, e non respingerlo nemmeno. Nota solo: cos'è consapevole di {topic} in questo momento, prima che tu lo nomini?",
-    "Ciò che chiami {topic} appare già in una consapevolezza che non è mai stata disturbata da esso. Riesci a trovare quella consapevolezza, o solo il suo contenuto?",
-    "E se {topic} non avesse bisogno di essere sistemato, ma solo riconosciuto? Cosa succede quando lo vedi semplicemente con chiarezza, senza aggiustare nulla?",
-    "Da dove sorge ciò che chiami {topic}, dove dimora, e dove va? Guarda direttamente, non all'idea di esso.",
-    "Prima che {topic} fosse nominato, cosa c'era semplicemente?",
-    "La consapevolezza stessa è disturbata da {topic}, o solo il suo tempo meteorologico passeggero?"
-   ],
-   "reflect": [
-    "Descrivi {topic} come un problema da risolvere. Nello stato naturale, è solo un'altra manifestazione -- cosa cambia se lo vedi così?",
-    "L'autoliberazione significa che {topic} si scioglie nell'istante in cui è davvero visto, senza bisogno di correzione. Hai davvero guardato, o solo pensato a guardare?",
-    "Sotto {topic}, c'è una consapevolezza che c'era prima che sorgesse e ci sarà dopo che sarà passato?",
-    "Non deve essere diverso -- solo visto nudo, così com'è."
-   ],
-   "technique": [
-    "Lascia che lo sguardo si ammorbidisca, il respiro si posi, e semplicemente riposa -- non concentrato su {topic}, non ignorandolo. Solo questo, trenta secondi.",
-    "Chiediti direttamente: chi o cosa è consapevole di {topic}? Non rispondere con un concetto come {t1} -- guarda."
-   ]
-  },
-  "lamrim_kadam": {
-   "label": "Lamrim / Lignaggio Kadam-Gelug",
-   "openers": [
-    "Prima di continuare con {topic} -- dove sei sul sentiero in questo momento? All'inizio, a metà, o stai saltando dei passi?",
-    "Come apparirebbe lavorare su {topic} nell'ordine giusto -- prima il fondamento, poi la motivazione, poi la visione?",
-    "Il tuo interesse per {topic} viene dal voler comfort per te stesso, o dal voler essere utile agli altri? Entrambi vanno bene, ma sii onesto su quale sia.",
-    "Siamo sistematici su {topic}. Quale fondamento serve a ciò, per reggere davvero?",
-    "Dove si colloca {topic} rispetto alla tua motivazione -- serve il benessere altrui, o solo il tuo?",
-    "Cosa direbbero rispettivamente la visione a portata piccola, media e grande su {topic}?"
-   ],
-   "reflect": [
-    "Stai cercando la visione avanzata di {topic} senza le basi sottostanti. Quale fondamento manca ancora?",
-    "La disciplina non è nemica di {topic} -- è ciò che lo rende abbastanza stabile per costruirci sopra. Dov'è sottile la tua, adesso?",
-    "Se collochi {topic} nel contesto dell'intero sentiero graduale, sembra ancora così urgente, o trova il suo posto giusto?",
-    "La rinuncia non è rifiuto -- è chiarezza su cosa provochi davvero sollievo duraturo da qualcosa come {topic}.",
-    "Anche una cosa difficile come {topic} diventa materiale utile una volta tenuta come pratica, non solo come problema."
-   ],
-   "technique": [
-    "Scrivi in ordine i tre o quattro passi che dovrebbero davvero avvenire prima che {topic} si risolva. Inizia dal più piccolo.",
-    "Dedica un minuto a riflettere sull'impermanenza prima di tornare a {topic} -- appare diverso da lì?",
-    "Prova il tonglen per un minuto: inspira il disagio di {topic}, espira sollievo, per te stesso e per chiunque altro affronti la stessa cosa."
-   ]
-  },
-  "contemplative_science": {
-   "label": "Scienza Contemplativa / Buddhismo e Occidente",
-   "openers": [
-    "Trattiamo {topic} come un'abilità allenabile, non un tratto fisso. Come apparirebbe concretamente la prima piccola ripetizione?",
-    "Prima di interpretare {topic}, possiamo semplicemente notarlo -- un respiro, con attenzione, senza ancora attaccarci una storia?",
-    "Cosa dice l'evidenza della tua stessa esperienza su {topic}, a parte quello che ti è stato detto che dovresti provare?",
-    "Se praticassi con {t1} per otto settimane, dieci minuti al giorno, cosa staresti esattamente allenando?",
-    "Cosa cambierebbe probabilmente in {topic} dopo otto settimane di pratica costante, in base a ciò che mostra la ricerca?",
-    "È reattività, o è responsività -- e qual è la reale differenza in questo momento?"
-   ],
-   "reflect": [
-    "Stai descrivendo {topic} come qualcosa che ti capita. Cosa cambia se lo tratti come qualcosa su cui puoi allenare una risposta?",
-    "L'attenzione è un muscolo, e in questo momento è puntata proprio su {topic}. Cosa succede se la sposti gentilmente, deliberatamente?",
-    "C'è un divario tra l'evento e la tua reazione a {topic}. Quanto è ampio quel divario per te oggi?",
-    "La neuroplasticità significa che lo schema in {topic} è più modificabile di quanto sembri ora.",
-    "L'interocezione -- notare i segnali del corpo -- spesso precede la storia cosciente su {topic}."
-   ],
-   "technique": [
-    "Adesso: tre respiri lenti, piena attenzione solo sul respiro. Poi torna a {topic} e dimmi cosa è diverso.",
-    "Nomina {topic} ad alta voce, semplicemente, come farebbe uno scienziato registrando un'osservazione -- senza parole di giudizio. Cosa resta?",
-    "Prova a etichettare l'emozione in una parola, ad alta voce, prima di reagire a {topic} -- l'«affect labeling» calma in modo affidabile la risposta dell'amigdala."
    ]
   }
  },

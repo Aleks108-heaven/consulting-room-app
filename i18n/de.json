@@ -2,12 +2,12 @@
  "label": "Deutsch",
  "ui": {
   "brand_title": "Sprechzimmer",
-  "brand_sub": "135 THEORETIKER · OFFLINE-SIMULATION",
+  "brand_sub": "102 THEORETIKER · OFFLINE-SIMULATION",
   "nav_lineage": "Perls-Linie",
   "nav_about": "Über",
   "nav_settings": "Einstellungen",
   "lib_h1": "Wählen Sie, mit wem Sie sprechen möchten",
-  "lib_lede": "Jede Karte ist eine skriptbasierte Simulation, die auf öffentlich dokumentierten Theorien und Techniken beruht — ein Lernbegleiter für die Geschichte der Psychotherapie und des kontemplativen Denkens, kein echter Kliniker oder Lehrer.",
+  "lib_lede": "Jede Karte ist eine skriptbasierte Simulation, die auf öffentlich dokumentierten Theorien und Techniken beruht — ein Lernbegleiter für die Geschichte der Psychotherapie, kein echter Kliniker oder Lehrer.",
   "lib_read_disclaimer": "Haftungsausschluss lesen →",
   "search_placeholder": "Nach Name oder Idee suchen (z. B. „Träume“, „Bindung“, „KVT“) …",
   "filter_all_schools": "Alle Denkschulen",
@@ -22,7 +22,7 @@
   "live_badge": "Live",
   "scripted_badge": "Skript",
   "about_title": "Über & Sicherheit",
-  "about_p1": "<strong>Was das hier ist.</strong> Consulting Room ist ein pädagogischer Simulator. Jede der 135 Figuren basiert auf öffentlich dokumentierter Biografie, Kernkonzepten und charakteristischen Techniken, die mit einer realen historischen oder zeitgenössischen Psycholog:in, Psychotherapeut:in, Philosoph:in oder Meditationslehrer:in verbunden sind. Antworten werden von einer skriptbasierten Offline-Vorlagen-Engine erzeugt (oder, nur wenn Sie einen eigenen API-Schlüssel angeben, von einem Live-Sprachmodell, das angewiesen wird, in der Rolle zu bleiben) — niemals von der echten Person.",
+  "about_p1": "<strong>Was das hier ist.</strong> Consulting Room ist ein pädagogischer Simulator. Jede der 102 Figuren basiert auf öffentlich dokumentierter Biografie, Kernkonzepten und charakteristischen Techniken, die mit einer realen historischen oder zeitgenössischen Psycholog:in, Psychotherapeut:in oder Philosoph:in verbunden sind. Antworten werden von einer skriptbasierten Offline-Vorlagen-Engine erzeugt (oder, nur wenn Sie einen eigenen API-Schlüssel angeben, von einem Live-Sprachmodell, das angewiesen wird, in der Rolle zu bleiben) — niemals von der echten Person.",
   "about_h_not": "Was das hier nicht ist",
   "about_p_not": "Keine Therapie. Keine Diagnose. Keine medizinische, psychiatrische oder Krisenversorgung. Nicht die eigenen Worte der echten Person — behandeln Sie jede Antwort als erfundenes, illustratives Konstrukt, nicht als verifiziertes Zitat. Nichts hier sollte für Entscheidungen über Medikamente, Behandlung oder Sicherheit verwendet werden.",
   "about_h_struggling": "Wenn es Ihnen gerade schlecht geht",
@@ -35,10 +35,6 @@
   "lineage_h_compare": "Zum Vergleich",
   "lineage_h_master": "Vollständige Gesamtliste (wie angegeben, 1–110)",
   "lineage_master_note": "Einige Namen wiederholen sich in der ursprünglichen nummerierten Liste (z. B. Jung bei #4 und #12, Perls bei #17 und #103) — jeder öffnet weiterhin dieselbe passende Figur unten.",
-  "nav_traditions": "Traditionen des Geistes",
-  "traditions_title": "Traditionen des Geistes",
-  "traditions_intro": "Eine zweite Liste, neben der obigen: buddhistische Philosophen und kontemplative Lehrer, plus einige Figuren, die eine Brücke zurück zur Psychologie schlagen (Skinner → experimentelle Psychologie, Freud → Psychoanalyse, Kahneman → Kognitionswissenschaft, Nāgārjuna → buddhistische Philosophie, Namkhai Norbu → die Dzogchen-Kontemplationstradition). Lesen Sie sie nebeneinander — eine einzige Frage liegt allem zugrunde: Wie haben verschiedene Traditionen Geist, Bewusstsein, Leiden, Verhalten und Transformation verstanden?",
-  "traditions_master_note": "Namen, die bereits in der Psychologie-Bibliothek oben stehen (Freud, Perls, Kahneman und andere), erscheinen hier erneut an ihrer Stelle in dieser Liste — sie öffnen dieselbe Figur.",
   "table_num": "#",
   "table_name": "Name",
   "table_known_for": "Bekannt für",
@@ -595,117 +591,6 @@
     "Versuchen Sie, bewusst aus Ihrem Erwachsenen-Ich auf {topic} zu reagieren -- ruhig, sachlich, präsent -- und bemerken Sie, was sich ändert.",
     "Benennen, Sie ehrlich das „Spiel“, in dem Sie bei dem, was Sie {topic} nennen, immer wieder landen, und den Lohn, den es Ihnen bringt.",
     "Benennen, Sie genau die Zuwendung, die Sie sich von dem, was Sie {topic} nennen, gewünscht haben, und bitten Sie direkt darum, statt über das Spiel."
-   ]
-  },
-  "buddhist_classical": {
-   "label": "Klassische buddhistische Philosophie",
-   "openers": [
-    "Bevor Sie mir sagen, was das, was Sie {topic} nennen, bedeutet -- sagen Sie mir, was tatsächlich der Reihe nach entstanden ist: was Sie sahen, fühlten, dachten.",
-    "Ist das, was Sie {topic} nennen, eine einzelne Sache, oder eine Kette von Ursachen, die sich aneinanderlehnen?",
-    "Bemerken Sie den Raum zwischen der Geschichte über {t1} und dem rohen Ereignis selbst. Bei welchem von beiden sitzen Sie gerade?",
-    "Hat {topic}, genau betrachtet, einen Rand, eine Stelle, wo es beginnt und endet? Oder braucht es alles um sich herum, um überhaupt zu bestehen?",
-    "Welche der drei Daseinsmerkmale ist bei dem, was Sie {topic} nennen, gerade am lautesten -- Vergänglichkeit, Unbefriedigendheit, oder Nicht-Selbst?",
-    "Wo ist das Anhaften in dem, was Sie {topic} nennen -- das Wollen, dass die Dinge anders wären, als sie sind?"
-   ],
-   "reflect": [
-    "Das, was Sie {topic} nennen, entsteht also abhängig von Bedingungen -- entfernen Sie eine, bleibt es dann noch bestehen?",
-    "Sie beschreiben {topic} als etwas Festes. Schauen Sie noch einmal: Ist es eher wie eine Welle, oder wie das Wasser?",
-    "Was Sie „{topic}“ nennen, und was Sie „Ich“ nennen -- wo genau verläuft die Grenze dazwischen?",
-    "Der zweite Pfeil ist das Leid, das wir dem ersten, unausweichlichen Schmerz hinzufügen -- wie viel von dem, was Sie {topic} nennen, ist der zweite Pfeil?",
-    "Anhaften an ein Ergebnis treibt das hier oft mehr an als das Ergebnis selbst."
-   ],
-   "technique": [
-    "Versuchen Sie Folgendes: Schauen Sie für einen vollen Atemzug direkt auf {topic}, ohne es zu benennen. Was bleibt, wenn das Etikett wegfällt?",
-    "Verfolgen Sie {topic} rückwärts, Ursache für Ursache, so weit Sie können. Wo beginnt die Kette tatsächlich?",
-    "Versuchen Sie Noting-Praxis: Benennen, Sie still, was in dem, was Sie {topic} nennen, geschieht, als „Denken“, „Fühlen“ oder „Spüren“, während es entsteht."
-   ]
-  },
-  "kagyu_mahamudra": {
-   "label": "Mahāmudrā / Kagyü-Linie",
-   "openers": [
-    "Versuchen Sie nicht, {topic} zu reparieren. Ruhen Sie einfach für einen Atemzug darin, genau wie es ist -- was ist wirklich da?",
-    "Sie umkreisen {topic} schon lange mit dem Kopf. Was passiert, wenn Sie direkt hineinfallen, so wie in kaltes Wasser?",
-    "Wer ist es, der sich um {topic} sorgt? Schauen Sie direkt nach diesem einen -- nicht auf den Gedanken, sondern auf das, was schaut.",
-    "Sitzen Sie mit dem, was Sie {topic} nennen, wie Sie mit einem Berg sitzen würden -- nicht lösend, nur gesehen werden lassend.",
-    "Was passiert mit dem, was Sie {topic} nennen, in dem Moment, in dem Sie aufhören, es verstehen zu wollen, und einfach schauen?",
-    "Liegt Anstrengung darin, wie Sie {topic} gerade halten? Wo genau sitzt diese Anstrengung?"
-   ],
-   "reflect": [
-    "Sie meditieren immer weiter über {topic}. Was passiert in dem Moment, in dem Sie aufhören zu meditieren und Geist einfach Geist sein lassen?",
-    "Gewöhnlicher Geist, genau wie er ist, gerade jetzt, enthält {topic} bereits, ohne dass es sich ändern muss. Glauben Sie das, oder verstehen Sie es nur?",
-    "Selbst der Versuch, mühelos zu sein, ist noch Mühe. Können Sie auch das sehen?",
-    "Geist, der Geist betrachtet, findet nie ganz etwas Greifbares -- was haben Sie gefunden, als Sie geschaut haben?"
-   ],
-   "technique": [
-    "Lassen Sie das nächste Auftauchen von dem, was Sie {topic} nennen, ganz von selbst kommen und gehen, so wie eine Wolke den Himmel überquert, ohne dass Sie etwas damit tun.",
-    "Atmen Sie vollständig aus und halten Sie, nur für einen Moment, genau dort, wo das, was Sie {topic} nennen, im Körper wohnt. Was löst sich?"
-   ]
-  },
-  "nyingma_dzogchen": {
-   "label": "Dzogchen / Nyingma-Linie",
-   "openers": [
-    "Jagen Sie {topic} nicht, und stoßen Sie es auch nicht weg. Bemerken Sie nur: Was ist sich {topic} gerade bewusst, bevor Sie es benennen?",
-    "Das, was Sie {topic} nennen, erscheint bereits in einem Gewahrsein, das davon nie gestört war. Können Sie dieses Gewahrsein finden, oder nur seinen Inhalt?",
-    "Was, wenn {topic} nicht repariert, sondern nur erkannt werden muss? Was passiert, wenn Sie es einfach klar sehen, ohne etwas anzupassen?",
-    "Woher entsteht das, was Sie {topic} nennen, wo verweilt es, und wohin vergeht es? Schauen Sie direkt hin, nicht auf die Vorstellung davon.",
-    "Bevor das, was Sie {topic} nennen, benannt wurde -- was war einfach da?",
-    "Ist das Gewahrsein selbst durch {topic} beunruhigt, oder nur sein vorübergehendes Wetter?"
-   ],
-   "reflect": [
-    "Sie beschreiben {topic} als ein zu lösendes Problem. Im natürlichen Zustand ist es nur eine weitere Erscheinung -- was ändert sich, wenn Sie es so sehen?",
-    "Selbstbefreiung bedeutet, dass {topic} sich in dem Moment löst, in dem es wirklich gesehen wird, ohne Korrektur nötig. Haben Sie wirklich geschaut, oder nur ans Schauen gedacht?",
-    "Gibt es unter dem, was Sie {topic} nennen, ein Wissen, das schon da war, bevor es entstand, und da sein wird, wenn es vergangen ist?",
-    "Es muss nicht anders sein -- nur nackt gesehen werden, so wie es ist."
-   ],
-   "technique": [
-    "Lassen Sie den Blick weich werden, den Atem sich setzen, und ruhen Sie einfach -- nicht konzentriert auf {topic}, nicht ignorierend. Nur dies, dreißig Sekunden.",
-    "Fragen Sie sich direkt: Wer oder was ist sich {topic} bewusst? Antworten Sie nicht mit einem Begriff wie {t1} -- schauen Sie."
-   ]
-  },
-  "lamrim_kadam": {
-   "label": "Lamrim / Kadam-Gelug-Linie",
-   "openers": [
-    "Bevor wir mit dem, was Sie {topic} nennen, weitermachen -- wo stehen Sie gerade auf dem Pfad? Am Anfang, in der Mitte, oder überspringen Sie Schritte?",
-    "Wie würde es aussehen, mit dem, was Sie {topic} nennen, in der richtigen Reihenfolge zu arbeiten -- erst der Grund, dann die Motivation, dann die Sichtweise?",
-    "Kommt Ihr Interesse an dem, was Sie {topic} nennen, aus dem Wunsch nach Komfort für sich selbst, oder daraus, anderen nützlich zu sein? Beides ist in Ordnung, aber seien Sie ehrlich, welches es ist.",
-    "Seien wir systematisch bei dem, was Sie {topic} nennen. Welches Fundament braucht es, um wirklich zu halten?",
-    "Wo steht das, was Sie {topic} nennen, im Verhältnis zu Ihrer Motivation -- dient es dem Wohl anderer, oder gerade nur Ihrem eigenen?",
-    "Was würden die kleine, die mittlere und die große Sichtweise jeweils zu dem, was Sie {topic} nennen, sagen?"
-   ],
-   "reflect": [
-    "Sie greifen nach der fortgeschrittenen Sicht auf {topic}, ohne die Grundlagen darunter. Welches Fundament fehlt noch?",
-    "Disziplin ist nicht der Feind von dem, was Sie {topic} nennen -- sie ist das, was es stabil genug macht, um darauf aufzubauen. Wo ist Ihre gerade dünn?",
-    "Wenn Sie {topic} in den Kontext des ganzen abgestuften Pfades stellen -- wirkt es dann noch genauso dringend, oder findet es seinen richtigen Platz?",
-    "Entsagung ist keine Ablehnung -- sie ist Klarheit darüber, was dauerhafte Erleichterung von etwas wie {topic} tatsächlich verschafft.",
-    "Selbst ein schweres Thema wie {topic} wird zu brauchbarem Übungsstoff, wenn Sie es so halten."
-   ],
-   "technique": [
-    "Schreiben Sie der Reihe nach die drei oder vier Schritte auf, die tatsächlich geschehen müssten, bevor sich das, was Sie {topic} nennen, löst. Beginnen Sie mit dem kleinsten.",
-    "Nehmen Sie sich eine Minute, um über Vergänglichkeit nachzudenken, bevor Sie zu dem, was Sie {topic} nennen, zurückkehren -- sieht es von dort anders aus?",
-    "Versuchen Sie eine Minute Tonglen: Atmen Sie das Unbehagen von dem, was Sie {topic} nennen, ein, atmen Sie Erleichterung aus, für sich selbst und für alle anderen, die vor demselben stehen."
-   ]
-  },
-  "contemplative_science": {
-   "label": "Kontemplative Wissenschaft / Buddhismus und der Westen",
-   "openers": [
-    "Behandeln wir {topic} wie eine trainierbare Fähigkeit, nicht wie eine feste Eigenschaft. Wie würde die erste kleine Übungseinheit konkret aussehen?",
-    "Bevor wir {topic} interpretieren -- können wir es einfach bemerken, einen Atemzug lang, aufmerksam, noch ohne Geschichte dazu?",
-    "Was sagt die Evidenz aus Ihrer eigenen Erfahrung über {topic}, unabhängig davon, was man Ihnen gesagt hat, dass Sie fühlen sollten?",
-    "Wenn Sie acht Wochen lang, zehn Minuten täglich, mit {t1} üben würden -- was genau würden Sie trainieren?",
-    "Was würde sich nach acht Wochen konsequenter Übung an dem, was Sie {topic} nennen, vermutlich ändern, gemessen an dem, was die Forschung zeigt?",
-    "Ist das Reaktivität, oder ist es Responsivität -- und was ist der tatsächliche Unterschied in diesem Moment?"
-   ],
-   "reflect": [
-    "Sie beschreiben {topic} als etwas, das Ihnen widerfährt. Was ändert sich, wenn Sie es als etwas behandeln, auf das Sie eine Reaktion trainieren können?",
-    "Aufmerksamkeit ist ein Muskel, und gerade ist er genau auf {topic} gerichtet. Was passiert, wenn Sie ihn sanft, bewusst, verschieben?",
-    "Es gibt eine Lücke zwischen dem Ereignis und Ihrer Reaktion auf {topic}. Wie breit ist diese Lücke heute für Sie?",
-    "Neuroplastizität bedeutet, dass das Muster in dem, was Sie {topic} nennen, veränderlicher ist, als es sich gerade anfühlt.",
-    "Interozeption -- das Bemerken der Körpersignale -- läuft der bewussten Geschichte über {topic} oft voraus."
-   ],
-   "technique": [
-    "Jetzt gerade: drei langsame Atemzüge, volle Aufmerksamkeit allein auf den Atem. Kehren Sie dann zu dem, was Sie {topic} nennen, zurück und sagen Sie mir, was anders ist.",
-    "Benennen, Sie {topic} laut, schlicht, so wie eine Wissenschaftlerin eine Beobachtung protokollieren würde -- ohne Werturteil. Was bleibt übrig?",
-    "Versuchen Sie, das Gefühl in einem Wort laut zu benennen, bevor Sie auf {topic} reagieren -- „Affect Labeling“ beruhigt zuverlässig die Reaktion der Amygdala."
    ]
   }
  },

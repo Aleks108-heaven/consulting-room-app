@@ -2,12 +2,12 @@
  "label": "Català",
  "ui": {
   "brand_title": "Sala de Consulta",
-  "brand_sub": "135 TEÒRICS · SIMULACIÓ SENSE CONNEXIÓ",
+  "brand_sub": "102 TEÒRICS · SIMULACIÓ SENSE CONNEXIÓ",
   "nav_lineage": "Línia de Perls",
   "nav_about": "Quant a",
   "nav_settings": "Configuració",
   "lib_h1": "Tria amb qui vols parlar",
-  "lib_lede": "Cada targeta és una simulació guionada construïda a partir de teories i tècniques documentades públicament — un company d'estudi per a la història de la psicoteràpia i el pensament contemplatiu, no un clínic o mestre real.",
+  "lib_lede": "Cada targeta és una simulació guionada construïda a partir de teories i tècniques documentades públicament — un company d'estudi per a la història de la psicoteràpia, no un clínic o mestre real.",
   "lib_read_disclaimer": "Llegeix l'avís legal →",
   "search_placeholder": "Cerca per nom o idea (p. ex. «somnis», «vincle», «TCC»)…",
   "filter_all_schools": "Totes les escoles de pensament",
@@ -22,7 +22,7 @@
   "live_badge": "En directe",
   "scripted_badge": "Guió",
   "about_title": "Quant a & seguretat",
-  "about_p1": "<strong>Què és això.</strong> Consulting Room és un simulador educatiu. Cadascun dels 135 personatges es construeix a partir de biografia documentada públicament, conceptes clau i tècniques característiques associades a un psicòleg, psicoterapeuta, filòsof o mestre de meditació real, històric o contemporani. Les respostes es generen amb un motor de plantilles fora de línia guionat (o, només si proporciones la teva pròpia clau API, amb un model de llenguatge en directe instruït per mantenir-se en el personatge) — mai per la persona real.",
+  "about_p1": "<strong>Què és això.</strong> Consulting Room és un simulador educatiu. Cadascun dels 102 personatges es construeix a partir de biografia documentada públicament, conceptes clau i tècniques característiques associades a un psicòleg, psicoterapeuta o filòsof real, històric o contemporani. Les respostes es generen amb un motor de plantilles fora de línia guionat (o, només si proporciones la teva pròpia clau API, amb un model de llenguatge en directe instruït per mantenir-se en el personatge) — mai per la persona real.",
   "about_h_not": "Què no és això",
   "about_p_not": "No és teràpia. No és un diagnòstic. No és atenció mèdica, psiquiàtrica ni de crisi. No són les paraules reals de la persona real — tracta cada resposta com un compost inventat i il·lustratiu, no una cita verificada. Res d'aquí s'hauria d'utilitzar per prendre decisions sobre medicació, tractament o seguretat.",
   "about_h_struggling": "Si ho estàs passant malament",
@@ -35,10 +35,6 @@
   "lineage_h_compare": "Comparar amb",
   "lineage_h_master": "Llista completa (tal com es dona, 1–110)",
   "lineage_master_note": "Alguns noms es repeteixen a la llista numerada original (p. ex. Jung al #4 i al #12, Perls al #17 i al #103) — cadascun obre igualment el mateix personatge corresponent a sota.",
-  "nav_traditions": "Tradicions de la Ment",
-  "traditions_title": "Tradicions de la Ment",
-  "traditions_intro": "Una segona llista, al costat de l'anterior: filòsofs budistes i mestres contemplatius, més algunes figures que fan de pont cap a la psicologia (Skinner → psicologia experimental, Freud → psicoanàlisi, Kahneman → ciència cognitiva, Nāgārjuna → filosofia budista, Namkhai Norbu → la tradició contemplativa Dzogchen). Llegeix-los junts: una sola pregunta ho travessa tot: com han entès la ment, la consciència, el patiment, el comportament i la transformació les diferents tradicions?",
-  "traditions_master_note": "Els noms que ja apareixen a la biblioteca de psicologia de dalt (Freud, Perls, Kahneman i d'altres) hi reapareixen al seu lloc d'aquesta llista — obrir-los obre el mateix personatge.",
   "table_num": "#",
   "table_name": "Nom",
   "table_known_for": "Conegut per",
@@ -595,117 +591,6 @@
     "Prova a respondre a {topic} deliberadament des del teu Adult -- calmat, factual, present -- i nota què canvia.",
     "Anomena honestament el «joc» en què acabes sempre sobre {topic}, i la recompensa que et dona.",
     "Anomena exactament la carícia que volies de {topic}, i demana-la directament en lloc de fer-ho a través del joc."
-   ]
-  },
-  "buddhist_classical": {
-   "label": "Filosofia Budista Clàssica",
-   "openers": [
-    "Abans de dir-me què significa {topic} -- digues-me què ha sorgit realment: què has vist, sentit, pensat, en ordre.",
-    "El que anomenes {topic} és una sola cosa, o una cadena de causes recolzant-se l'una en l'altra?",
-    "Nota l'espai entre la història sobre {t1} i l'esdeveniment en brut mateix. Amb quin dels dos estàs ara mateix?",
-    "Mirant-ho bé, {topic} té una vora, un lloc on comença i acaba? O depèn de tot el que l'envolta per existir?",
-    "Quina de les tres característiques és més present a {topic} ara mateix -- impermanència, insatisfacció, o no-jo?",
-    "On és el desig aferrat a {topic} -- el voler que les coses siguin diferents del que són?"
-   ],
-   "reflect": [
-    "Així doncs {topic} sorgeix depenent de condicions -- treu-ne una, i encara es manté dret?",
-    "Descrius {topic} com a sòlid. Mira de nou: s'assembla més a una onada, o a l'aigua?",
-    "El que anomenes «{topic}» i el que anomenes «jo» -- on és exactament la línia entre ells?",
-    "La segona fletxa és el patiment que afegim sobre el primer dolor, inevitable -- quant de {topic} és la segona fletxa?",
-    "L'aferrament a un resultat, més que el resultat mateix, sovint és el que impulsa això."
-   ],
-   "technique": [
-    "Prova això: durant una respiració sencera, mira directament {topic} sense anomenar-lo. Què queda quan cau l'etiqueta?",
-    "Traça {topic} cap enrere, causa per causa, tan lluny com puguis. On comença realment la cadena?",
-    "Prova la pràctica de l'etiquetatge: anomena en silenci el que passa a {topic} com «pensant», «sentint» o «percebent», a mesura que sorgeix."
-   ]
-  },
-  "kagyu_mahamudra": {
-   "label": "Mahāmudrā / Llinatge Kagyu",
-   "openers": [
-    "Deixa d'intentar arreglar {topic}. Simplement descansa-hi durant una respiració, exactament tal com és -- què hi ha realment?",
-    "Has estat voltant {topic} amb el cap. Què passa si hi caus de dret, com en aigua freda?",
-    "Qui és el que està preocupat per {topic}? Busca directament aquest -- no el pensament, sinó allò que mira.",
-    "Seu amb {topic} com seuries amb una muntanya -- no resolent-lo, només deixant que es vegi.",
-    "Què li passa a {topic} en l'instant en què deixes d'intentar entendre'l i simplement mires?",
-    "Hi ha esforç en com sostens {topic} ara mateix? On es troba exactament aquest esforç?"
-   ],
-   "reflect": [
-    "Continues meditant sobre {topic}. Què passa en el moment en què deixes de meditar i simplement deixes que la ment sigui ment?",
-    "La ment ordinària, exactament tal com és, ara mateix, ja conté {topic} sense necessitat que canviï. Ho creus, o només ho entens?",
-    "Fins i tot l'esforç de no fer esforç encara és esforç. Pots veure això també?",
-    "La ment que mira la ment mai acaba de trobar res a agafar -- què has trobat quan has mirat?"
-   ],
-   "technique": [
-    "Deixa que el proper sorgiment de {topic} vagi i vingui completament per si sol, com un núvol que travessa el cel, sense que hi facis res.",
-    "Expira completament i mantén, només un moment, just on {topic} viu al cos. Què s'afluixa?"
-   ]
-  },
-  "nyingma_dzogchen": {
-   "label": "Dzogchen / Llinatge Nyingma",
-   "openers": [
-    "No persegueixis {topic}, i tampoc l'apartis. Nota només: què és conscient de {topic} ara mateix, abans que l'anomenis?",
-    "{topic} ja apareix dins d'una consciència que mai va ser pertorbada per ell. Pots trobar aquesta consciència, o només el seu contingut?",
-    "I si {topic} no necessités arreglar-se, només reconèixer-se? Què passa quan el veus simplement amb claredat, sense ajustar res?",
-    "D'on sorgeix {topic}, on roman, i on va? Mira directament, no a la idea d'ell.",
-    "Abans que {topic} fos anomenat, què hi havia simplement?",
-    "La consciència mateixa està pertorbada per {topic}, o només pel seu clima passatger?"
-   ],
-   "reflect": [
-    "Descrius {topic} com un problema a resoldre. En l'estat natural, és només una altra manifestació -- què canvia si el veus així?",
-    "L'autoalliberament vol dir que {topic} es dissol en l'instant en què realment es veu, sense necessitat de correcció. Has mirat realment, o només has pensat en mirar?",
-    "Sota {topic}, hi ha un saber que ja hi era abans que sorgís i hi serà després que hagi passat?",
-    "No cal que sigui diferent -- només vist nu, tal com és."
-   ],
-   "technique": [
-    "Deixa que la mirada s'estovi, la respiració s'assenti, i simplement descansa -- no concentrat en {topic}, no ignorant-lo. Només això, trenta segons.",
-    "Pregunta't directament: qui o què és conscient de {topic}? No responguis amb un concepte com {t1} -- mira."
-   ]
-  },
-  "lamrim_kadam": {
-   "label": "Lamrim / Llinatge Kadam-Gelug",
-   "openers": [
-    "Abans de continuar amb {topic} -- on ets ara mateix al camí? Al principi, al mig, o t'estàs saltant passos?",
-    "Com seria treballar amb {topic} en l'ordre correcte -- primer el fonament, després la motivació, després la visió?",
-    "El teu interès per {topic} ve de voler comoditat per a tu mateix, o de voler ser útil als altres? Totes dues estan bé, però sigues honest sobre quina és.",
-    "Siguem sistemàtics amb {topic}. Quin fonament necessita per aguantar-se realment?",
-    "On se situa {topic} respecte a la teva motivació -- serveix el benestar dels altres, o només el teu propi?",
-    "Què diria cadascuna de les visions -- petita, mitjana i gran -- sobre {topic}?"
-   ],
-   "reflect": [
-    "Vas cap a la visió avançada de {topic} sense els fonaments de sota. Quin fonament encara falta?",
-    "La disciplina no és l'enemiga de {topic} -- és el que el fa prou estable per construir-hi a sobre. On és prima la teva ara mateix?",
-    "Si col·loques {topic} en el context de tot el camí gradual, encara sembla tan urgent, o troba el seu lloc adequat?",
-    "La renúncia no és rebuig -- és claredat sobre què provoca realment un alleujament durador d'alguna cosa com {topic}.",
-    "Fins i tot una cosa difícil com {topic} esdevé material útil un cop la sostens com a pràctica, no només com a problema."
-   ],
-   "technique": [
-    "Escriu en ordre els tres o quatre passos que realment haurien de passar abans que {topic} es resolgui. Comença pel més petit.",
-    "Dedica un minut a reflexionar sobre la impermanència abans de tornar a {topic} -- es veu diferent des d'allà?",
-    "Prova el tonglen durant un minut: inspira el malestar de {topic}, expira alleujament, per a tu mateix i per a qualsevol altre que afronti el mateix."
-   ]
-  },
-  "contemplative_science": {
-   "label": "Ciència Contemplativa / Budisme i Occident",
-   "openers": [
-    "Tractem {topic} com una habilitat entrenable, no un tret fix. Com seria concretament la primera petita repetició?",
-    "Abans d'interpretar {topic}, podem simplement notar-lo -- una respiració, amb atenció, sense cap història encara?",
-    "Què diu l'evidència de la teva pròpia experiència sobre {topic}, a part del que t'han dit que hauries de sentir?",
-    "Si practiquessis amb {t1} durant vuit setmanes, deu minuts al dia, què estaries entrenant exactament?",
-    "Què canviaria probablement a {topic} després de vuit setmanes de pràctica constant, segons el que mostra la investigació?",
-    "És reactivitat, o és responsivitat -- i quina és la diferència real en aquest moment?"
-   ],
-   "reflect": [
-    "Descrius {topic} com alguna cosa que et passa. Què canvia si el tractes com alguna cosa sobre la qual pots entrenar una resposta?",
-    "L'atenció és un múscul, i ara mateix apunta directament a {topic}. Què passa si el mous suaument, deliberadament?",
-    "Hi ha una bretxa entre l'esdeveniment i la teva reacció a {topic}. Com d'ampla és aquesta bretxa avui per a tu?",
-    "La neuroplasticitat vol dir que el patró a {topic} és més modificable del que sembla ara mateix.",
-    "La interocepció -- notar els senyals del cos -- sovint s'avança a la història conscient sobre {topic}."
-   ],
-   "technique": [
-    "Ara mateix: tres respiracions lentes, atenció completa només a la respiració. Després torna a {topic} i digues-me què és diferent.",
-    "Anomena {topic} en veu alta, senzillament, tal com ho faria un científic registrant una observació -- sense paraules de judici. Què queda?",
-    "Prova a etiquetar l'emoció en una paraula, en veu alta, abans de reaccionar a {topic} -- l'«etiquetatge afectiu» calma de manera fiable la resposta de l'amígdala."
    ]
   }
  },

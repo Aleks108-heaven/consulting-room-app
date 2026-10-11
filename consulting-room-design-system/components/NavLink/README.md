@@ -1,6 +1,6 @@
 # NavLink
 
-The top-nav text links (Perls lineage, Traditions of the Mind, About,
+The top-nav text links (Perls lineage, Psychology terms, Quotes, About,
 Settings).
 
 ## Anatomy
