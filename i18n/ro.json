@@ -106,8 +106,10 @@
   "terms_h_varies": "Unde diferă",
   "terms_sources": "Surse",
   "terms_sources_note": "Doar citări. Fiecare redare este atribuită așa cum apare în aceste surse; aplicația nu deschide linkuri.",
-  "quotes_h_quotes": "Citate",
-  "quotes_translated_by": "Tradus de"
+  "quotes_h_quotes": "Citate din domeniul public",
+  "quotes_translated_by": "Tradus de",
+  "quotes_h_short": "Citate scurte de la autori mai recenți",
+  "quotes_short_note": "Operele acestor autori sunt încă protejate de drepturi de autor, așa că se citează doar una sau două propoziții, cu lucrarea și anul. Formularea a fost verificată într-o referință documentată, nu cuvânt cu cuvânt într-un text liber al cărții."
  },
  "modes": {
   "founders": {

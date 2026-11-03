@@ -106,8 +106,10 @@
   "terms_h_varies": "Où cela varie",
   "terms_sources": "Sources",
   "terms_sources_note": "Références seulement. Chaque rendu est attribué tel qu'il apparaît dans ces sources ; l'application n'ouvre pas de liens.",
-  "quotes_h_quotes": "Citations",
-  "quotes_translated_by": "Traduit par"
+  "quotes_h_quotes": "Citations du domaine public",
+  "quotes_translated_by": "Traduit par",
+  "quotes_h_short": "Courtes citations d'auteurs plus récents",
+  "quotes_short_note": "Les œuvres de ces auteurs sont encore protégées par le droit d'auteur : seules une ou deux phrases sont citées, avec l'œuvre et l'année. Le texte a été vérifié sur une référence documentée, et non mot pour mot sur un texte libre du livre."
  },
  "modes": {
   "founders": {

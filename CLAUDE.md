@@ -30,7 +30,7 @@ TypeScript + React, built with Vite. Wrapped natively for Android (Capacitor) an
 
 \- \[x] Live AI hardened: crisis messages (wording from all 11 languages) never reach a provider (`src/lib/liveGate.ts`); prompt names the interface language for all 11; grammar pass for assembled replies (`src/lib/grammar.ts`)
 
-\- \[x] Psychology terms window (`data/terms.json`, nine terms, attributed renderings, en + uk) and public-domain Quotes window (`data/quotes.json`, five quotations, `scripts/verify-quotes.js`)
+\- \[x] Psychology terms window (`data/terms.json`, nine terms, attributed renderings, en + uk) and Quotes window (`data/quotes.json`: 12 public-domain + 8 short in-copyright quotations, `status` field, `scripts/verify-quotes.js`); characters' lines are shown in quotation marks at display time (`quoteSpeech` in `src/lib/grammar.ts`)
 
 \- \[x] `SECURITY.md` uses GitHub private vulnerability reporting
 

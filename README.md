@@ -27,8 +27,9 @@ lineage, terms, quotes and mantras) are a separate app in their own repo:
   by native speakers**. Only English, Spanish, Polish and Ukrainian have per-character dialogue; the
   other languages show the English text for each character.
 - **Psychology terms** are in English and Ukrainian (other languages show the English content with
-  translated labels). **Quotes**: only five psychologists have a quotation, because the rest are
-  still in copyright (see [Quotes](#quotes)).
+  translated labels). **Quotes**: twelve public-domain quotations from five psychologists, plus eight
+  short quotations from three later ones (Jung, Perls, Maslow) that are still in copyright and whose
+  wording is checked against a sourced reference, not a free full text (see [Quotes](#quotes)).
 - **Licence:** no licence has been chosen, so by default all rights are reserved.
 - This is an educational simulation: not the real people, not therapy, not a clinician.
 
@@ -329,23 +330,41 @@ simplified for study.
 
 ## Quotes
 
-The **Quotes** window has one short passage each from five psychologists: William James, Sigmund Freud
-(A. A. Brill's translation), Edward Thorndike, Wilhelm Wundt (Creighton and Titchener's translation) and
-Alfred Adler (W. Béran Wolfe's translation). Each names its work, year, translator and source, and is shown
-in the English text cited, never re-translated.
+The **Quotes** window has two groups, each marked in the window and in `data/quotes.json` (`status`). Every
+quotation names its work, year and source (and translator, if any) and is shown in the English text cited,
+never re-translated.
+
+**1. Public domain (`public-domain`)**: twelve passages from William James, Sigmund Freud (A. A. Brill's and
+M. D. Eder's translations), Edward Thorndike, Wilhelm Wundt (Creighton and Titchener's translation) and
+Alfred Adler (W. Béran Wolfe's translation).
 
 - **Rule: public domain everywhere.** A text qualifies only if its author **and its translator** died more
   than 70 years ago, so it is free to use in the US and in life+70 countries such as the EU, Ukraine and Poland.
   `src/lib/quotes.test.ts` enforces this (an unknown translator fails the test until someone checks them).
-  That rules out Jung, Watson, Pavlov, Maslow and every later author: the window says no quotation is included
-  for the other characters.
 - Texts live in `data/quotes.json` (with `sourceUrls`, which are never shown in the app). They were copied
   from the source texts by a script, not typed. `node scripts/verify-quotes.js` (needs network; not run in CI)
   re-fetches every source and confirms each quotation appears there word for word. Adler and Wundt come from
   scans, so each is checked against **two or three independent scans** and would be dropped if they disagreed.
 - Project Gutenberg texts are public domain in the US; the Gutenberg name is used only to cite the source.
-- To add a quotation: find a short passage in a text whose author and translator both died before 1956,
+- To add one: find a short passage in a text whose author and translator both died before 1956,
   add its entry (and the translator's death year in `quotes.test.ts`), and run the verify script.
+
+**2. Short quotations (`in-copyright`)**: eight passages from Carl Jung (4), Abraham Maslow (3) and Fritz
+Perls (1). Their books are still in copyright, so each quotation is one or two sentences (at most 45 words,
+enforced by the tests), with the work, year and, where a reference gives it, the page.
+
+- **These are not verified against the books.** There is no free full text, so each entry carries
+  `citationUrls`: the *sourced* section of Wikiquote (or, for the Gestalt Prayer, Wikipedia), which gives the
+  work and page. `verify-quotes.js` checks the wording against that reference (markup removed). It confirms the
+  reference says so; it does not replace looking in the printed book.
+- Lines found only on quotation sites (Goodreads, BrainyQuote) are **not** used. Several popular ones have no
+  traceable source: Wikiquote lists "Thinking is difficult, that's why most people judge" as a misquote of Jung's
+  *Flying Saucers* (1959), and it does not list "Until you make the unconscious conscious…" or "I am not what
+  happened to me…" among his sourced words, so they are left out.
+- Translators of these works are named from the standard English editions (Dell and Baynes; Richard and Clara
+  Winston; R. F. C. Hull).
+- To add one: find it in the *sourced* section of Wikiquote with a work and page, keep it to 45 words or fewer,
+  add its entry, and run the verify script.
 
 ## Project layout
 
@@ -361,7 +380,7 @@ consulting-room-app/
 │  └─ data/appData.generated.json   # generated — do not hand-edit (see above)
 ├─ data/core.json            # personas, lineage chains, category order (shared)
 ├─ data/terms.json           # psychology terms: renderings, who uses which, sources
-├─ data/quotes.json          # public-domain quotations (with verification sources)
+├─ data/quotes.json          # public-domain and short in-copyright quotations (with verification sources)
 ├─ i18n/*.json                # one file per language
 ├─ scripts/build-data.js     # data/ + i18n/ -> src/data/appData.generated.json
 ├─ scripts/verify-quotes.js  # re-fetches the quotation sources and checks them word for word

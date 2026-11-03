@@ -106,8 +106,10 @@
   "terms_h_varies": "Wo es abweicht",
   "terms_sources": "Quellen",
   "terms_sources_note": "Nur Quellenangaben. Jede Wiedergabe ist so zugeordnet, wie sie in diesen Quellen steht; die App öffnet keine Links.",
-  "quotes_h_quotes": "Zitate",
-  "quotes_translated_by": "Übersetzt von"
+  "quotes_h_quotes": "Gemeinfreie Zitate",
+  "quotes_translated_by": "Übersetzt von",
+  "quotes_h_short": "Kurze Zitate späterer Autoren",
+  "quotes_short_note": "Die Werke dieser Autoren sind noch urheberrechtlich geschützt, deshalb werden nur ein bis zwei Sätze zitiert, mit Werk und Jahr. Der Wortlaut wurde an einer belegten Referenz geprüft, nicht Wort für Wort an einem frei verfügbaren Text des Buches."
  },
  "modes": {
   "founders": {

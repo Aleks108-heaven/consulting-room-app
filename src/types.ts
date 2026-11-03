@@ -105,15 +105,22 @@ export interface TermsText {
   varies?: Record<string, string>;
 }
 
-/** A public-domain quotation copied word for word. `sourceUrls` are for verification only and are never shown. */
+export type QuoteStatus = "public-domain" | "in-copyright";
+
+/** A quotation. `sourceUrls` and `citationUrls` are for verification only and are never shown. */
 export interface QuoteEntry {
+  /** public-domain: copied word for word from a free full text. in-copyright: a short quotation whose citation is checked against a sourced reference. */
+  status: QuoteStatus;
   person: string;
   work: string;
   year: string;
   part?: string;
   translator?: string;
   source: string;
-  sourceUrls: string[];
+  /** Free full texts the quotation is verified against (public-domain entries). */
+  sourceUrls?: string[];
+  /** Sourced references the citation is checked against (in-copyright entries). */
+  citationUrls?: string[];
   text: string;
 }
 

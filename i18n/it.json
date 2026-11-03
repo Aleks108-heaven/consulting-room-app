@@ -106,8 +106,10 @@
   "terms_h_varies": "Dove varia",
   "terms_sources": "Fonti",
   "terms_sources_note": "Solo riferimenti. Ogni resa è attribuita come appare in queste fonti; l'app non apre link.",
-  "quotes_h_quotes": "Citazioni",
-  "quotes_translated_by": "Tradotto da"
+  "quotes_h_quotes": "Citazioni di pubblico dominio",
+  "quotes_translated_by": "Tradotto da",
+  "quotes_h_short": "Brevi citazioni di autori più recenti",
+  "quotes_short_note": "Le opere di questi autori sono ancora protette dal diritto d'autore, perciò si citano solo una o due frasi, con l'opera e l'anno. Il testo è stato verificato su un riferimento documentato, non parola per parola su un testo libero del libro."
  },
  "modes": {
   "founders": {

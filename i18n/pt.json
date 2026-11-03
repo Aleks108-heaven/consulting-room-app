@@ -106,8 +106,10 @@
   "terms_h_varies": "Onde varia",
   "terms_sources": "Fontes",
   "terms_sources_note": "Apenas citações. Cada tradução é atribuída tal como aparece nestas fontes; a aplicação não abre ligações.",
-  "quotes_h_quotes": "Citações",
-  "quotes_translated_by": "Traduzido por"
+  "quotes_h_quotes": "Citações de domínio público",
+  "quotes_translated_by": "Traduzido por",
+  "quotes_h_short": "Citações breves de autores mais recentes",
+  "quotes_short_note": "As obras destes autores ainda estão protegidas por direitos de autor, por isso citam-se apenas uma ou duas frases, com a obra e o ano. O texto foi confrontado com uma referência documentada, não palavra por palavra com um texto livre do livro."
  },
  "modes": {
   "founders": {
