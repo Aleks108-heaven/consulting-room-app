@@ -106,8 +106,10 @@
   "terms_h_varies": "Gdzie się różni",
   "terms_sources": "Źródła",
   "terms_sources_note": "Tylko odwołania do źródeł. Każdy odpowiednik jest przypisany tak, jak występuje w tych źródłach; aplikacja nie otwiera linków.",
-  "quotes_h_quotes": "Cytaty",
-  "quotes_translated_by": "Tłumaczenie:"
+  "quotes_h_quotes": "Cytaty z domeny publicznej",
+  "quotes_translated_by": "Tłumaczenie:",
+  "quotes_h_short": "Krótkie cytaty późniejszych autorów",
+  "quotes_short_note": "Dzieła tych autorów nadal są objęte prawem autorskim, dlatego cytowane są tylko jedno lub dwa zdania, z podaniem dzieła i roku. Brzmienie sprawdzono w udokumentowanym źródle pomocniczym, a nie słowo w słowo w swobodnie dostępnym tekście książki."
  },
  "modes": {
   "founders": {

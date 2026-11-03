@@ -106,8 +106,10 @@
   "terms_h_varies": "On varia",
   "terms_sources": "Fonts",
   "terms_sources_note": "Només citacions. Cada traducció s'atribueix tal com apareix en aquestes fonts; l'aplicació no obre enllaços.",
-  "quotes_h_quotes": "Cites",
-  "quotes_translated_by": "Traduït per"
+  "quotes_h_quotes": "Cites de domini públic",
+  "quotes_translated_by": "Traduït per",
+  "quotes_h_short": "Cites breus d'autors més recents",
+  "quotes_short_note": "Les obres d'aquests autors encara tenen drets d'autor, per això només es citen una o dues frases, amb l'obra i l'any. El text s'ha comprovat amb una referència documentada, no paraula per paraula amb un text lliure del llibre."
  },
  "modes": {
   "founders": {

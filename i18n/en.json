@@ -106,8 +106,10 @@
   "terms_h_varies": "Where it varies",
   "terms_sources": "Sources",
   "terms_sources_note": "Citations only. Each rendering is attributed as it appears in these sources; the app does not open links.",
-  "quotes_h_quotes": "Quotations",
-  "quotes_translated_by": "Translated by"
+  "quotes_h_quotes": "Public-domain quotations",
+  "quotes_translated_by": "Translated by",
+  "quotes_h_short": "Short quotations from later authors",
+  "quotes_short_note": "These authors' works are still in copyright, so only one or two sentences are quoted, with the work and year. The wording was checked against a sourced reference, not word for word against a free text of the book."
  },
  "modes": {
   "founders": {

@@ -10,3 +10,7 @@ src/data/appData.generated.json
 .DS_Store
 
 ci-artifacts/
+
+# Raw Goodreads copy-paste used while researching quotes; copyrighted, not for the repo
+quotes.md
+desktop.ini

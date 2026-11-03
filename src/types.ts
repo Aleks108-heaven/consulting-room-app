@@ -68,6 +68,8 @@ export interface ChatMessage {
   text: string;
   /** Only set for clinician/crisis replies — which engine produced this text. */
   source?: ReplySource;
+  /** The app's own words about the simulation (not spoken in character): never shown in quotation marks. */
+  notice?: boolean;
 }
 
 /** An English rendering of a term; `by` says who uses it (omitted when no single source is named). */
@@ -103,15 +105,22 @@ export interface TermsText {
   varies?: Record<string, string>;
 }
 
-/** A public-domain quotation copied word for word. `sourceUrls` are for verification only and are never shown. */
+export type QuoteStatus = "public-domain" | "in-copyright";
+
+/** A quotation. `sourceUrls` and `citationUrls` are for verification only and are never shown. */
 export interface QuoteEntry {
+  /** public-domain: copied word for word from a free full text. in-copyright: a short quotation whose citation is checked against a sourced reference. */
+  status: QuoteStatus;
   person: string;
   work: string;
   year: string;
   part?: string;
   translator?: string;
   source: string;
-  sourceUrls: string[];
+  /** Free full texts the quotation is verified against (public-domain entries). */
+  sourceUrls?: string[];
+  /** Sourced references the citation is checked against (in-copyright entries). */
+  citationUrls?: string[];
   text: string;
 }
 
