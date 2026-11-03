@@ -68,6 +68,8 @@ export interface ChatMessage {
   text: string;
   /** Only set for clinician/crisis replies — which engine produced this text. */
   source?: ReplySource;
+  /** The app's own words about the simulation (not spoken in character): never shown in quotation marks. */
+  notice?: boolean;
 }
 
 /** An English rendering of a term; `by` says who uses it (omitted when no single source is named). */

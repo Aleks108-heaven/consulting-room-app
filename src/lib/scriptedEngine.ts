@@ -95,6 +95,7 @@ export function respond(
     return {
       role: "clinician",
       source: "scripted",
+      notice: true,
       text: fillUI(t(lang, "msg_about_template"), {
         name: meta.n,
         life: meta.y,
@@ -107,7 +108,7 @@ export function respond(
     return { role: "clinician", source: "scripted", text: fillTemplate(lang, tpl, txt, t(lang, "topic_fallback")) };
   }
   if (cat === "farewell") {
-    return { role: "clinician", source: "scripted", text: t(lang, "msg_farewell") };
+    return { role: "clinician", source: "scripted", notice: true, text: t(lang, "msg_farewell") };
   }
 
   const cats = categories(lang);

@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { appData } from "./appData";
-import { capitalizeFirst, tidyGrammar } from "./grammar";
+import { capitalizeFirst, quoteSpeech, tidyGrammar } from "./grammar";
 import { fillTemplate, openerFor, respond } from "./scriptedEngine";
 
 describe("grammar pass for assembled replies", () => {
@@ -30,6 +30,39 @@ describe("grammar pass for assembled replies", () => {
   it("leaves other languages' wording alone", () => {
     expect(tidyGrammar("en", "Look at what's there")).toBe("Look at what's there");
     expect(tidyGrammar("fr", "Asseyez-vous comme vous vous assiériez")).toBe("Asseyez-vous comme vous vous assiériez");
+  });
+});
+
+describe("quotation marks around what the character says", () => {
+  it("uses each language's own convention", () => {
+    expect(quoteSpeech("en", "Hello.")).toBe("“Hello.”");
+    expect(quoteSpeech("de", "Hallo.")).toBe("„Hallo.“");
+    expect(quoteSpeech("pl", "Cześć.")).toBe("„Cześć.”");
+    expect(quoteSpeech("fr", "Bonjour.")).toBe("« Bonjour. »");
+    expect(quoteSpeech("es", "Hola.")).toBe("«Hola.»");
+    expect(quoteSpeech("uk", "Привіт.")).toBe("«Привіт.»");
+  });
+
+  it("has a style for every interface language, and falls back to English", () => {
+    for (const lang of appData.langs) expect(quoteSpeech(lang, "x")).not.toBe("x");
+    expect(quoteSpeech("xx", "x")).toBe("“x”");
+  });
+
+  it("does not quote a reply twice, or an empty one", () => {
+    expect(quoteSpeech("en", "“Already quoted.”")).toBe("“Already quoted.”");
+    expect(quoteSpeech("en", "\"Already quoted.\"")).toBe("\"Already quoted.\"");
+    expect(quoteSpeech("en", "")).toBe("");
+  });
+
+  it("marks the about and farewell lines as the app's own words", () => {
+    const idx = 0;
+    const lang = "en";
+    const about = respond(lang, idx, appData.languages.en.categories.about.kw[0], 1);
+    const bye = respond(lang, idx, appData.languages.en.categories.farewell.kw[0], 1);
+    expect(about.notice).toBe(true);
+    expect(bye.notice).toBe(true);
+    expect(openerFor(lang, idx)).not.toMatch(/^["“]/);
+    expect(respond(lang, idx, "I feel anxious", 2).notice).toBeUndefined();
   });
 });
 

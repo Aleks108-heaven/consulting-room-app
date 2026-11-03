@@ -1,4 +1,5 @@
 import { t } from "../../lib/i18n";
+import { quoteSpeech } from "../../lib/grammar";
 import { initials } from "../../lib/personas";
 import type { ChatMessage } from "../../types";
 import { Icon } from "../ui/Icon";
@@ -30,7 +31,7 @@ export function MessageBubble({ message, personaName, lang }: MessageBubbleProps
         )}
         {/* A crisis message must interrupt a screen-reader user; everything else is announced politely by the log. */}
         <div className="bubble" role={message.role === "crisis" ? "alert" : undefined}>
-          {message.text}
+          {message.role === "clinician" && !message.notice ? quoteSpeech(lang, message.text) : message.text}
         </div>
       </div>
     </div>

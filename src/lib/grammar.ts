@@ -29,6 +29,35 @@ export function capitalizeFirst(text: string): string {
   return text.replace(/^([\p{P}\s]*)(\p{Ll})/u, (_, lead: string, ch: string) => lead + ch.toLocaleUpperCase());
 }
 
+// What the character says is shown in quotation marks, in each language's own convention. Applied when a message is
+// displayed, never to the stored text, so saved history and what a Live AI provider receives stay unquoted.
+const NBSP = " ";
+const quoteMarks: Record<string, [string, string]> = {
+  en: ["“", "”"],
+  pt: ["“", "”"],
+  de: ["„", "“"],
+  pl: ["„", "”"],
+  ro: ["„", "”"],
+  fr: ["«" + NBSP, NBSP + "»"],
+  es: ["«", "»"],
+  it: ["«", "»"],
+  ca: ["«", "»"],
+  ru: ["«", "»"],
+  uk: ["«", "»"],
+};
+
+const OPENING = /^["“„«]/;
+const CLOSING = /["“”»]$/;
+
+export function quoteSpeech(lang: string, text: string): string {
+  const body = text.trim();
+  if (!body) return text;
+  // A reply that the model already put in quotation marks is not quoted twice.
+  if (OPENING.test(body) && CLOSING.test(body)) return text;
+  const [open, close] = quoteMarks[lang] ?? quoteMarks.en;
+  return open + body + close;
+}
+
 export function tidyGrammar(lang: string, text: string): string {
   let out = text;
   for (const [re, to] of contractions[lang] ?? []) out = out.replace(re, (m) => keepCase(m, to));
