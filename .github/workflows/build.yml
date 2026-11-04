@@ -1,4 +1,4 @@
-name: Build Android + Windows + iOS
+name: Build Android + Windows + macOS + iOS
 
 on:
   push:
@@ -100,6 +100,39 @@ jobs:
           path: |
             src-tauri/target/release/bundle/nsis/*.exe
             src-tauri/target/release/bundle/msi/*.msi
+          if-no-files-found: error
+
+  macos:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: aarch64-apple-darwin,x86_64-apple-darwin
+
+      - name: Install JS deps
+        run: npm install
+
+      - name: Build macOS app + DMG (universal, ad-hoc signed -- no Apple Developer account needed)
+        run: npm run mac:build:universal
+
+      - name: Collect DMG and write SHA256SUMS.txt
+        run: |
+          mkdir -p dist-mac
+          cp src-tauri/target/universal-apple-darwin/release/bundle/dmg/*.dmg dist-mac/
+          cd dist-mac
+          shasum -a 256 *.dmg > SHA256SUMS.txt
+          cat SHA256SUMS.txt
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: consulting-room-macos-dmg
+          path: dist-mac/
           if-no-files-found: error
 
   ios:

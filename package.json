@@ -19,7 +19,10 @@
     "android:open": "cap open android",
     "android:run": "cap run android",
     "win:dev": "npm run data:build && tauri dev",
-    "win:build": "npm run build && tauri build"
+    "win:build": "npm run build && tauri build",
+    "mac:dev": "npm run data:build && tauri dev",
+    "mac:build": "npm run build && tauri build",
+    "mac:build:universal": "npm run build && tauri build --target universal-apple-darwin"
   },
   "devDependencies": {
     "@capacitor/android": "^6.1.2",
